@@ -1,11 +1,8 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "sam-fabrication",
-  "compatibility_date": "2026-10-30",
-  "pages_build_output_dir": "./dist",
-  "vars": {
-    "SITE_URL": "https://samfabrication.in",
-    "ENVIRONMENT": "production"
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist"
   }
 }
-
