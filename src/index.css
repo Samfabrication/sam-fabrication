@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-display: 'Cinzel', serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-script: 'Caveat', cursive;
+
+  --color-charcoal-950: #070A0E;
+  --color-charcoal-900: #0B0F15;
+  --color-charcoal-850: #0E141D;
+  --color-charcoal-800: #121820;
+  --color-charcoal-750: #151D28;
+  --color-charcoal-700: #1A2432;
+  --color-charcoal-600: #243245;
+
+  --color-gold-50: #FCF8EE;
+  --color-gold-100: #F7EDD2;
+  --color-gold-200: #EFD99F;
+  --color-gold-300: #E5C36B;
+  --color-gold-400: #E5A83B;
+  --color-gold-500: #D49B37;
+  --color-gold-600: #B77C26;
+  --color-gold-700: #8E5B1C;
+
+  --color-steel-50: #F8FAFC;
+  --color-steel-100: #F1F5F9;
+  --color-steel-200: #E2E8F0;
+  --color-steel-300: #CBD5E1;
+  --color-steel-400: #94A3B8;
+  --color-steel-500: #64748B;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-serif-heading {
+  font-family: var(--font-serif);
+}
+
+.font-script-accent {
+  font-family: var(--font-script);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FAD981 0%, #D49B37 50%, #E5A83B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.steel-gradient-text {
+  background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 50%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-shimmer-btn {
+  background: linear-gradient(135deg, #E5A83B 0%, #D49B37 100%);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-shimmer-btn:hover {
+  background: linear-gradient(135deg, #F3B74F 0%, #E0A642 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px -5px rgba(212, 155, 55, 0.4);
+}
+

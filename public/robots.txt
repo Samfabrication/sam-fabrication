@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samfabrication.in/sitemap.xml
+

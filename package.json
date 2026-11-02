@@ -1,0 +1,29 @@
+{
+  "name": "sam-fabrication",
+  "version": "1.0.0",
+  "description": "SAM Fabrication Engineering Work - Bangalore",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node scripts/prerender.mjs",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.32",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  },
+  "dependencies": {
+    "lucide-react": "^1.65.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "sharp": "^0.35.5"
+  }
+}

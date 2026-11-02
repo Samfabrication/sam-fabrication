@@ -1,0 +1,478 @@
+{
+  "siteUrl": "https://samfabrication.in",
+  "businessName": "SAM Fabrication Engineering Work",
+  "phone": "+91 98765 43210",
+  "email": "info@samfabrication.in",
+  "address": "Hebbal / Outer Ring Road Industrial Corridor, Bangalore, Karnataka 560024",
+  "pages": [
+    {
+      "url": "/",
+      "title": "Fabrication Works in Bangalore | SAM Fabrication Engineering Work",
+      "description": "Looking for reliable fabrication and welding works in Bangalore? Explore custom gates, grills, railings, sheds and steel fabrication solutions from SAM Fabrication.",
+      "h1": "Professional Welding & Fabrication Works in Bangalore",
+      "primaryKeyword": "fabrication works in bangalore",
+      "schemaType": "LocalBusiness",
+      "category": "core"
+    },
+    {
+      "url": "/about-us/",
+      "title": "About Us | SAM Fabrication Engineering Work Bangalore",
+      "description": "Learn about SAM Fabrication Engineering Work, Bangalore's premier steel & metal fabricator delivering custom structural, residential and commercial solutions.",
+      "h1": "Built with Experience. Driven by Quality.",
+      "primaryKeyword": "SAM Fabrication Engineering Work Bangalore",
+      "schemaType": "AboutPage",
+      "category": "core"
+    },
+    {
+      "url": "/services/",
+      "title": "Fabrication Services in Bangalore | Complete Metal & Steel Solutions",
+      "description": "Explore expert fabrication services in Bangalore: custom gates, safety window grills, SS/MS railings, structural sheds, and architectural steel work.",
+      "h1": "Complete Fabrication Solutions in Bangalore",
+      "primaryKeyword": "fabrication services bangalore",
+      "schemaType": "CollectionPage",
+      "category": "services"
+    },
+    {
+      "url": "/services/gate-fabrication/",
+      "title": "Gate Fabrication in Bangalore | Custom MS & Steel Gates",
+      "description": "Premium main gate fabrication in Bangalore. Sliding gates, folding gates, and modern laser-cut designer steel gates built for strength and elegance.",
+      "h1": "Custom Gate Fabrication in Bangalore",
+      "primaryKeyword": "gate fabrication bangalore",
+      "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/services/window-grills/",
+      "title": "Window Grill Fabrication in Bangalore | Modern Safety Grills",
+      "description": "High-security modern window grill fabrication in Bangalore. Custom MS and SS safety grills for apartments, villas, and commercial properties.",
+      "h1": "Custom Window Grill & Safety Grill Fabrication",
+      "primaryKeyword": "window grill fabrication bangalore",
+      "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/services/ms-gates/",
+      "title": "MS Gate Manufacturers in Bangalore | Mild Steel Main Gates",
+      "description": "Durable and affordable mild steel (MS) gates in Bangalore. Heavy-duty sliding and swing gates with anti-rust primer and premium powder coating.",
+      "h1": "Mild Steel (MS) Gate Fabrication in Bangalore",
+      "primaryKeyword": "ms gate manufacturers bangalore",
+      "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/services/ss-railings/",
+      "title": "SS Railing in Bangalore | Stainless Steel Balcony & Stair Railings",
+      "description": "Top stainless steel (SS 304 Grade) railing fabricators in Bangalore. Modern balcony railings, staircase handrails, and glass-steel combinations.",
+      "h1": "Stainless Steel (SS) Railing Fabrication in Bangalore",
+      "primaryKeyword": "ss railing bangalore",
+      "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/services/ms-railings/",
+      "title": "MS Railing Fabrication in Bangalore | Modern Mild Steel Railings",
+      "description": "Architectural MS railings for balconies, stairs, and terraces in Bangalore. Laser-cut geometric designs and long-lasting powder coated finishes.",
+      "h1": "Mild Steel (MS) Railing Fabrication in Bangalore",
+      "primaryKeyword": "ms railing fabrication bangalore",
+      "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/services/staircase-fabrication/",
+      "title": "Staircase Fabrication in Bangalore | Metal, Spiral & Floating Stairs",
+      "description": "Custom metal staircase fabrication in Bangalore. Space-saving spiral stairs, floating mono-stringer staircases, and heavy-duty industrial fire escapes.",
+      "h1": "Custom Steel Staircase Fabrication in Bangalore",
+      "primaryKeyword": "staircase fabrication bangalore",
+      "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/services/car-parking-sheds/",
+      "title": "Car Parking Shed in Bangalore | Polycarbonate & Tensile Carports",
+      "description": "Custom car parking shed fabrication in Bangalore for homes, apartments, and office campuses. Weatherproof polycarbonate, tensile, and GI sheet sheds.",
+      "h1": "Car Parking Shed & Carport Fabrication in Bangalore",
+      "primaryKeyword": "car parking shed bangalore",
+      "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/services/metal-sheds/",
+      "title": "Metal Shed Fabrication in Bangalore | Rooftop & Storage Sheds",
+      "description": "Robust metal shed fabrication in Bangalore. Heavy-duty steel rooftop sheds, warehouse storage sheds, and industrial shelters built for all seasons.",
+      "h1": "Metal Shed & Rooftop Shed Fabrication in Bangalore",
+      "primaryKeyword": "metal shed fabrication bangalore",
+      "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/services/structural-steel-fabrication/",
+      "title": "Structural Steel Fabrication in Bangalore | Industrial Warehouses & PEB",
+      "description": "Engineered structural steel fabrication in Bangalore. Heavy I-beam frameworks, industrial PEB sheds, factory structures, and commercial mezzanine floors.",
+      "h1": "Structural Steel & Industrial Fabrication in Bangalore",
+      "primaryKeyword": "structural steel fabrication bangalore",
+      "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/services/canopy-fabrication/",
+      "title": "Metal Canopy Fabrication in Bangalore | Entrance & Window Canopies",
+      "description": "Architectural metal canopy fabrication in Bangalore. Designer glass and steel entrance canopies, cantilever sunshades, and terrace pergolas.",
+      "h1": "Architectural Metal Canopy Fabrication in Bangalore",
+      "primaryKeyword": "metal canopy fabrication bangalore",
+      "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/services/custom-welding-fabrication/",
+      "title": "Custom Welding & Fabrication Bangalore | MIG, TIG & On-Site Works",
+      "description": "Specialized custom welding and metal fabrication services in Bangalore. Expert TIG, MIG, and Arc welding for bespoke residential and industrial needs.",
+      "h1": "Custom Welding & Metal Fabrication Works Bangalore",
+      "primaryKeyword": "custom welding bangalore",
+      "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/our-work/",
+      "title": "Our Work | Real Fabrication Projects in Bangalore | SAM Fabrication",
+      "description": "Browse real completed fabrication projects across Bangalore: modern main gates, balcony railings, car parking sheds, staircases, and steel structures.",
+      "h1": "Real Projects. Stronger Spaces.",
+      "primaryKeyword": "fabrication projects bangalore",
+      "schemaType": "CollectionPage",
+      "category": "portfolio"
+    },
+    {
+      "url": "/why-choose-us/",
+      "title": "Why Choose Us | Premium Metal Fabrication | SAM Fabrication",
+      "description": "Discover why SAM Fabrication is Bangalore's trusted choice: high-grade materials, precision engineering, transparent pricing, and timely project delivery.",
+      "h1": "More Than Fabrication. A Stronger Tomorrow.",
+      "primaryKeyword": "best metal fabricators in bangalore",
+      "schemaType": "WebPage",
+      "category": "core"
+    },
+    {
+      "url": "/blog/",
+      "title": "Fabrication Ideas, Tips & Inspiration | SAM Fabrication Blog",
+      "description": "Expert advice, material guides, and design trends for gates, grills, railings, and structural steel fabrication in Bangalore.",
+      "h1": "Ideas, Tips & Inspiration for Stronger Spaces",
+      "primaryKeyword": "steel fabrication guides bangalore",
+      "schemaType": "Blog",
+      "category": "blog"
+    },
+    {
+      "url": "/blog/how-to-choose-the-right-gate-for-your-home/",
+      "title": "How to Choose the Right Gate for Your Home | Complete Buyer's Guide",
+      "description": "Selecting the perfect main gate: compare sliding vs swing gates, MS vs SS materials, safety considerations, and budget estimation for Bangalore homes.",
+      "h1": "How to Choose the Right Gate for Your Home",
+      "primaryKeyword": "how to choose main gate for home",
+      "schemaType": "BlogPosting",
+      "category": "blog"
+    },
+    {
+      "url": "/blog/top-10-modern-grill-designs-for-windows/",
+      "title": "Top 10 Modern Grill Designs for Windows | Security & Aesthetics",
+      "description": "Discover the latest 2026 window grill designs combining robust home security with contemporary architectural elegance.",
+      "h1": "Top 10 Modern Grill Designs for Windows",
+      "primaryKeyword": "modern window grill designs",
+      "schemaType": "BlogPosting",
+      "category": "blog"
+    },
+    {
+      "url": "/blog/stainless-steel-vs-ms-railings/",
+      "title": "Stainless Steel vs MS Railings: Which is Better? | In-Depth Comparison",
+      "description": "Compare SS (Stainless Steel) and MS (Mild Steel) railings on strength, cost, rust resistance, and maintenance for balconies and staircases.",
+      "h1": "Stainless Steel vs MS Railings: Which is Better?",
+      "primaryKeyword": "ss vs ms railings",
+      "schemaType": "BlogPosting",
+      "category": "blog"
+    },
+    {
+      "url": "/blog/car-parking-shed-design-ideas/",
+      "title": "Car Parking Shed Design Ideas for Homes & Offices | Material Guide",
+      "description": "Explore stylish and durable car parking shed designs: polycarbonate, tensile fabric, and metal roofing for villas and corporate spaces.",
+      "h1": "Car Parking Shed Design Ideas for Homes & Offices",
+      "primaryKeyword": "car parking shed design ideas",
+      "schemaType": "BlogPosting",
+      "category": "blog"
+    },
+    {
+      "url": "/blog/latest-main-gate-designs-for-modern-homes/",
+      "title": "Latest Main Gate Designs for Modern Homes | 2026 Trends",
+      "description": "Explore trending main gate designs: CNC laser cut geometric patterns, wood-finish metal slats, and smart motorized sliding gates in Bangalore.",
+      "h1": "Latest Main Gate Designs for Modern Homes",
+      "primaryKeyword": "modern main gate designs bangalore",
+      "schemaType": "BlogPosting",
+      "category": "blog"
+    },
+    {
+      "url": "/blog/space-saving-staircase-design-ideas/",
+      "title": "Space-Saving Staircase Design Ideas | Compact Steel Stairs",
+      "description": "Creative metal staircase designs for tight residential spaces: spiral staircases, floating stairs, and space-efficient mezzanine access.",
+      "h1": "Space-Saving Staircase Design Ideas",
+      "primaryKeyword": "space saving staircase designs",
+      "schemaType": "BlogPosting",
+      "category": "blog"
+    },
+    {
+      "url": "/blog/ms-structural-fabrication-commercial-projects/",
+      "title": "MS Structural Fabrication for Commercial Projects | Heavy Steel Works",
+      "description": "Key considerations for commercial structural fabrication: load calculations, I-beam assembly, safety compliance, and timeline management.",
+      "h1": "MS Structural Fabrication for Commercial Projects",
+      "primaryKeyword": "ms structural fabrication uses",
+      "schemaType": "BlogPosting",
+      "category": "blog"
+    },
+    {
+      "url": "/blog/how-to-maintain-gates-and-railings/",
+      "title": "How to Maintain Your Gates and Railings | Rust Prevention Guide",
+      "description": "Actionable tips to prevent rust and maintain the shine of MS and SS gates and railings in Bangalore's monsoon climate.",
+      "h1": "How to Maintain Your Gates and Railings",
+      "primaryKeyword": "how to maintain steel gates and railings",
+      "schemaType": "BlogPosting",
+      "category": "blog"
+    },
+    {
+      "url": "/locations/hebbal/",
+      "title": "Fabrication Works in Hebbal, Bangalore | Gates, Grills & Railings",
+      "description": "Trusted fabrication and welding works in Hebbal, Bangalore. Custom gates, safety window grills, balcony railings, and car parking sheds with on-site installation.",
+      "h1": "Fabrication Works in Hebbal, Bangalore",
+      "primaryKeyword": "fabrication works in hebbal bangalore",
+      "schemaType": "LocalBusiness",
+      "category": "locations"
+    },
+    {
+      "url": "/locations/yelahanka/",
+      "title": "Metal Fabrication Services in Yelahanka, Bangalore | SAM Fabrication",
+      "description": "Expert metal fabrication services in Yelahanka. Custom MS gates, staircase fabrication, structural sheds, and architectural railings for villas and apartments.",
+      "h1": "Metal Fabrication & Welding in Yelahanka, Bangalore",
+      "primaryKeyword": "metal fabrication in yelahanka",
+      "schemaType": "LocalBusiness",
+      "category": "locations"
+    },
+    {
+      "url": "/locations/manyata-tech-park/",
+      "title": "Steel Fabrication near Manyata Tech Park, Bangalore | SAM Fabrication",
+      "description": "Reliable steel and metal fabrication services near Manyata Tech Park. Commercial canopies, security grills, SS railings, and custom office metalwork.",
+      "h1": "Steel Fabrication Services near Manyata Tech Park",
+      "primaryKeyword": "steel fabrication manyata tech park",
+      "schemaType": "LocalBusiness",
+      "category": "locations"
+    },
+    {
+      "url": "/locations/whitefield/",
+      "title": "Fabrication Services in Whitefield, Bangalore | Custom Gates & Sheds",
+      "description": "High-quality fabrication works in Whitefield, Bangalore. Premium villa gates, car parking sheds, balcony railings, and commercial steel structures.",
+      "h1": "Custom Metal Fabrication in Whitefield, Bangalore",
+      "primaryKeyword": "fabrication services whitefield bangalore",
+      "schemaType": "LocalBusiness",
+      "category": "locations"
+    },
+    {
+      "url": "/locations/electronic-city/",
+      "title": "Welding & Fabrication in Electronic City, Bangalore | SAM Fabrication",
+      "description": "Professional welding and structural fabrication in Electronic City. Custom industrial sheds, metal staircases, security grills, and automated gates.",
+      "h1": "Welding & Fabrication Works in Electronic City",
+      "primaryKeyword": "welding and fabrication electronic city",
+      "schemaType": "LocalBusiness",
+      "category": "locations"
+    },
+    {
+      "url": "/locations/hsr-layout/",
+      "title": "Custom Fabrication in HSR Layout, Bangalore | Balcony Railings & Gates",
+      "description": "Modern metal fabrication in HSR Layout, Bangalore. SS balcony railings, laser cut main gates, window grills, and residential rooftop sheds.",
+      "h1": "Custom Fabrication Works in HSR Layout, Bangalore",
+      "primaryKeyword": "custom fabrication hsr layout",
+      "schemaType": "LocalBusiness",
+      "category": "locations"
+    },
+    {
+      "url": "/areas-we-serve/",
+      "title": "Areas We Serve in Bangalore | Metal & Steel Fabrication Hub | SAM Fabrication",
+      "description": "Comprehensive metal and structural fabrication coverage across North, South, East, and West Bangalore. Quick on-site measurement and certified installation in Hebbal, Whitefield, HSR, Peenya & beyond.",
+      "h1": "Engineering Stronger Spaces Across Every Bangalore Corridor",
+      "primaryKeyword": "fabrication works in bangalore areas",
+      "schemaType": "CollectionPage",
+      "category": "regions"
+    },
+    {
+      "url": "/areas-we-serve/north-bangalore/",
+      "title": "North Bangalore Fabrication Works | Hebbal, Yelahanka, Manyata | SAM Fabrication",
+      "description": "Specialized fabrication services across North Bangalore including Hebbal, Yelahanka, Jakkur, Thanisandra, Hennur, and RT Nagar. Custom gates, SS railings, sheds & grills.",
+      "h1": "North Bangalore Metal Fabrication, Gates & Structural Steelwork",
+      "primaryKeyword": "fabrication works north bangalore",
+      "schemaType": "Service",
+      "category": "regions"
+    },
+    {
+      "url": "/areas-we-serve/south-bangalore/",
+      "title": "South Bangalore Fabrication Works | HSR Layout, Electronic City, Jayanagar | SAM Fabrication",
+      "description": "Professional metal fabrication, railings, gates, staircases and sheds in South Bangalore: HSR Layout, Sarjapur Road, Electronic City, JP Nagar, Jayanagar & BTM Layout.",
+      "h1": "South Bangalore Metal Fabrication, Gates & Structural Steelwork",
+      "primaryKeyword": "fabrication works south bangalore",
+      "schemaType": "Service",
+      "category": "regions"
+    },
+    {
+      "url": "/areas-we-serve/east-bangalore/",
+      "title": "East Bangalore Fabrication Works | Whitefield, KR Puram, Marathahalli | SAM Fabrication",
+      "description": "East Bangalore fabrication specialists serving Whitefield, KR Puram, Marathahalli, Brookefield, and Mahadevapura. Luxury gates, designer railings, pergolas & steel sheds.",
+      "h1": "East Bangalore Metal Fabrication, Gates & Structural Steelwork",
+      "primaryKeyword": "fabrication works east bangalore",
+      "schemaType": "Service",
+      "category": "regions"
+    },
+    {
+      "url": "/areas-we-serve/west-bangalore/",
+      "title": "West Bangalore Fabrication Works | Peenya, Yeshwanthpur, Rajajinagar | SAM Fabrication",
+      "description": "Heavy-duty fabrication, PEB warehouse sheds, industrial structures, gates and grills in West Bangalore: Peenya Industrial Area, Yeshwanthpur & Rajajinagar.",
+      "h1": "West Bangalore Metal Fabrication, Gates & Structural Steelwork",
+      "primaryKeyword": "fabrication works west bangalore",
+      "schemaType": "Service",
+      "category": "regions"
+    },
+    {
+      "url": "/our-work/main-gate-laser-cut-bangalore/",
+      "title": "Main Gate Fabrication (Bangalore) | Case Study | SAM Fabrication",
+      "description": "Modern black steel main entrance gate featuring gold laser-cut CNC decorative inlay panels and heavy-duty sliding tracks. Custom fabrication case study in Bangalore by SAM Fabrication.",
+      "h1": "Main Gate Fabrication with CNC Laser Inlay",
+      "primaryKeyword": "cnc laser cut main gate case study bangalore",
+      "schemaType": "Article",
+      "category": "projects"
+    },
+    {
+      "url": "/our-work/window-grills-hebbal-villa/",
+      "title": "Window Grills (Hebbal) | Case Study | SAM Fabrication",
+      "description": "Minimalist horizontal steel security window grills installed for a luxury independent villa in Hebbal. Custom fabrication case study in Hebbal, Bangalore by SAM Fabrication.",
+      "h1": "Modern Villa Window Grills in Hebbal",
+      "primaryKeyword": "modern window grills case study hebbal",
+      "schemaType": "Article",
+      "category": "projects"
+    },
+    {
+      "url": "/our-work/ss-balcony-railing-manyata/",
+      "title": "SS Railing (Manyata Tech Park) | Case Study | SAM Fabrication",
+      "description": "AISI 304 Grade stainless steel balcony railings with satin hairline finish and multi-tier horizontal safety bars. Custom fabrication case study in Manyata Tech Park, Bangalore by SAM Fabrication.",
+      "h1": "Grade 304 SS Balcony Railing in Manyata",
+      "primaryKeyword": "stainless steel railing case study manyata",
+      "schemaType": "Article",
+      "category": "projects"
+    },
+    {
+      "url": "/our-work/ms-staircase-yelahanka-duplex/",
+      "title": "MS Staircase (Yelahanka) | Case Study | SAM Fabrication",
+      "description": "Modern floating mono-stringer metal staircase with integrated step lighting channels and sleek steel handrails. Custom fabrication case study in Yelahanka, Bangalore by SAM Fabrication.",
+      "h1": "Internal MS Floating Staircase in Yelahanka",
+      "primaryKeyword": "floating metal staircase case study yelahanka",
+      "schemaType": "Article",
+      "category": "projects"
+    },
+    {
+      "url": "/our-work/car-parking-shed-bangalore-campus/",
+      "title": "Car Parking Shed (Bangalore) | Case Study | SAM Fabrication",
+      "description": "Multi-bay commercial car parking shed featuring heavy-gauge tubular steel columns and UV-resistant roofing. Custom fabrication case study in Bangalore by SAM Fabrication.",
+      "h1": "Commercial Cantilever Car Parking Shed in Bangalore",
+      "primaryKeyword": "cantilever car parking shed case study bangalore",
+      "schemaType": "Article",
+      "category": "projects"
+    },
+    {
+      "url": "/our-work/ms-structure-bidadi-industrial/",
+      "title": "MS Structure (Bidadi) | Case Study | SAM Fabrication",
+      "description": "Heavy structural steel warehouse framing, open-span trusses, and purlins for an industrial logistics hub. Custom fabrication case study in Bidadi, Bangalore by SAM Fabrication.",
+      "h1": "MS Structural Warehouse Steelwork in Bidadi",
+      "primaryKeyword": "industrial steel warehouse case study bidadi",
+      "schemaType": "Article",
+      "category": "projects"
+    },
+    {
+      "url": "/our-work/custom-fabrication-screen-whitefield/",
+      "title": "Custom Fabrication (Whitefield) | Case Study | SAM Fabrication",
+      "description": "Intricate CNC laser-cut decorative metal privacy screens and illuminated room dividers for a corporate office. Custom fabrication case study in Whitefield, Bangalore by SAM Fabrication.",
+      "h1": "Bespoke Laser Cut Metal Partition Screen in Whitefield",
+      "primaryKeyword": "laser cut partition screen case study whitefield",
+      "schemaType": "Article",
+      "category": "projects"
+    },
+    {
+      "url": "/our-work/canopy-structure-sarjapur-villa/",
+      "title": "Canopy Structure (Sarjapur) | Case Study | SAM Fabrication",
+      "description": "Architectural metal portico entrance canopy with weather-treated wooden louvers and downlighting. Custom fabrication case study in Sarjapur, Bangalore by SAM Fabrication.",
+      "h1": "Architectural Portico Entrance Canopy in Sarjapur",
+      "primaryKeyword": "metal entrance canopy case study sarjapur",
+      "schemaType": "Article",
+      "category": "projects"
+    },
+    {
+      "url": "/our-work/sliding-gate-devanahalli-estate/",
+      "title": "Sliding Gate (Devanahalli) | Case Study | SAM Fabrication",
+      "description": "Full-privacy horizontal steel slat motorized sliding gate with charcoal grey epoxy coating. Custom fabrication case study in Devanahalli, Bangalore by SAM Fabrication.",
+      "h1": "Motorized Horizontal Slat Sliding Gate in Devanahalli",
+      "primaryKeyword": "motorized sliding gate case study devanahalli",
+      "schemaType": "Article",
+      "category": "projects"
+    },
+    {
+      "url": "/our-work/balcony-railing-hsr-residence/",
+      "title": "Balcony Railing (HSR Layout) | Case Study | SAM Fabrication",
+      "description": "Modern black mild steel balcony railing installed on a 3-storey contemporary villa in HSR Layout. Custom fabrication case study in HSR Layout, Bangalore by SAM Fabrication.",
+      "h1": "Matte Black Villa Balcony Railings in HSR Layout",
+      "primaryKeyword": "matte black balcony railing case study hsr",
+      "schemaType": "Article",
+      "category": "projects"
+    },
+    {
+      "url": "/our-work/industrial-fabrication-nelamangala-plant/",
+      "title": "Industrial Fabrication (Nelamangala) | Case Study | SAM Fabrication",
+      "description": "Heavy industrial roof truss fabrication and steel column erection for a manufacturing plant. Custom fabrication case study in Nelamangala, Bangalore by SAM Fabrication.",
+      "h1": "Clear-Span Industrial Roof Truss Fabrication in Nelamangala",
+      "primaryKeyword": "industrial roof truss case study nelamangala",
+      "schemaType": "Article",
+      "category": "projects"
+    },
+    {
+      "url": "/our-work/terrace-pergola-indiranagar-penthouse/",
+      "title": "Pergola (Indiranagar) | Case Study | SAM Fabrication",
+      "description": "Rooftop terrace steel pergola with integrated glass shelter and hanging planter trellis. Custom fabrication case study in Indiranagar, Bangalore by SAM Fabrication.",
+      "h1": "Rooftop Terrace Steel Glass Pergola in Indiranagar",
+      "primaryKeyword": "terrace steel pergola case study indiranagar",
+      "schemaType": "Article",
+      "category": "projects"
+    },
+    {
+      "url": "/admin/seo/",
+      "title": "Admin SEO Suite & Technical Registry | SAM Fabrication",
+      "description": "Internal SEO operations, keyword-to-URL assignment map, Schema JSON-LD validation, regional coverage, and GA4 tracking registry for samfabrication.in.",
+      "h1": "SAM Fabrication SEO Administration Suite",
+      "primaryKeyword": "seo admin operations samfabrication",
+      "schemaType": "WebPage",
+      "category": "admin"
+    },
+    {
+      "url": "/contact-us/",
+      "title": "Contact Us | Get a Free Quote | SAM Fabrication Engineering Work",
+      "description": "Contact SAM Fabrication Engineering Work in Bangalore. Call +91 98765 43210 or request a free consultation and quotation for your fabrication project.",
+      "h1": "Let's Build Your Project Together",
+      "primaryKeyword": "SAM Fabrication contact number Bangalore",
+      "schemaType": "ContactPage",
+      "category": "core"
+    },
+    {
+      "url": "/privacy-policy/",
+      "title": "Privacy Policy | SAM Fabrication Engineering Work",
+      "description": "Privacy policy for SAM Fabrication Engineering Work explaining how client project details and contact data are securely handled.",
+      "h1": "Privacy Policy",
+      "primaryKeyword": "privacy policy SAM Fabrication",
+      "schemaType": "WebPage",
+      "category": "legal"
+    },
+    {
+      "url": "/terms-and-conditions/",
+      "title": "Terms and Conditions | SAM Fabrication Engineering Work",
+      "description": "Terms of service and fabrication contracting terms for SAM Fabrication Engineering Work in Bangalore, India.",
+      "h1": "Terms and Conditions",
+      "primaryKeyword": "terms and conditions SAM Fabrication",
+      "schemaType": "WebPage",
+      "category": "legal"
+    }
+  ]
+}
+
