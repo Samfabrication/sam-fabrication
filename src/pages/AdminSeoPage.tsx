@@ -61,7 +61,7 @@ export const AdminSeoPage: React.FC = () => {
       priceRange: '₹₹ - ₹₹₹₹',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Hebbal / Outer Ring Road Corridor',
+        streetAddress: 'Dasarahalli Main Road, Near Sobha Moonstone',
         addressLocality: 'Bangalore',
         addressRegion: 'Karnataka',
         postalCode: '560024',
@@ -69,8 +69,8 @@ export const AdminSeoPage: React.FC = () => {
       },
       geo: {
         '@type': 'GeoCoordinates',
-        latitude: '13.0358',
-        longitude: '77.5970'
+        latitude: '13.0489',
+        longitude: '77.6052'
       },
       areaServed: ['Hebbal', 'Yelahanka', 'Whitefield', 'HSR Layout', 'Electronic City', 'Peenya', 'All Bangalore'],
       openingHoursSpecification: {
@@ -511,8 +511,8 @@ export const AdminSeoPage: React.FC = () => {
                   </thead>
                   <tbody className="divide-y divide-[#21262D]">
                     {[
-                      { name: 'click_telephone', trigger: 'Click on any phone link or sticky mobile button', val: '+91 98765 43210', param: 'event_label: "phone_call"' },
-                      { name: 'click_whatsapp', trigger: 'Click on WhatsApp chat CTA or mobile bar', val: 'wa.me/919876543210', param: 'event_label: "whatsapp_lead"' },
+                      { name: 'click_telephone', trigger: 'Click on any phone link or sticky mobile button', val: '+91 94533 44824', param: 'event_label: "phone_call"' },
+                      { name: 'click_whatsapp', trigger: 'Click on WhatsApp chat CTA or mobile bar', val: 'wa.me/919453344824', param: 'event_label: "whatsapp_lead"' },
                       { name: 'submit_quote_request', trigger: 'Submission of interactive quotation modal', val: 'Quotation Form', param: 'service_type, location, phone' },
                       { name: 'view_service_detail', trigger: 'Navigation to any /services/:slug/ page', val: 'Service Pages', param: 'service_name' },
                       { name: 'view_case_study', trigger: 'Navigation to any /our-work/:slug/ page', val: 'Project Case Studies', param: 'project_name, location' }

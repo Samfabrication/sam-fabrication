@@ -10,8 +10,8 @@
 | **Business Name** | SAM Fabrication Engineering Work | Header, Footer, Schema, Contact Page |
 | **Primary Category** | Metal Fabricator | JSON-LD `LocalBusiness`, Service Hub |
 | **Secondary Categories** | Steel Fabricator, Welder, Fence Contractor, Stair Contractor | Service Landing Pages |
-| **Physical Address** | Hebbal / Outer Ring Road Corridor, Bangalore, Karnataka 560024 | Footer, Contact Page, Schema |
-| **Phone Number** | +91 98765 43210 *(Placeholder awaiting verified number)* | Header, Mobile Sticky Bar, Contact Page |
+| **Physical Address** | Dasarahalli Main Road Near Sobha Moonstone, Bangalore, Karnataka 560024 | Footer, Contact Page, Schema |
+| **Phone Number** | +91 94533 44824 *(Verified direct & WhatsApp line)* | Header, Mobile Sticky Bar, Contact Page |
 | **Website URL** | `https://samfabrication.in/` | Primary Landing Page Link |
 | **Operational Hours** | Monday – Saturday: 9:00 AM – 8:00 PM | Contact Page, JSON-LD Schema |
 | **Service Radius** | Entire Greater Bangalore Metropolitan Region (North, South, East, West) | `/locations/*` Hubs |

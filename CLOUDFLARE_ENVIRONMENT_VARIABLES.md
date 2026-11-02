@@ -9,8 +9,8 @@
 |---|---|---|---|---|
 | `SITE_URL` | Production / Preview | Canonical public site origin | Public | `https://samfabrication.in` |
 | `ENVIRONMENT` | Production / Staging | Deployment environment identifier | Public | `production` |
-| `PUBLIC_PHONE` | All | Direct customer phone line | Public | `+91 98765 43210` *(Pending verified number)* |
-| `PUBLIC_WHATSAPP` | All | WhatsApp inquiry destination number | Public | `919876543210` *(Pending verified number)* |
+| `PUBLIC_PHONE` | All | Direct customer phone line | Public | `+91 94533 44824` |
+| `PUBLIC_WHATSAPP` | All | WhatsApp inquiry destination number | Public | `919453344824` |
 | `PUBLIC_EMAIL` | All | Official business inquiry email | Public | `info@samfabrication.in` |
 | `CF_TURNSTILE_SITE_KEY` | Production | Cloudflare Turnstile anti-bot public key | Public | Optional / Configurable |
 | `CF_TURNSTILE_SECRET_KEY` | Production | Cloudflare Turnstile server validation secret | Secret | Do NOT expose in frontend |

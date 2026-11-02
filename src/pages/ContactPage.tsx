@@ -65,7 +65,7 @@ export const ContactPage: React.FC = () => {
       email: siteConfig.email,
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Hebbal / Outer Ring Road Corridor',
+        streetAddress: 'Dasarahalli Main Road, Near Sobha Moonstone',
         addressLocality: 'Bangalore',
         addressRegion: 'Karnataka',
         postalCode: '560024',
@@ -78,7 +78,7 @@ export const ContactPage: React.FC = () => {
     <>
       <SeoHead
         title="Contact Us | Get a Free Quote | SAM Fabrication Engineering Work"
-        description="Contact SAM Fabrication Engineering Work in Bangalore. Call +91 98765 43210 or request a free consultation and quotation for your fabrication project."
+        description="Contact SAM Fabrication Engineering Work in Bangalore. Call +91 94533 44824 or request a free consultation and quotation for your fabrication project."
         canonical="https://samfabrication.in/contact-us/"
         schema={contactSchema}
       />
@@ -144,7 +144,7 @@ export const ContactPage: React.FC = () => {
                         rel="noopener noreferrer"
                         className="text-sm font-bold text-gray-950 hover:text-green-600"
                       >
-                        +91 98765 43210 (Instant Chat)
+                        {siteConfig.phone} (Instant Chat)
                       </a>
                       <span className="block text-[11px] text-gray-500 mt-0.5">Quick drawings &amp; photo estimates</span>
                     </div>
@@ -266,7 +266,7 @@ export const ContactPage: React.FC = () => {
                       <input
                         type="tel"
                         required
-                        placeholder="e.g. +91 98765 43210"
+                        placeholder="e.g. +91 94533 44824"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-xs text-gray-900 focus:outline-none focus:border-[#D49B37]"

@@ -29,7 +29,7 @@
 - **About Us Section:** Dark charcoal background, 3D metallic SAM Fabrication emblem mounted on dark wall with spotlights, headline "Reliable Fabrication for a Stronger Tomorrow", 3 stat counters (100+ Projects, 5+ Years, 100% Satisfaction), architectural steel staircase photo. **[Verified]**
 - **Services Section:** White background, "OUR SERVICES", "Complete Fabrication Solutions", "View All Services →", 6 service cards with circular gold arrow buttons. **[Verified]**
 - **Recent Projects Section:** Dark background, "OUR WORK", "Recent Projects", "View Full Gallery →", 6 project cards. **[Verified]**
-- **Bottom CTA Banner:** Dual split gold/dark banner: "Let's Build Your Project", "Get a Free Quote →", "Call Us Now +91 98765 43210". **[Verified]**
+- **Bottom CTA Banner:** Dual split gold/dark banner: "Let's Build Your Project", "Get a Free Quote →", "Call Us Now +91 94533 44824". **[Verified]**
 - **Footer:** 5 columns: Brand with SF Logo, Quick Links, Our Services, Popular Topics & Bangalore Locations, Get in Touch with phone, email, and social icons (WA, IG, FB, YT). **[Verified]**
 
 ### Mockup 2: Why Choose Us (Desktop) (`media_1793383424024_c7bd938b.jpg`)
@@ -87,8 +87,8 @@
 
 As required by Section 23 of the Master Prompt, development proceeded with clearly marked, professional placeholders. The following details should be provided by the client prior to final DNS switchover:
 
-1. **Official Phone & WhatsApp Number:** Currently using `+91 98765 43210`. Replace with client's actual SIM and WhatsApp Business number.
-2. **Physical Workshop Street Address:** Currently set to `Hebbal / Outer Ring Road Corridor, Bangalore, Karnataka 560024`. Update with exact building number/cross road.
+1. **Official Phone & WhatsApp Number:** Verified active client number: `+91 94533 44824`.
+2. **Physical Workshop Street Address:** Verified location: `Dasarahalli Main Road Near Sobha Moonstone, Bangalore, Karnataka 560024`.
 3. **Google Business Profile (GBP) CID / Review Link:** Client to provide direct Google Review shortened link for automated post-handover review collection.
 4. **Cloudflare Account ID & API Token:** Required for final automated deployment to production domain `https://samfabrication.in`.
 

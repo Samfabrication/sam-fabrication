@@ -112,8 +112,8 @@ graph TD
    - Service Area: Bangalore Urban & Bangalore Rural (covering all 20 listed localities).
 2. **Local Citation Hygiene:**
    - Consistent Name: `SAM Fabrication Engineering Work`
-   - Consistent Phone: `+91 98765 43210`
-   - Consistent Address: `Hebbal / Outer Ring Road Corridor, Bangalore, Karnataka 560024`
+   - Consistent Phone: `+91 94533 44824`
+   - Consistent Address: `Dasarahalli Main Road Near Sobha Moonstone, Bangalore, Karnataka 560024`
 3. **On-Site Measurement Dispatch:**
    - Mobile teams equipped with digital laser distance meters and material finish catalogs.
    - Guaranteed same-day or next-day site consultations across North, South, East, and West Bangalore.

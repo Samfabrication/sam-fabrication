@@ -70,7 +70,7 @@ export const LegalPage: React.FC<LegalPageProps> = ({ type }) => {
 
               <h2 className="text-base font-bold text-gray-900 font-serif-heading">4. Contacting Us</h2>
               <p>
-                If you have any questions regarding this Privacy Policy, please email us at <strong>info@samfabrication.in</strong> or call <strong>+91 98765 43210</strong>.
+                If you have any questions regarding this Privacy Policy, please email us at <strong>info@samfabrication.in</strong> or call <strong>{siteConfig.phone}</strong>.
               </p>
             </div>
           ) : (

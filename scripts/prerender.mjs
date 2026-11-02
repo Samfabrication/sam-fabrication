@@ -54,7 +54,7 @@ async function prerender() {
           email: siteConfig.email,
           address: {
             '@type': 'PostalAddress',
-            streetAddress: 'Hebbal / Outer Ring Road Corridor',
+            streetAddress: 'Dasarahalli Main Road, Near Sobha Moonstone',
             addressLocality: 'Bangalore',
             addressRegion: 'Karnataka',
             postalCode: '560024',
@@ -62,8 +62,8 @@ async function prerender() {
           },
           geo: {
             '@type': 'GeoCoordinates',
-            latitude: 13.0358,
-            longitude: 77.5970
+            latitude: 13.0489,
+            longitude: 77.6052
           }
         },
         {

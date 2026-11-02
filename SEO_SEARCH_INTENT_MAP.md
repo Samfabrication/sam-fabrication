@@ -9,7 +9,7 @@
 |---|---|---|---|---|---|
 | **Top of Funnel (TOFU)** | Informational | "I am building/renovating a house in Bangalore and need ideas, comparisons, or maintenance advice." | "ss vs ms railing difference", "top window grill designs 2026", "how to choose main gate", "car parking shed ideas" | `/blog/*` articles | "Explore Design Portfolio" / "Request Custom Design" |
 | **Middle of Funnel (MOFU)** | Commercial Investigation | "I know I need a gate/shed/railing, but I need to see work quality, materials used, client reviews, and local Bangalore fabricator capability." | "gate fabricators in bangalore", "car parking shed fabricators near me", "best metal fabrication company bangalore", "our work" | `/services/*`, `/our-work/`, `/why-choose-us/` | "Get a Free Quote" / "View Portfolio" |
-| **Bottom of Funnel (BOFU)** | Transactional / Local | "I have measurements/requirements and need a quotation, site visit, or direct phone call right now." | "fabrication works hebbal bangalore contact", "ms gate fabrication price quote bangalore", "welder near me bangalore" | `/contact-us/`, `/locations/*`, Service Pages with Sticky Actions | WhatsApp Direct / Call +91 98765 43210 |
+| **Bottom of Funnel (BOFU)** | Transactional / Local | "I have measurements/requirements and need a quotation, site visit, or direct phone call right now." | "fabrication works hebbal bangalore contact", "ms gate fabrication price quote bangalore", "welder near me bangalore" | `/contact-us/`, `/locations/*`, Service Pages with Sticky Actions | WhatsApp Direct / Call +91 94533 44824 |
 
 ---
 

@@ -37,7 +37,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
     email: siteConfig.email,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Hebbal / Outer Ring Road Corridor',
+      streetAddress: 'Dasarahalli Main Road, Near Sobha Moonstone',
       addressLocality: 'Bangalore',
       addressRegion: 'Karnataka',
       postalCode: '560024',
@@ -45,8 +45,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 13.0358,
-      longitude: 77.5970
+      latitude: 13.0489,
+      longitude: 77.6052
     },
     description: 'Looking for reliable fabrication and welding works in Bangalore? Explore custom gates, grills, railings, sheds and steel fabrication solutions from SAM Fabrication.',
     areaServed: ['Bangalore', 'Hebbal', 'Yelahanka', 'Whitefield', 'Electronic City', 'Manyata Tech Park', 'HSR Layout']
