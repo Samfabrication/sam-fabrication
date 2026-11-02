@@ -25,18 +25,11 @@ export const LocationPage: React.FC<LocationPageProps> = ({ location, onOpenQuot
 
   const locationSchema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: `SAM Fabrication Engineering Work - ${location.name}`,
-    telephone: siteConfig.phoneClean,
-    url: `https://samfabrication.in/locations/${location.slug}/`,
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: location.name,
-      addressRegion: 'Bangalore, Karnataka',
-      addressCountry: 'IN'
-    },
-    areaServed: [location.name, 'Bangalore'],
-    description: `Professional welding and metal fabrication services in ${location.name}, Bangalore. Custom gates, window safety grills, SS railings and car parking sheds.`
+    '@type': 'Service',
+    serviceType: 'Metal fabrication services',
+    provider: { '@id': 'https://samfabrication.in/#entity' },
+    areaServed: { '@type': 'Place', name: `${location.name}, Bangalore` },
+    description: `Metal fabrication services available in ${location.name}, Bangalore, including custom gates, window grills, railings and sheds.`
   };
 
   return (

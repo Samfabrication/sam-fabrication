@@ -15,7 +15,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ project, o
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
     { label: 'Our Work', href: '/our-work/' },
-    { label: project.title }
+    { label: project.title, href: `/our-work/${project.slug}/` }
   ];
 
   const relatedProjects = projectsData
@@ -55,8 +55,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ project, o
       <SeoHead
         title={`${project.title} (${project.location}) | Case Study | SAM Fabrication`}
         description={`${project.description} Custom fabrication case study in ${project.location}, Bangalore by SAM Fabrication.`}
-        canonicalUrl={`https://samfabrication.in/our-work/${project.slug}/`}
-        breadcrumbs={breadcrumbItems}
+        canonical={`https://samfabrication.in/our-work/${project.slug}/`}
         schema={projectSchema}
         ogImage={`https://samfabrication.in${project.image}`}
       />

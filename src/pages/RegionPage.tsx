@@ -16,7 +16,7 @@ export const RegionPage: React.FC<RegionPageProps> = ({ region, onOpenQuote }) =
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
     { label: 'Areas We Serve', href: '/areas-we-serve/' },
-    { label: region.name }
+    { label: region.name, href: `/areas-we-serve/${region.slug}/` }
   ];
 
   const otherRegions = regionsData.filter((r) => r.slug !== region.slug);
@@ -26,19 +26,7 @@ export const RegionPage: React.FC<RegionPageProps> = ({ region, onOpenQuote }) =
     '@context': 'https://schema.org',
     '@type': 'Service',
     serviceType: `Metal Fabrication in ${region.name}`,
-    provider: {
-      '@type': 'LocalBusiness',
-      name: siteConfig.name,
-      url: siteConfig.domain,
-      telephone: siteConfig.phone,
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Bangalore',
-        addressRegion: 'Karnataka',
-        postalCode: '560024',
-        addressCountry: 'IN'
-      }
-    },
+    provider: { '@id': 'https://samfabrication.in/#entity' },
     areaServed: region.localities.map((loc) => ({
       '@type': 'AdministrativeArea',
       name: `${loc}, ${region.name}, Bangalore`
@@ -51,8 +39,7 @@ export const RegionPage: React.FC<RegionPageProps> = ({ region, onOpenQuote }) =
       <SeoHead
         title={`${region.name} Fabrication Works | Gates, Railings, Sheds | SAM Fabrication`}
         description={region.metaDescription}
-        canonicalUrl={`https://samfabrication.in/areas-we-serve/${region.slug}/`}
-        breadcrumbs={breadcrumbItems}
+        canonical={`https://samfabrication.in/areas-we-serve/${region.slug}/`}
         schema={regionSchema}
       />
 

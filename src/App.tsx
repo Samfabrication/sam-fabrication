@@ -20,7 +20,6 @@ import { NotFoundPage } from './pages/NotFoundPage';
 import { AreasWeServeIndexPage } from './pages/AreasWeServeIndexPage';
 import { RegionPage } from './pages/RegionPage';
 import { ProjectDetailPage } from './pages/ProjectDetailPage';
-import { AdminSeoPage } from './pages/AdminSeoPage';
 
 // Data
 import { servicesData, blogPostsData, locationsData, regionsData, projectsData } from './data/siteData';
@@ -168,11 +167,6 @@ export const App: React.FC<AppProps> = ({ initialPath }) => {
       if (loc) {
         return <LocationPage location={loc} onOpenQuote={() => openQuoteModalWithService()} />;
       }
-    }
-
-    // 11. Admin SEO Operations Suite (/admin/seo/)
-    if (path === '/admin/seo/' || path === '/admin/seo') {
-      return <AdminSeoPage />;
     }
 
     // 12. Contact Us

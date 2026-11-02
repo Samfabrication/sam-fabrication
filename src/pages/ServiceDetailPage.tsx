@@ -48,12 +48,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
       '@type': 'City',
       name: 'Bangalore'
     },
-    description: service.fullDescription,
-    offers: {
-      '@type': 'Offer',
-      priceCurrency: 'INR',
-      availability: 'https://schema.org/InStock'
-    }
+    description: service.fullDescription
   };
 
   const faqSchema = {

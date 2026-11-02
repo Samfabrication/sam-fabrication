@@ -27,38 +27,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
   // 6 Recent projects matching mockup
   const homeProjects = projectsData.slice(0, 6);
 
-  const homeSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': 'https://samfabrication.in/#entity',
-    name: 'SAM Fabrication Engineering Work',
-    url: 'https://samfabrication.in',
-    telephone: siteConfig.phoneClean,
-    email: siteConfig.email,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Dasarahalli Main Road, Near Sobha Moonstone',
-      addressLocality: 'Bangalore',
-      addressRegion: 'Karnataka',
-      postalCode: '560024',
-      addressCountry: 'IN'
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 13.0489,
-      longitude: 77.6052
-    },
-    description: 'Looking for reliable fabrication and welding works in Bangalore? Explore custom gates, grills, railings, sheds and steel fabrication solutions from SAM Fabrication.',
-    areaServed: ['Bangalore', 'Hebbal', 'Yelahanka', 'Whitefield', 'Electronic City', 'Manyata Tech Park', 'HSR Layout']
-  };
-
   return (
     <>
       <SeoHead
         title="Fabrication Works in Bangalore | SAM Fabrication Engineering Work"
         description="Looking for reliable fabrication and welding works in Bangalore? Explore custom gates, grills, railings, sheds and steel fabrication solutions from SAM Fabrication."
         canonical="https://samfabrication.in/"
-        schema={homeSchema}
       />
 
       {/* 1. HERO SECTION (Pixel-Accurate to Mockup) */}

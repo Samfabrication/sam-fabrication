@@ -13,7 +13,7 @@ interface AreasWeServeIndexPageProps {
 export const AreasWeServeIndexPage: React.FC<AreasWeServeIndexPageProps> = ({ onOpenQuote }) => {
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
-    { label: 'Areas We Serve' }
+    { label: 'Areas We Serve', href: '/areas-we-serve/' }
   ];
 
   return (
@@ -21,8 +21,7 @@ export const AreasWeServeIndexPage: React.FC<AreasWeServeIndexPageProps> = ({ on
       <SeoHead
         title="Areas We Serve in Bangalore | Metal & Steel Fabrication Hub | SAM Fabrication"
         description="Comprehensive metal and structural fabrication coverage across North, South, East, and West Bangalore. Quick on-site measurement and certified installation in Hebbal, Whitefield, HSR, Peenya & beyond."
-        canonicalUrl="https://samfabrication.in/areas-we-serve/"
-        breadcrumbs={breadcrumbItems}
+        canonical="https://samfabrication.in/areas-we-serve/"
       />
 
       <Breadcrumbs items={breadcrumbItems} />

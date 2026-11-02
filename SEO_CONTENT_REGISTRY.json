@@ -438,15 +438,6 @@
       "category": "projects"
     },
     {
-      "url": "/admin/seo/",
-      "title": "Admin SEO Suite & Technical Registry | SAM Fabrication",
-      "description": "Internal SEO operations, keyword-to-URL assignment map, Schema JSON-LD validation, regional coverage, and GA4 tracking registry for samfabrication.in.",
-      "h1": "SAM Fabrication SEO Administration Suite",
-      "primaryKeyword": "seo admin operations samfabrication",
-      "schemaType": "WebPage",
-      "category": "admin"
-    },
-    {
       "url": "/contact-us/",
       "title": "Contact Us | Get a Free Quote | SAM Fabrication Engineering Work",
       "description": "Contact SAM Fabrication Engineering Work in Bangalore. Call +91 94533 44824 or request a free consultation and quotation for your fabrication project.",
@@ -475,4 +466,3 @@
     }
   ]
 }
-
