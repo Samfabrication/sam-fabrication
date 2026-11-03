@@ -49,9 +49,9 @@ export const RegionPage: React.FC<RegionPageProps> = ({ region, onOpenQuote }) =
       <section className="relative min-h-[420px] lg:min-h-[460px] flex items-center bg-[#0B0F15] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <picture>
-            <source srcSet="/images/hero-villa.webp" type="image/webp" />
+            <source srcSet="/images/hero-home.webp" type="image/webp" />
             <img
-              src="/images/hero-villa.jpg"
+              src="/images/hero-home.jpg"
               alt={`${region.name} architectural metal and steel fabrication`}
               className="w-full h-full object-cover object-center brightness-[0.65]"
               fetchPriority="high"

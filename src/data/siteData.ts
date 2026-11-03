@@ -50,6 +50,10 @@ export const servicesData: ServiceItem[] = [
         answer: 'Sliding gates are optimal when your driveway slopes upwards or when vehicle parking space inside the compound is limited. Swing gates work best for flat driveways with ample clearance.'
       },
       {
+        question: 'What is the typical cost per sq ft for main gate fabrication in Bangalore?',
+        answer: 'In Bangalore, custom MS gate fabrication generally ranges from ₹380 to ₹750+ per square foot depending on metal gauge thickness (14 to 16 gauge), CNC laser-cut design density, motorization track readiness, and anti-rust epoxy primer finishes.'
+      },
+      {
         question: 'Can you motorize the gate for remote control operation?',
         answer: 'Yes, all our gates can be pre-engineered with reinforced mounting brackets and track systems designed for top gate automation brands (Came, Centurion, Somfy).'
       },
@@ -87,8 +91,16 @@ export const servicesData: ServiceItem[] = [
         answer: 'Yes, we customize dimensions, bar orientations (horizontal or vertical), and anchor depths to comply with all major RWA and apartment association bylaws.'
       },
       {
+        question: 'What is the price of window safety grill fabrication per sq ft in Bangalore?',
+        answer: 'Window safety grill fabrication in Bangalore typically ranges between ₹180 and ₹350 per square foot based on square bar or flat bar dimensions (10mm to 12mm), spacing density for child safety, and electrostatic powder coating or PU paint.'
+      },
+      {
         question: 'Will mild steel window grills rust during Bangalore rains?',
         answer: 'We treat every MS grill with chemical rust-inhibitors, zinc phosphate primer, and durable outdoor polyurethane or powder-coated finishes to prevent corrosion.'
+      },
+      {
+        question: 'Do you make balcony safety grills for high-rise apartments in Bangalore?',
+        answer: 'Yes, we fabricate full-height and half-height balcony safety grills designed for Bangalore apartment complexes, ensuring child protection and compliance with building management safety guidelines.'
       }
     ]
   },
@@ -116,6 +128,14 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'How do MS gates compare to Stainless Steel gates?',
         answer: 'MS gates are approximately 40% to 50% more affordable than SS gates and offer greater structural rigidity for very large spans, though they require high-quality paint or powder coating to prevent rust.'
+      },
+      {
+        question: 'What steel gauge thickness is recommended for residential MS gates?',
+        answer: 'For residential gates in Bangalore, we recommend 14 gauge (approx. 2.0mm) for structural outer frames and 16 gauge (approx. 1.6mm) for inner horizontal or vertical louvers to ensure rigid structural strength without excessive weight.'
+      },
+      {
+        question: 'What maintenance is required to prevent MS gates from rusting in Bangalore?',
+        answer: 'With our dual-coat zinc phosphate anti-rust primer and exterior PU coating, MS gates require only an annual wash with mild soap water and occasional grease lubrication on roller bearings or hinges.'
       }
     ]
   },
@@ -143,6 +163,14 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'How can I verify that genuine 304 Grade Stainless Steel is used?',
         answer: 'We provide chemical test confirmation and offer on-site acid-test verification upon client request to guarantee 100% genuine non-magnetic AISI 304 SS.'
+      },
+      {
+        question: 'What is the price per running foot for SS railing with glass in Bangalore?',
+        answer: 'SS 304 railing with 10mm or 12mm toughened glass in Bangalore typically ranges from ₹1,200 to ₹2,500+ per running foot, depending on whether spigot, standoff, or continuous base-shoe mounting is selected.'
+      },
+      {
+        question: 'Why should I choose SS 304 over SS 202 for balcony railings in Bangalore?',
+        answer: 'SS 304 contains 18% chromium and 8% nickel, resisting oxidation and pitting caused by Bangalore’s monsoon humidity. SS 202 has lower nickel content and tends to develop surface rust spots when installed outdoors.'
       }
     ]
   },
@@ -170,6 +198,14 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Are MS railings safe for external balconies in Bangalore?',
         answer: 'Yes, when properly primed with zinc phosphate and oven-baked powder coating, MS railings endure outdoor rain and sun exposure for many years.'
+      },
+      {
+        question: 'What are the most popular MS railing designs for Bangalore homes?',
+        answer: 'Modern minimalist designs such as horizontal flat bar railings, vertical box-section balusters, and laser-cut geometric screen panels with matte black powder coating are currently the most requested designs.'
+      },
+      {
+        question: 'How much does MS balcony railing fabrication cost in Bangalore?',
+        answer: 'MS balcony and terrace railings in Bangalore generally range from ₹350 to ₹650 per running foot, offering an economical and modern architectural alternative to stainless steel.'
       }
     ]
   },
@@ -196,7 +232,15 @@ export const servicesData: ServiceItem[] = [
     faqs: [
       {
         question: 'Can you build a staircase inside a tight 5ft x 5ft space?',
-        answer: 'Yes, our custom-engineered spiral staircases fit comfortably within compact footprints starting from 4.5 ft diameter.'
+        answer: 'Yes, our custom-engineered spiral staircases fit comfortably within compact footprints starting from 4.5 ft diameter with anti-skid chequered plate steps and wrap-around safety handrails.'
+      },
+      {
+        question: 'What types of metal staircases do you fabricate in Bangalore?',
+        answer: 'We fabricate space-saving spiral staircases, central mono-stringer floating stairs, external fire escape stairs, straight-flight duplex staircases, and heavy-duty industrial access stairs with chequered plate treads.'
+      },
+      {
+        question: 'How long does custom metal staircase fabrication and installation take?',
+        answer: 'A residential spiral or straight-flight steel staircase typically takes 8 to 14 working days from structural site measurement, CAD drafting, workshop fabrication to on-site anchoring.'
       }
     ]
   },
@@ -224,6 +268,14 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Which roofing material is best for a residential car shed?',
         answer: 'Polycarbonate sheets are the most popular because they allow natural diffused daylight while blocking 99% of damaging UV rays and vehicle interior heat.'
+      },
+      {
+        question: 'What is the cost of car parking shed fabrication in Bangalore?',
+        answer: 'Car parking sheds in Bangalore typically range from ₹160 to ₹350 per square foot depending on the roofing material (polycarbonate multi-wall sheet, profile GI sheet, or tensile membrane) and structural pipe gauge.'
+      },
+      {
+        question: 'Can you fabricate a cantilever car parking shed without front pillars?',
+        answer: 'Yes, our cantilever carports use heavy-gauge back columns and gusset-reinforced cantilever rafters, keeping the driveway completely clear of front poles for effortless vehicle parking.'
       }
     ]
   },
@@ -251,6 +303,14 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Will a rooftop metal shed damage my terrace waterproofing?',
         answer: 'No, we anchor steel base plates into RCC pedestals or use non-penetrative weighted footing techniques combined with PU elastomeric sealants to safeguard waterproofing.'
+      },
+      {
+        question: 'What is the cost of terrace roofing shed fabrication in Bangalore?',
+        answer: 'Terrace metal roofing sheds in Bangalore typically cost between ₹150 and ₹280 per square foot, covering structural steel trusses, colour-coated Galvalume or GI roofing sheets, and gutter installation.'
+      },
+      {
+        question: 'Can terrace sheds withstand heavy Bangalore monsoon rains and strong winds?',
+        answer: 'Yes, our terrace sheds are engineered with triangulated structural trusses and wind-load anchoring calculated to withstand torrential rains and high terrace wind speeds.'
       }
     ]
   },
@@ -278,6 +338,14 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Do you undertake turnkey industrial PEB warehouse construction?',
         answer: 'Yes, we provide end-to-end structural steel fabrication from shop drawings and column fabrication to crane girder installation and roof cladding.'
+      },
+      {
+        question: 'Do you fabricate mezzanine floors for warehouses and commercial shops in Bangalore?',
+        answer: 'Yes, we design and fabricate modular structural steel mezzanine floors using ISMB heavy I-beams, cold-formed deck sheets, and staircase access to double usable floor space in commercial and industrial units.'
+      },
+      {
+        question: 'Which industrial areas across Bangalore do you serve?',
+        answer: 'We regularly execute heavy structural steel fabrication and factory shed works across Peenya Industrial Area, Nelamangala, Bidadi, Bommasandra, Jigani, and Whitefield industrial corridors.'
       }
     ]
   },
@@ -305,6 +373,14 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Are cantilever glass canopies safe during Bangalore windstorms?',
         answer: 'Yes, our cantilever canopies are engineered with structural gusset plates and high-tensile anchor bolts calculated for high wind uplift.'
+      },
+      {
+        question: 'What materials do you use for entrance canopy fabrication in Bangalore?',
+        answer: 'We build entrance canopies using heavy-gauge MS or SS structural frames combined with laminated toughened glass, polycarbonate multi-wall sheets, or composite aluminium panels (ACP).'
+      },
+      {
+        question: 'Can you install an entrance canopy over a villa main door or portico?',
+        answer: 'Yes, we custom-fit residential portico and entrance canopies that shield wooden doors and visitors from rain and sunlight while adding architectural elegance to the facade.'
       }
     ]
   },
@@ -332,6 +408,14 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Can you fabricate custom designs provided by our interior designer or architect?',
         answer: 'Yes, we frequently collaborate with Bangalore architects and interior designers, translating AutoCAD drawings, 3D SketchUp files, and sketches into finished metalwork.'
+      },
+      {
+        question: 'Do you provide on-site mobile welding and fabrication repairs in Bangalore?',
+        answer: 'Yes, our certified mobile welding team provides on-site MIG, TIG, and arc welding repair services across Bangalore for gates, broken hinges, balcony grills, railing reinforcements, and custom structural modifications.'
+      },
+      {
+        question: 'What welding techniques do you use for precision metal fabrication?',
+        answer: 'We employ MIG (GMAW), TIG (GTAW), and shielded metal arc welding (SMAW) depending on the alloy, ensuring clean spatter-free joints, maximum tensile strength, and smooth ground finishes.'
       }
     ]
   }

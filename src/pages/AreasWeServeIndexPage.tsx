@@ -31,9 +31,9 @@ export const AreasWeServeIndexPage: React.FC<AreasWeServeIndexPageProps> = ({ on
         {/* Background Photo */}
         <div className="absolute inset-0 z-0">
           <picture>
-            <source srcSet="/images/hero-villa.webp" type="image/webp" />
+            <source srcSet="/images/hero-home.webp" type="image/webp" />
             <img
-              src="/images/hero-villa.jpg"
+              src="/images/hero-home.jpg"
               alt="Bangalore-wide architectural metal and steel fabrication works"
               className="w-full h-full object-cover object-center brightness-[0.65]"
               fetchPriority="high"
