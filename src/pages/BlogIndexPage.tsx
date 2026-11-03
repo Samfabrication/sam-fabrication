@@ -91,6 +91,8 @@ export const BlogIndexPage: React.FC = () => {
               alt="Outdoor steel pergola terrace with ambient lighting and fabricated metal railings"
               className="w-full h-full object-cover object-center brightness-[0.75]"
               fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               width="1376"
               height="580"
             />

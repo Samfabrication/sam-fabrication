@@ -81,9 +81,11 @@ export const WhyChooseUsPage: React.FC<WhyChooseUsPageProps> = ({ onOpenQuote })
             <source srcSet="/images/hero-why-us.webp" type="image/webp" />
             <img
               src="/images/hero-why-us.jpg"
-              alt="Contemporary architectural building with precision engineered metal balcony railings"
+              alt="Contemporary architectural metal balcony railings and structural work by SAM Fabrication"
               className="w-full h-full object-cover object-center brightness-[0.75]"
               fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               width="1376"
               height="650"
             />
@@ -269,7 +271,7 @@ export const WhyChooseUsPage: React.FC<WhyChooseUsPageProps> = ({ onOpenQuote })
                   <source srcSet="/images/commitment-carport.webp" type="image/webp" />
                   <img
                     src="/images/commitment-carport.jpg"
-                    alt="Heavy-duty structural metal car parking shed with dark steel frame"
+                    alt="Heavy-duty structural metal car parking shed with dark steel frame fabricated in Bangalore"
                     className="w-full h-full object-cover"
                     width="1000"
                     height="650"

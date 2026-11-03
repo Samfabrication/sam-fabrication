@@ -69,9 +69,11 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ project, o
             <source srcSet="/images/hero-work.webp" type="image/webp" />
             <img
               src="/images/hero-work.jpg"
-              alt="Fabrication Case Study Showcase"
+              alt={`${project.title} fabrication case study in ${project.location}, Bangalore`}
               className="w-full h-full object-cover object-center brightness-[0.65]"
               fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               width="1376"
               height="580"
             />
@@ -132,12 +134,14 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ project, o
                 <picture>
                   <source srcSet={project.image} type="image/webp" />
                   <img
-                    src={project.image}
-                    alt={project.imageAlt}
-                    width={1000}
-                    height={800}
+                    src={project.image.replace('.webp', '.jpg')}
+                    alt={`${project.title} completed in ${project.location} by SAM Fabrication`}
+                    width="1200"
+                    height="750"
                     className="w-full h-auto object-cover max-h-[550px]"
                     fetchPriority="high"
+                    loading="eager"
+                    decoding="async"
                   />
                 </picture>
                 <div className="p-4 bg-white border-t border-gray-100 text-xs text-gray-500 flex items-center justify-between">
@@ -289,12 +293,18 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ project, o
               >
                 <div>
                   <div className="h-48 overflow-hidden bg-[#0B0F15]">
-                    <img
-                      src={rel.image}
-                      alt={rel.imageAlt}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
+                    <picture>
+                      <source srcSet={rel.image} type="image/webp" />
+                      <img
+                        src={rel.image.replace('.webp', '.jpg')}
+                        alt={`${rel.title} fabrication project in ${rel.location}`}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
                   </div>
                   <div className="p-5">
                     <div className="flex items-center gap-2 text-xs text-gray-400 mb-2">

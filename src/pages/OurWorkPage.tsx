@@ -89,9 +89,11 @@ export const OurWorkPage: React.FC<OurWorkPageProps> = ({ onOpenQuote }) => {
             <source srcSet="/images/hero-work.webp" type="image/webp" />
             <img
               src="/images/hero-work.jpg"
-              alt="Architectural steel structure with warm recessed lighting and horizontal steel railings"
+              alt="Showcase of custom steel structures, railings, and gates completed in Bangalore"
               className="w-full h-full object-cover object-center brightness-[0.75]"
               fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               width="1376"
               height="580"
             />
@@ -167,7 +169,7 @@ export const OurWorkPage: React.FC<OurWorkPageProps> = ({ onOpenQuote }) => {
                     <source srcSet={project.image} type="image/webp" />
                     <img
                       src={project.image.replace('.webp', '.jpg')}
-                      alt={project.imageAlt}
+                      alt={`${project.title} fabrication project in ${project.location}`}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       width="1200"
                       height="750"
@@ -308,7 +310,7 @@ export const OurWorkPage: React.FC<OurWorkPageProps> = ({ onOpenQuote }) => {
                   <source srcSet={selectedProject.image} type="image/webp" />
                   <img
                     src={selectedProject.image.replace('.webp', '.jpg')}
-                    alt={selectedProject.imageAlt}
+                    alt={`${selectedProject.title} project in ${selectedProject.location}`}
                     className="w-full h-full object-cover"
                     width="1200"
                     height="750"

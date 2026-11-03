@@ -60,11 +60,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuote }) => {
             <source srcSet="/images/hero-home.webp" type="image/webp" />
             <img
               src="/images/hero-home.jpg"
-              alt="SAM Fabrication Engineering Work workshop and architectural projects in Bangalore"
+              alt="Architectural metal fabrication work and residential steel structures by SAM Fabrication Engineering Work in Bangalore"
               className="w-full h-full object-cover object-center brightness-[0.7]"
               fetchPriority="high"
-              width="682"
-              height="360"
+              loading="eager"
+              decoding="sync"
+              width="1376"
+              height="768"
             />
           </picture>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F15]/95 via-[#0B0F15]/85 to-transparent lg:w-3/5" />
@@ -124,7 +126,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuote }) => {
                   <source srcSet="/images/feedback-balcony.webp" type="image/webp" />
                   <img
                     src="/images/feedback-balcony.jpg"
-                    alt="Precision engineered balcony railings fabricated by SAM Fabrication"
+                    alt="Precision-engineered modern balcony railing fabricated and installed by SAM Fabrication"
                     className="w-full h-80 object-cover"
                     width="1200"
                     height="750"

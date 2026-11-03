@@ -31,7 +31,7 @@ async function prerender() {
   });
 
   const { App } = await vite.ssrLoadModule('/src/App.tsx');
-  const { siteConfig, servicesData, projectsData, regionsData } = await vite.ssrLoadModule('/src/data/siteData.ts');
+  const { siteConfig, servicesData, projectsData, regionsData, locationsData } = await vite.ssrLoadModule('/src/data/siteData.ts');
 
   const sitemapUrls = [];
 
@@ -82,10 +82,34 @@ async function prerender() {
       if (s) {
         pageSchema['@graph'].push({
           '@type': 'Service',
+          '@id': `https://samfabrication.in/services/${s.slug}/#service`,
+          name: `${s.title} in Bangalore`,
           serviceType: s.title,
+          url: `https://samfabrication.in/services/${s.slug}/`,
+          image: `https://samfabrication.in${s.image.replace('.webp', '.jpg')}`,
           provider: { '@id': 'https://samfabrication.in/#entity' },
           areaServed: { '@type': 'City', name: 'Bangalore' },
           description: s.fullDescription
+        });
+      }
+    }
+
+    if (page.category === 'locations' && page.url !== '/areas-we-serve/') {
+      const slug = page.url.replace('/locations/', '').replace('/', '');
+      const loc = locationsData.find(l => l.slug === slug);
+      if (loc) {
+        pageSchema['@graph'].push({
+          '@type': 'Service',
+          '@id': `https://samfabrication.in/locations/${loc.slug}/#service`,
+          name: `Fabrication Works in ${loc.name}, Bangalore`,
+          serviceType: 'Metal Fabrication',
+          url: `https://samfabrication.in/locations/${loc.slug}/`,
+          provider: { '@id': 'https://samfabrication.in/#entity' },
+          areaServed: {
+            '@type': 'AdministrativeArea',
+            name: `${loc.name}, Bangalore`
+          },
+          description: loc.description
         });
       }
     }

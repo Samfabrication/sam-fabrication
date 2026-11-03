@@ -14,6 +14,7 @@ import { siteConfig, servicesData } from '../data/siteData';
 import { CtaBanner } from '../components/CtaBanner';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { SeoHead } from '../components/SeoHead';
+import { serviceLocationLinks } from '../data/serviceLocationLinks';
 
 interface LocationPageProps {
   location: LocationItem;
@@ -21,7 +22,9 @@ interface LocationPageProps {
 }
 
 export const LocationPage: React.FC<LocationPageProps> = ({ location, onOpenQuote }) => {
-  const localServices = servicesData.slice(0, 6);
+  const localServices = servicesData.filter((service) =>
+    serviceLocationLinks[service.slug]?.includes(location.slug)
+  );
 
   const locationSchema = {
     '@context': 'https://schema.org',
@@ -38,7 +41,6 @@ export const LocationPage: React.FC<LocationPageProps> = ({ location, onOpenQuot
         title={`Fabrication Works in ${location.name}, Bangalore | SAM Fabrication`}
         description={`Trusted fabrication and welding works in ${location.name}, Bangalore. Custom gates, safety window grills, balcony railings, and car parking sheds with on-site installation.`}
         canonical={`https://samfabrication.in/locations/${location.slug}/`}
-        schema={locationSchema}
       />
 
       <Breadcrumbs
@@ -56,11 +58,13 @@ export const LocationPage: React.FC<LocationPageProps> = ({ location, onOpenQuot
             <source srcSet="/images/hero-home.webp" type="image/webp" />
             <img
               src="/images/hero-home.jpg"
-              alt={`Fabrication works in ${location.name} Bangalore`}
+              alt={`Architectural metal and steel fabrication works serving ${location.name}, Bangalore`}
               className="w-full h-full object-cover object-center brightness-[0.7]"
               fetchPriority="high"
-              width="682"
-              height="360"
+              loading="eager"
+              decoding="sync"
+              width="1376"
+              height="768"
             />
           </picture>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F15]/95 via-[#0B0F15]/85 to-transparent lg:w-3/5" />
@@ -167,6 +171,7 @@ export const LocationPage: React.FC<LocationPageProps> = ({ location, onOpenQuot
                 <a
                   key={s.id}
                   href={`/services/${s.slug}/`}
+                  aria-label={`${s.title} in ${location.name}, Bangalore`}
                   className="p-3 bg-[#F8FAFC] border border-gray-200 rounded-lg hover:border-[#D49B37] text-center transition-all group block"
                 >
                   <div className="h-20 w-full rounded overflow-hidden mb-2 bg-gray-100">
@@ -174,7 +179,7 @@ export const LocationPage: React.FC<LocationPageProps> = ({ location, onOpenQuot
                       <source srcSet={s.image} type="image/webp" />
                       <img
                         src={s.image.replace('.webp', '.jpg')}
-                        alt={s.imageAlt}
+                        alt={`${s.title} fabrication work for ${location.name}, Bangalore`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                         width="300"
                         height="200"
@@ -183,8 +188,8 @@ export const LocationPage: React.FC<LocationPageProps> = ({ location, onOpenQuot
                       />
                     </picture>
                   </div>
-                  <span className="text-xs font-bold text-gray-950 group-hover:text-[#B77C26] transition-colors block truncate font-serif-heading">
-                    {s.title}
+                  <span className="text-xs font-bold text-gray-950 group-hover:text-[#B77C26] transition-colors block font-serif-heading">
+                    {s.title} in {location.name}
                   </span>
                 </a>
               ))}

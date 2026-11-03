@@ -52,9 +52,11 @@ export const RegionPage: React.FC<RegionPageProps> = ({ region, onOpenQuote }) =
             <source srcSet="/images/hero-home.webp" type="image/webp" />
             <img
               src="/images/hero-home.jpg"
-              alt={`${region.name} architectural metal and steel fabrication`}
+              alt={`Architectural steel and metal fabrication installations across ${region.name}, Bangalore`}
               className="w-full h-full object-cover object-center brightness-[0.65]"
               fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               width="1376"
               height="768"
             />

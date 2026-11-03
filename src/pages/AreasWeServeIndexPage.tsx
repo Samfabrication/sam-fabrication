@@ -34,9 +34,11 @@ export const AreasWeServeIndexPage: React.FC<AreasWeServeIndexPageProps> = ({ on
             <source srcSet="/images/hero-home.webp" type="image/webp" />
             <img
               src="/images/hero-home.jpg"
-              alt="Bangalore-wide architectural metal and steel fabrication works"
+              alt="SAM Fabrication metalwork and steel structure coverage across Bangalore neighborhoods"
               className="w-full h-full object-cover object-center brightness-[0.65]"
               fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               width="1376"
               height="768"
             />

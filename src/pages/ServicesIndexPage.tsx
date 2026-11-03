@@ -68,11 +68,13 @@ export const ServicesIndexPage: React.FC<ServicesIndexPageProps> = ({ onOpenQuot
             <source srcSet="/images/hero-home.webp" type="image/webp" />
             <img
               src="/images/hero-home.jpg"
-              alt="Complete architectural metal and steel fabrication services in Bangalore"
+              alt="Complete architectural metal, gate, grill, and steel fabrication services in Bangalore"
               className="w-full h-full object-cover object-center brightness-[0.7]"
               fetchPriority="high"
-              width="682"
-              height="360"
+              loading="eager"
+              decoding="sync"
+              width="1376"
+              height="768"
             />
           </picture>
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B0F15]/95 via-[#0B0F15]/85 to-transparent lg:w-3/5" />
@@ -139,7 +141,7 @@ export const ServicesIndexPage: React.FC<ServicesIndexPageProps> = ({ onOpenQuot
                       <source srcSet={service.image} type="image/webp" />
                       <img
                         src={service.image.replace('.webp', '.jpg')}
-                        alt={service.imageAlt}
+                        alt={`Custom ${service.title.toLowerCase()} design and fabrication in Bangalore`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         width="1200"
                         height="750"

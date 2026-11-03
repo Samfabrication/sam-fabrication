@@ -44,9 +44,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
             <source srcSet="/images/hero-home.webp" type="image/webp" />
             <img
               src="/images/hero-home.jpg"
-              alt="Modern luxury villa with architectural steel structure and wooden pergola in Bangalore"
+              alt="Architectural steel frame and wooden pergola fabrication on modern Bangalore residential villa"
               className="w-full h-full object-cover object-center brightness-[0.78]"
               fetchPriority="high"
+              loading="eager"
+              decoding="sync"
               width="1376"
               height="768"
             />

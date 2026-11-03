@@ -10,10 +10,12 @@ import {
   Minus, 
   Layers, 
   Phone,
-  MessageSquare
+  MessageSquare,
+  MapPin
 } from 'lucide-react';
 import { ServiceItem } from '../types';
-import { projectsData, siteConfig } from '../data/siteData';
+import { projectsData, siteConfig, locationsData } from '../data/siteData';
+import { serviceLocationLinks } from '../data/serviceLocationLinks';
 import { CtaBanner } from '../components/CtaBanner';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { SeoHead } from '../components/SeoHead';
@@ -25,6 +27,9 @@ interface ServiceDetailPageProps {
 
 export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, onOpenQuote }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const serviceLocations = locationsData.filter((location) =>
+    serviceLocationLinks[service.slug]?.includes(location.slug)
+  );
 
   // Filter relevant projects for this service
   const relatedProjects = projectsData.filter((p) => {
@@ -40,15 +45,17 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    '@id': `https://samfabrication.in/services/${service.slug}/#service`,
+    name: `${service.title} in Bangalore`,
     serviceType: service.title,
-    provider: {
-      '@id': 'https://samfabrication.in/#entity'
-    },
+    description: service.fullDescription,
+    url: `https://samfabrication.in/services/${service.slug}/`,
+    image: `https://samfabrication.in${service.image.replace('.webp', '.jpg')}`,
+    provider: { '@id': 'https://samfabrication.in/#entity' },
     areaServed: {
       '@type': 'City',
       name: 'Bangalore'
-    },
-    description: service.fullDescription
+    }
   };
 
   const faqSchema = {
@@ -70,7 +77,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
         title={`${service.title} in Bangalore | SAM Fabrication Engineering Work`}
         description={service.shortDescription}
         canonical={`https://samfabrication.in/services/${service.slug}/`}
-        schema={[serviceSchema, faqSchema]}
+        schema={faqSchema}
       />
 
       <Breadcrumbs
@@ -88,11 +95,11 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
             <source srcSet={service.image} type="image/webp" />
             <img
               src={service.image.replace('.webp', '.jpg')}
-              alt={service.imageAlt}
+              alt={`${service.title} engineering and on-site installation by SAM Fabrication in Bangalore`}
               className="w-full h-full object-cover object-center brightness-[0.7]"
               fetchPriority="high"
               loading="eager"
-              decoding="async"
+              decoding="sync"
               width="1200"
               height="750"
             />
@@ -232,7 +239,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                             <source srcSet={p.image} type="image/webp" />
                             <img
                               src={p.image.replace('.webp', '.jpg')}
-                              alt={p.imageAlt}
+                              alt={`${p.title} installed in ${p.location}`}
                               className="w-full h-full object-cover"
                               width="600"
                               height="400"
@@ -250,6 +257,65 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                   </div>
                 </div>
               )}
+
+              {/* Local Bangalore Service Coverage with Contextual Internal Links */}
+              <div className="space-y-4 pt-6 border-t border-gray-200">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div>
+                    <span className="text-[11px] font-bold tracking-[0.2em] text-[#B77C26] uppercase">
+                      BANGALORE SERVICE COVERAGE
+                    </span>
+                    <h3 className="text-xl font-bold font-serif-heading text-gray-950 mt-1">
+                      On-Site {service.title} Across Key Bangalore Localities
+                    </h3>
+                  </div>
+                  <a
+                    href="/areas-we-serve/"
+                    className="text-xs font-semibold text-[#B77C26] hover:text-[#8E5B1C] inline-flex items-center"
+                  >
+                    All Areas We Serve <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                  </a>
+                </div>
+
+                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                  Explore our Bangalore service-area pages for neighborhood-specific details about {service.title.toLowerCase()}, nearby landmarks, and the work planned for that locality:
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 pt-2">
+                  {serviceLocations.map((loc) => {
+                    const anchorText = loc.slug === "manyata-tech-park"
+                      ? `${service.title} near Manyata Tech Park`
+                      : `${service.title} in ${loc.name}`;
+                    return (
+                      <a
+                        key={loc.slug}
+                        href={`/locations/${loc.slug}/`}
+                        className="p-3.5 rounded-lg border border-gray-200 bg-[#F8FAFC] hover:border-[#D49B37] hover:bg-[#FAF3E0]/40 transition-all group flex flex-col justify-between"
+                      >
+                        <div>
+                          <div className="flex items-center text-[#B77C26] text-[10px] font-bold uppercase tracking-wider mb-1">
+                            <MapPin className="w-3 h-3 mr-1 shrink-0" />
+                            <span>{loc.subRegion}</span>
+                          </div>
+                          <h4 className="text-xs font-bold text-gray-950 group-hover:text-[#B77C26] transition-colors font-serif-heading">
+                            {anchorText}
+                          </h4>
+                          <p className="text-[11px] text-gray-500 mt-1 line-clamp-2">
+                            {loc.description}
+                          </p>
+                        </div>
+                        <span className="text-[10px] font-semibold text-[#8E5B1C] mt-2 inline-flex items-center">
+                          Explore {service.title} in {loc.name} <ArrowRight className="w-2.5 h-2.5 ml-1 group-hover:translate-x-0.5 transition-transform" />
+                        </span>
+                      </a>
+                    );
+                  })}
+                </div>
+
+                <p className="text-xs text-gray-600">
+                  Looking for broader coverage? <a href="/areas-we-serve/" className="font-semibold text-[#B77C26] hover:underline">See all Bangalore service areas</a>.
+                </p>
+              </div>
 
               {/* Service FAQs */}
               <div className="space-y-4 pt-4 border-t border-gray-200">
@@ -338,6 +404,30 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                   <li><a href="/services/ss-railings/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• SS Railings</a></li>
                   <li><a href="/services/car-parking-sheds/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Car Parking Sheds</a></li>
                   <li><a href="/services/staircase-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Staircase Fabrication</a></li>
+                </ul>
+              </div>
+
+              {/* Local Area Service Hubs Navigation Box */}
+              <div className="bg-[#F8FAFC] border border-gray-200 rounded-xl p-5 space-y-3">
+                <h4 className="text-xs font-bold text-gray-950 font-serif-heading uppercase tracking-wider border-l-2 border-[#D49B37] pl-2">
+                  {service.title} in Bangalore
+                </h4>
+                <ul className="space-y-1.5 text-xs">
+                  {serviceLocations.map((loc) => {
+                    const label = loc.slug === "manyata-tech-park"
+                      ? `${service.title} near Manyata Tech Park`
+                      : `${service.title} in ${loc.name}`;
+                    return (
+                      <li key={loc.slug}>
+                        <a
+                          href={`/locations/${loc.slug}/`}
+                          className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5"
+                        >
+                          • {label}
+                        </a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
 
