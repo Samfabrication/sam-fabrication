@@ -22,8 +22,8 @@ interface HomePageProps {
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
-  // 6 Services for homepage matching mockup
-  const homeServices = servicesData.slice(0, 6);
+  // Feature all confirmed service pages on the homepage with crawlable links
+  const homeServices = servicesData;
   // 6 Recent projects matching mockup
   const homeProjects = projectsData.slice(0, 6);
 
@@ -64,34 +64,36 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
             {/* Small tracking kicker */}
             <div className="inline-flex items-center space-x-2">
               <span className="text-[11px] sm:text-xs font-bold tracking-[0.2em] text-[#D49B37] uppercase">
-                STRONGER SPACES • BUILT WITH PRECISION
+                METAL &amp; STEEL FABRICATION WORKS • BANGALORE
               </span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif-heading text-white tracking-tight leading-[1.12]">
-              SAM <span className="gold-gradient-text">Fabrication</span><br />
-              Engineering Work
+              Fabrication Works in <span className="gold-gradient-text">Bangalore</span>
+              <span className="block text-lg sm:text-xl lg:text-2xl text-gray-300 font-sans font-medium tracking-normal mt-2">
+                SAM Fabrication Engineering Work
+              </span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-sm sm:text-base text-gray-300 font-normal leading-relaxed max-w-xl">
-              Custom metal and steel fabrication works in Bangalore for residential houses, commercial buildings, and industrial structures.
+              Custom MS and SS fabrication works across Bangalore. We manufacture and install gates, window safety grills, balcony railings, staircases, car parking sheds, and structural steelwork for residential and commercial properties.
             </p>
 
             {/* 3 Feature Badges Row */}
             <div className="flex flex-wrap items-center gap-3 pt-1">
               <div className="flex items-center space-x-2 bg-black/50 border border-gray-700/60 px-3.5 py-1.5 rounded-full text-xs text-gray-200 backdrop-blur-sm">
                 <ShieldCheck className="w-4 h-4 text-[#D49B37]" />
-                <span>Durable Structures</span>
+                <span>MS &amp; SS Fabrication</span>
               </div>
               <div className="flex items-center space-x-2 bg-black/50 border border-gray-700/60 px-3.5 py-1.5 rounded-full text-xs text-gray-200 backdrop-blur-sm">
                 <Cog className="w-4 h-4 text-[#D49B37]" />
-                <span>Precision Fabrication</span>
+                <span>Gates, Grills &amp; Railings</span>
               </div>
               <div className="flex items-center space-x-2 bg-black/50 border border-gray-700/60 px-3.5 py-1.5 rounded-full text-xs text-gray-200 backdrop-blur-sm">
                 <Building2 className="w-4 h-4 text-[#D49B37]" />
-                <span>Residential, Commercial &amp; Industrial</span>
+                <span>Sheds &amp; Structural Steel</span>
               </div>
             </div>
 
@@ -276,12 +278,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
             </a>
           </div>
 
-          {/* Grid of 6 Service Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          {/* Grid of Service Cards */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {homeServices.map((service) => (
               <a
                 key={service.id}
                 href={`/services/${service.slug}/`}
+                aria-label={`${service.title} in Bangalore: view service details`}
                 className="group block bg-[#F8FAFC] rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-all hover:-translate-y-1"
               >
                 <div className="h-28 w-full overflow-hidden bg-gray-100">
@@ -300,7 +303,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 </div>
                 <div className="p-3 flex items-center justify-between">
                   <span className="text-xs font-bold text-gray-900 font-serif-heading group-hover:text-[#B77C26] transition-colors truncate">
-                    {service.title}
+                    {service.title} in Bangalore
                   </span>
                   <div className="w-6 h-6 rounded-full border border-[#D49B37] flex items-center justify-center text-[#B77C26] group-hover:bg-[#D49B37] group-hover:text-white transition-colors shrink-0 ml-1">
                     <ArrowRight className="w-3 h-3" />
