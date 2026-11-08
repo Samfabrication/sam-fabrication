@@ -31,7 +31,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
     <>
       <SeoHead
         title="Fabrication Works in Bangalore | SAM Fabrication Engineering Work"
-        description="Looking for reliable fabrication and welding works in Bangalore? Explore custom gates, grills, railings, sheds and steel fabrication solutions from SAM Fabrication."
+        description="Looking for reliable metal and steel fabrication works in Bangalore? SAM Fabrication provides custom gates, window safety grills, SS railings, parking sheds, and structural fabrication."
         canonical="https://samfabrication.in/"
       />
 
@@ -76,7 +76,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
 
             {/* Subheadline */}
             <p className="text-sm sm:text-base text-gray-300 font-normal leading-relaxed max-w-xl">
-              Custom fabrication solutions for buildings, houses, offices and all types of structures across Bangalore.
+              Custom metal and steel fabrication works in Bangalore for residential houses, commercial buildings, and industrial structures.
             </p>
 
             {/* 3 Feature Badges Row */}
@@ -134,40 +134,40 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
             <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3">
               <Flame className="w-5 h-5" />
             </div>
-            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">WELDING</h2>
-            <p className="text-[11px] text-gray-600 mt-1 leading-snug">High quality welding for all structures</p>
+            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">WELDING SERVICES</h2>
+            <p className="text-[11px] text-gray-600 mt-1 leading-snug">MIG, TIG and on-site welding works across Bangalore</p>
           </div>
 
           <div className="bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1">
             <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3">
               <Layers className="w-5 h-5" />
             </div>
-            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">FABRICATION WORKS</h2>
-            <p className="text-[11px] text-gray-600 mt-1 leading-snug">Custom steel fabrication as per your needs</p>
+            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">METAL FABRICATION</h2>
+            <p className="text-[11px] text-gray-600 mt-1 leading-snug">Custom metal fabrication for residential and commercial spaces</p>
           </div>
 
           <div className="bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1">
             <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3">
               <Building2 className="w-5 h-5" />
             </div>
-            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">FOR BUILDINGS</h2>
-            <p className="text-[11px] text-gray-600 mt-1 leading-snug">Residential &amp; commercial projects</p>
+            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">STEEL STRUCTURES</h2>
+            <p className="text-[11px] text-gray-600 mt-1 leading-snug">Structural steel fabrication, sheds and trusses</p>
           </div>
 
           <div className="bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1">
             <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3">
               <HomeIcon className="w-5 h-5" />
             </div>
-            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">FOR HOUSES</h2>
-            <p className="text-[11px] text-gray-600 mt-1 leading-snug">Gates, grills, railings, frames and more</p>
+            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">RESIDENTIAL WORKS</h2>
+            <p className="text-[11px] text-gray-600 mt-1 leading-snug">Main gates, safety grills, SS railings and stairs</p>
           </div>
 
           <div className="col-span-2 md:col-span-1 bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1">
             <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3">
               <Briefcase className="w-5 h-5" />
             </div>
-            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">FOR OFFICES</h2>
-            <p className="text-[11px] text-gray-600 mt-1 leading-snug">Modern and strong fabrication solutions</p>
+            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">COMMERCIAL FABRICATION</h2>
+            <p className="text-[11px] text-gray-600 mt-1 leading-snug">Office partitions, canopies and utility metalwork</p>
           </div>
 
         </div>
@@ -202,7 +202,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 ABOUT US
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold font-serif-heading text-white leading-tight">
-                Reliable Fabrication for a Stronger Tomorrow
+                Reliable Steel &amp; Metal Fabrication Works in Bangalore
               </h2>
               <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
                 SAM Fabrication Engineering Work specializes in welding and fabrication solutions for buildings, houses, offices and all places where strong, durable and customized steel structures are required. We focus on quality workmanship, timely delivery and customer satisfaction.
@@ -264,7 +264,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 OUR SERVICES
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold font-serif-heading text-gray-950 mt-1">
-                Complete Fabrication Solutions
+                Metal &amp; Steel Fabrication Works in Bangalore
               </h2>
             </div>
             <a

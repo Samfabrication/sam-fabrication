@@ -8,11 +8,17 @@
     {
       "url": "/",
       "title": "Fabrication Works in Bangalore | SAM Fabrication Engineering Work",
-      "description": "Looking for top fabrication works in Bangalore? Custom main gates, window safety grills, SS railings, car parking sheds, and structural steel fabrication.",
+      "description": "Looking for reliable metal and steel fabrication works in Bangalore? SAM Fabrication provides custom gates, window safety grills, SS railings, parking sheds, and structural fabrication.",
       "h1": "Professional Welding & Fabrication Works in Bangalore",
       "primaryKeyword": "fabrication works in bangalore",
       "schemaType": "LocalBusiness",
-      "category": "core"
+      "category": "core",
+      "targetKeywords": [
+        "fabrication works in bangalore",
+        "steel fabrication works in bangalore",
+        "metal fabrication works in bangalore",
+        "best fabrication works in bangalore"
+      ]
     },
     {
       "url": "/about-us/",
