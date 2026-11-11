@@ -388,34 +388,55 @@ export const servicesData: ServiceItem[] = [
     id: 'custom-welding-fabrication',
     slug: 'custom-welding-fabrication',
     title: 'Custom Welding & Fabrication',
-    shortDescription: 'Precision TIG/MIG welding, bespoke architectural metal furniture, structural modifications, and on-site repairs.',
-    fullDescription: 'Have a unique architectural design or custom engineering requirement? Our team specializes in precision bespoke metal fabrication. From customized metal planters, divider screens, and metal furniture frames to on-site emergency structural welding, we bring drawings to life with millimeter precision.',
+    shortDescription: 'Certified TIG, MIG & Arc welding for MS, SS 304/316 structures, residential gates, safety grills, and mobile on-site welding across Bangalore.',
+    fullDescription: 'Rated among the best welding shops in Bangalore, SAM Fabrication Engineering Work provides industrial-grade precision welding and turnkey metal fabrication. Sourcing certified steel sections from Tata, Jindal, and SAIL alongside authenticated AISI 304/316 stainless steel, our certified welders deliver high-penetration MIG, high-purity Argon TIG, and portable inverter arc welding for residential villas, commercial offices, and industrial complexes across Greater Bangalore.',
     category: 'custom',
     image: '/images/project-custom-fab.webp',
-    imageAlt: 'Bespoke architectural laser-cut metal partition screen in Whitefield commercial office',
+    imageAlt: 'Certified TIG and MIG welding work by SAM Fabrication engineering workshop in Bangalore',
     features: [
-      'TIG (Gas Tungsten Arc) and MIG (Gas Metal Arc) welding capabilities',
-      'Custom laser-cut decorative divider panels and architectural screens',
-      'Bespoke steel furniture bases, tables, and display fixtures',
-      'Mobile on-site welding equipment for rapid structural modifications'
+      'Specialized Argon TIG Welding for SS 304 and SS 316 architectural railings and cleanrooms',
+      'High-penetration MIG/GMAW solid-wire welding for heavy structural MS joints and gates',
+      'Portable inverter arc welding kits with mobile generator backup for on-site repairs',
+      'Full-perimeter weld sealing to eliminate rainwater traps and structural corrosion',
+      'Multi-stage angle grinding and dual-coat zinc phosphate red-oxide primer application',
+      'On-site mechanical anchoring into RCC concrete with Grade 8.8 high-tensile bolts'
     ],
-    materials: ['Mild Steel', 'Stainless Steel 304/316', 'Aluminium', 'Brass Elements'],
+    materials: [
+      'Mild Steel (Tata / Jindal / SAIL)',
+      'Stainless Steel 304 (Architectural Grade)',
+      'Stainless Steel 316 (Marine & Weatherproof)',
+      'Galvanized Iron (GI Tubes & Sheets)',
+      'CNC Laser-Cut Steel Jali Sheets',
+      'Heavy Wrought Iron Elements'
+    ],
     specs: [
       { label: 'Welding Tolerances', value: 'Within ±1.0mm precision engineering' },
-      { label: 'On-Site Readiness', value: 'Portable inverter welding machines & generator backup' }
+      { label: 'Welding Processes', value: 'TIG (GTAW), MIG (GMAW), Shielded Arc (SMAW)' },
+      { label: 'Electrode & Wire Grades', value: 'AWS E6013, E7018, ER70S-6, ER308L / ER316L SS' },
+      { label: 'Anti-Rust Coating', value: 'Epoxy Zinc-Phosphate Primer + PU / Powder Coating' },
+      { label: 'On-Site Readiness', value: 'Mobile vans with portable inverter welders & generators' },
+      { label: 'Turnaround Time', value: 'Same-day on-site repairs; 3–7 days for workshop fabrication' }
     ],
     faqs: [
       {
-        question: 'Can you fabricate custom designs provided by our interior designer or architect?',
-        answer: 'Yes, we frequently collaborate with Bangalore architects and interior designers, translating AutoCAD drawings, 3D SketchUp files, and sketches into finished metalwork.'
+        question: 'Who is the best welding shop in Bangalore for custom fabrication and repairs?',
+        answer: 'SAM Fabrication Engineering Work on Dasarahalli Main Road near Hebbal is recognized among the best welding shops in Bangalore. We provide certified TIG, MIG, and arc welding using branded steel (Tata, Jindal, SAIL) and mobile on-site welding units across all Bangalore zones.'
       },
       {
-        question: 'Do you provide on-site mobile welding and fabrication repairs in Bangalore?',
-        answer: 'Yes, our certified mobile welding team provides on-site MIG, TIG, and arc welding repair services across Bangalore for gates, broken hinges, balcony grills, railing reinforcements, and custom structural modifications.'
+        question: 'How much do welding shops in Bangalore charge per day or per hour?',
+        answer: 'General on-site welding service visits in Bangalore typically charge between ₹1,200 and ₹2,500 for small repairs. Structural fabrication is quoted on a per-kg basis (₹120–₹190/kg for MS) or per-sq-ft basis, covering steel, cutting, welding, priming, and installation.'
       },
       {
-        question: 'What welding techniques do you use for precision metal fabrication?',
-        answer: 'We employ MIG (GMAW), TIG (GTAW), and shielded metal arc welding (SMAW) depending on the alloy, ensuring clean spatter-free joints, maximum tensile strength, and smooth ground finishes.'
+        question: 'What is the difference between MS and SS welding for Bangalore homes?',
+        answer: 'Mild Steel (MS) welding uses MIG or Arc welding and requires anti-rust primer and enamel paint or powder coating to prevent corrosion. Stainless Steel (SS) welding uses specialized Argon TIG welding with SS 304 or 316 filler wire, requiring no painting and leaving zero rust stains.'
+      },
+      {
+        question: 'Do you provide on-site welding repairs for broken gates and railings?',
+        answer: 'Yes, SAM Fabrication provides on-site mobile welding across Bangalore. Service vans carry inverter welding units, portable grinders, safety gear, and steel reinforcement sections to handle hinge breakages and structural adjustments on site.'
+      },
+      {
+        question: 'How do you prevent welded joints from rusting during Bangalore monsoons?',
+        answer: 'Full-perimeter weld sealing prevents moisture penetration inside hollow pipes. After angle grinding to remove slag, mild steel components are immediately coated with an industrial-grade zinc phosphate red-oxide primer before PU or powder coating.'
       }
     ]
   }

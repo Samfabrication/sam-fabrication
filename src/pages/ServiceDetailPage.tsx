@@ -113,9 +113,18 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
             <span className="text-[11px] font-bold tracking-[0.2em] text-[#D49B37] uppercase">
               FABRICATION SERVICES • BANGALORE
             </span>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif-heading text-white tracking-tight leading-[1.15]">
-              {service.title} <span className="gold-gradient-text">in Bangalore</span>
-            </h1>
+            {service.slug === 'custom-welding-fabrication' ? (
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif-heading text-white tracking-tight leading-[1.15]">
+                Best Welding Shop <span className="gold-gradient-text">in Bangalore</span>
+                <span className="block text-lg sm:text-xl lg:text-2xl text-gray-300 font-sans font-medium tracking-normal mt-2">
+                  Precision MS, SS &amp; On-Site Mobile Welding Works
+                </span>
+              </h1>
+            ) : (
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif-heading text-white tracking-tight leading-[1.15]">
+                {service.title} <span className="gold-gradient-text">in Bangalore</span>
+              </h1>
+            )}
             <p className="text-xs sm:text-sm text-gray-300 leading-relaxed max-w-xl">
               {service.shortDescription}
             </p>
@@ -155,12 +164,120 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                   ENGINEERING OVERVIEW
                 </span>
                 <h2 className="text-2xl font-bold font-serif-heading text-gray-950 mt-1 mb-4">
-                  Precision Fabricated {service.title} Tailored for Bangalore Properties
+                  {service.slug === 'custom-welding-fabrication'
+                    ? 'Best Welding Shop & Precision Metal Fabrication in Bangalore'
+                    : 'Precision Fabricated ' + service.title + ' Tailored for Bangalore Properties'}
                 </h2>
                 <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
                   {service.fullDescription}
                 </p>
               </div>
+
+              {/* Specialized AEO & GEO Structured Content for Welding Shop */}
+              {service.slug === 'custom-welding-fabrication' && (
+                <div className="space-y-6">
+                  {/* Direct Answer Block for AI Overviews & Featured Snippets (AEO / GEO) */}
+                  <div className="bg-[#FAF3E0] border-l-4 border-[#D49B37] p-4 sm:p-5 rounded-r-xl space-y-2">
+                    <h3 className="text-sm sm:text-base font-bold text-gray-950 font-serif-heading">
+                      Who is the best welding shop in Bangalore for custom fabrication and repairs?
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-800 leading-relaxed">
+                      <strong>SAM Fabrication Engineering Work</strong> is rated among the best welding shops in Bangalore, delivering industrial-grade TIG, MIG, and electric arc welding with certified welders, branded raw materials (Tata Steel, Jindal, SAIL, AISI 304/316 SS), and dual-coat anti-corrosion protection. Located in North Bangalore on Dasarahalli Main Road near Hebbal and Manyata Tech Park, SAM Fabrication handles both precision workshop manufacturing and turnkey on-site mobile welding repairs across all Bangalore zones.
+                    </p>
+                    <p className="text-xs text-[#8E5B1C] font-semibold pt-1">
+                      Direct Workshop Phone: +91 94533 44824 • Dasarahalli Main Road, Near Sobha Moonstone, Bangalore 560024.
+                    </p>
+                  </div>
+
+                  {/* Workshop vs Mobile On-Site Table */}
+                  <div className="space-y-3">
+                    <h3 className="text-base font-bold font-serif-heading text-gray-950">
+                      Workshop Welding vs. On-Site Mobile Welding in Bangalore
+                    </h3>
+                    <div className="border border-gray-200 rounded-lg overflow-x-auto">
+                      <table className="w-full text-left text-xs min-w-[500px]">
+                        <thead className="bg-[#F1F5F9] text-gray-900 border-b border-gray-200 font-semibold">
+                          <tr>
+                            <th className="py-2.5 px-3">Service Dimension</th>
+                            <th className="py-2.5 px-3">Workshop Fabrication (In-House)</th>
+                            <th className="py-2.5 px-3">Mobile On-Site Welding (Field Repair)</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-gray-700">
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Primary Applications</td>
+                            <td className="py-2.5 px-3">Main gates, safety grills, staircases, jali panels</td>
+                            <td className="py-2.5 px-3">Column anchoring, shed erection, hinge repairs</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Welding Processes</td>
+                            <td className="py-2.5 px-3">TIG (Argon), Heavy MIG (CO2), CNC Laser Cutting</td>
+                            <td className="py-2.5 px-3">Portable Inverter Arc Welding (SMAW / Stick)</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Finishing Standard</td>
+                            <td className="py-2.5 px-3">Mirror/Satin buffing, electrostatic powder coat</td>
+                            <td className="py-2.5 px-3">Slag ground clean, cold-galvanized zinc primer</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Typical Lead Time</td>
+                            <td className="py-2.5 px-3">3 to 7 working days based on tonnage</td>
+                            <td className="py-2.5 px-3">Same-day or scheduled within 24–48 hours</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  {/* Bangalore Welding & Fabrication Rates Table */}
+                  <div className="space-y-3">
+                    <h3 className="text-base font-bold font-serif-heading text-gray-950">
+                      Estimated Bangalore Welding &amp; Fabrication Rates (2026 Guide)
+                    </h3>
+                    <p className="text-xs text-gray-600">
+                      Standard price bands for custom metalwork across Greater Bangalore. Exact quotes depend on gauge thickness, alloy grade, and site accessibility.
+                    </p>
+                    <div className="border border-gray-200 rounded-lg overflow-x-auto">
+                      <table className="w-full text-left text-xs min-w-[500px]">
+                        <thead className="bg-[#F1F5F9] text-gray-900 border-b border-gray-200 font-semibold">
+                          <tr>
+                            <th className="py-2.5 px-3">Fabrication / Welding Scope</th>
+                            <th className="py-2.5 px-3">Raw Material Grade</th>
+                            <th className="py-2.5 px-3">Estimated Bangalore Price Band</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-gray-700">
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">MS Window Safety Grills</td>
+                            <td className="py-2.5 px-3">Tata / Jindal MS Square or Flat Bars</td>
+                            <td className="py-2.5 px-3">₹120 – ₹175 per kg (or ₹160–₹240/sq.ft installed)</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Custom MS Designer Gates</td>
+                            <td className="py-2.5 px-3">Hollow Structural Sections + CNC Jali</td>
+                            <td className="py-2.5 px-3">₹145 – ₹210 per kg</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">SS Balcony &amp; Staircase Railings</td>
+                            <td className="py-2.5 px-3">Jindal AISI 304 Grade Stainless Steel</td>
+                            <td className="py-2.5 px-3">₹380 – ₹650 per running foot</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Car Parking Sheds &amp; Canopies</td>
+                            <td className="py-2.5 px-3">MS Columns + Polycarbonate / Metal Sheet</td>
+                            <td className="py-2.5 px-3">₹220 – ₹380 per sq. ft.</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Mobile On-Site Welding Visit</td>
+                            <td className="py-2.5 px-3">Inverter Welder / Consumables / Technician</td>
+                            <td className="py-2.5 px-3">Starting from ₹1,200 – ₹2,500 per visit</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {/* Key Features */}
               <div className="bg-[#F8FAFC] border border-gray-200 rounded-xl p-6 space-y-3">
