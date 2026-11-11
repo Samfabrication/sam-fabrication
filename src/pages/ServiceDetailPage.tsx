@@ -173,8 +173,8 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                 </p>
               </div>
 
-              {/* Specialized AEO & GEO Structured Content for Welding Shop */}
-              {service.slug === 'custom-welding-fabrication' && (
+              {/* Specialized AEO & GEO Structured Content for Welding Shop or Contextual Welding Link */}
+              {service.slug === 'custom-welding-fabrication' ? (
                 <div className="space-y-6">
                   {/* Direct Answer Block for AI Overviews & Featured Snippets (AEO / GEO) */}
                   <div className="bg-[#FAF3E0] border-l-4 border-[#D49B37] p-4 sm:p-5 rounded-r-xl space-y-2">
@@ -276,6 +276,28 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                       </table>
                     </div>
                   </div>
+                </div>
+              ) : (
+                /* In-Content Contextual Link to Welding Workshop for other 10 services */
+                <div className="bg-[#FAF3E0] border-l-4 border-[#D49B37] p-4 sm:p-5 rounded-r-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  <div className="space-y-1 max-w-xl">
+                    <span className="text-[10px] font-bold tracking-wider text-[#8E5B1C] uppercase">
+                      PRECISION WELDING &amp; ON-SITE REPAIRS
+                    </span>
+                    <h3 className="text-sm sm:text-base font-bold text-gray-950 font-serif-heading">
+                      Need professional welding works or on-site repair services in Bangalore?
+                    </h3>
+                    <p className="text-xs text-gray-700 leading-relaxed">
+                      All our {service.title.toLowerCase()} structures are fabricated using certified TIG, MIG, and arc welding techniques. If you need hinge adjustments, structural reinforcements, or emergency repairs anywhere in Bangalore, explore our <a href="/services/custom-welding-fabrication/" className="font-bold text-[#8E5B1C] hover:text-[#B77C26] underline decoration-[#D49B37]">Bangalore welding shop</a> or request a mobile welding technician.
+                    </p>
+                  </div>
+                  <a
+                    href="/services/custom-welding-fabrication/"
+                    className="inline-flex items-center px-4 py-2 rounded-md bg-[#D49B37] hover:bg-[#B77C26] text-gray-950 hover:text-white text-xs font-bold uppercase tracking-wider shrink-0 shadow-sm transition-colors"
+                  >
+                    <span>Welding Services</span>
+                    <ArrowRight className="w-3.5 h-3.5 ml-1.5" />
+                  </a>
                 </div>
               )}
 
@@ -516,11 +538,34 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                   Related Fabrication Services
                 </h4>
                 <ul className="space-y-1.5 text-xs">
-                  <li><a href="/services/gate-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Gate Fabrication</a></li>
-                  <li><a href="/services/window-grills/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Window Grills</a></li>
-                  <li><a href="/services/ss-railings/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• SS Railings</a></li>
-                  <li><a href="/services/car-parking-sheds/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Car Parking Sheds</a></li>
-                  <li><a href="/services/staircase-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Staircase Fabrication</a></li>
+                  {service.slug !== 'custom-welding-fabrication' && (
+                    <li>
+                      <a
+                        href="/services/custom-welding-fabrication/"
+                        className="text-[#8E5B1C] hover:text-[#B77C26] font-semibold transition-colors block py-0.5"
+                      >
+                        • Best Welding Shop in Bangalore
+                      </a>
+                    </li>
+                  )}
+                  {service.slug !== 'gate-fabrication' && (
+                    <li><a href="/services/gate-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Gate Fabrication</a></li>
+                  )}
+                  {service.slug !== 'window-grills' && (
+                    <li><a href="/services/window-grills/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Window Grills</a></li>
+                  )}
+                  {service.slug !== 'ss-railings' && (
+                    <li><a href="/services/ss-railings/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• SS Railings</a></li>
+                  )}
+                  {service.slug !== 'car-parking-sheds' && (
+                    <li><a href="/services/car-parking-sheds/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Car Parking Sheds</a></li>
+                  )}
+                  {service.slug !== 'staircase-fabrication' && (
+                    <li><a href="/services/staircase-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Staircase Fabrication</a></li>
+                  )}
+                  {service.slug !== 'structural-steel-fabrication' && (
+                    <li><a href="/services/structural-steel-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Structural Steel Fabrication</a></li>
+                  )}
                 </ul>
               </div>
 

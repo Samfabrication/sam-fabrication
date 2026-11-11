@@ -132,45 +132,65 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
       <section className="relative z-20 -mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
           
-          <div className="bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1">
-            <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3">
+          <a
+            href="/services/custom-welding-fabrication/"
+            aria-label="Best welding shop in Bangalore: TIG, MIG and on-site mobile welding works"
+            className="group bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-all hover:-translate-y-1 hover:border-[#D49B37]/60 block"
+          >
+            <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3 group-hover:bg-[#D49B37] group-hover:text-white transition-colors">
               <Flame className="w-5 h-5" />
             </div>
-            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">WELDING SERVICES</h2>
-            <p className="text-[11px] text-gray-600 mt-1 leading-snug">MIG, TIG and on-site welding works across Bangalore</p>
-          </div>
+            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading group-hover:text-[#B77C26] transition-colors">WELDING SERVICES</h2>
+            <p className="text-[11px] text-gray-600 mt-1 leading-snug">Best welding shop in Bangalore: TIG, MIG &amp; on-site repairs</p>
+          </a>
 
-          <div className="bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1">
-            <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3">
+          <a
+            href="/services/"
+            aria-label="Custom metal fabrication for residential and commercial spaces in Bangalore"
+            className="group bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-all hover:-translate-y-1 hover:border-[#D49B37]/60 block"
+          >
+            <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3 group-hover:bg-[#D49B37] group-hover:text-white transition-colors">
               <Layers className="w-5 h-5" />
             </div>
-            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">METAL FABRICATION</h2>
+            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading group-hover:text-[#B77C26] transition-colors">METAL FABRICATION</h2>
             <p className="text-[11px] text-gray-600 mt-1 leading-snug">Custom metal fabrication for residential and commercial spaces</p>
-          </div>
+          </a>
 
-          <div className="bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1">
-            <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3">
+          <a
+            href="/services/structural-steel-fabrication/"
+            aria-label="Structural steel fabrication, sheds and trusses in Bangalore"
+            className="group bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-all hover:-translate-y-1 hover:border-[#D49B37]/60 block"
+          >
+            <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3 group-hover:bg-[#D49B37] group-hover:text-white transition-colors">
               <Building2 className="w-5 h-5" />
             </div>
-            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">STEEL STRUCTURES</h2>
+            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading group-hover:text-[#B77C26] transition-colors">STEEL STRUCTURES</h2>
             <p className="text-[11px] text-gray-600 mt-1 leading-snug">Structural steel fabrication, sheds and trusses</p>
-          </div>
+          </a>
 
-          <div className="bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1">
-            <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3">
+          <a
+            href="/services/gate-fabrication/"
+            aria-label="Residential fabrication works: main gates, safety grills, SS railings and stairs"
+            className="group bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-all hover:-translate-y-1 hover:border-[#D49B37]/60 block"
+          >
+            <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3 group-hover:bg-[#D49B37] group-hover:text-white transition-colors">
               <HomeIcon className="w-5 h-5" />
             </div>
-            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">RESIDENTIAL WORKS</h2>
+            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading group-hover:text-[#B77C26] transition-colors">RESIDENTIAL WORKS</h2>
             <p className="text-[11px] text-gray-600 mt-1 leading-snug">Main gates, safety grills, SS railings and stairs</p>
-          </div>
+          </a>
 
-          <div className="col-span-2 md:col-span-1 bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1">
-            <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3">
+          <a
+            href="/services/car-parking-sheds/"
+            aria-label="Commercial fabrication: canopies, sheds and utility metalwork in Bangalore"
+            className="col-span-2 md:col-span-1 group bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-all hover:-translate-y-1 hover:border-[#D49B37]/60 block"
+          >
+            <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3 group-hover:bg-[#D49B37] group-hover:text-white transition-colors">
               <Briefcase className="w-5 h-5" />
             </div>
-            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">COMMERCIAL FABRICATION</h2>
+            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading group-hover:text-[#B77C26] transition-colors">COMMERCIAL FABRICATION</h2>
             <p className="text-[11px] text-gray-600 mt-1 leading-snug">Office partitions, canopies and utility metalwork</p>
-          </div>
+          </a>
 
         </div>
       </section>
@@ -207,7 +227,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 Reliable Steel &amp; Metal Fabrication Works in Bangalore
               </h2>
               <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                SAM Fabrication Engineering Work specializes in welding and fabrication solutions for buildings, houses, offices and all places where strong, durable and customized steel structures are required. We focus on quality workmanship, timely delivery and customer satisfaction.
+                Operating a dedicated <a href="/services/custom-welding-fabrication/" className="text-[#D49B37] hover:underline font-semibold">welding shop in Bangalore</a>, SAM Fabrication Engineering Work specializes in precision TIG, MIG, and arc welding alongside custom <a href="/services/" className="text-gray-200 hover:text-white underline decoration-gray-500">metal fabrication solutions</a> for residential, commercial, and industrial properties. From designer entrance gates and safety window grills to heavy structural steel frameworks, we provide turnkey workshop manufacturing and rapid mobile welding repairs across all Bangalore corridors.
               </p>
 
               {/* 3 Stat Numbers */}
@@ -389,7 +409,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
               Fabrication Works Across Greater Bangalore
             </h2>
             <p className="text-xs text-gray-400 mt-2">
-              We provide rapid on-site measurement, free consultation, and turnkey fabrication across key Bangalore residential and commercial corridors.
+              We provide rapid on-site measurement, mobile emergency repairs from our <a href="/services/custom-welding-fabrication/" className="text-[#D49B37] hover:underline">Bangalore welding shop</a>, and turnkey fabrication across key residential and commercial corridors.
             </p>
           </div>
 

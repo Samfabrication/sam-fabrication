@@ -196,6 +196,30 @@ export const ServicesIndexPage: React.FC<ServicesIndexPageProps> = ({ onOpenQuot
         </div>
       </section>
 
+      {/* Contextual Feature: Welding Workshop & On-Site Repairs Banner */}
+      <section className="bg-[#FAF3E0] border-y border-[#D49B37]/30 py-8 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="space-y-1.5 max-w-2xl">
+            <span className="text-[10px] font-bold tracking-widest text-[#8E5B1C] uppercase">
+              BANGALORE WELDING WORKSHOP &amp; MOBILE REPAIRS
+            </span>
+            <h3 className="text-lg sm:text-xl font-bold font-serif-heading text-gray-950">
+              Need fast on-site welding or custom precision metal fabrication?
+            </h3>
+            <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              From broken gate hinges and railing reinforcements to structural welding modifications, visit our <a href="/services/custom-welding-fabrication/" className="font-bold text-[#8E5B1C] hover:text-[#B77C26] underline decoration-[#D49B37]">Bangalore welding shop</a> or dispatch a mobile technician anywhere across Bangalore.
+            </p>
+          </div>
+          <a
+            href="/services/custom-welding-fabrication/"
+            className="px-6 py-3 rounded-md bg-[#0B0F15] hover:bg-[#161D26] text-white text-xs font-bold uppercase tracking-wider flex items-center shrink-0 shadow-md transition-colors"
+          >
+            <span>Explore Welding Services</span>
+            <ArrowRight className="w-3.5 h-3.5 ml-2 text-[#D49B37]" />
+          </a>
+        </div>
+      </section>
+
       {/* 4. TURNKEY FABRICATION STANDARDS */}
       <section className="bg-[#0B0F15] text-white py-14 px-4 sm:px-6 lg:px-8 border-t border-[#1C2533]">
         <div className="max-w-7xl mx-auto">
