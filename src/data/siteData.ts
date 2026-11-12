@@ -12,6 +12,10 @@ export const siteConfig = {
   email: 'info@samfabrication.in',
   address: 'Dasarahalli Main Road, Near Sobha Moonstone, Bangalore, Karnataka 560024',
   workingHours: 'Mon - Sat: 9:00 AM - 8:00 PM',
+  googleMapsEmbedUrl:
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53699.516277903305!2d77.54575414863284!3d12.987976999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42558abc340b42ad%3A0x94475de137f4ec35!2sSam%20Fabrication%20%26%20Engineering%20Works!5e1!3m2!1sen!2sin!4v1794494133638!5m2!2sen!2sin',
+  googleMapsDirectionsUrl:
+    'https://www.google.com/maps/search/?api=1&query=Sam+Fabrication+%26+Engineering+Works,+Dasarahalli+Main+Road,+Near+Sobha+Moonstone,+Bangalore+560024',
   stats: {
     projectsCompleted: '100+',
     yearsExperience: '5+',

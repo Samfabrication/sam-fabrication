@@ -86,6 +86,7 @@ async function prerender() {
             }
           ],
           priceRange: '₹₹',
+          hasMap: siteConfig.googleMapsDirectionsUrl,
           areaServed: {
             '@type': 'GeoCircle',
             geoMidpoint: {

@@ -20,6 +20,7 @@ import {
 import { siteConfig, servicesData, projectsData, clientReviewsData } from '../data/siteData';
 import { CtaBanner } from '../components/CtaBanner';
 import { SeoHead } from '../components/SeoHead';
+import { GoogleMapEmbed } from '../components/GoogleMapEmbed';
 
 interface HomePageProps {
   onOpenQuote: () => void;
@@ -62,6 +63,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
       }
     ],
     priceRange: '₹₹',
+    hasMap: siteConfig.googleMapsDirectionsUrl,
     description: 'Trusted fabricator in Bangalore for custom MS/SS gates, window grills, balcony railings, sheds, heavy structural steel, event trusses & on-site home welding (Aluminium, Gas & Fiber) from our Dasarahalli Main Road workshop.',
     areaServed: [
       {
@@ -581,6 +583,15 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 <span className="block text-[10px] text-gray-500 mt-0.5">{loc.area}</span>
               </a>
             ))}
+          </div>
+
+          <div className="mt-8">
+            <GoogleMapEmbed
+              variant="dark"
+              compact
+              title="Visit SAM Fabrication Workshop or Book Doorstep Site Inspection"
+              subtitle="Operating from Dasarahalli Main Road near Sobha Moonstone (560024) — dispatching mobile welding & laser measurement teams across Bangalore within 16–25 km."
+            />
           </div>
         </div>
       </section>

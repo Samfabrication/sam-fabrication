@@ -3,6 +3,7 @@ import { SeoHead } from '../components/SeoHead';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { CtaBanner } from '../components/CtaBanner';
 import { StatCounters } from '../components/StatCounters';
+import { GoogleMapEmbed } from '../components/GoogleMapEmbed';
 import { regionsData, servicesData, siteConfig } from '../data/siteData';
 import { MapPin, ArrowRight, ShieldCheck, Clock, CheckCircle2, Building, Wrench, ChevronRight, Phone } from 'lucide-react';
 
@@ -321,6 +322,16 @@ export const AreasWeServeIndexPage: React.FC<AreasWeServeIndexPageProps> = ({ on
                 Welding Home Service
               </a>
             </div>
+          </div>
+
+          {/* Interactive Workshop Dispatch Map */}
+          <div className="mt-8">
+            <GoogleMapEmbed
+              variant="dark"
+              compact
+              title="Central Workshop Hub & Bangalore Service Radius"
+              subtitle="Located on Dasarahalli Main Road near Sobha Moonstone (560024) for 60–90 minute North Bangalore arrival and full Greater Bangalore coverage."
+            />
           </div>
         </div>
       </section>

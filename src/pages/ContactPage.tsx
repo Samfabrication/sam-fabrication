@@ -13,6 +13,7 @@ import {
 import { siteConfig } from '../data/siteData';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { SeoHead } from '../components/SeoHead';
+import { GoogleMapEmbed } from '../components/GoogleMapEmbed';
 
 export const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -65,6 +66,7 @@ export const ContactPage: React.FC = () => {
       email: siteConfig.email,
       openingHours: 'Mo-Sa 09:00-20:00',
       priceRange: '₹₹',
+      hasMap: siteConfig.googleMapsDirectionsUrl,
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Dasarahalli Main Road, Near Sobha Moonstone',
@@ -393,6 +395,17 @@ export const ContactPage: React.FC = () => {
             </div>
 
           </div>
+        </div>
+      </section>
+
+      {/* INTERACTIVE GOOGLE MAPS LOCATION & WORKSHOP DIRECTIONS */}
+      <section className="bg-white py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto">
+          <GoogleMapEmbed
+            variant="light"
+            title="Visit SAM Fabrication & Engineering Works — Dasarahalli Main Road"
+            subtitle="Directly inspect MS & SS 304 steel gauges, CNC laser gate cut samples, and welding finishes at our Dasarahalli workshop near Sobha Moonstone, or call for 16 km mobile welding & free site measurement."
+          />
         </div>
       </section>
     </>
