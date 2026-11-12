@@ -7,10 +7,10 @@
   "pages": [
     {
       "url": "/",
-      "title": "Fabricator in Bangalore | Fabrication Work, Gates, Grills & Welding | SAM Fabrication",
-      "description": "Trusted metal fabricator in Bangalore near Dasarahalli & Hebbal. Custom gates, window grills, SS/MS railings, sheds, heavy steelwork & on-site home welding. Call +91 94533 44824.",
-      "h1": "SAM Fabrication Engineering Work",
-      "primaryKeyword": "fabrication work in bangalore",
+      "title": "Fabrication Works in Bangalore | Metal Fabricator, Gates, Grills & Welding | SAM Fabrication",
+      "description": "Leading metal fabrication works in Bangalore near Dasarahalli & Hebbal. Custom MS gates, window safety grills, SS railings, sheds & on-site welding. Call +91 94533 44824.",
+      "h1": "Fabrication Works in Bangalore",
+      "primaryKeyword": "fabrication works in bangalore",
       "schemaType": "LocalBusiness",
       "category": "core"
     },
@@ -161,7 +161,7 @@
     {
       "url": "/why-choose-us/",
       "title": "Best Fabricators in Bangalore Reviews & Quality Standards | SAM Fabrication",
-      "description": "Read verified Bangalore customer reviews and engineering guarantees for SAM Fabrication: MS/SS gates, grills, sheds, welding & heavy structural steel. Open Mon–Sat 9 AM–8 PM.",
+      "description": "Read verified Bangalore customer reviews and engineering guarantees for SAM Fabrication: MS/SS gates, grills, sheds, welding & heavy structural steel. Open Mon\u2013Sat 9 AM\u20138 PM.",
       "h1": "More Than Fabrication. A Stronger Tomorrow.",
       "primaryKeyword": "best fabricators in bangalore reviews",
       "schemaType": "WebPage",
@@ -493,4 +493,3 @@
     }
   ]
 }
-

@@ -1400,4 +1400,34 @@ export const weldingCapabilitiesData = [
   }
 ];
 
+export interface HomeFaqItem {
+  question: string;
+  answer: string;
+}
 
+export const homeFaqsData: HomeFaqItem[] = [
+  {
+    question: 'What is the fabrication work rate per kg and per sq.ft in Bangalore?',
+    answer: 'In Bangalore, MS (Mild Steel) structural fabrication generally ranges between ₹95 to ₹135 per kg for supply, fabrication, and basic primer. For architectural metalwork measured per square foot, MS window safety grills typically cost ₹180 to ₹320/sq.ft, custom MS gates cost ₹350 to ₹680/sq.ft, SS 304 railings range between ₹750 to ₹1,450/running ft, and car parking sheds cost ₹220 to ₹480/sq.ft depending on design complexity, material gauge, and surface finish.'
+  },
+  {
+    question: 'Do you provide on-site mobile welding and doorstep fabrication repairs across Bangalore?',
+    answer: 'Yes, SAM Fabrication provides prompt on-site mobile welding and repairs across Bangalore. Operating from our Dasarahalli Main Road workshop near Hebbal, our mobile welding van is equipped with portable inverter arc welding, TIG welding, and gas torches for gate hinge repairs, sliding track alignment, grill reinforcement, and emergency metal fixes within a 16–25 km radius.'
+  },
+  {
+    question: 'What steel brands and material grades do you use for fabrication?',
+    answer: 'We exclusively fabricate with certified structural steel from leading Indian mills including Tata Steel, JSW Steel, Jindal, and APL Apollo hollow rectangular and square pipes (IS 2062). For stainless steel railings and architectural fixtures, we use verified AISI 304 and 316 grade rustproof stainless steel.'
+  },
+  {
+    question: 'How do I get a free site measurement and quote for my fabrication project?',
+    answer: 'You can call us directly at +91 94533 44824 or submit your project details through our online quote form. Our fabrication engineer visits your site in Bangalore, takes accurate laser measurements, discusses design preferences, and provides a transparent, itemized quotation with zero hidden charges.'
+  },
+  {
+    question: 'What is the typical completion and installation timeline for fabrication works?',
+    answer: 'Standard residential metalworks like window safety grills, balcony railings, and single entrance gates typically take 3 to 7 working days from measurement to on-site installation. Custom laser-cut CNC gates, complex staircases, and terrace car parking sheds take 7 to 14 working days.'
+  },
+  {
+    question: 'How do you protect fabricated metal and steel from rusting in Bangalore weather?',
+    answer: 'All our mild steel products undergo thorough mechanical slag and rust removal, followed by an industrial dual-coat anti-corrosive zinc-chromate or red-oxide primer. We then apply either architectural electrostatic powder coating or dual coats of high-gloss polyurethane (PU) / synthetic enamel paint to protect against Bangalore monsoon humidity.'
+  }
+];

@@ -42,7 +42,7 @@ async function prerender() {
   });
 
   const { App } = await vite.ssrLoadModule('/src/App.tsx');
-  const { siteConfig, servicesData, projectsData, regionsData } = await vite.ssrLoadModule('/src/data/siteData.ts');
+  const { siteConfig, servicesData, projectsData, regionsData, homeFaqsData } = await vite.ssrLoadModule('/src/data/siteData.ts');
 
   const sitemapUrls = [];
 
@@ -106,6 +106,21 @@ async function prerender() {
         }
       ]
     };
+
+    if (page.url === '/' && homeFaqsData && homeFaqsData.length > 0) {
+      pageSchema['@graph'].push({
+        '@type': 'FAQPage',
+        '@id': 'https://samfabrication.in/#faq',
+        mainEntity: homeFaqsData.map(f => ({
+          '@type': 'Question',
+          name: f.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: f.answer
+          }
+        }))
+      });
+    }
 
     let ogImage = 'https://samfabrication.in/images/hero-home.jpg';
     if (page.category === 'services' && page.url !== '/services/' && page.url !== '/fabrication-rates-bangalore/') {

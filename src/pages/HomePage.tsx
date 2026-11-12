@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { 
   ShieldCheck, 
   Cog, 
@@ -15,9 +15,19 @@ import {
   Star,
   Clock,
   Calculator,
-  Wrench
+  Wrench,
+  ChevronDown,
+  HelpCircle,
+  IndianRupee
 } from 'lucide-react';
-import { siteConfig, servicesData, projectsData, clientReviewsData } from '../data/siteData';
+import { 
+  siteConfig, 
+  servicesData, 
+  projectsData, 
+  clientReviewsData, 
+  fabricationRatesData, 
+  homeFaqsData 
+} from '../data/siteData';
 import { CtaBanner } from '../components/CtaBanner';
 import { SeoHead } from '../components/SeoHead';
 import { GoogleMapEmbed } from '../components/GoogleMapEmbed';
@@ -27,76 +37,36 @@ interface HomePageProps {
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
+
   // 6 Services for homepage matching mockup
   const homeServices = servicesData.slice(0, 6);
   // 6 Recent projects matching mockup
   const homeProjects = projectsData.slice(0, 6);
 
-  const homeSchema = {
+  // FAQ Schema for HomePage - LocalBusiness and WebSite are already supplied in @graph by prerender.mjs
+  const homeFaqSchema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': 'https://samfabrication.in/#entity',
-    name: 'SAM Fabrication Engineering Work',
-    url: 'https://samfabrication.in',
-    telephone: siteConfig.phoneClean,
-    email: siteConfig.email,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Dasarahalli Main Road, Near Sobha Moonstone',
-      addressLocality: 'Bangalore',
-      addressRegion: 'Karnataka',
-      postalCode: '560024',
-      addressCountry: 'IN'
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 13.0489,
-      longitude: 77.6052
-    },
-    openingHours: 'Mo-Sa 09:00-20:00',
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-        opens: '09:00',
-        closes: '20:00'
+    '@type': 'FAQPage',
+    mainEntity: homeFaqsData.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: f.answer
       }
-    ],
-    priceRange: '₹₹',
-    hasMap: siteConfig.googleMapsDirectionsUrl,
-    description: 'Trusted fabricator in Bangalore for custom MS/SS gates, window grills, balcony railings, sheds, heavy structural steel, event trusses & on-site home welding (Aluminium, Gas & Fiber) from our Dasarahalli Main Road workshop.',
-    areaServed: [
-      {
-        '@type': 'GeoCircle',
-        geoMidpoint: {
-          '@type': 'GeoCoordinates',
-          latitude: 13.0489,
-          longitude: 77.6052
-        },
-        geoRadius: '25000'
-      },
-      'Bangalore',
-      'Hebbal',
-      'Dasarahalli',
-      'Yelahanka',
-      'Whitefield',
-      'Electronic City',
-      'Manyata Tech Park',
-      'HSR Layout',
-      'Peenya'
-    ]
+    }))
   };
 
   return (
     <>
       <SeoHead
-        title="Fabrication Works in Bangalore | SAM Fabrication Engineering Work"
-        description="Looking for reliable fabrication and welding works in Bangalore? Explore custom gates, grills, railings, sheds and steel fabrication solutions from SAM Fabrication."
+        title="Fabrication Works in Bangalore | Metal Fabricator, Gates, Grills & Welding | SAM Fabrication"
+        description="Leading metal fabrication works in Bangalore near Dasarahalli & Hebbal. Custom MS gates, window safety grills, SS railings, sheds & on-site welding. Call +91 94533 44824."
         canonical="https://samfabrication.in/"
-        schema={homeSchema}
       />
 
-      {/* 1. HERO SECTION (Pixel-Accurate to Mockup) */}
+      {/* 1. HERO SECTION */}
       <section className="relative min-h-[620px] lg:min-h-[720px] flex items-center bg-[#0B0F15] overflow-hidden">
         
         {/* Background Architectural Image with Overlay */}
@@ -127,15 +97,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
               </span>
             </div>
 
-            {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif-heading text-white tracking-tight leading-[1.12]">
-              SAM <span className="gold-gradient-text">Fabrication</span><br />
-              Engineering Work
-            </h1>
+            {/* Main Headline - Primary Target Query */}
+            <div className="space-y-2">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-serif-heading text-white tracking-tight leading-[1.12]">
+                Fabrication Works in <span className="gold-gradient-text">Bangalore</span>
+              </h1>
+              <p className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-[#D49B37]">
+                SAM Fabrication Engineering Work
+              </p>
+            </div>
 
-            {/* Subheadline */}
+            {/* Subheadline - Natural Keyword Integration */}
             <p className="text-sm sm:text-base text-gray-300 font-normal leading-relaxed max-w-xl">
-              Custom fabrication solutions for buildings, houses, offices and all types of structures across Bangalore.
+              Leading metal fabricator in Bangalore near Dasarahalli &amp; Hebbal. Custom MS gates, window safety grills, SS railings, car parking sheds, heavy structural steelwork and on-site welding services across Bengaluru.
             </p>
 
             {/* 3 Feature Badges Row */}
@@ -232,7 +206,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
         </div>
       </section>
 
-      {/* 3. ABOUT US SECTION (Pixel-Accurate to Mockup: 3D Logo + Text + Staircase Image) */}
+      {/* 3. ABOUT US SECTION */}
       <section className="bg-[#0B0F15] text-white py-20 px-4 sm:px-6 lg:px-8 border-b border-[#1E2735]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -261,10 +235,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 ABOUT US
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold font-serif-heading text-white leading-tight">
-                Reliable Fabrication for a Stronger Tomorrow
+                Reliable Metal Fabrication &amp; Engineering for a Stronger Tomorrow
               </h2>
               <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                SAM Fabrication Engineering Work specializes in welding and fabrication solutions for buildings, houses, offices and all places where strong, durable and customized steel structures are required. We focus on quality workmanship, timely delivery and customer satisfaction.
+                SAM Fabrication Engineering Work specializes in precision welding and steel fabrication solutions for buildings, houses, offices and industrial spaces across Bangalore. From our Dasarahalli workshop near Hebbal, we focus on certified metal grades, timely delivery, and exact architectural alignment.
               </p>
 
               {/* 3 Stat Numbers */}
@@ -312,7 +286,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
         </div>
       </section>
 
-      {/* 4. OUR SERVICES SECTION (White Background with 6 Service Cards) */}
+      {/* 4. OUR SERVICES SECTION */}
       <section className="bg-white text-gray-900 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           
@@ -323,14 +297,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 OUR SERVICES
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold font-serif-heading text-gray-950 mt-1">
-                Complete Fabrication Solutions
+                Complete Metal Fabrication Solutions
               </h2>
             </div>
             <a
               href="/services/"
               className="inline-flex items-center px-4 py-2 rounded-full border border-gray-300 hover:border-gray-800 text-xs font-semibold text-gray-800 hover:text-black transition-colors"
             >
-              <span>View All Services</span>
+              <span>View All 11 Services</span>
               <ArrowRight className="w-3.5 h-3.5 ml-1.5" />
             </a>
           </div>
@@ -372,7 +346,105 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
         </div>
       </section>
 
-      {/* 5. OUR WORK / RECENT PROJECTS SECTION (Dark Section with 6 Project Cards) */}
+      {/* 4b. BANGALORE FABRICATION RATES & PRICE ESTIMATION */}
+      <section className="bg-[#F8FAFC] text-gray-900 py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+            <div>
+              <div className="inline-flex items-center space-x-2 text-[11px] font-bold tracking-[0.2em] text-[#B77C26] uppercase">
+                <IndianRupee className="w-3.5 h-3.5 text-[#B77C26]" />
+                <span>BANGALORE PRICE ESTIMATES</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-bold font-serif-heading text-gray-950 mt-1">
+                Fabrication Works in Bangalore Price List
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 mt-2 max-w-2xl leading-relaxed">
+                Standard fabrication rates in Bangalore based on material grade (Tata, Jindal, APL Apollo), steel gauge, and custom design. Transparent pricing with no hidden charges.
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-3">
+              <a
+                href="/fabrication-rates-bangalore/"
+                className="inline-flex items-center px-4 py-2.5 rounded-md bg-[#FAF3E0] border border-[#D49B37]/60 text-xs font-bold text-[#8E5B1C] hover:bg-[#D49B37] hover:text-white transition-all shadow-sm"
+              >
+                <Calculator className="w-3.5 h-3.5 mr-1.5" />
+                <span>Interactive Cost Calculator</span>
+              </a>
+              <button
+                onClick={onOpenQuote}
+                className="inline-flex items-center px-4 py-2.5 rounded-md bg-gray-950 text-white hover:bg-gray-800 text-xs font-bold uppercase tracking-wider transition-all shadow-sm cursor-pointer"
+              >
+                <span>Get Exact Site Quote</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1.5 text-[#D49B37]" />
+              </button>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {fabricationRatesData.slice(0, 6).map((rate, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md hover:border-[#D49B37]/80 transition-all flex flex-col justify-between space-y-4"
+              >
+                <div>
+                  <div className="flex items-start justify-between gap-2">
+                    <h3 className="text-sm font-bold font-serif-heading text-gray-950">
+                      {rate.category}
+                    </h3>
+                    <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-gray-100 text-gray-700 shrink-0">
+                      {rate.unitBasis}
+                    </span>
+                  </div>
+                  <div className="mt-3 py-2 px-3 rounded-lg bg-[#FAF3E0]/70 border border-[#D49B37]/30">
+                    <span className="text-xs text-gray-600 block">Indicative Rate:</span>
+                    <span className="text-base font-extrabold text-[#B77C26] font-serif-heading">
+                      {rate.indicativeRate}
+                    </span>
+                  </div>
+                  <div className="mt-3 space-y-1.5 text-xs text-gray-600">
+                    <p>
+                      <strong className="text-gray-900 font-medium">Material:</strong> {rate.materialGrade}
+                    </p>
+                    <p>
+                      <strong className="text-gray-900 font-medium">Includes:</strong> {rate.includes}
+                    </p>
+                  </div>
+                </div>
+                <div className="pt-3 border-t border-gray-100 flex items-center justify-between">
+                  <a
+                    href={`/services/${rate.serviceSlug}/`}
+                    className="text-xs font-bold text-[#8E5B1C] hover:text-[#B77C26] inline-flex items-center"
+                  >
+                    <span>View Specifications</span>
+                    <ArrowRight className="w-3 h-3 ml-1" />
+                  </a>
+                  <button
+                    onClick={onOpenQuote}
+                    className="text-xs font-semibold text-gray-700 hover:text-black cursor-pointer"
+                  >
+                    Request Quote &rarr;
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-6 p-4 rounded-xl bg-amber-50/80 border border-amber-200/80 text-xs text-amber-950 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+            <p className="leading-relaxed">
+              <strong>Need an MS fabrication rate per kg in Bangalore?</strong> Structural steelwork ranges between ₹95 to ₹135/kg. We provide free doorstep laser measurements and custom design consultations across Bangalore.
+            </p>
+            <a
+              href={`tel:${siteConfig.phoneClean}`}
+              className="inline-flex items-center px-3.5 py-1.5 rounded-lg bg-[#B77C26] text-white font-bold text-xs hover:bg-[#8E5B1C] transition-colors shrink-0"
+            >
+              <Phone className="w-3.5 h-3.5 mr-1.5" />
+              <span>Call {siteConfig.phone}</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. OUR WORK / RECENT PROJECTS SECTION */}
       <section className="bg-[#0B0F15] text-white py-16 px-4 sm:px-6 lg:px-8 border-t border-[#1C2533]">
         <div className="max-w-7xl mx-auto">
           
@@ -438,7 +510,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
       <section className="bg-[#F8FAFC] text-gray-900 py-14 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
         <div className="max-w-7xl mx-auto space-y-10">
 
-          {/* 3 Quick-Intent Cards (Welding Shop 16km, Work Rates, Event & Heavy Structural) */}
+          {/* 3 Quick-Intent Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             <a
               href="/services/custom-welding-fabrication/"
@@ -596,9 +668,84 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
         </div>
       </section>
 
+      {/* 6b. FREQUENTLY ASKED QUESTIONS SECTION */}
+      <section className="bg-white text-gray-900 py-16 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center space-x-1.5 text-[11px] font-bold tracking-[0.2em] text-[#B77C26] uppercase">
+              <HelpCircle className="w-3.5 h-3.5 text-[#B77C26]" />
+              <span>COMMONLY ASKED QUESTIONS</span>
+            </div>
+            <h2 className="text-2xl sm:text-3xl font-bold font-serif-heading text-gray-950 mt-1">
+              Bangalore Fabrication &amp; Welding FAQs
+            </h2>
+            <p className="text-xs sm:text-sm text-gray-600 mt-2 max-w-xl mx-auto leading-relaxed">
+              Clear answers regarding pricing, materials, on-site welding service coverage, and installation timelines in Bangalore.
+            </p>
+          </div>
+
+          <div className="space-y-3.5">
+            {homeFaqsData.map((faq, idx) => {
+              const isOpen = openFaq === idx;
+              return (
+                <div
+                  key={idx}
+                  className="rounded-xl border border-gray-200 bg-white overflow-hidden shadow-sm transition-all duration-200 hover:border-[#D49B37]/60"
+                >
+                  <button
+                    onClick={() => setOpenFaq(isOpen ? null : idx)}
+                    className="w-full py-4 px-5 text-left flex items-center justify-between gap-4 cursor-pointer focus:outline-none transition-colors hover:bg-gray-50/80"
+                    aria-expanded={isOpen}
+                  >
+                    <span className="text-sm sm:text-base font-bold font-serif-heading text-gray-900">
+                      {faq.question}
+                    </span>
+                    <div
+                      className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
+                        isOpen ? 'bg-[#FAF3E0] text-[#B77C26] rotate-180' : 'bg-gray-100 text-gray-500'
+                      }`}
+                    >
+                      <ChevronDown className="w-4 h-4" />
+                    </div>
+                  </button>
+                  {isOpen && (
+                    <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-gray-100">
+                      <p>{faq.answer}</p>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mt-8 text-center bg-[#FAF3E0]/50 rounded-xl p-5 border border-[#D49B37]/30">
+            <h3 className="text-sm font-bold font-serif-heading text-gray-900">
+              Have a specific fabrication question or custom drawing?
+            </h3>
+            <p className="text-xs text-gray-600 mt-1">
+              Share your requirements with our fabrication engineers for instant technical guidance and free estimates.
+            </p>
+            <div className="mt-3 flex flex-wrap items-center justify-center gap-3">
+              <a
+                href={`tel:${siteConfig.phoneClean}`}
+                className="inline-flex items-center px-4 py-2 rounded-md bg-[#B77C26] hover:bg-[#8E5B1C] text-xs font-bold text-white transition-colors"
+              >
+                <Phone className="w-3.5 h-3.5 mr-1.5" />
+                <span>Call {siteConfig.phone}</span>
+              </a>
+              <button
+                onClick={onOpenQuote}
+                className="inline-flex items-center px-4 py-2 rounded-md border border-gray-300 hover:border-gray-800 text-xs font-bold text-gray-800 transition-colors bg-white cursor-pointer"
+              >
+                <span>Book Free Site Visit</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 7. BOTTOM CTA BANNER (Split Gold & Dark) */}
       <CtaBanner onOpenQuote={onOpenQuote} />
     </>
   );
 };
-
