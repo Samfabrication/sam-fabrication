@@ -1,3 +1,4 @@
+import { FormattedText } from '../components/FormattedText';
 import React from 'react';
 import { 
   Calendar, 
@@ -32,8 +33,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onOpenQuote })
     headline: post.title,
     description: post.excerpt,
     image: `https://samfabrication.in${post.image}`,
-    datePublished: '2024-05-10T08:00:00+05:30',
-    dateModified: '2026-10-30T12:00:00+05:30',
+    datePublished: new Date(post.date).toISOString(),
     author: {
       '@type': 'Organization',
       name: post.author.name,
@@ -128,10 +128,21 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onOpenQuote })
             <div className="pt-6 prose prose-slate max-w-none text-xs sm:text-sm text-gray-700 leading-relaxed space-y-5">
               {post.content.split('\n\n').map((paragraph, index) => {
                 if (paragraph.startsWith('### ')) {
+                  const lines = paragraph.split('\n');
+                  const headingLine = lines[0].replace('### ', '').trim();
+                  const bodyLines = lines.slice(1).join('\n').trim();
+
                   return (
-                    <h2 key={index} className="text-lg sm:text-xl font-bold font-serif-heading text-gray-950 mt-6 mb-2 border-l-3 border-[#D49B37] pl-3">
-                      {paragraph.replace('### ', '')}
-                    </h2>
+                    <React.Fragment key={index}>
+                      <h2 className="text-lg sm:text-xl font-bold font-serif-heading text-gray-950 mt-6 mb-2 border-l-3 border-[#D49B37] pl-3">
+                        {headingLine}
+                      </h2>
+                      {bodyLines && (
+                        <p className="leading-relaxed">
+                          <FormattedText text={bodyLines} />
+                        </p>
+                      )}
+                    </React.Fragment>
                   );
                 }
 
@@ -167,7 +178,7 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onOpenQuote })
 
                 return (
                   <p key={index} className="leading-relaxed">
-                    {paragraph}
+                    <FormattedText text={paragraph} />
                   </p>
                 );
               })}

@@ -1,3 +1,4 @@
+import { FormattedText } from '../components/FormattedText';
 import React, { useState } from 'react';
 import { 
   ArrowRight, 
@@ -10,10 +11,12 @@ import {
   Minus, 
   Layers, 
   Phone,
-  MessageSquare
+  MessageSquare,
+  MapPin
 } from 'lucide-react';
 import { ServiceItem } from '../types';
-import { projectsData, siteConfig, weldingCapabilitiesData } from '../data/siteData';
+import { projectsData, siteConfig, locationsData } from '../data/siteData';
+import { serviceLocationLinks } from '../data/serviceLocationLinks';
 import { CtaBanner } from '../components/CtaBanner';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { SeoHead } from '../components/SeoHead';
@@ -25,47 +28,34 @@ interface ServiceDetailPageProps {
 
 export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, onOpenQuote }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+  const serviceLocations = locationsData.filter((location) =>
+    serviceLocationLinks[service.slug]?.includes(location.slug)
+  );
 
-  // Filter relevant projects for this service (matched first, fallback to fill 3)
-  const matchedProjects = projectsData.filter((p) => {
+  // Filter relevant projects for this service
+  const relatedProjects = projectsData.filter((p) => {
     if (service.id.includes('gate') && p.category === 'gates') return true;
     if (service.id.includes('grill') && p.category === 'grills') return true;
     if (service.id.includes('railing') && p.category === 'railings') return true;
     if (service.id.includes('staircase') && p.category === 'staircases') return true;
     if (service.id.includes('shed') && (p.category === 'car-parking-sheds' || p.category === 'ss-ms-structures')) return true;
-    if ((service.id.includes('structural') || service.id.includes('event') || service.id.includes('welding')) && p.category === 'ss-ms-structures') return true;
-    return false;
-  });
-  const relatedProjects = (matchedProjects.length >= 3
-    ? matchedProjects
-    : [...matchedProjects, ...projectsData.filter((p) => !matchedProjects.includes(p))]
-  ).slice(0, 3);
-
-  const seoTitle =
-    service.slug === 'custom-welding-fabrication'
-      ? 'Welding Shop in Bangalore Near Me | Home Service, Aluminium, Gas & Fiber Welding | SAM Fabrication'
-      : service.slug === 'structural-steel-fabrication'
-        ? 'Heavy Structural Steel Fabrication Company in Bangalore | PEB & I-Beam Works | SAM Fabrication'
-        : service.slug === 'event-fabrication'
-          ? 'Event Fabrication Vendors in Bangalore | Stage Truss, Booths & Arches | SAM Fabrication'
-          : `${service.title} in Bangalore | SAM Fabrication Engineering Work`;
+    if (service.id.includes('structural') && p.category === 'ss-ms-structures') return true;
+    return true;
+  }).slice(0, 3);
 
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    '@id': `https://samfabrication.in/services/${service.slug}/#service`,
+    name: `${service.title} in Bangalore`,
     serviceType: service.title,
-    provider: {
-      '@id': 'https://samfabrication.in/#entity'
-    },
+    description: service.fullDescription,
+    url: `https://samfabrication.in/services/${service.slug}/`,
+    image: `https://samfabrication.in${service.image.replace('.webp', '.jpg')}`,
+    provider: { '@id': 'https://samfabrication.in/#entity' },
     areaServed: {
       '@type': 'City',
       name: 'Bangalore'
-    },
-    description: service.fullDescription,
-    offers: {
-      '@type': 'Offer',
-      priceCurrency: 'INR',
-      availability: 'https://schema.org/InStock'
     }
   };
 
@@ -77,7 +67,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
       name: f.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: f.answer
+        text: f.answer.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')
       }
     }))
   };
@@ -85,10 +75,10 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
   return (
     <>
       <SeoHead
-        title={seoTitle}
+        title={`${service.title} in Bangalore | SAM Fabrication Engineering Work`}
         description={service.shortDescription}
         canonical={`https://samfabrication.in/services/${service.slug}/`}
-        schema={[serviceSchema, faqSchema]}
+        schema={faqSchema}
       />
 
       <Breadcrumbs
@@ -106,11 +96,11 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
             <source srcSet={service.image} type="image/webp" />
             <img
               src={service.image.replace('.webp', '.jpg')}
-              alt={service.imageAlt}
+              alt={`${service.title} engineering and on-site installation by SAM Fabrication in Bangalore`}
               className="w-full h-full object-cover object-center brightness-[0.7]"
               fetchPriority="high"
               loading="eager"
-              decoding="async"
+              decoding="sync"
               width="1200"
               height="750"
             />
@@ -124,9 +114,18 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
             <span className="text-[11px] font-bold tracking-[0.2em] text-[#D49B37] uppercase">
               FABRICATION SERVICES • BANGALORE
             </span>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif-heading text-white tracking-tight leading-[1.15]">
-              {service.title} <span className="gold-gradient-text">in Bangalore</span>
-            </h1>
+            {service.slug === 'custom-welding-fabrication' ? (
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif-heading text-white tracking-tight leading-[1.15]">
+                Best Welding Shop <span className="gold-gradient-text">in Bangalore</span>
+                <span className="block text-lg sm:text-xl lg:text-2xl text-gray-300 font-sans font-medium tracking-normal mt-2">
+                  Precision MS, SS &amp; On-Site Mobile Welding Works
+                </span>
+              </h1>
+            ) : (
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif-heading text-white tracking-tight leading-[1.15]">
+                {service.title} <span className="gold-gradient-text">in Bangalore</span>
+              </h1>
+            )}
             <p className="text-xs sm:text-sm text-gray-300 leading-relaxed max-w-xl">
               {service.shortDescription}
             </p>
@@ -166,12 +165,142 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                   ENGINEERING OVERVIEW
                 </span>
                 <h2 className="text-2xl font-bold font-serif-heading text-gray-950 mt-1 mb-4">
-                  Precision Fabricated {service.title} Tailored for Bangalore Properties
+                  {service.slug === 'custom-welding-fabrication'
+                    ? 'Best Welding Shop & Precision Metal Fabrication in Bangalore'
+                    : 'Precision Fabricated ' + service.title + ' Tailored for Bangalore Properties'}
                 </h2>
                 <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
                   {service.fullDescription}
                 </p>
               </div>
+
+              {/* Specialized AEO & GEO Structured Content for Welding Shop or Contextual Welding Link */}
+              {service.slug === 'custom-welding-fabrication' ? (
+                <div className="space-y-6">
+                  {/* Direct Answer Block for AI Overviews & Featured Snippets (AEO / GEO) */}
+                  <div className="bg-[#FAF3E0] border-l-4 border-[#D49B37] p-4 sm:p-5 rounded-r-xl space-y-2">
+                    <h3 className="text-sm sm:text-base font-bold text-gray-950 font-serif-heading">
+                      Who is the best welding shop in Bangalore for custom fabrication and repairs?
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-800 leading-relaxed">
+                      <strong>SAM Fabrication Engineering Work</strong> is rated among the best welding shops in Bangalore, delivering industrial-grade TIG, MIG, and electric arc welding with certified welders, branded raw materials (Tata Steel, Jindal, SAIL, AISI 304/316 SS), and dual-coat anti-corrosion protection. Located in North Bangalore on Dasarahalli Main Road near Hebbal and Manyata Tech Park, SAM Fabrication handles both precision workshop manufacturing and turnkey on-site mobile welding repairs across all Bangalore zones.
+                    </p>
+                    <p className="text-xs text-[#8E5B1C] font-semibold pt-1">
+                      Direct Workshop Phone: +91 94533 44824 • Dasarahalli Main Road, Near Sobha Moonstone, Bangalore 560024.
+                    </p>
+                  </div>
+
+                  {/* Workshop vs Mobile On-Site Table */}
+                  <div className="space-y-3">
+                    <h3 className="text-base font-bold font-serif-heading text-gray-950">
+                      Workshop Welding vs. On-Site Mobile Welding in Bangalore
+                    </h3>
+                    <div className="border border-gray-200 rounded-lg overflow-x-auto">
+                      <table className="w-full text-left text-xs min-w-[500px]">
+                        <thead className="bg-[#F1F5F9] text-gray-900 border-b border-gray-200 font-semibold">
+                          <tr>
+                            <th className="py-2.5 px-3">Service Dimension</th>
+                            <th className="py-2.5 px-3">Workshop Fabrication (In-House)</th>
+                            <th className="py-2.5 px-3">Mobile On-Site Welding (Field Repair)</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-gray-700">
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Primary Applications</td>
+                            <td className="py-2.5 px-3">Main gates, safety grills, staircases, jali panels</td>
+                            <td className="py-2.5 px-3">Column anchoring, shed erection, hinge repairs</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Welding Processes</td>
+                            <td className="py-2.5 px-3">TIG (Argon), Heavy MIG (CO2), CNC Laser Cutting</td>
+                            <td className="py-2.5 px-3">Portable Inverter Arc Welding (SMAW / Stick)</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Finishing Standard</td>
+                            <td className="py-2.5 px-3">Mirror/Satin buffing, electrostatic powder coat</td>
+                            <td className="py-2.5 px-3">Slag ground clean, cold-galvanized zinc primer</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Typical Lead Time</td>
+                            <td className="py-2.5 px-3">3 to 7 working days based on tonnage</td>
+                            <td className="py-2.5 px-3">Same-day or scheduled within 24–48 hours</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  {/* Bangalore Welding & Fabrication Rates Table */}
+                  <div className="space-y-3">
+                    <h3 className="text-base font-bold font-serif-heading text-gray-950">
+                      Estimated Bangalore Welding &amp; Fabrication Rates (2026 Guide)
+                    </h3>
+                    <p className="text-xs text-gray-600">
+                      Standard price bands for custom metalwork across Greater Bangalore. Exact quotes depend on gauge thickness, alloy grade, and site accessibility.
+                    </p>
+                    <div className="border border-gray-200 rounded-lg overflow-x-auto">
+                      <table className="w-full text-left text-xs min-w-[500px]">
+                        <thead className="bg-[#F1F5F9] text-gray-900 border-b border-gray-200 font-semibold">
+                          <tr>
+                            <th className="py-2.5 px-3">Fabrication / Welding Scope</th>
+                            <th className="py-2.5 px-3">Raw Material Grade</th>
+                            <th className="py-2.5 px-3">Estimated Bangalore Price Band</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-gray-100 text-gray-700">
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">MS Window Safety Grills</td>
+                            <td className="py-2.5 px-3">Tata / Jindal MS Square or Flat Bars</td>
+                            <td className="py-2.5 px-3">₹120 – ₹175 per kg (or ₹160–₹240/sq.ft installed)</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Custom MS Designer Gates</td>
+                            <td className="py-2.5 px-3">Hollow Structural Sections + CNC Jali</td>
+                            <td className="py-2.5 px-3">₹145 – ₹210 per kg</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">SS Balcony &amp; Staircase Railings</td>
+                            <td className="py-2.5 px-3">Jindal AISI 304 Grade Stainless Steel</td>
+                            <td className="py-2.5 px-3">₹380 – ₹650 per running foot</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Car Parking Sheds &amp; Canopies</td>
+                            <td className="py-2.5 px-3">MS Columns + Polycarbonate / Metal Sheet</td>
+                            <td className="py-2.5 px-3">₹220 – ₹380 per sq. ft.</td>
+                          </tr>
+                          <tr className="hover:bg-gray-50">
+                            <td className="py-2.5 px-3 font-semibold text-gray-900">Mobile On-Site Welding Visit</td>
+                            <td className="py-2.5 px-3">Inverter Welder / Consumables / Technician</td>
+                            <td className="py-2.5 px-3">Starting from ₹1,200 – ₹2,500 per visit</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                /* In-Content Contextual Link to Welding Workshop for other 10 services */
+                <div className="bg-[#FAF3E0] border-l-4 border-[#D49B37] p-4 sm:p-5 rounded-r-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  <div className="space-y-1 max-w-xl">
+                    <span className="text-[10px] font-bold tracking-wider text-[#8E5B1C] uppercase">
+                      PRECISION WELDING &amp; ON-SITE REPAIRS
+                    </span>
+                    <h3 className="text-sm sm:text-base font-bold text-gray-950 font-serif-heading">
+                      Need professional welding works or on-site repair services in Bangalore?
+                    </h3>
+                    <p className="text-xs text-gray-700 leading-relaxed">
+                      All our {service.title.toLowerCase()} structures are fabricated using certified TIG, MIG, and arc welding techniques. If you need hinge adjustments, structural reinforcements, or emergency repairs anywhere in Bangalore, explore our <a href="/services/custom-welding-fabrication/" className="font-bold text-[#8E5B1C] hover:text-[#B77C26] underline decoration-[#D49B37]">Bangalore welding shop</a> or request a mobile welding technician.
+                    </p>
+                  </div>
+                  <a
+                    href="/services/custom-welding-fabrication/"
+                    className="inline-flex items-center px-4 py-2 rounded-md bg-[#D49B37] hover:bg-[#B77C26] text-gray-950 hover:text-white text-xs font-bold uppercase tracking-wider shrink-0 shadow-sm transition-colors"
+                  >
+                    <span>Welding Services</span>
+                    <ArrowRight className="w-3.5 h-3.5 ml-1.5" />
+                  </a>
+                </div>
+              )}
 
               {/* Key Features */}
               <div className="bg-[#F8FAFC] border border-gray-200 rounded-xl p-6 space-y-3">
@@ -204,56 +333,6 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                   ))}
                 </div>
               </div>
-
-              {/* Specialized Welding Capabilities Hub (Shown on Welding Service Page) */}
-              {service.slug === 'custom-welding-fabrication' && (
-                <div className="space-y-4 pt-2">
-                  <div className="rounded-xl bg-[#0B0F15] text-white p-5 border border-[#1E2735] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                    <div className="space-y-1">
-                      <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-emerald-400">
-                        <Clock className="w-3.5 h-3.5" />
-                        <span>Open Now: Mon – Sat, 9:00 AM – 8:00 PM</span>
-                      </div>
-                      <h3 className="text-base font-bold font-serif-heading text-white">
-                        Mobile Welding Van Dispatch Within 16+ km of Dasarahalli Main Road (560024)
-                      </h3>
-                      <p className="text-xs text-gray-300">
-                        Workshop near Sobha Moonstone, Dasarahalli Main Road, Hebbal — direct doorstep welding across North, East, Central &amp; West Bangalore.
-                      </p>
-                    </div>
-                    <a
-                      href={`tel:${siteConfig.phoneClean}`}
-                      className="shrink-0 px-4 py-2.5 rounded-md bg-[#D49B37] hover:bg-[#C28B2B] text-gray-950 text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center transition-colors"
-                    >
-                      <Phone className="w-3.5 h-3.5 mr-1.5" />
-                      <span>Call {siteConfig.phone}</span>
-                    </a>
-                  </div>
-
-                  <h3 className="text-lg font-bold font-serif-heading text-gray-950">
-                    Specialized Welding Capabilities: Home Service, Aluminium, Gas &amp; Fiber Laser
-                  </h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {weldingCapabilitiesData.map((cap, idx) => (
-                      <div key={idx} className="bg-[#F8FAFC] border border-gray-200 rounded-xl p-5 space-y-2.5">
-                        <span className="inline-block px-2.5 py-0.5 rounded bg-[#FAF3E0] border border-[#D49B37]/50 text-[10px] font-bold uppercase tracking-wider text-[#8E5B1C]">
-                          {cap.badge}
-                        </span>
-                        <h4 className="text-sm font-bold font-serif-heading text-gray-950">{cap.title}</h4>
-                        <p className="text-xs text-gray-600 leading-relaxed">{cap.description}</p>
-                        <ul className="space-y-1 pt-1 border-t border-gray-200/70">
-                          {cap.highlights.map((hl, hIdx) => (
-                            <li key={hIdx} className="flex items-start text-[11px] text-gray-700">
-                              <CheckCircle2 className="w-3.5 h-3.5 text-[#B77C26] mr-1.5 shrink-0 mt-0.5" />
-                              <span>{hl}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
 
               {/* Technical Specifications Table */}
               <div>
@@ -300,7 +379,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                             <source srcSet={p.image} type="image/webp" />
                             <img
                               src={p.image.replace('.webp', '.jpg')}
-                              alt={p.imageAlt}
+                              alt={`${p.title} installed in ${p.location}`}
                               className="w-full h-full object-cover"
                               width="600"
                               height="400"
@@ -318,6 +397,65 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                   </div>
                 </div>
               )}
+
+              {/* Local Bangalore Service Coverage with Contextual Internal Links */}
+              <div className="space-y-4 pt-6 border-t border-gray-200">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div>
+                    <span className="text-[11px] font-bold tracking-[0.2em] text-[#B77C26] uppercase">
+                      BANGALORE SERVICE COVERAGE
+                    </span>
+                    <h3 className="text-xl font-bold font-serif-heading text-gray-950 mt-1">
+                      On-Site {service.title} Across Key Bangalore Localities
+                    </h3>
+                  </div>
+                  <a
+                    href="/areas-we-serve/"
+                    className="text-xs font-semibold text-[#B77C26] hover:text-[#8E5B1C] inline-flex items-center"
+                  >
+                    All Areas We Serve <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                  </a>
+                </div>
+
+                <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                  Explore our Bangalore service-area pages for neighborhood-specific details about {service.title.toLowerCase()}, nearby landmarks, and the work planned for that locality:
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 pt-2">
+                  {serviceLocations.map((loc) => {
+                    const anchorText = loc.slug === "manyata-tech-park"
+                      ? `${service.title} near Manyata Tech Park`
+                      : `${service.title} in ${loc.name}`;
+                    return (
+                      <a
+                        key={loc.slug}
+                        href={`/locations/${loc.slug}/`}
+                        className="p-3.5 rounded-lg border border-gray-200 bg-[#F8FAFC] hover:border-[#D49B37] hover:bg-[#FAF3E0]/40 transition-all group flex flex-col justify-between"
+                      >
+                        <div>
+                          <div className="flex items-center text-[#B77C26] text-[10px] font-bold uppercase tracking-wider mb-1">
+                            <MapPin className="w-3 h-3 mr-1 shrink-0" />
+                            <span>{loc.subRegion}</span>
+                          </div>
+                          <h4 className="text-xs font-bold text-gray-950 group-hover:text-[#B77C26] transition-colors font-serif-heading">
+                            {anchorText}
+                          </h4>
+                          <p className="text-[11px] text-gray-500 mt-1 line-clamp-2">
+                            {loc.description}
+                          </p>
+                        </div>
+                        <span className="text-[10px] font-semibold text-[#8E5B1C] mt-2 inline-flex items-center">
+                          Explore {service.title} in {loc.name} <ArrowRight className="w-2.5 h-2.5 ml-1 group-hover:translate-x-0.5 transition-transform" />
+                        </span>
+                      </a>
+                    );
+                  })}
+                </div>
+
+                <p className="text-xs text-gray-600">
+                  Looking for broader coverage? <a href="/areas-we-serve/" className="font-semibold text-[#B77C26] hover:underline">See all Bangalore service areas</a>.
+                </p>
+              </div>
 
               {/* Service FAQs */}
               <div className="space-y-4 pt-4 border-t border-gray-200">
@@ -338,11 +476,9 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                             {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                           </span>
                         </button>
-                        {isOpen && (
-                          <div className="px-4 pb-3 pt-1 text-xs text-gray-600 leading-relaxed border-t border-gray-100">
-                            {faq.answer}
-                          </div>
-                        )}
+                        <div className={`px-4 pb-3 pt-1 text-xs text-gray-600 leading-relaxed border-t border-gray-100 ${isOpen ? 'block' : 'hidden'}`}>
+                          <FormattedText text={faq.answer} />
+                        </div>
                       </div>
                     );
                   })}
@@ -401,15 +537,58 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                   Related Fabrication Services
                 </h4>
                 <ul className="space-y-1.5 text-xs">
-                  <li><a href="/services/gate-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Gate Fabrication</a></li>
-                  <li><a href="/services/window-grills/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Window Grills</a></li>
-                  <li><a href="/services/ss-railings/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• SS Railings</a></li>
-                  <li><a href="/services/car-parking-sheds/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Car Parking Sheds</a></li>
-                  <li><a href="/services/staircase-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Staircase Fabrication</a></li>
-                  <li><a href="/services/structural-steel-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Heavy Structural Steel Fabrication</a></li>
-                  <li><a href="/services/custom-welding-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Welding Shop &amp; Home Service</a></li>
-                  <li><a href="/services/event-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Event Fabrication &amp; Trusses</a></li>
-                  <li><a href="/fabrication-rates-bangalore/" className="text-[#8E5B1C] font-semibold hover:text-[#B77C26] transition-colors block py-0.5 pt-1 border-t border-gray-200 mt-1">• Bangalore Fabrication Rate Card →</a></li>
+                  {service.slug !== 'custom-welding-fabrication' && (
+                    <li>
+                      <a
+                        href="/services/custom-welding-fabrication/"
+                        className="text-[#8E5B1C] hover:text-[#B77C26] font-semibold transition-colors block py-0.5"
+                      >
+                        • Best Welding Shop in Bangalore
+                      </a>
+                    </li>
+                  )}
+                  {service.slug !== 'gate-fabrication' && (
+                    <li><a href="/services/gate-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Gate Fabrication</a></li>
+                  )}
+                  {service.slug !== 'window-grills' && (
+                    <li><a href="/services/window-grills/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Window Grills</a></li>
+                  )}
+                  {service.slug !== 'ss-railings' && (
+                    <li><a href="/services/ss-railings/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• SS Railings</a></li>
+                  )}
+                  {service.slug !== 'car-parking-sheds' && (
+                    <li><a href="/services/car-parking-sheds/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Car Parking Sheds</a></li>
+                  )}
+                  {service.slug !== 'staircase-fabrication' && (
+                    <li><a href="/services/staircase-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Staircase Fabrication</a></li>
+                  )}
+                  {service.slug !== 'structural-steel-fabrication' && (
+                    <li><a href="/services/structural-steel-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Structural Steel Fabrication</a></li>
+                  )}
+                </ul>
+              </div>
+
+              {/* Local Area Service Hubs Navigation Box */}
+              <div className="bg-[#F8FAFC] border border-gray-200 rounded-xl p-5 space-y-3">
+                <h4 className="text-xs font-bold text-gray-950 font-serif-heading uppercase tracking-wider border-l-2 border-[#D49B37] pl-2">
+                  {service.title} in Bangalore
+                </h4>
+                <ul className="space-y-1.5 text-xs">
+                  {serviceLocations.map((loc) => {
+                    const label = loc.slug === "manyata-tech-park"
+                      ? `${service.title} near Manyata Tech Park`
+                      : `${service.title} in ${loc.name}`;
+                    return (
+                      <li key={loc.slug}>
+                        <a
+                          href={`/locations/${loc.slug}/`}
+                          className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5"
+                        >
+                          • {label}
+                        </a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
 
