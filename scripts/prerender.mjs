@@ -9,6 +9,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.resolve(__dirname, '..');
 
+const escapeAttr = (str = '') =>
+  String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+
 async function prerender() {
   console.log('🚀 Starting Static SEO Prerender Pipeline for SAM Fabrication...');
 
@@ -16,13 +23,17 @@ async function prerender() {
   const registryRaw = fs.readFileSync(path.join(rootDir, 'SEO_CONTENT_REGISTRY.json'), 'utf-8');
   const registry = JSON.parse(registryRaw);
 
-  // 2. Read compiled index.html template from dist
+  // 2. Read compiled index.html template from dist (strip prior prerender artifacts if re-run)
   const templatePath = path.join(rootDir, 'dist/index.html');
   if (!fs.existsSync(templatePath)) {
     console.error('❌ dist/index.html not found! Run "vite build" first.');
     process.exit(1);
   }
-  const baseHtml = fs.readFileSync(templatePath, 'utf-8');
+  const baseHtml = fs
+    .readFileSync(templatePath, 'utf-8')
+    .replace(/<!-- PRERENDER_SEO_START -->[\s\S]*?<!-- PRERENDER_SEO_END -->\s*/g, '')
+    .replace(/<!-- OpenGraph Metadata -->[\s\S]*?<\/script>\s*/g, '')
+    .replace(/<div id="root">[\s\S]*?(?=<script\b)/, '<div id="root"></div>\n    ');
 
   // 3. Create Vite SSR Instance
   const vite = await createServer({
@@ -64,6 +75,25 @@ async function prerender() {
             '@type': 'GeoCoordinates',
             latitude: 13.0489,
             longitude: 77.6052
+          },
+          openingHours: 'Mo-Sa 09:00-20:00',
+          openingHoursSpecification: [
+            {
+              '@type': 'OpeningHoursSpecification',
+              dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+              opens: '09:00',
+              closes: '20:00'
+            }
+          ],
+          priceRange: '₹₹',
+          areaServed: {
+            '@type': 'GeoCircle',
+            geoMidpoint: {
+              '@type': 'GeoCoordinates',
+              latitude: 13.0489,
+              longitude: 77.6052
+            },
+            geoRadius: '25000'
           }
         },
         {
@@ -76,10 +106,14 @@ async function prerender() {
       ]
     };
 
-    if (page.category === 'services' && page.url !== '/services/') {
+    let ogImage = 'https://samfabrication.in/images/hero-home.jpg';
+    if (page.category === 'services' && page.url !== '/services/' && page.url !== '/fabrication-rates-bangalore/') {
       const slug = page.url.replace('/services/', '').replace('/', '');
       const s = servicesData.find(item => item.slug === slug);
       if (s) {
+        if (s.image) {
+          ogImage = `https://samfabrication.in${s.image.replace('.webp', '.jpg')}`;
+        }
         pageSchema['@graph'].push({
           '@type': 'Service',
           serviceType: s.title,
@@ -87,6 +121,19 @@ async function prerender() {
           areaServed: { '@type': 'City', name: 'Bangalore' },
           description: s.fullDescription
         });
+        if (s.faqs && s.faqs.length > 0) {
+          pageSchema['@graph'].push({
+            '@type': 'FAQPage',
+            mainEntity: s.faqs.map(f => ({
+              '@type': 'Question',
+              name: f.question,
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: f.answer
+              }
+            }))
+          });
+        }
       }
     }
 
@@ -111,11 +158,14 @@ async function prerender() {
       const slug = page.url.replace('/our-work/', '').replace('/', '');
       const proj = projectsData.find(p => p.slug === slug);
       if (proj) {
+        if (proj.image) {
+          ogImage = `https://samfabrication.in${proj.image.replace('.webp', '.jpg')}`;
+        }
         pageSchema['@graph'].push({
           '@type': 'Article',
           headline: proj.title,
           description: proj.description,
-          image: `https://samfabrication.in${proj.image}`,
+          image: ogImage,
           author: { '@id': 'https://samfabrication.in/#entity' },
           publisher: { '@id': 'https://samfabrication.in/#entity' }
         });
@@ -124,14 +174,20 @@ async function prerender() {
 
     // Replace Head Elements
     let finalHtml = baseHtml;
+    const safeTitle = escapeAttr(page.title);
+    const safeDescription = escapeAttr(page.description);
+    const robotsDirective =
+      page.category === 'admin'
+        ? 'noindex, nofollow'
+        : 'index, follow, max-image-preview:large, max-snippet:-1';
 
     // Title
-    finalHtml = finalHtml.replace(/<title>.*?<\/title>/, `<title>${page.title}</title>`);
+    finalHtml = finalHtml.replace(/<title>.*?<\/title>/, `<title>${safeTitle}</title>`);
     
     // Meta Description
     finalHtml = finalHtml.replace(
       /<meta\s+name="description"\s+content=".*?"\s*\/?>/,
-      `<meta name="description" content="${page.description}" />`
+      `<meta name="description" content="${safeDescription}" />`
     );
 
     // Canonical
@@ -140,24 +196,27 @@ async function prerender() {
       `<link rel="canonical" href="https://samfabrication.in${page.url}" />`
     );
 
-    // OpenGraph & Twitter Tags
+    // OpenGraph, Robots & Twitter Tags
     const ogTags = `
+    <!-- PRERENDER_SEO_START -->
+    <meta name="robots" content="${robotsDirective}" />
     <!-- OpenGraph Metadata -->
-    <meta property="og:title" content="${page.title}" />
-    <meta property="og:description" content="${page.description}" />
+    <meta property="og:title" content="${safeTitle}" />
+    <meta property="og:description" content="${safeDescription}" />
     <meta property="og:url" content="https://samfabrication.in${page.url}" />
     <meta property="og:type" content="${page.category === 'blog' && page.url !== '/blog/' ? 'article' : 'website'}" />
-    <meta property="og:image" content="https://samfabrication.in/images/hero-home.jpg" />
-    <meta property="og:site_name" content="${siteConfig.name}" />
+    <meta property="og:image" content="${ogImage}" />
+    <meta property="og:site_name" content="${escapeAttr(siteConfig.name)}" />
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${page.title}" />
-    <meta name="twitter:description" content="${page.description}" />
-    <meta name="twitter:image" content="https://samfabrication.in/images/hero-home.jpg" />
+    <meta name="twitter:title" content="${safeTitle}" />
+    <meta name="twitter:description" content="${safeDescription}" />
+    <meta name="twitter:image" content="${ogImage}" />
     <!-- Structured Data JSON-LD -->
     <script type="application/ld+json">
       ${JSON.stringify(pageSchema)}
     </script>
+    <!-- PRERENDER_SEO_END -->
     `;
 
     finalHtml = finalHtml.replace('</head>', `${ogTags}\n  </head>`);
@@ -177,19 +236,22 @@ async function prerender() {
 
     fs.writeFileSync(outputPath, finalHtml, 'utf-8');
 
-    // Add to sitemap list
-    sitemapUrls.push({
-      loc: `https://samfabrication.in${page.url}`,
-      priority: page.url === '/' ? '1.0' : page.category === 'services' ? '0.9' : page.category === 'locations' ? '0.85' : '0.8',
-      changefreq: page.url === '/' ? 'weekly' : page.category === 'blog' ? 'weekly' : 'monthly'
-    });
+    // Add indexable routes to sitemap list (exclude admin)
+    if (page.category !== 'admin') {
+      sitemapUrls.push({
+        loc: `https://samfabrication.in${page.url}`,
+        priority: page.url === '/' ? '1.0' : page.category === 'services' ? '0.9' : page.category === 'locations' ? '0.85' : '0.8',
+        changefreq: page.url === '/' ? 'weekly' : page.category === 'blog' ? 'weekly' : 'monthly'
+      });
+    }
   }
 
   // Also Prerender Custom 404 Page
   console.log('Prerendering route: 404.html');
   const notFoundHtml = renderToString(React.createElement(App, { initialPath: '/404' }));
   let final404 = baseHtml.replace('<div id="root"></div>', `<div id="root">${notFoundHtml}</div>`);
-  final404 = final404.replace(/<title>.*?<\/title>/, `<title>Page Not Found (404) | ${siteConfig.name}</title>`);
+  final404 = final404.replace(/<title>.*?<\/title>/, `<title>Page Not Found (404) | ${escapeAttr(siteConfig.name)}</title>`);
+  final404 = final404.replace('</head>', `    <meta name="robots" content="noindex, nofollow" />\n  </head>`);
   fs.writeFileSync(path.join(rootDir, 'dist/404.html'), final404, 'utf-8');
 
   // Generate XML Sitemap

@@ -147,7 +147,8 @@ export const AdminSeoPage: React.FC = () => {
       <SeoHead
         title="Admin SEO Suite & Technical Registry | SAM Fabrication"
         description="Internal SEO operations, keyword-to-URL assignment map, Schema JSON-LD validation, regional coverage, and GA4 tracking registry for samfabrication.in."
-        canonicalUrl="https://samfabrication.in/admin/seo/"
+        canonical="https://samfabrication.in/admin/seo/"
+        robots="noindex, nofollow"
       />
 
       {/* Admin Suite Header */}

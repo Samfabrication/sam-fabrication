@@ -11,9 +11,13 @@ import {
   Play, 
   MapPin, 
   CheckCircle2,
-  Phone
+  Phone,
+  Star,
+  Clock,
+  Calculator,
+  Wrench
 } from 'lucide-react';
-import { siteConfig, servicesData, projectsData } from '../data/siteData';
+import { siteConfig, servicesData, projectsData, clientReviewsData } from '../data/siteData';
 import { CtaBanner } from '../components/CtaBanner';
 import { SeoHead } from '../components/SeoHead';
 
@@ -48,8 +52,37 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
       latitude: 13.0489,
       longitude: 77.6052
     },
-    description: 'Looking for reliable fabrication and welding works in Bangalore? Explore custom gates, grills, railings, sheds and steel fabrication solutions from SAM Fabrication.',
-    areaServed: ['Bangalore', 'Hebbal', 'Yelahanka', 'Whitefield', 'Electronic City', 'Manyata Tech Park', 'HSR Layout']
+    openingHours: 'Mo-Sa 09:00-20:00',
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        opens: '09:00',
+        closes: '20:00'
+      }
+    ],
+    priceRange: '₹₹',
+    description: 'Trusted fabricator in Bangalore for custom MS/SS gates, window grills, balcony railings, sheds, heavy structural steel, event trusses & on-site home welding (Aluminium, Gas & Fiber) from our Dasarahalli Main Road workshop.',
+    areaServed: [
+      {
+        '@type': 'GeoCircle',
+        geoMidpoint: {
+          '@type': 'GeoCoordinates',
+          latitude: 13.0489,
+          longitude: 77.6052
+        },
+        geoRadius: '25000'
+      },
+      'Bangalore',
+      'Hebbal',
+      'Dasarahalli',
+      'Yelahanka',
+      'Whitefield',
+      'Electronic City',
+      'Manyata Tech Park',
+      'HSR Layout',
+      'Peenya'
+    ]
   };
 
   return (
@@ -394,6 +427,121 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 </div>
               </a>
             ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* 5b. BANGALORE WELDING HUB, RATES & CLIENT REVIEWS STRIP */}
+      <section className="bg-[#F8FAFC] text-gray-900 py-14 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto space-y-10">
+
+          {/* 3 Quick-Intent Cards (Welding Shop 16km, Work Rates, Event & Heavy Structural) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <a
+              href="/services/custom-welding-fabrication/"
+              className="bg-white rounded-xl border border-gray-200 hover:border-[#D49B37] p-6 shadow-sm transition-all group block space-y-2.5"
+            >
+              <div className="flex items-center justify-between">
+                <span className="inline-flex items-center text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full">
+                  <Clock className="w-3 h-3 mr-1" /> Open Mon–Sat 9 AM–8 PM
+                </span>
+                <Wrench className="w-5 h-5 text-[#B77C26]" />
+              </div>
+              <h3 className="text-base font-bold font-serif-heading text-gray-950 group-hover:text-[#B77C26] transition-colors">
+                Welding Shop &amp; Home Service (16 km+)
+              </h3>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                Doorstep welding repairs from Dasarahalli Main Road (560024), plus Aluminium TIG, Gas Oxy-Acetylene, and Fiber Laser welding. Call {siteConfig.phone}.
+              </p>
+              <span className="inline-flex items-center text-xs font-bold text-[#8E5B1C]">
+                Explore Welding Services <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </span>
+            </a>
+
+            <a
+              href="/fabrication-rates-bangalore/"
+              className="bg-white rounded-xl border border-gray-200 hover:border-[#D49B37] p-6 shadow-sm transition-all group block space-y-2.5"
+            >
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-[#8E5B1C] bg-[#FAF3E0] border border-[#D49B37]/40 px-2.5 py-0.5 rounded-full">
+                  Per Sq.Ft &amp; Per Kg Guide
+                </span>
+                <Calculator className="w-5 h-5 text-[#B77C26]" />
+              </div>
+              <h3 className="text-base font-bold font-serif-heading text-gray-950 group-hover:text-[#B77C26] transition-colors">
+                Fabrication Work Rate in Bangalore
+              </h3>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                Check 2026 rates for MS gates (₹350–₹680/sq.ft), grills (₹180–₹320/sq.ft), SS 304 railings &amp; structural steel (₹95–₹135/kg) with interactive estimator.
+              </p>
+              <span className="inline-flex items-center text-xs font-bold text-[#8E5B1C]">
+                Open Rate Card &amp; Calculator <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </span>
+            </a>
+
+            <div className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm space-y-2.5">
+              <div className="flex items-center justify-between">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-gray-700 bg-gray-100 border border-gray-200 px-2.5 py-0.5 rounded-full">
+                  Commercial &amp; Exhibition
+                </span>
+                <Building2 className="w-5 h-5 text-[#B77C26]" />
+              </div>
+              <h3 className="text-base font-bold font-serif-heading text-gray-950">
+                Heavy Steel &amp; Event Fabrication Vendors
+              </h3>
+              <p className="text-xs text-gray-600 leading-relaxed">
+                Industrial PEB sheds, crane girders &amp; mezzanines, plus modular stage trusses, corporate arches, and exhibition booths for Bangalore venues.
+              </p>
+              <div className="flex flex-wrap gap-3 pt-0.5 text-xs font-bold text-[#8E5B1C]">
+                <a href="/services/structural-steel-fabrication/" className="hover:underline inline-flex items-center">
+                  Heavy Fabrication <ArrowRight className="w-3 h-3 ml-1" />
+                </a>
+                <a href="/services/event-fabrication/" className="hover:underline inline-flex items-center">
+                  Event Trusses <ArrowRight className="w-3 h-3 ml-1" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Client Reviews Strip */}
+          <div className="space-y-5">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+              <div>
+                <span className="text-[11px] font-bold tracking-[0.2em] text-[#B77C26] uppercase">
+                  BANGALORE CLIENT REVIEWS
+                </span>
+                <h2 className="text-xl sm:text-2xl font-bold font-serif-heading text-gray-950 mt-0.5">
+                  What Bangalore Property Owners Say About Us
+                </h2>
+              </div>
+              <a
+                href="/why-choose-us/"
+                className="text-xs font-bold text-[#8E5B1C] hover:text-[#B77C26] inline-flex items-center"
+              >
+                <span>View All Reviews &amp; Quality Standards</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </a>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              {clientReviewsData.slice(0, 3).map((review, idx) => (
+                <div key={idx} className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm flex flex-col justify-between space-y-3">
+                  <div>
+                    <div className="flex items-center space-x-1 text-[#D49B37] mb-2">
+                      {[...Array(5)].map((_, sIdx) => (
+                        <Star key={sIdx} className="w-3.5 h-3.5 fill-current" />
+                      ))}
+                    </div>
+                    <p className="text-xs text-gray-700 leading-relaxed italic">"{review.text}"</p>
+                  </div>
+                  <div className="pt-3 border-t border-gray-100">
+                    <div className="text-xs font-bold text-gray-950 font-serif-heading">{review.name}</div>
+                    <div className="text-[11px] text-gray-500">{review.role}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
         </div>

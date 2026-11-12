@@ -13,7 +13,7 @@ import {
   MessageSquare
 } from 'lucide-react';
 import { ServiceItem } from '../types';
-import { projectsData, siteConfig } from '../data/siteData';
+import { projectsData, siteConfig, weldingCapabilitiesData } from '../data/siteData';
 import { CtaBanner } from '../components/CtaBanner';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { SeoHead } from '../components/SeoHead';
@@ -26,16 +26,29 @@ interface ServiceDetailPageProps {
 export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, onOpenQuote }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
-  // Filter relevant projects for this service
-  const relatedProjects = projectsData.filter((p) => {
+  // Filter relevant projects for this service (matched first, fallback to fill 3)
+  const matchedProjects = projectsData.filter((p) => {
     if (service.id.includes('gate') && p.category === 'gates') return true;
     if (service.id.includes('grill') && p.category === 'grills') return true;
     if (service.id.includes('railing') && p.category === 'railings') return true;
     if (service.id.includes('staircase') && p.category === 'staircases') return true;
     if (service.id.includes('shed') && (p.category === 'car-parking-sheds' || p.category === 'ss-ms-structures')) return true;
-    if (service.id.includes('structural') && p.category === 'ss-ms-structures') return true;
-    return true;
-  }).slice(0, 3);
+    if ((service.id.includes('structural') || service.id.includes('event') || service.id.includes('welding')) && p.category === 'ss-ms-structures') return true;
+    return false;
+  });
+  const relatedProjects = (matchedProjects.length >= 3
+    ? matchedProjects
+    : [...matchedProjects, ...projectsData.filter((p) => !matchedProjects.includes(p))]
+  ).slice(0, 3);
+
+  const seoTitle =
+    service.slug === 'custom-welding-fabrication'
+      ? 'Welding Shop in Bangalore Near Me | Home Service, Aluminium, Gas & Fiber Welding | SAM Fabrication'
+      : service.slug === 'structural-steel-fabrication'
+        ? 'Heavy Structural Steel Fabrication Company in Bangalore | PEB & I-Beam Works | SAM Fabrication'
+        : service.slug === 'event-fabrication'
+          ? 'Event Fabrication Vendors in Bangalore | Stage Truss, Booths & Arches | SAM Fabrication'
+          : `${service.title} in Bangalore | SAM Fabrication Engineering Work`;
 
   const serviceSchema = {
     '@context': 'https://schema.org',
@@ -72,7 +85,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
   return (
     <>
       <SeoHead
-        title={`${service.title} in Bangalore | SAM Fabrication Engineering Work`}
+        title={seoTitle}
         description={service.shortDescription}
         canonical={`https://samfabrication.in/services/${service.slug}/`}
         schema={[serviceSchema, faqSchema]}
@@ -191,6 +204,56 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                   ))}
                 </div>
               </div>
+
+              {/* Specialized Welding Capabilities Hub (Shown on Welding Service Page) */}
+              {service.slug === 'custom-welding-fabrication' && (
+                <div className="space-y-4 pt-2">
+                  <div className="rounded-xl bg-[#0B0F15] text-white p-5 border border-[#1E2735] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div className="space-y-1">
+                      <div className="flex items-center space-x-2 text-[11px] font-bold uppercase tracking-wider text-emerald-400">
+                        <Clock className="w-3.5 h-3.5" />
+                        <span>Open Now: Mon – Sat, 9:00 AM – 8:00 PM</span>
+                      </div>
+                      <h3 className="text-base font-bold font-serif-heading text-white">
+                        Mobile Welding Van Dispatch Within 16+ km of Dasarahalli Main Road (560024)
+                      </h3>
+                      <p className="text-xs text-gray-300">
+                        Workshop near Sobha Moonstone, Dasarahalli Main Road, Hebbal — direct doorstep welding across North, East, Central &amp; West Bangalore.
+                      </p>
+                    </div>
+                    <a
+                      href={`tel:${siteConfig.phoneClean}`}
+                      className="shrink-0 px-4 py-2.5 rounded-md bg-[#D49B37] hover:bg-[#C28B2B] text-gray-950 text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center transition-colors"
+                    >
+                      <Phone className="w-3.5 h-3.5 mr-1.5" />
+                      <span>Call {siteConfig.phone}</span>
+                    </a>
+                  </div>
+
+                  <h3 className="text-lg font-bold font-serif-heading text-gray-950">
+                    Specialized Welding Capabilities: Home Service, Aluminium, Gas &amp; Fiber Laser
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {weldingCapabilitiesData.map((cap, idx) => (
+                      <div key={idx} className="bg-[#F8FAFC] border border-gray-200 rounded-xl p-5 space-y-2.5">
+                        <span className="inline-block px-2.5 py-0.5 rounded bg-[#FAF3E0] border border-[#D49B37]/50 text-[10px] font-bold uppercase tracking-wider text-[#8E5B1C]">
+                          {cap.badge}
+                        </span>
+                        <h4 className="text-sm font-bold font-serif-heading text-gray-950">{cap.title}</h4>
+                        <p className="text-xs text-gray-600 leading-relaxed">{cap.description}</p>
+                        <ul className="space-y-1 pt-1 border-t border-gray-200/70">
+                          {cap.highlights.map((hl, hIdx) => (
+                            <li key={hIdx} className="flex items-start text-[11px] text-gray-700">
+                              <CheckCircle2 className="w-3.5 h-3.5 text-[#B77C26] mr-1.5 shrink-0 mt-0.5" />
+                              <span>{hl}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Technical Specifications Table */}
               <div>
@@ -343,6 +406,10 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                   <li><a href="/services/ss-railings/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• SS Railings</a></li>
                   <li><a href="/services/car-parking-sheds/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Car Parking Sheds</a></li>
                   <li><a href="/services/staircase-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Staircase Fabrication</a></li>
+                  <li><a href="/services/structural-steel-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Heavy Structural Steel Fabrication</a></li>
+                  <li><a href="/services/custom-welding-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Welding Shop &amp; Home Service</a></li>
+                  <li><a href="/services/event-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Event Fabrication &amp; Trusses</a></li>
+                  <li><a href="/fabrication-rates-bangalore/" className="text-[#8E5B1C] font-semibold hover:text-[#B77C26] transition-colors block py-0.5 pt-1 border-t border-gray-200 mt-1">• Bangalore Fabrication Rate Card →</a></li>
                 </ul>
               </div>
 

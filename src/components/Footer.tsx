@@ -81,7 +81,17 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="/services/structural-steel-fabrication/" className="text-gray-400 hover:text-white transition-colors">
-                  Structural Steel
+                  Heavy Structural Steel
+                </a>
+              </li>
+              <li>
+                <a href="/services/custom-welding-fabrication/" className="text-gray-400 hover:text-white transition-colors">
+                  Welding &amp; Home Service
+                </a>
+              </li>
+              <li>
+                <a href="/services/event-fabrication/" className="text-gray-400 hover:text-white transition-colors">
+                  Event Fabrication
                 </a>
               </li>
             </ul>
@@ -116,6 +126,11 @@ export const Footer: React.FC = () => {
               <li>
                 <a href="/blog/car-parking-shed-design-ideas/" className="text-gray-400 hover:text-white transition-colors">
                   Shed Design Ideas
+                </a>
+              </li>
+              <li>
+                <a href="/fabrication-rates-bangalore/" className="text-gray-400 hover:text-white transition-colors">
+                  Fabrication Work Rates
                 </a>
               </li>
               <li>

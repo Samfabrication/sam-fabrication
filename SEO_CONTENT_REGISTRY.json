@@ -3,14 +3,14 @@
   "businessName": "SAM Fabrication Engineering Work",
   "phone": "+91 94533 44824",
   "email": "info@samfabrication.in",
-  "address": "Hebbal / Outer Ring Road Industrial Corridor, Bangalore, Karnataka 560024",
+  "address": "Dasarahalli Main Road, Near Sobha Moonstone, Bangalore, Karnataka 560024",
   "pages": [
     {
       "url": "/",
-      "title": "Fabrication Works in Bangalore | SAM Fabrication Engineering Work",
-      "description": "Looking for reliable fabrication and welding works in Bangalore? Explore custom gates, grills, railings, sheds and steel fabrication solutions from SAM Fabrication.",
-      "h1": "Professional Welding & Fabrication Works in Bangalore",
-      "primaryKeyword": "fabrication works in bangalore",
+      "title": "Fabricator in Bangalore | Fabrication Work, Gates, Grills & Welding | SAM Fabrication",
+      "description": "Trusted metal fabricator in Bangalore near Dasarahalli & Hebbal. Custom gates, window grills, SS/MS railings, sheds, heavy steelwork & on-site home welding. Call +91 94533 44824.",
+      "h1": "SAM Fabrication Engineering Work",
+      "primaryKeyword": "fabrication work in bangalore",
       "schemaType": "LocalBusiness",
       "category": "core"
     },
@@ -106,10 +106,10 @@
     },
     {
       "url": "/services/structural-steel-fabrication/",
-      "title": "Structural Steel Fabrication in Bangalore | Industrial Warehouses & PEB",
-      "description": "Engineered structural steel fabrication in Bangalore. Heavy I-beam frameworks, industrial PEB sheds, factory structures, and commercial mezzanine floors.",
-      "h1": "Structural Steel & Industrial Fabrication in Bangalore",
-      "primaryKeyword": "structural steel fabrication bangalore",
+      "title": "Heavy Structural Steel Fabrication Company in Bangalore | PEB & I-Beam Works | SAM Fabrication",
+      "description": "Heavy structural steel fabrication in Bangalore. ISMB/ISMC beams, crane girders, industrial PEB warehouse trusses & steel mezzanine decks with ultrasonic weld QA.",
+      "h1": "Heavy Structural Steel Fabrication",
+      "primaryKeyword": "heavy fabrication companies in bangalore",
       "schemaType": "Service",
       "category": "services"
     },
@@ -124,11 +124,29 @@
     },
     {
       "url": "/services/custom-welding-fabrication/",
-      "title": "Custom Welding & Fabrication Bangalore | MIG, TIG & On-Site Works",
-      "description": "Specialized custom welding and metal fabrication services in Bangalore. Expert TIG, MIG, and Arc welding for bespoke residential and industrial needs.",
-      "h1": "Custom Welding & Metal Fabrication Works Bangalore",
-      "primaryKeyword": "custom welding bangalore",
+      "title": "Welding Shop in Bangalore Near Me | Home Service, Aluminium, Gas & Fiber Welding | SAM Fabrication",
+      "description": "Need a welding shop open now in Bangalore? SAM Fabrication (Dasarahalli Main Rd, +91 94533 44824) offers 16 km home welding service, Aluminium TIG, Gas brazing & Fiber laser welding.",
+      "h1": "Welding Services & Home Welding",
+      "primaryKeyword": "welding shop in bangalore near me",
       "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/services/event-fabrication/",
+      "title": "Event Fabrication Vendors in Bangalore | Stage Truss, Booths & Arches | SAM Fabrication",
+      "description": "Custom stage trusses, exhibition stalls, corporate backdrop steel frames, entry arches, and modular event canopies in Bangalore.",
+      "h1": "Event Fabrication",
+      "primaryKeyword": "event fabrication vendors in bangalore",
+      "schemaType": "Service",
+      "category": "services"
+    },
+    {
+      "url": "/fabrication-rates-bangalore/",
+      "title": "Fabrication Work Rate in Bangalore (2026 Per Sq.Ft & Per Kg Price List) | SAM Fabrication",
+      "description": "Check updated 2026 fabrication work rate in Bangalore for MS gates, window grills, SS 304 railings, car parking sheds, heavy structural steel (per kg/sq.ft) & home welding. Free site measurement.",
+      "h1": "Fabrication Work Rate in Bangalore",
+      "primaryKeyword": "fabrication work rate in bangalore",
+      "schemaType": "FAQPage",
       "category": "services"
     },
     {
@@ -142,10 +160,10 @@
     },
     {
       "url": "/why-choose-us/",
-      "title": "Why Choose Us | Premium Metal Fabrication | SAM Fabrication",
-      "description": "Discover why SAM Fabrication is Bangalore's trusted choice: high-grade materials, precision engineering, transparent pricing, and timely project delivery.",
+      "title": "Best Fabricators in Bangalore Reviews & Quality Standards | SAM Fabrication",
+      "description": "Read verified Bangalore customer reviews and engineering guarantees for SAM Fabrication: MS/SS gates, grills, sheds, welding & heavy structural steel. Open Mon–Sat 9 AM–8 PM.",
       "h1": "More Than Fabrication. A Stronger Tomorrow.",
-      "primaryKeyword": "best metal fabricators in bangalore",
+      "primaryKeyword": "best fabricators in bangalore reviews",
       "schemaType": "WebPage",
       "category": "core"
     },

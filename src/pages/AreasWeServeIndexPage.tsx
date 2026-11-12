@@ -293,6 +293,35 @@ export const AreasWeServeIndexPage: React.FC<AreasWeServeIndexPageProps> = ({ on
               </p>
             </div>
           </div>
+
+          {/* Rapid 16 km - 25 km Dispatch Callout */}
+          <div className="mt-10 rounded-xl bg-[#121820] border border-[#D49B37]/40 p-6 sm:p-7 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div className="space-y-2 max-w-3xl">
+              <span className="inline-block px-2.5 py-0.5 rounded bg-[#D49B37]/20 text-[#D49B37] text-[10px] font-bold uppercase tracking-wider">
+                16 KM – 25 KM RAPID MOBILE WELDING &amp; MEASUREMENT ZONE
+              </span>
+              <h3 className="text-lg sm:text-xl font-bold font-serif-heading text-white">
+                Centered at {siteConfig.address}
+              </h3>
+              <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                Need a welding shop near you open now (Mon – Sat, 9:00 AM – 8:00 PM)? Our mobile home welding van and fabrication supervisors dispatch directly within 16 km for gate hinge repairs, window grills, Aluminium TIG, Gas brazing, and commercial steel projects across Bangalore.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3 shrink-0">
+              <a
+                href={`tel:${siteConfig.phoneClean}`}
+                className="px-5 py-2.5 rounded-md bg-[#D49B37] hover:bg-[#C28B2B] text-gray-950 text-xs font-bold uppercase tracking-wider transition-colors"
+              >
+                Call {siteConfig.phone}
+              </a>
+              <a
+                href="/services/custom-welding-fabrication/"
+                className="px-5 py-2.5 rounded-md border border-gray-600 hover:border-[#D49B37] text-white text-xs font-bold uppercase tracking-wider transition-colors"
+              >
+                Welding Home Service
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 

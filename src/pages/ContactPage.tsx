@@ -63,6 +63,8 @@ export const ContactPage: React.FC = () => {
       name: siteConfig.name,
       telephone: siteConfig.phoneClean,
       email: siteConfig.email,
+      openingHours: 'Mo-Sa 09:00-20:00',
+      priceRange: '₹₹',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Dasarahalli Main Road, Near Sobha Moonstone',

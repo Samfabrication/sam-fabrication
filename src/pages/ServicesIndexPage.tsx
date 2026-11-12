@@ -103,23 +103,32 @@ export const ServicesIndexPage: React.FC<ServicesIndexPageProps> = ({ onOpenQuot
 
       {/* 2. CATEGORY FILTER TABS */}
       <section className="bg-white border-b border-gray-200 py-4 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto flex items-center space-x-2 overflow-x-auto pb-1 scrollbar-none">
-          {categories.map((cat) => {
-            const active = activeCategory === cat.id;
-            return (
-              <button
-                key={cat.id}
-                onClick={() => setActiveCategory(cat.id)}
-                className={`px-4 py-2 rounded-md text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
-                  active
-                    ? 'bg-[#D49B37] text-gray-950 font-bold shadow-sm'
-                    : 'bg-[#F1F5F9] text-gray-700 hover:bg-[#E2E8F0]'
-                }`}
-              >
-                {cat.label}
-              </button>
-            );
-          })}
+        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+          <div className="flex items-center space-x-2 overflow-x-auto pb-1 scrollbar-none">
+            {categories.map((cat) => {
+              const active = activeCategory === cat.id;
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveCategory(cat.id)}
+                  className={`px-4 py-2 rounded-md text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${
+                    active
+                      ? 'bg-[#D49B37] text-gray-950 font-bold shadow-sm'
+                      : 'bg-[#F1F5F9] text-gray-700 hover:bg-[#E2E8F0]'
+                  }`}
+                >
+                  {cat.label}
+                </button>
+              );
+            })}
+          </div>
+          <a
+            href="/fabrication-rates-bangalore/"
+            className="inline-flex items-center px-3.5 py-2 rounded-md bg-[#FAF3E0] border border-[#D49B37]/60 text-xs font-bold text-[#8E5B1C] hover:bg-[#D49B37] hover:text-gray-950 transition-colors whitespace-nowrap"
+          >
+            <span>View Bangalore Rate Card</span>
+            <ArrowRight className="w-3.5 h-3.5 ml-1.5" />
+          </a>
         </div>
       </section>
 

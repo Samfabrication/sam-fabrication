@@ -257,27 +257,32 @@ export const servicesData: ServiceItem[] = [
   {
     id: 'structural-steel-fabrication',
     slug: 'structural-steel-fabrication',
-    title: 'Structural Steel Fabrication',
-    shortDescription: 'Heavy industrial warehouse framing, pre-engineered steel buildings (PEB), factory trusses, and mezzanine floors.',
-    fullDescription: 'For industrial and commercial builders across Bangalore, Peenya, Bidadi, and Nelamangala, SAM Fabrication delivers heavy structural steel fabrication. We manufacture I-beam columns, portal frames, mezzanine storage floors, and heavy equipment skids certified for high load capacity.',
+    title: 'Heavy Structural Steel Fabrication',
+    shortDescription: 'Heavy industrial fabrication, warehouse framing, pre-engineered steel buildings (PEB), factory trusses, crane girders, and mezzanine floors in Bangalore.',
+    fullDescription: 'As one of the dependable heavy fabrication companies in Bangalore, SAM Fabrication Engineering Work serves industrial belts across Peenya, Bidadi, Bommasandra, Whitefield, and Nelamangala. We fabricate heavy I-beam columns, portal frames, crane girders, multi-tier mezzanine storage floors, and industrial machinery skids engineered to IS 800 and IS 2062 structural codes.',
     category: 'structural',
     image: '/images/project-ms-structure.webp',
-    imageAlt: 'Industrial MS structural steel framework for commercial warehouse in Bidadi Bangalore',
+    imageAlt: 'Heavy structural steel fabrication and industrial warehouse trusses in Bidadi Bangalore',
     features: [
-      'Certified structural welding adhering to IS 800 fabrication codes',
-      'Complete pre-engineered building (PEB) detailing and on-site erection',
-      'Industrial mezzanine floor fabrication to double warehouse storage space',
-      'Ultrasonic weld testing and rigorous quality inspection protocols'
+      'Heavy steel structural fabrication adhering to IS 800 & AWS D1.1 welding standards',
+      'Complete pre-engineered building (PEB) detailing, truss assembly, and crane erection',
+      'Heavy-duty industrial mezzanine floors to double warehouse storage capacity',
+      'Machinery bases, heavy plate bending, gusseted columns & dye-penetrant weld testing'
     ],
-    materials: ['IS 2062 Grade E250 / E350 Steel', 'Heavy I-Beams (ISMB)', 'Angle & Channel Trusses'],
+    materials: ['IS 2062 Grade E250 / E350 Heavy Steel', 'Heavy I-Beams (ISMB / NPB)', 'MS Plates (8mm to 25mm)', 'Channel & Angle Trusses'],
     specs: [
-      { label: 'Welding Standards', value: 'SMAW & GMAW / MIG certified procedures' },
-      { label: 'Structural Safety', value: 'Engineered for seismic Zone II & wind loads' }
+      { label: 'Welding Standards', value: 'SMAW, GMAW / MIG & Flux-Core heavy structural welding' },
+      { label: 'Load & Safety', value: 'Engineered for heavy industrial crane loads & Seismic Zone II' },
+      { label: 'Indicative Rate Basis', value: 'Quoted per kg / per metric ton based on tonnage & complexity' }
     ],
     faqs: [
       {
-        question: 'Do you undertake turnkey industrial PEB warehouse construction?',
-        answer: 'Yes, we provide end-to-end structural steel fabrication from shop drawings and column fabrication to crane girder installation and roof cladding.'
+        question: 'Do you handle heavy structural fabrication for warehouses and factories in Bangalore?',
+        answer: 'Yes. We undertake heavy steel structural fabrication, PEB sheds, crane girders, and industrial mezzanine floors across Peenya, Bidadi, Nelamangala, Bommasandra, and Hoskote.'
+      },
+      {
+        question: 'How are heavy structural steel fabrication rates calculated in Bangalore?',
+        answer: 'Heavy fabrication pricing is typically quoted per kg or per metric ton depending on section sizes (ISMB/ISA/plate thickness), erection height, and epoxy primer specifications.'
       }
     ]
   },
@@ -311,27 +316,72 @@ export const servicesData: ServiceItem[] = [
   {
     id: 'custom-welding-fabrication',
     slug: 'custom-welding-fabrication',
-    title: 'Custom Welding & Fabrication',
-    shortDescription: 'Precision TIG/MIG welding, bespoke architectural metal furniture, structural modifications, and on-site repairs.',
-    fullDescription: 'Have a unique architectural design or custom engineering requirement? Our team specializes in precision bespoke metal fabrication. From customized metal planters, divider screens, and metal furniture frames to on-site emergency structural welding, we bring drawings to life with millimeter precision.',
+    title: 'Welding Services & Home Welding',
+    shortDescription: 'Workshop & doorstep home welding service within 16+ km in Bangalore. Precision Fiber Laser, TIG/MIG, Aluminium welding, Gas welding & MS/SS repairs — Open Mon–Sat.',
+    fullDescription: 'Searching for a dependable welding shop near you in Bangalore? Located on Dasarahalli Main Road near Sobha Moonstone (560024) and open Mon–Sat from 9:00 AM to 8:00 PM, SAM Fabrication Engineering Work provides both workshop fabrication and rapid on-site home welding services within a 16 km to 25 km radius. Our certified welders handle precision Fiber Laser & Micro-TIG welding, Aluminium TIG/MIG welding, Oxy-Acetylene Gas welding & brazing, stainless steel railings, broken gate hinge repairs, and bespoke architectural metal furniture.',
     category: 'custom',
     image: '/images/project-custom-fab.webp',
-    imageAlt: 'Bespoke architectural laser-cut metal partition screen in Whitefield commercial office',
+    imageAlt: 'Precision welding shop and custom metal fabrication in Bangalore for SS, MS, aluminium and laser-cut panels',
     features: [
-      'TIG (Gas Tungsten Arc) and MIG (Gas Metal Arc) welding capabilities',
-      'Custom laser-cut decorative divider panels and architectural screens',
-      'Bespoke steel furniture bases, tables, and display fixtures',
-      'Mobile on-site welding equipment for rapid structural modifications'
+      'Welding Home Service: Portable inverter welding vans dispatched across Bangalore (16 km+ radius)',
+      'Aluminium Welding (AC/DC TIG): Clean fabrication & repair for aluminium frames, ladders, castings & doors',
+      'Gas Welding & Brazing: Oxy-acetylene welding for brass, copper, cast iron, thin sheets & flame cutting',
+      'Fiber Laser & Precision TIG Welding: Low-distortion, burr-free seams on SS 304/316 & architectural panels'
     ],
-    materials: ['Mild Steel', 'Stainless Steel 304/316', 'Aluminium', 'Brass Elements'],
+    materials: ['Mild Steel (MS)', 'Stainless Steel 304 / 316', 'Aluminium Alloys', 'Brass, Copper & Cast Iron'],
     specs: [
-      { label: 'Welding Tolerances', value: 'Within ±1.0mm precision engineering' },
-      { label: 'On-Site Readiness', value: 'Portable inverter welding machines & generator backup' }
+      { label: 'Welding Processes', value: 'Fiber Laser / Precision TIG, MIG, Stick (Arc), Aluminium TIG & Gas Welding' },
+      { label: 'Service Radius', value: 'Dasarahalli HQ + 16 km to 25 km mobile home welding coverage across Bangalore' },
+      { label: 'Open Hours & Contact', value: 'Mon – Sat: 9:00 AM – 8:00 PM | Direct Call: +91 94533 44824' }
     ],
     faqs: [
       {
-        question: 'Can you fabricate custom designs provided by our interior designer or architect?',
-        answer: 'Yes, we frequently collaborate with Bangalore architects and interior designers, translating AutoCAD drawings, 3D SketchUp files, and sketches into finished metalwork.'
+        question: 'Do you provide welding home service near me in Bangalore?',
+        answer: 'Yes! Our mobile welding technicians travel with portable inverter welding machines across North, East, South, and West Bangalore (16 km+ from Dasarahalli Main Road / Hebbal) for on-site gate hinge repairs, grill fixes, lock welding, and balcony railing reinforcement. Call +91 94533 44824 for same-day slot availability.'
+      },
+      {
+        question: 'Do you offer aluminium welding and gas welding at your Bangalore shop?',
+        answer: 'Yes, we are equipped for AC/DC TIG aluminium welding (for aluminium doors, ladders, automotive parts, and lightweight frames) as well as oxy-acetylene gas welding and brazing for copper, brass, cast iron, and precision repairs.'
+      },
+      {
+        question: 'Do you perform fiber laser welding and CNC laser fabrication?',
+        answer: 'Yes, we offer ultra-clean fiber laser and precision micro-TIG welding alongside 0.1mm CNC fiber laser cutting for sleek stainless steel railings, designer main gates, and commercial steel branding.'
+      },
+      {
+        question: 'What are your welding shop opening hours and contact number?',
+        answer: 'Our workshop on Dasarahalli Main Road (near Sobha Moonstone, 560024) is open Monday to Saturday from 9:00 AM to 8:00 PM. Reach us directly at +91 94533 44824 via call or WhatsApp.'
+      }
+    ]
+  },
+  {
+    id: 'event-fabrication',
+    slug: 'event-fabrication',
+    title: 'Event Fabrication',
+    shortDescription: 'Custom stage trusses, exhibition stalls, corporate backdrop steel frames, entry arches, and modular event canopies in Bangalore.',
+    fullDescription: 'Looking for experienced event fabrication vendors in Bangalore? SAM Fabrication Engineering Work partners with event agencies, exhibition designers, and corporate venues across Manyata Tech Park, Whitefield KTPO, Palace Grounds, and BIEC to build sturdy modular stage trusses, custom steel entry arches, LED screen rigging frames, trade show booths, and heavy-duty temporary canopies.',
+    category: 'custom',
+    image: '/images/project-terrace-pergola.webp',
+    imageAlt: 'Custom event steel truss, corporate backdrop framework and canopy fabrication in Bangalore',
+    features: [
+      'Modular box-truss stage structures & heavy LED wall support frames',
+      'Custom corporate event entry arches, branding totems & photo-booth metal rigs',
+      'Exhibition booth steel subframes with bolt-together quick assembly',
+      'Outdoor monsoon-safe canopy frames & weighted ballast bases (no floor drilling)'
+    ],
+    materials: ['MS Square & RHS Box Sections', 'Lightweight Aluminium Truss Elements', 'GI Pipes', 'Powder-Coated Steel Channels'],
+    specs: [
+      { label: 'Assembly System', value: 'Bolt-together modular sections for fast venue load-in / tear-down' },
+      { label: 'Turnaround', value: 'Express 48-hour to 7-day fabrication for Bangalore events' },
+      { label: 'Venues Served', value: 'BIEC, Palace Grounds, KTPO Whitefield, Manyata & Hotel Ballrooms' }
+    ],
+    faqs: [
+      {
+        question: 'Do you build custom exhibition stall frames and stage structures for events in Bangalore?',
+        answer: 'Yes, we fabricate custom steel arches, modular exhibition stall frameworks, LED screen rigging stands, and canopy frames tailored to agency 3D renders and strict venue load-in timelines.'
+      },
+      {
+        question: 'Are your event metal structures portable for non-destructive hotel or indoor installation?',
+        answer: 'Yes, we design bolted knock-down joints with rubber-padded weighted base plates so installations require zero floor drilling in hotel ballrooms and convention centers.'
       }
     ]
   }
@@ -1224,6 +1274,126 @@ export const clientReviewsData = [
     rating: 5,
     text: 'Outstanding cantilever car parking shed built for our office campus. Clean welding, sturdy design, and prompt completion within 10 days.',
     image: '/images/project-car-shed.webp'
+  },
+  {
+    id: 'rev-4',
+    name: 'Kiran Deshmukh',
+    role: 'Villa Owner, Dasarahalli Main Road',
+    rating: 5,
+    text: 'Needed urgent on-site home welding repair for a heavy sliding gate roller and window safety grills. Their technician arrived from Dasarahalli within 2 hours and finished the weld neatly.',
+    image: '/images/project-sliding-gate.webp'
+  },
+  {
+    id: 'rev-5',
+    name: 'Deepak Nair',
+    role: 'Factory Operations Head, Peenya Industrial Area',
+    rating: 5,
+    text: 'Reliable heavy structural fabrication partner. Supplied ISMB mezzanine trusses and loading bay canopies per drawing with solid weld integrity and transparent per-kg billing.',
+    image: '/images/project-ms-structure.webp'
   }
 ];
+
+export interface FabricationRateItem {
+  category: string;
+  serviceSlug: string;
+  unitBasis: string;
+  indicativeRate: string;
+  materialGrade: string;
+  includes: string;
+}
+
+export const fabricationRatesData: FabricationRateItem[] = [
+  {
+    category: 'MS Safety Window Grills',
+    serviceSlug: 'window-grills',
+    unitBasis: 'Per Sq. Ft. / Per Kg',
+    indicativeRate: '₹180 – ₹320 / sq. ft. (or ₹110 – ₹145 / kg)',
+    materialGrade: '10mm / 12mm Solid Square Bar (IS 2062)',
+    includes: 'Fabrication, red-oxide / zinc primer, enamel paint & wall grouting'
+  },
+  {
+    category: 'MS Main Gate & Sliding Gates',
+    serviceSlug: 'ms-gates',
+    unitBasis: 'Per Sq. Ft. / Per Kg',
+    indicativeRate: '₹350 – ₹680 / sq. ft. (or ₹115 – ₹155 / kg)',
+    materialGrade: 'Heavy 14/16 Gauge TATA / Jindal RHS Pipes',
+    includes: 'Heavy bearings/track rollers, epoxy zinc primer, PU coat & site erection'
+  },
+  {
+    category: 'CNC Laser-Cut Designer Gate',
+    serviceSlug: 'gate-fabrication',
+    unitBasis: 'Per Sq. Ft.',
+    indicativeRate: '₹650 – ₹1,250 / sq. ft.',
+    materialGrade: '3.0mm CRCA Laser Sheet + Heavy MS Frame',
+    includes: 'Custom AutoCAD pattern cutting, brass/gold accents & powder/PU finish'
+  },
+  {
+    category: 'SS 304 Balcony & Stair Railings',
+    serviceSlug: 'ss-railings',
+    unitBasis: 'Per Running Ft.',
+    indicativeRate: '₹750 – ₹1,450 / rft (₹1,650+ with Toughened Glass)',
+    materialGrade: 'Genuine AISI 304 Jindal Stainless Steel',
+    includes: 'Argon TIG welding, buff mirror/brushed satin polish & core cutting'
+  },
+  {
+    category: 'MS Balcony & Staircase Railings',
+    serviceSlug: 'ms-railings',
+    unitBasis: 'Per Running Ft.',
+    indicativeRate: '₹420 – ₹780 / rft',
+    materialGrade: 'IS 2062 Hollow Sections + Flat Bars',
+    includes: 'Anti-rust epoxy primer, matte black finish & anchor bolt fixing'
+  },
+  {
+    category: 'Car Parking & Roofing Sheds',
+    serviceSlug: 'car-parking-sheds',
+    unitBasis: 'Per Sq. Ft.',
+    indicativeRate: '₹220 – ₹480 / sq. ft.',
+    materialGrade: 'Tata Bluescope Sheet / UV Polycarbonate + MS Truss',
+    includes: 'Column foundation grouting, gutters & high-wind fastener sealing'
+  },
+  {
+    category: 'Heavy Structural Steel & PEB Works',
+    serviceSlug: 'structural-steel-fabrication',
+    unitBasis: 'Per Kg / Per Ton',
+    indicativeRate: '₹95 – ₹135 / kg (Labour + Supply) | ₹28 – ₹42 / kg (Job Work)',
+    materialGrade: 'ISMB Beams, Channels, E250 / E350 Plates',
+    includes: 'Shop cutting, MIG structural welding, epoxy coating & crane erection'
+  },
+  {
+    category: 'On-Site Home Welding Visit',
+    serviceSlug: 'custom-welding-fabrication',
+    unitBasis: 'Per Visit / Job Quote',
+    indicativeRate: 'Starts ₹600 – ₹1,500+ (Inspection & Small Repairs)',
+    materialGrade: 'Portable Inverter Arc, TIG, Aluminium & Gas Setup',
+    includes: 'Gate hinge repairs, grill fixes, lock welding within 16 km Bangalore zone'
+  }
+];
+
+export const weldingCapabilitiesData = [
+  {
+    title: 'Welding Home Service (16+ km Van Dispatch)',
+    badge: 'Same-Day Doorstep Service',
+    description: 'On-site residential and commercial welding across Bangalore. Broken gate hinges, sliding track alignment, window grill reinforcement, shutter latches, and balcony railing repairs right at your doorstep.',
+    highlights: ['Dasarahalli & Hebbal dispatch in 60–90 mins', 'Portable generator-ready inverter units', 'Clean site sweep & touch-up primer included']
+  },
+  {
+    title: 'Aluminium Welding (AC/DC TIG & MIG)',
+    badge: 'Specialized Non-Ferrous Shop',
+    description: 'Precision aluminium fabrication and crack repair without burn-through or porosity. Ideal for aluminium door frames, industrial ladders, architectural louvers, castings, and light trusses.',
+    highlights: ['Pure argon shielded AC-TIG welding', '100% crack-free structural beads', 'Cast aluminium & 6061/6063 extrusion repairs']
+  },
+  {
+    title: 'Gas Welding & Oxy-Acetylene Brazing',
+    badge: 'Workshop & Field Ready',
+    description: 'High-precision oxy-acetylene gas welding, bronze/brass brazing, copper jointing, cast iron pre-heating repairs, and heavy steel flame cutting for parts incompatible with electric arc.',
+    highlights: ['Copper, brass & galvanized pipe brazing', 'Zero electrical shock hazard on damp sites', 'Controlled flame straightening for bent frames']
+  },
+  {
+    title: 'Fiber Laser & Micro-TIG Welding',
+    badge: 'Architectural Finish',
+    description: 'Ultra-narrow heat-affected zone joining for stainless steel 304/316 railings, thin architectural sheet panels, gold/brass logo inlays, and mirror-finish furniture frames.',
+    highlights: ['Minimal grinding required post-weld', '0.1mm CNC fiber laser sheet compatibility', 'Zero warping on thin-gauge SS sheets']
+  }
+];
+
 

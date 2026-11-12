@@ -21,6 +21,7 @@ import { AreasWeServeIndexPage } from './pages/AreasWeServeIndexPage';
 import { RegionPage } from './pages/RegionPage';
 import { ProjectDetailPage } from './pages/ProjectDetailPage';
 import { AdminSeoPage } from './pages/AdminSeoPage';
+import { FabricationRatesPage } from './pages/FabricationRatesPage';
 
 // Data
 import { servicesData, blogPostsData, locationsData, regionsData, projectsData } from './data/siteData';
@@ -101,9 +102,13 @@ export const App: React.FC<AppProps> = ({ initialPath }) => {
       return <AboutPage onOpenQuote={() => openQuoteModalWithService()} />;
     }
 
-    // 3. Services Hub
+    // 3. Services Hub & Rates
     if (path === '/services/') {
       return <ServicesIndexPage onOpenQuote={() => openQuoteModalWithService()} />;
+    }
+
+    if (path === '/fabrication-rates-bangalore/') {
+      return <FabricationRatesPage onOpenQuote={(svc) => openQuoteModalWithService(svc)} />;
     }
 
     // 4. Individual Service Pages
