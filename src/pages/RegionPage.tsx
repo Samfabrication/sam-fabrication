@@ -17,7 +17,7 @@ export const RegionPage: React.FC<RegionPageProps> = ({ region, onOpenQuote }) =
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
     { label: 'Areas We Serve', href: '/areas-we-serve/' },
-    { label: region.name, href: `/areas-we-serve/${region.slug}/` }
+    { label: region.name }
   ];
 
   const otherRegions = regionsData.filter((r) => r.slug !== region.slug);
@@ -27,7 +27,19 @@ export const RegionPage: React.FC<RegionPageProps> = ({ region, onOpenQuote }) =
     '@context': 'https://schema.org',
     '@type': 'Service',
     serviceType: `Metal Fabrication in ${region.name}`,
-    provider: { '@id': 'https://samfabrication.in/#entity' },
+    provider: {
+      '@type': 'LocalBusiness',
+      name: siteConfig.name,
+      url: siteConfig.domain,
+      telephone: siteConfig.phone,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Bangalore',
+        addressRegion: 'Karnataka',
+        postalCode: '560024',
+        addressCountry: 'IN'
+      }
+    },
     areaServed: region.localities.map((loc) => ({
       '@type': 'AdministrativeArea',
       name: `${loc}, ${region.name}, Bangalore`
@@ -40,7 +52,8 @@ export const RegionPage: React.FC<RegionPageProps> = ({ region, onOpenQuote }) =
       <SeoHead
         title={`${region.name} Fabrication Works | Gates, Railings, Sheds | SAM Fabrication`}
         description={region.metaDescription}
-        canonical={`https://samfabrication.in/areas-we-serve/${region.slug}/`}
+        canonicalUrl={`https://samfabrication.in/areas-we-serve/${region.slug}/`}
+        breadcrumbs={breadcrumbItems}
         schema={regionSchema}
       />
 
@@ -50,14 +63,12 @@ export const RegionPage: React.FC<RegionPageProps> = ({ region, onOpenQuote }) =
       <section className="relative min-h-[420px] lg:min-h-[460px] flex items-center bg-[#0B0F15] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <picture>
-            <source srcSet="/images/hero-home.webp" type="image/webp" />
+            <source srcSet="/images/hero-villa.webp" type="image/webp" />
             <img
-              src="/images/hero-home.jpg"
-              alt={`Architectural steel and metal fabrication installations across ${region.name}, Bangalore`}
+              src="/images/hero-villa.jpg"
+              alt={`${region.name} architectural metal and steel fabrication`}
               className="w-full h-full object-cover object-center brightness-[0.65]"
               fetchPriority="high"
-              loading="eager"
-              decoding="sync"
               width="1376"
               height="768"
             />

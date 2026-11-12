@@ -33,7 +33,8 @@ export const BlogPostPage: React.FC<BlogPostPageProps> = ({ post, onOpenQuote })
     headline: post.title,
     description: post.excerpt,
     image: `https://samfabrication.in${post.image}`,
-    datePublished: new Date(post.date).toISOString(),
+    datePublished: '2024-05-10T08:00:00+05:30',
+    dateModified: '2026-10-30T12:00:00+05:30',
     author: {
       '@type': 'Organization',
       name: post.author.name,

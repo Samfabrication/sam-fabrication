@@ -16,9 +16,12 @@ import {
   Building2,
   Cog,
   Users,
-  Gem
+  Gem,
+  Star,
+  Phone,
+  MapPin
 } from 'lucide-react';
-import { siteConfig, advantagesData, faqsData } from '../data/siteData';
+import { siteConfig, advantagesData, faqsData, clientReviewsData } from '../data/siteData';
 import { ProcessSteps } from '../components/ProcessSteps';
 import { CtaBanner } from '../components/CtaBanner';
 import { Breadcrumbs } from '../components/Breadcrumbs';
@@ -60,8 +63,8 @@ export const WhyChooseUsPage: React.FC<WhyChooseUsPageProps> = ({ onOpenQuote })
   return (
     <>
       <SeoHead
-        title="Why Choose Us | Premium Metal Fabrication | SAM Fabrication"
-        description="Discover why SAM Fabrication is Bangalore's trusted choice: high-grade materials, precision engineering, transparent pricing, and timely project delivery."
+        title="Best Fabricators in Bangalore Reviews & Quality Standards | SAM Fabrication"
+        description="Read verified Bangalore customer reviews and engineering guarantees for SAM Fabrication: MS/SS gates, grills, sheds, welding & heavy structural steel. Open Mon–Sat 9 AM–8 PM."
         canonical="https://samfabrication.in/why-choose-us/"
         schema={whyChooseUsSchema}
       />
@@ -82,11 +85,9 @@ export const WhyChooseUsPage: React.FC<WhyChooseUsPageProps> = ({ onOpenQuote })
             <source srcSet="/images/hero-why-us.webp" type="image/webp" />
             <img
               src="/images/hero-why-us.jpg"
-              alt="Contemporary architectural metal balcony railings and structural work by SAM Fabrication"
+              alt="Contemporary architectural building with precision engineered metal balcony railings"
               className="w-full h-full object-cover object-center brightness-[0.75]"
               fetchPriority="high"
-              loading="eager"
-              decoding="sync"
               width="1376"
               height="650"
             />
@@ -259,6 +260,70 @@ export const WhyChooseUsPage: React.FC<WhyChooseUsPageProps> = ({ onOpenQuote })
       {/* 4. OUR PROCESS (5-Step Interactive Component) */}
       <ProcessSteps />
 
+      {/* 4b. VERIFIED CLIENT REVIEWS & WORKSHOP CONTACT CARD */}
+      <section className="bg-white text-gray-900 py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto space-y-10">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+              <span className="text-[11px] font-bold tracking-[0.2em] text-[#B77C26] uppercase">
+                BANGALORE FABRICATOR REVIEWS
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold font-serif-heading text-gray-950 mt-1">
+                Verified Client Feedback Across Bangalore
+              </h2>
+            </div>
+            <a
+              href="/fabrication-rates-bangalore/"
+              className="text-xs font-bold text-[#8E5B1C] hover:text-[#B77C26] inline-flex items-center"
+            >
+              <span>Check Transparent Bangalore Rate Card</span>
+              <ArrowRight className="w-3.5 h-3.5 ml-1" />
+            </a>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {clientReviewsData.map((review, idx) => (
+              <div
+                key={idx}
+                className="bg-[#F8FAFC] border border-gray-200 rounded-xl p-5 flex flex-col justify-between space-y-3"
+              >
+                <div>
+                  <div className="flex items-center space-x-1 text-[#D49B37] mb-2">
+                    {[...Array(5)].map((_, sIdx) => (
+                      <Star key={sIdx} className="w-3.5 h-3.5 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-xs text-gray-700 leading-relaxed italic">"{review.text}"</p>
+                </div>
+                <div className="pt-3 border-t border-gray-200/80">
+                  <div className="text-xs font-bold text-gray-950 font-serif-heading">{review.name}</div>
+                  <div className="text-[11px] text-gray-500">{review.role}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="rounded-xl bg-[#0B0F15] text-white p-6 border border-[#1E2735] flex flex-col md:flex-row md:items-center justify-between gap-5">
+            <div className="space-y-1.5">
+              <div className="flex items-center space-x-2 text-xs font-bold text-[#D49B37]">
+                <MapPin className="w-4 h-4 shrink-0" />
+                <span>{siteConfig.address}</span>
+              </div>
+              <p className="text-xs text-gray-300">
+                Open Now: Mon – Sat, 9:00 AM – 8:00 PM • Direct Workshop &amp; 16 km Home Welding Dispatch across Bangalore
+              </p>
+            </div>
+            <a
+              href={`tel:${siteConfig.phoneClean}`}
+              className="shrink-0 px-5 py-2.5 rounded-md bg-[#D49B37] hover:bg-[#C28B2B] text-gray-950 text-xs font-bold uppercase tracking-wider inline-flex items-center justify-center transition-colors"
+            >
+              <Phone className="w-3.5 h-3.5 mr-1.5" />
+              <span>Call {siteConfig.phone}</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* 5. SPLIT COMMITMENT & FAQ SECTION (Pixel-Accurate to Mockup) */}
       <section className="bg-[#F8FAFC] py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-200">
         <div className="max-w-7xl mx-auto">
@@ -272,7 +337,7 @@ export const WhyChooseUsPage: React.FC<WhyChooseUsPageProps> = ({ onOpenQuote })
                   <source srcSet="/images/commitment-carport.webp" type="image/webp" />
                   <img
                     src="/images/commitment-carport.jpg"
-                    alt="Heavy-duty structural metal car parking shed with dark steel frame fabricated in Bangalore"
+                    alt="Heavy-duty structural metal car parking shed with dark steel frame"
                     className="w-full h-full object-cover"
                     width="1000"
                     height="650"
