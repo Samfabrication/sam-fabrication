@@ -50,45 +50,12 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
           ? 'Event Fabrication Vendors in Bangalore | Stage Truss, Booths & Arches | SAM Fabrication'
           : `${service.title} in Bangalore | SAM Fabrication Engineering Work`;
 
-  const serviceSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    serviceType: service.title,
-    provider: {
-      '@id': 'https://samfabrication.in/#entity'
-    },
-    areaServed: {
-      '@type': 'City',
-      name: 'Bangalore'
-    },
-    description: service.fullDescription,
-    offers: {
-      '@type': 'Offer',
-      priceCurrency: 'INR',
-      availability: 'https://schema.org/InStock'
-    }
-  };
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: service.faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: f.answer
-      }
-    }))
-  };
-
   return (
     <>
       <SeoHead
         title={seoTitle}
         description={service.shortDescription}
         canonical={`https://samfabrication.in/services/${service.slug}/`}
-        schema={[serviceSchema, faqSchema]}
       />
 
       <Breadcrumbs

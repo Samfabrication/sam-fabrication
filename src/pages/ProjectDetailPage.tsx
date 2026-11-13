@@ -24,31 +24,7 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ project, o
 
   const fallbackProjects = relatedProjects.length > 0 ? relatedProjects : projectsData.filter((p) => p.id !== project.id).slice(0, 3);
 
-  // Schema for CreativeWork / CaseStudy
-  const projectSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: `${project.title} – ${project.projectType} in ${project.location}`,
-    description: project.description,
-    image: `https://samfabrication.in${project.image}`,
-    author: {
-      '@type': 'Organization',
-      name: siteConfig.name,
-      url: siteConfig.domain
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: siteConfig.name,
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://samfabrication.in/images/sam-logo.webp'
-      }
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': `https://samfabrication.in/our-work/${project.slug}/`
-    }
-  };
+
 
   return (
     <>
@@ -56,8 +32,6 @@ export const ProjectDetailPage: React.FC<ProjectDetailPageProps> = ({ project, o
         title={`${project.title} (${project.location}) | Case Study | SAM Fabrication`}
         description={`${project.description} Custom fabrication case study in ${project.location}, Bangalore by SAM Fabrication.`}
         canonicalUrl={`https://samfabrication.in/our-work/${project.slug}/`}
-        breadcrumbs={breadcrumbItems}
-        schema={projectSchema}
         ogImage={`https://samfabrication.in${project.image}`}
       />
 

@@ -23,7 +23,6 @@ export const AreasWeServeIndexPage: React.FC<AreasWeServeIndexPageProps> = ({ on
         title="Areas We Serve in Bangalore | Metal & Steel Fabrication Hub | SAM Fabrication"
         description="Comprehensive metal and structural fabrication coverage across North, South, East, and West Bangalore. Quick on-site measurement and certified installation in Hebbal, Whitefield, HSR, Peenya & beyond."
         canonicalUrl="https://samfabrication.in/areas-we-serve/"
-        breadcrumbs={breadcrumbItems}
       />
 
       <Breadcrumbs items={breadcrumbItems} />

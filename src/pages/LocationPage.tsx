@@ -23,35 +23,18 @@ interface LocationPageProps {
 export const LocationPage: React.FC<LocationPageProps> = ({ location, onOpenQuote }) => {
   const localServices = servicesData.slice(0, 6);
 
-  const locationSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: `SAM Fabrication Engineering Work - ${location.name}`,
-    telephone: siteConfig.phoneClean,
-    url: `https://samfabrication.in/locations/${location.slug}/`,
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: location.name,
-      addressRegion: 'Bangalore, Karnataka',
-      addressCountry: 'IN'
-    },
-    areaServed: [location.name, 'Bangalore'],
-    description: `Professional welding and metal fabrication services in ${location.name}, Bangalore. Custom gates, window safety grills, SS railings and car parking sheds.`
-  };
-
   return (
     <>
       <SeoHead
         title={`Fabrication Works in ${location.name}, Bangalore | SAM Fabrication`}
         description={`Trusted fabrication and welding works in ${location.name}, Bangalore. Custom gates, safety window grills, balcony railings, and car parking sheds with on-site installation.`}
         canonical={`https://samfabrication.in/locations/${location.slug}/`}
-        schema={locationSchema}
       />
 
       <Breadcrumbs
         items={[
           { label: 'Home', href: '/' },
-          { label: 'Locations', href: '/#locations' },
+          { label: 'Areas We Serve', href: '/areas-we-serve/' },
           { label: location.name, href: `/locations/${location.slug}/` }
         ]}
       />

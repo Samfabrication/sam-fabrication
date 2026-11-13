@@ -140,26 +140,12 @@ export const FabricationRatesPage: React.FC<FabricationRatesPageProps> = ({ onOp
     if (next) setQuantity(next.defaultUnits);
   };
 
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: rateFaqs.map((f) => ({
-      '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: f.answer
-      }
-    }))
-  };
-
   return (
     <>
       <SeoHead
         title="Fabrication Work Rate in Bangalore (2026 Per Sq.Ft & Per Kg Price List) | SAM Fabrication"
         description="Check updated 2026 fabrication work rate in Bangalore for MS gates, window grills, SS 304 railings, car parking sheds, heavy structural steel (per kg/sq.ft) & home welding. Free site measurement."
         canonical="https://samfabrication.in/fabrication-rates-bangalore/"
-        schema={[faqSchema]}
       />
 
       <Breadcrumbs

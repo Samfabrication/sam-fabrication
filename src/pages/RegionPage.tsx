@@ -21,30 +21,7 @@ export const RegionPage: React.FC<RegionPageProps> = ({ region, onOpenQuote }) =
 
   const otherRegions = regionsData.filter((r) => r.slug !== region.slug);
 
-  // Schema for LocalBusiness service area
-  const regionSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    serviceType: `Metal Fabrication in ${region.name}`,
-    provider: {
-      '@type': 'LocalBusiness',
-      name: siteConfig.name,
-      url: siteConfig.domain,
-      telephone: siteConfig.phone,
-      address: {
-        '@type': 'PostalAddress',
-        addressLocality: 'Bangalore',
-        addressRegion: 'Karnataka',
-        postalCode: '560024',
-        addressCountry: 'IN'
-      }
-    },
-    areaServed: region.localities.map((loc) => ({
-      '@type': 'AdministrativeArea',
-      name: `${loc}, ${region.name}, Bangalore`
-    })),
-    description: region.metaDescription
-  };
+
 
   return (
     <>
@@ -52,8 +29,6 @@ export const RegionPage: React.FC<RegionPageProps> = ({ region, onOpenQuote }) =
         title={`${region.name} Fabrication Works | Gates, Railings, Sheds | SAM Fabrication`}
         description={region.metaDescription}
         canonicalUrl={`https://samfabrication.in/areas-we-serve/${region.slug}/`}
-        breadcrumbs={breadcrumbItems}
-        schema={regionSchema}
       />
 
       <Breadcrumbs items={breadcrumbItems} />

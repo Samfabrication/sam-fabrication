@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender.mjs",
-    "preview": "vite preview"
+    "build": "vite build && node scripts/prerender.mjs && npm run check:seo:structured-data",
+    "preview": "vite preview",
+    "check:seo:structured-data": "node scripts/check-seo-structured-data.mjs"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",

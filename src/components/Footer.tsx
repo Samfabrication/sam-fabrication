@@ -6,67 +6,38 @@ export const Footer: React.FC = () => {
     <footer className="relative bg-[#070A0E] text-gray-300 border-t border-[#1C2533] pt-16 pb-28 lg:pb-6 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* 5-Column Navigation Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-10 pb-12">
+        {/* 5-Column Comprehensive Navigation Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-8 pb-12">
           
-          {/* Col 1: Company */}
+          {/* Col 1: Architectural Metalwork */}
           <div className="space-y-4">
             <h4 className="text-white font-semibold text-sm sm:text-base tracking-tight">
-              Company
+              Architectural Works
             </h4>
-            <ul className="space-y-3 text-xs sm:text-sm">
-              <li>
-                <a href="/about-us/" className="text-gray-400 hover:text-white transition-colors">
-                  About us
-                </a>
-              </li>
-              <li>
-                <a href="/why-choose-us/" className="text-gray-400 hover:text-white transition-colors">
-                  Why Us
-                </a>
-              </li>
-              <li>
-                <a href="/our-work/" className="text-gray-400 hover:text-white transition-colors">
-                  Our Work
-                </a>
-              </li>
-              <li>
-                <a href="/areas-we-serve/" className="text-gray-400 hover:text-white transition-colors">
-                  Areas We Serve
-                </a>
-              </li>
-              <li>
-                <a href="/why-choose-us/#faqs" className="text-gray-400 hover:text-white transition-colors">
-                  FAQs
-                </a>
-              </li>
-              <li>
-                <a href="/contact-us/" className="text-gray-400 hover:text-white transition-colors">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Col 2: Products / Services */}
-          <div className="space-y-4">
-            <h4 className="text-white font-semibold text-sm sm:text-base tracking-tight">
-              Products
-            </h4>
-            <ul className="space-y-3 text-xs sm:text-sm">
+            <ul className="space-y-2.5 text-xs sm:text-sm">
               <li>
                 <a href="/services/gate-fabrication/" className="text-gray-400 hover:text-white transition-colors">
                   Gate Fabrication
                 </a>
               </li>
               <li>
+                <a href="/services/ms-gates/" className="text-gray-400 hover:text-white transition-colors">
+                  MS Main &amp; Sliding Gates
+                </a>
+              </li>
+              <li>
                 <a href="/services/window-grills/" className="text-gray-400 hover:text-white transition-colors">
-                  Window Grills
+                  Window Safety Grills
                 </a>
               </li>
               <li>
                 <a href="/services/ss-railings/" className="text-gray-400 hover:text-white transition-colors">
-                  SS &amp; MS Railings
+                  SS 304 Balcony Railings
+                </a>
+              </li>
+              <li>
+                <a href="/services/ms-railings/" className="text-gray-400 hover:text-white transition-colors">
+                  MS Balcony &amp; Stair Railings
                 </a>
               </li>
               <li>
@@ -74,9 +45,28 @@ export const Footer: React.FC = () => {
                   Staircase Fabrication
                 </a>
               </li>
+              <li className="pt-1">
+                <a href="/services/" className="text-[#D49B37] hover:text-[#E5B55D] font-medium transition-colors inline-flex items-center gap-1">
+                  All Fabrication Services &rarr;
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Col 2: Sheds, Steel & Welding */}
+          <div className="space-y-4">
+            <h4 className="text-white font-semibold text-sm sm:text-base tracking-tight">
+              Sheds &amp; Welding
+            </h4>
+            <ul className="space-y-2.5 text-xs sm:text-sm">
               <li>
                 <a href="/services/car-parking-sheds/" className="text-gray-400 hover:text-white transition-colors">
                   Car Parking Sheds
+                </a>
+              </li>
+              <li>
+                <a href="/services/metal-sheds/" className="text-gray-400 hover:text-white transition-colors">
+                  Metal Sheds &amp; Roofing
                 </a>
               </li>
               <li>
@@ -90,22 +80,100 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
+                <a href="/services/canopy-fabrication/" className="text-gray-400 hover:text-white transition-colors">
+                  Entrance &amp; Window Canopies
+                </a>
+              </li>
+              <li>
                 <a href="/services/event-fabrication/" className="text-gray-400 hover:text-white transition-colors">
-                  Event Fabrication
+                  Event Metal Fabrication
+                </a>
+              </li>
+              <li className="pt-1">
+                <a href="/fabrication-rates-bangalore/" className="text-[#D49B37] hover:text-[#E5B55D] font-medium transition-colors inline-flex items-center gap-1">
+                  Fabrication Rates &amp; Price List &rarr;
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Col 3: Resources */}
+          {/* Col 3: Bangalore Locations */}
           <div className="space-y-4">
             <h4 className="text-white font-semibold text-sm sm:text-base tracking-tight">
-              Resources
+              Bangalore Areas
             </h4>
-            <ul className="space-y-3 text-xs sm:text-sm">
+            <ul className="space-y-2.5 text-xs sm:text-sm">
+              <li>
+                <a href="/locations/hebbal/" className="text-gray-400 hover:text-white transition-colors">
+                  Hebbal &amp; Dasarahalli
+                </a>
+              </li>
+              <li>
+                <a href="/locations/yelahanka/" className="text-gray-400 hover:text-white transition-colors">
+                  Yelahanka &amp; Kogilu
+                </a>
+              </li>
+              <li>
+                <a href="/locations/manyata-tech-park/" className="text-gray-400 hover:text-white transition-colors">
+                  Manyata Tech Park &amp; Nagavara
+                </a>
+              </li>
+              <li>
+                <a href="/locations/whitefield/" className="text-gray-400 hover:text-white transition-colors">
+                  Whitefield &amp; IT Corridor
+                </a>
+              </li>
+              <li>
+                <a href="/locations/electronic-city/" className="text-gray-400 hover:text-white transition-colors">
+                  Electronic City &amp; Hosur Rd
+                </a>
+              </li>
+              <li>
+                <a href="/locations/hsr-layout/" className="text-gray-400 hover:text-white transition-colors">
+                  HSR Layout &amp; South
+                </a>
+              </li>
+              <li className="pt-1 border-t border-white/5">
+                <a href="/areas-we-serve/" className="text-[#D49B37] hover:text-[#E5B55D] font-medium transition-colors inline-flex items-center gap-1">
+                  All Bangalore Service Zones &rarr;
+                </a>
+              </li>
+              <li className="flex flex-wrap gap-x-2 gap-y-1 text-[11px] text-gray-500 pt-0.5">
+                <a href="/areas-we-serve/north-bangalore/" className="hover:text-gray-300">North</a>
+                <span>&bull;</span>
+                <a href="/areas-we-serve/south-bangalore/" className="hover:text-gray-300">South</a>
+                <span>&bull;</span>
+                <a href="/areas-we-serve/east-bangalore/" className="hover:text-gray-300">East</a>
+                <span>&bull;</span>
+                <a href="/areas-we-serve/west-bangalore/" className="hover:text-gray-300">West</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Col 4: Company & Guides */}
+          <div className="space-y-4">
+            <h4 className="text-white font-semibold text-sm sm:text-base tracking-tight">
+              Company &amp; Guides
+            </h4>
+            <ul className="space-y-2.5 text-xs sm:text-sm">
+              <li>
+                <a href="/about-us/" className="text-gray-400 hover:text-white transition-colors">
+                  About SAM Fabrication
+                </a>
+              </li>
+              <li>
+                <a href="/why-choose-us/" className="text-gray-400 hover:text-white transition-colors">
+                  Why Choose Us
+                </a>
+              </li>
+              <li>
+                <a href="/our-work/" className="text-gray-400 hover:text-white transition-colors">
+                  Project Portfolio
+                </a>
+              </li>
               <li>
                 <a href="/blog/" className="text-gray-400 hover:text-white transition-colors">
-                  Blog
+                  Technical Blog
                 </a>
               </li>
               <li>
@@ -114,73 +182,29 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/blog/top-10-modern-grill-designs-for-windows/" className="text-gray-400 hover:text-white transition-colors">
-                  Window Grill Ideas
-                </a>
-              </li>
-              <li>
                 <a href="/blog/stainless-steel-vs-ms-railings/" className="text-gray-400 hover:text-white transition-colors">
                   SS vs MS Comparison
                 </a>
               </li>
               <li>
-                <a href="/blog/car-parking-shed-design-ideas/" className="text-gray-400 hover:text-white transition-colors">
-                  Shed Design Ideas
+                <a href="/why-choose-us/#faqs" className="text-gray-400 hover:text-white transition-colors">
+                  Customer FAQs
                 </a>
               </li>
-              <li>
-                <a href="/fabrication-rates-bangalore/" className="text-gray-400 hover:text-white transition-colors">
-                  Fabrication Work Rates
-                </a>
-              </li>
-              <li>
-                <a href="/contact-us/" className="text-[#D49B37] hover:text-[#E5B55D] font-medium transition-colors">
-                  Request Quotation →
+              <li className="pt-1">
+                <a href="/contact-us/" className="text-[#D49B37] hover:text-[#E5B55D] font-medium transition-colors inline-flex items-center gap-1">
+                  Request a Quote &rarr;
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Col 4: Legal */}
-          <div className="space-y-4">
-            <h4 className="text-white font-semibold text-sm sm:text-base tracking-tight">
-              Legal
-            </h4>
-            <ul className="space-y-3 text-xs sm:text-sm">
-              <li>
-                <a href="/privacy-policy/" className="text-gray-400 hover:text-white transition-colors">
-                  Privacy
-                </a>
-              </li>
-              <li>
-                <a href="/terms-and-conditions/" className="text-gray-400 hover:text-white transition-colors">
-                  Terms of use
-                </a>
-              </li>
-              <li>
-                <a href="/why-choose-us/" className="text-gray-400 hover:text-white transition-colors">
-                  Quality guarantee
-                </a>
-              </li>
-              <li>
-                <a href="/about-us/" className="text-gray-400 hover:text-white transition-colors">
-                  Engineering standards
-                </a>
-              </li>
-              <li>
-                <a href="/sitemap.xml" className="text-gray-400 hover:text-white transition-colors">
-                  Sitemap
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Col 5: Contact */}
+          {/* Col 5: Contact & Workshop */}
           <div className="col-span-2 md:col-span-1 space-y-4">
             <h4 className="text-white font-semibold text-sm sm:text-base tracking-tight">
-              Contact
+              Contact &amp; Workshop
             </h4>
-            <ul className="space-y-3 text-xs sm:text-sm">
+            <ul className="space-y-2.5 text-xs sm:text-sm">
               <li>
                 <a 
                   href={`mailto:${siteConfig.email}`} 
@@ -192,7 +216,7 @@ export const Footer: React.FC = () => {
               <li>
                 <a 
                   href={`tel:${siteConfig.phoneClean}`} 
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 hover:text-white transition-colors font-medium"
                 >
                   {siteConfig.phone}
                 </a>
@@ -202,13 +226,28 @@ export const Footer: React.FC = () => {
                   href={`https://wa.me/${siteConfig.whatsappNumber}?text=Hello%20SAM%20Fabrication`} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-emerald-400 transition-colors"
+                  className="text-gray-400 hover:text-emerald-400 transition-colors font-medium"
                 >
                   WhatsApp: +91 94533 44824
                 </a>
               </li>
               <li className="text-gray-500 text-[11px] pt-1">
-                Mon - Sat: 9:00 AM - 8:00 PM
+                Workshop: Mon - Sat: 9:00 AM - 8:00 PM
+              </li>
+              <li className="pt-2 border-t border-white/5 space-y-1.5 text-xs">
+                <div>
+                  <a href="/privacy-policy/" className="text-gray-500 hover:text-gray-300 transition-colors">
+                    Privacy Policy
+                  </a>
+                  <span className="text-gray-600 mx-1.5">&bull;</span>
+                  <a href="/terms-and-conditions/" className="text-gray-500 hover:text-gray-300 transition-colors">
+                    Terms
+                  </a>
+                  <span className="text-gray-600 mx-1.5">&bull;</span>
+                  <a href="/sitemap.xml" className="text-gray-500 hover:text-gray-300 transition-colors">
+                    Sitemap
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -227,7 +266,7 @@ export const Footer: React.FC = () => {
               SAM Fabrication HQ, Dasarahalli Main Road Near Sobha Moonstone, Bangalore, Karnataka 560024.
             </p>
             <p className="text-xs text-gray-400 font-normal">
-              © {new Date().getFullYear()} SAM Fabrication Engineering Work. All rights reserved.
+              &copy; {new Date().getFullYear()} SAM Fabrication Engineering Work. All rights reserved.
             </p>
           </div>
 
@@ -252,7 +291,7 @@ export const Footer: React.FC = () => {
               className="w-8 h-8 rounded-full bg-white/10 hover:bg-[#D49B37] hover:text-gray-950 flex items-center justify-center text-white text-xs font-bold transition-all"
               aria-label="X (Twitter)"
             >
-              𝕏
+              &#120143;
             </a>
 
             {/* Instagram */}
