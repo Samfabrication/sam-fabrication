@@ -955,7 +955,8 @@ export const locationsData: LocationItem[] = [
     description: 'Hebbal is one of North Bangalore’s premier residential and commercial gateways. We provide fast on-site measurement, custom gate fabrication, window grills, and balcony railings across Hebbal, Kempapura, and Bellary Road.',
     highlights: ['Rapid same-day site visits in Hebbal & surrounding layouts', 'Residential villa main gates and terrace metal sheds', 'Compliance with local RWA security grill specifications'],
     commonProjects: ['Custom black & gold main gates', 'Stainless steel balcony safety railings', 'Cantilever residential car sheds'],
-    nearbyLandmarks: ['Hebbal Flyover', 'Hebbal Lake', 'Kempapura Layout']
+    nearbyLandmarks: ['Hebbal Flyover', 'Hebbal Lake', 'Kempapura Layout'],
+    featuredProjectSlug: 'window-grills-hebbal-villa'
   },
   {
     slug: 'yelahanka',
@@ -963,44 +964,89 @@ export const locationsData: LocationItem[] = [
     subRegion: 'North-East Bangalore',
     description: 'Serving independent villa communities and new residential layouts across Yelahanka New Town, Kogilu, and Doddaballapur Road with heavy-duty gates and modern architectural steel fabrication.',
     highlights: ['Specialized in wide-driveway sliding gates', 'Compact duplex spiral staircases', 'Polycarbonate carports for villa driveways'],
-    commonProjects: ['Motorized sliding gates', 'Rooftop metal sheds', 'Floating mono-stringer metal stairs'],
-    nearbyLandmarks: ['Yelahanka New Town', 'Yelahanka Air Force Station', 'Kogilu Cross']
+    commonProjects: ['Mild steel laser-cut boundary gates', 'Terrace roofing & laundry utility sheds', 'Decorative balcony safety grills'],
+    nearbyLandmarks: ['Yelahanka Old Town', 'Kogilu Cross', 'Doddaballapur Road'],
+    featuredProjectSlug: 'ms-staircase-yelahanka-duplex'
   },
   {
     slug: 'manyata-tech-park',
     name: 'Manyata Tech Park',
-    subRegion: 'Outer Ring Road North',
-    description: 'Supporting commercial IT hubs, cafeteria facilities, and residential apartment enclaves bordering Manyata Tech Park and Nagavara with commercial steel pergolas, railings, and security grills.',
-    highlights: ['Commercial glass & steel canopies', 'High-traffic staircase handrails', 'Rapid corporate fabrication turnaround'],
-    commonProjects: ['Office entrance drop-off canopies', 'Commercial mezzanine floor framing', 'Toughened glass balcony railings'],
-    nearbyLandmarks: ['Manyata Embassy Business Park', 'Nagavara Junction', 'Thanisandra Main Road']
+    subRegion: 'North Bangalore Tech Hub',
+    description: 'Providing commercial office metal fabrication, canopy installations, and high-spec residential metalwork for residential apartments and commercial properties along Thanisandra Main Road and Nagavara.',
+    highlights: ['Heavy-duty commercial glass and metal canopies', 'High-security parking barriers and compound gates', 'Stainless steel handrails for corporate and residential stairways'],
+    commonProjects: ['Office entrance drop-off canopies', 'SS 304 grade architectural railings', 'Perimeter security boundary fencing'],
+    nearbyLandmarks: ['Manyata Embassy Business Park', 'Nagavara Junction', 'Thanisandra Main Road'],
+    featuredProjectSlug: 'ss-balcony-railing-manyata'
   },
   {
     slug: 'whitefield',
     name: 'Whitefield',
-    subRegion: 'East Bangalore',
-    description: 'Providing luxury gated communities, tech parks, and commercial spaces across Whitefield, ITPL, and Kadugodi with CNC laser-cut luxury gates, designer pergolas, and stainless steel railings.',
-    highlights: ['High-end CNC laser cut gate designs', 'Modern minimalist matte black MS railings', 'Designer carports for luxury vehicles'],
-    commonProjects: ['Laser cut entrance gates', 'Terrace glass pergolas', 'Stainless steel glass railing systems'],
-    nearbyLandmarks: ['ITPB (International Tech Park Bangalore)', 'Hope Farm Junction', 'Kadugodi']
+    subRegion: 'East Bangalore IT Hub',
+    description: 'Specializing in contemporary residential metalwork for villas, gated communities, and tech campuses across Whitefield, ITPL Main Road, Hope Farm, and Brookefield.',
+    highlights: ['Architectural mild steel and brass accent work', 'Tensile and polycarbonate designer carports', 'Sound-dampening metal compound fencing'],
+    commonProjects: ['Designer main gates with wooden/WPC inlays', 'Modern vertical-slat balcony privacy railings', 'Rooftop pergola and glass skylight frames'],
+    nearbyLandmarks: ['ITPL', 'Hope Farm Junction', 'Prestige Shantiniketan'],
+    featuredProjectSlug: 'custom-fabrication-screen-whitefield'
   },
   {
     slug: 'electronic-city',
     name: 'Electronic City',
-    subRegion: 'South Bangalore',
-    description: 'Fabricating industrial warehouse sheds, PEB factory framing, commercial fire escapes, and apartment window safety grills across Electronic City Phase 1, Phase 2, and Bommasandra.',
-    highlights: ['Heavy industrial steel PEB fabrication', 'Certified fire escape staircase engineering', 'Apartment window grill bulk fabrication'],
-    commonProjects: ['Industrial warehouse sheds', 'External fire escape towers', 'Heavy boundary security gates'],
-    nearbyLandmarks: ['Electronic City Phase 1 & 2', 'Hosur Road Expressway', 'Bommasandra Industrial Area']
+    subRegion: 'South Bangalore Industrial & IT Belt',
+    description: 'Executing structural steel frameworks, industrial warehouse canopies, and apartment complex gate fabrication across Electronic City Phase 1 & 2, Neeladri Road, and Doddathogur.',
+    highlights: ['Industrial-grade structural welding and fabrication', 'Large-span commercial parking sheds', 'Automated sliding gates for residential societies'],
+    commonProjects: ['I-beam structural warehouse frames', 'Commercial cafeteria pergolas', 'Multi-car parking canopy structures'],
+    nearbyLandmarks: ['Phase 1 Toll Plaza', 'Neeladri Road', 'Wipro Gate'],
+    featuredProjectSlug: 'main-gate-laser-cut-bangalore'
   },
   {
     slug: 'hsr-layout',
     name: 'HSR Layout',
-    subRegion: 'South-East Bangalore',
-    description: 'Delivering bespoke architectural metalwork, modern matte black balcony railings, and motorized sliding gates for high-end multi-level residences across all sectors of HSR Layout.',
-    highlights: ['Architectural matte black mild steel railings', 'Space-saving floating metal staircases', 'Minimalist sliding gates for tight plots'],
-    commonProjects: ['Matte black horizontal slat railings', 'Terrace gazebo structures', 'Laser cut privacy screens'],
-    nearbyLandmarks: ['HSR BDA Complex', '27th Main Commercial Corridor', 'Agara Lake']
+    subRegion: 'South Bangalore Residential & Startup Hub',
+    description: 'Delivering precision architectural fabrication for upscale residences, commercial startup offices, and residential layouts across all sectors of HSR Layout.',
+    highlights: ['Modern minimalist safety grills compliant with building codes', 'Space-saving spiral staircases for compact urban plots', 'Laser-cut designer window and balcony safety screens'],
+    commonProjects: ['Matte-black powder-coated window grills', 'Internal floating metal staircases with wooden treads', 'Custom rooftop sit-out sheds'],
+    nearbyLandmarks: ['BDA Complex HSR', '27th Main Road', 'Agara Lake Road'],
+    featuredProjectSlug: 'balcony-railing-hsr-residence'
+  },
+  {
+    slug: 'sarjapur-road',
+    name: 'Sarjapur Road',
+    subRegion: 'South-East Bangalore Villa Corridor',
+    description: 'Connecting Koramangala and Bellandur to expansive residential villa layouts, Sarjapur Road is a prime corridor for architectural metalwork. We engineer custom entrance gates, weather-resistant cantilever carports, glass & SS balcony railings, and terrace canopies for villas and gated communities.',
+    highlights: ['Specialized in modern cantilever villa canopies & car parking sheds', 'Custom SS 304 toughened glass balcony safety railings', 'Fast on-site measurement across Carmelaram, Doddakannelli & Sompura'],
+    commonProjects: ['Architectural villa entrance canopies', 'Toughened glass & SS 304 balcony railings', 'Polycarbonate curved residential car parking sheds'],
+    nearbyLandmarks: ['Carmelaram', 'Doddakannelli', 'Rainbow Drive', 'Decathlon Sarjapur'],
+    featuredProjectSlug: 'canopy-structure-sarjapur-villa'
+  },
+  {
+    slug: 'indiranagar',
+    name: 'Indiranagar',
+    subRegion: 'Central-East Bangalore',
+    description: 'Indiranagar is one of Bangalore’s premier residential and lifestyle hubs, known for luxury independent bungalows, rooftop penthouses, and commercial boutique spaces. We deliver bespoke rooftop pergolas, modern spiral and floating metal staircases, designer security window grills, and precision architectural steelwork.',
+    highlights: ['Custom steel & aluminium rooftop terrace pergolas with shade louvers', 'Architectural space-saving spiral & floating staircases for duplexes', 'Minimalist laser-cut privacy screens and window safety grills'],
+    commonProjects: ['Rooftop terrace metal pergolas with glass or polycarbonate roofing', 'Modern internal and external MS spiral staircases', 'Architectural decorative metal facade screens & gates'],
+    nearbyLandmarks: ['100 Feet Road', '12th Main', 'CMH Road', 'Defence Colony'],
+    featuredProjectSlug: 'terrace-pergola-indiranagar-penthouse'
+  },
+  {
+    slug: 'devanahalli',
+    name: 'Devanahalli',
+    subRegion: 'North Bangalore Airport Corridor',
+    description: 'Anchoring the high-growth international airport belt and expansive plotted developments, Devanahalli features farm estates, gated luxury villas, and logistics facilities. We fabricate heavy-duty motorized sliding main gates, perimeter compound fencing, agricultural storage sheds, and structural steel warehouse roofing.',
+    highlights: ['Heavy-duty wide sliding estate gates with automation readiness', 'Industrial & agricultural metal storage sheds and roofing', 'On-site welding and fabrication across airport road villa enclaves'],
+    commonProjects: ['Automated heavy mild steel sliding main gates for large properties', 'Galvanized compound security fencing and boundary grills', 'Steel truss storage sheds and car parking structures'],
+    nearbyLandmarks: ['KIA Airport Corridor', 'Devanahalli Fort', 'Aerospace Park', 'Nandi Upachar Junction'],
+    featuredProjectSlug: 'sliding-gate-devanahalli-estate'
+  },
+  {
+    slug: 'peenya',
+    name: 'Peenya',
+    subRegion: 'West Bangalore Industrial Zone',
+    description: 'Located immediately adjacent to our Dasarahalli workshop, Peenya is South Asia’s largest industrial hub. We provide heavy structural steel fabrication, industrial PEB roofing sheds, factory mezzanine floors, safety catwalks, machine enclosures, and heavy sliding factory gates for manufacturing units and warehouses.',
+    highlights: ['Immediate same-day site visits from our nearby Dasarahalli workshop', 'Heavy IS 2062 I-beam structural steel & PEB industrial shed fabrication', 'Factory mezzanine storage platforms and OSHA-compliant safety railings'],
+    commonProjects: ['Industrial PEB factory roofing sheds and warehouse structures', 'Heavy-load steel mezzanine floors and industrial staircases', 'Factory main entrance heavy sliding gates & safety barricades'],
+    nearbyLandmarks: ['Peenya Industrial Area 1st & 2nd Stage', 'Tumkur Road', 'Dasarahalli Metro', 'Jalahalli Cross'],
+    featuredProjectSlug: 'industrial-fabrication-nelamangala-plant'
   }
 ];
 

@@ -10,7 +10,7 @@ import {
   Building2 
 } from 'lucide-react';
 import { LocationItem } from '../types';
-import { siteConfig, servicesData } from '../data/siteData';
+import { siteConfig, servicesData, projectsData } from '../data/siteData';
 import { CtaBanner } from '../components/CtaBanner';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { SeoHead } from '../components/SeoHead';
@@ -22,6 +22,9 @@ interface LocationPageProps {
 
 export const LocationPage: React.FC<LocationPageProps> = ({ location, onOpenQuote }) => {
   const localServices = servicesData.slice(0, 6);
+  const featuredProject = location.featuredProjectSlug
+    ? projectsData.find((p) => p.slug === location.featuredProjectSlug)
+    : projectsData.find((p) => p.location.toLowerCase().includes(location.name.toLowerCase()));
 
   return (
     <>
@@ -107,7 +110,11 @@ export const LocationPage: React.FC<LocationPageProps> = ({ location, onOpenQuot
                 Custom Metal &amp; Steel Fabrication in {location.name}
               </h2>
               <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-                SAM Fabrication Engineering Work regularly executes residential, commercial, and industrial fabrication projects throughout {location.name}. Whether you are constructing a private villa, upgrading apartment balcony safety grills, or installing a weather-resistant car parking shed, our engineers deliver prompt on-site measurement and seamless installation.
+                As part of our specialized{' '}
+                <a href="/" className="text-[#B77C26] hover:underline font-semibold">
+                  fabrication works in Bangalore
+                </a>
+                , SAM Fabrication Engineering Work regularly executes residential, commercial, and industrial projects throughout {location.name}. Whether you are constructing a private villa, upgrading apartment balcony safety grills, or installing a weather-resistant car parking shed, our engineers deliver prompt on-site measurement and seamless installation.
               </p>
 
               <div className="bg-[#FAF3E0]/70 border border-[#D49B37]/50 rounded-xl p-5 space-y-2 mt-4">
@@ -145,6 +152,54 @@ export const LocationPage: React.FC<LocationPageProps> = ({ location, onOpenQuot
               </div>
             </div>
           </div>
+
+          {/* Featured Real Project Showcase */}
+          {featuredProject && (
+            <div className="bg-[#0B0F15] text-white rounded-2xl p-6 sm:p-8 border border-[#222E3E] shadow-xl">
+              <div className="flex items-center space-x-2 text-[#D49B37] text-xs font-bold uppercase tracking-wider mb-4">
+                <CheckCircle2 className="w-4 h-4 text-[#D49B37]" />
+                <span>Verified Project Case Study • {location.name}</span>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className="lg:col-span-5 h-56 sm:h-64 rounded-xl overflow-hidden bg-gray-900 border border-gray-800">
+                  <picture>
+                    <source srcSet={featuredProject.image} type="image/webp" />
+                    <img
+                      src={featuredProject.image.replace('.webp', '.jpg')}
+                      alt={featuredProject.imageAlt}
+                      className="w-full h-full object-cover"
+                      width="600"
+                      height="400"
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+
+                <div className="lg:col-span-7 space-y-3">
+                  <h3 className="text-xl sm:text-2xl font-bold font-serif-heading text-white">
+                    {featuredProject.title} in {location.name}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
+                    {featuredProject.description}
+                  </p>
+                  <div className="p-3.5 bg-[#141B26] rounded-lg border border-gray-800 text-xs text-gray-400 space-y-1">
+                    <span className="font-semibold text-gray-300 block">Engineering Solution &amp; Scope:</span>
+                    <p className="line-clamp-3">{featuredProject.clientRequirement}</p>
+                  </div>
+                  <div className="pt-2">
+                    <a
+                      href={`/our-work/${featuredProject.slug}/`}
+                      className="inline-flex items-center text-xs font-bold text-[#D49B37] hover:text-[#E5B55D] uppercase tracking-wider transition-colors group"
+                    >
+                      <span>View Full Case Study &amp; Specifications</span>
+                      <ArrowRight className="w-4 h-4 ml-1.5 transition-transform group-hover:translate-x-1" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Local Services Grid */}
           <div className="pt-8 border-t border-gray-200">

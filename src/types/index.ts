@@ -59,6 +59,7 @@ export interface LocationItem {
   highlights: string[];
   commonProjects: string[];
   nearbyLandmarks: string[];
+  featuredProjectSlug?: string;
 }
 
 export interface RegionItem {

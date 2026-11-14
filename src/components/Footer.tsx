@@ -133,6 +133,26 @@ export const Footer: React.FC = () => {
                   HSR Layout &amp; South
                 </a>
               </li>
+              <li>
+                <a href="/locations/sarjapur-road/" className="text-gray-400 hover:text-white transition-colors">
+                  Sarjapur Road &amp; Carmelaram
+                </a>
+              </li>
+              <li>
+                <a href="/locations/indiranagar/" className="text-gray-400 hover:text-white transition-colors">
+                  Indiranagar &amp; Central East
+                </a>
+              </li>
+              <li>
+                <a href="/locations/devanahalli/" className="text-gray-400 hover:text-white transition-colors">
+                  Devanahalli &amp; Airport Belt
+                </a>
+              </li>
+              <li>
+                <a href="/locations/peenya/" className="text-gray-400 hover:text-white transition-colors">
+                  Peenya &amp; Industrial West
+                </a>
+              </li>
               <li className="pt-1 border-t border-white/5">
                 <a href="/areas-we-serve/" className="text-[#D49B37] hover:text-[#E5B55D] font-medium transition-colors inline-flex items-center gap-1">
                   All Bangalore Service Zones &rarr;
