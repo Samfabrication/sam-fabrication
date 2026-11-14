@@ -157,6 +157,11 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2.5 text-xs sm:text-sm">
               <li>
+                <a href="/" className="text-gray-400 hover:text-white transition-colors">
+                  Fabrication Works in Bangalore
+                </a>
+              </li>
+              <li>
                 <a href="/about-us/" className="text-gray-400 hover:text-white transition-colors">
                   About SAM Fabrication
                 </a>

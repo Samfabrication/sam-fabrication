@@ -138,6 +138,13 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                 <p className="text-xs sm:text-sm text-gray-700 leading-relaxed">
                   {service.fullDescription}
                 </p>
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mt-3">
+                  Delivered as part of our specialized{' '}
+                  <a href="/" className="text-[#B77C26] hover:underline font-semibold">
+                    fabrication works in Bangalore
+                  </a>
+                  , every installation is engineered at our Dasarahalli workshop for verified durability and structural safety.
+                </p>
               </div>
 
               {/* Key Features */}

@@ -37,9 +37,9 @@ export const ServicesIndexPage: React.FC<ServicesIndexPageProps> = ({ onOpenQuot
   const servicesSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Fabrication Services in Bangalore | SAM Fabrication Engineering Work',
+    name: 'Metal Fabrication Services & Capabilities Bangalore | SAM Fabrication Engineering Work',
     url: 'https://samfabrication.in/services/',
-    description: 'Explore expert fabrication services in Bangalore: custom gates, safety window grills, SS/MS railings, structural sheds, and architectural steel work.',
+    description: 'Explore custom metal fabrication services in Bangalore: workshop fabrication, architectural steel, safety grills, gates, sheds & structural welding.',
     publisher: {
       '@id': 'https://samfabrication.in/#entity'
     }
@@ -48,8 +48,8 @@ export const ServicesIndexPage: React.FC<ServicesIndexPageProps> = ({ onOpenQuot
   return (
     <>
       <SeoHead
-        title="Fabrication Services in Bangalore | Complete Metal & Steel Solutions"
-        description="Explore expert fabrication services in Bangalore: custom gates, safety window grills, SS/MS railings, structural sheds, and architectural steel work."
+        title="Metal Fabrication Services & Capabilities Bangalore | SAM Fabrication"
+        description="Explore custom metal fabrication services in Bangalore: workshop fabrication, architectural steel, safety grills, gates, sheds & structural welding."
         canonical="https://samfabrication.in/services/"
         schema={servicesSchema}
       />
@@ -85,11 +85,15 @@ export const ServicesIndexPage: React.FC<ServicesIndexPageProps> = ({ onOpenQuot
               OUR SERVICES
             </span>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif-heading text-white tracking-tight leading-[1.15]">
-              Complete Fabrication<br />
-              <span className="gold-gradient-text">Solutions in Bangalore</span>
+              Metal Fabrication<br />
+              <span className="gold-gradient-text">Services &amp; Capabilities</span>
             </h1>
             <p className="text-xs sm:text-sm text-gray-300 leading-relaxed max-w-xl">
-              We provide a wide range of residential, commercial and industrial fabrication services engineered for maximum durability, aesthetic beauty, and structural safety.
+              From our dedicated workshop in Dasarahalli, SAM Fabrication delivers certified{' '}
+              <a href="/" className="text-[#D49B37] hover:underline font-semibold">
+                fabrication works in Bangalore
+              </a>
+              . We engineer custom architectural metalwork, structural steel, and precision welding for residential, commercial, and industrial properties across the city.
             </p>
           </div>
 

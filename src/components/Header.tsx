@@ -47,10 +47,15 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onOpenQuote }) => {
         <div className="flex items-center justify-between h-20">
           
           {/* Logo */}
-          <a href="/" className="flex items-center space-x-3 group">
+          <a
+            href="/"
+            className="flex items-center space-x-3 group"
+            title="SAM Fabrication – Metal Fabrication Works in Bangalore"
+            aria-label="SAM Fabrication – Metal Fabrication Works in Bangalore"
+          >
             <img 
               src="/images/sam-logo.png" 
-              alt="SAM Fabrication Engineering Work Logo" 
+              alt="SAM Fabrication Engineering Work - Metal Fabrication Works in Bangalore" 
               className="h-12 w-auto object-contain transition-transform group-hover:scale-105"
               width="120"
               height="75"
