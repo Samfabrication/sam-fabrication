@@ -1016,7 +1016,29 @@ export const locationsData: LocationItem[] = [
     highlights: ['Specialized in modern cantilever villa canopies & car parking sheds', 'Custom SS 304 toughened glass balcony safety railings', 'Fast on-site measurement across Carmelaram, Doddakannelli & Sompura'],
     commonProjects: ['Architectural villa entrance canopies', 'Toughened glass & SS 304 balcony railings', 'Polycarbonate curved residential car parking sheds'],
     nearbyLandmarks: ['Carmelaram', 'Doddakannelli', 'Rainbow Drive', 'Decathlon Sarjapur'],
-    featuredProjectSlug: 'canopy-structure-sarjapur-villa'
+    featuredProjectSlug: 'canopy-structure-sarjapur-villa',
+    faqs: [
+      {
+        question: 'What fabrication works are most requested for villas and gated communities along Sarjapur Road?',
+        answer: 'Along Sarjapur Road, Carmelaram, and Doddakannelli, villa owners frequently request custom cantilever car parking sheds that maximize driveway space, toughened glass balcony railings with AISI 304 stainless steel fittings, modern automated sliding entrance gates, and terrace metal pergolas designed for outdoor living.'
+      },
+      {
+        question: 'Can you design cantilever car parking sheds that fit narrow villa driveways without support pillars?',
+        answer: 'Yes. Our cantilever car shed frames utilize heavy-gauge mild steel structural tubes and reinforced wall-bracket or single-side ground foundations. This eliminates outer pillars, ensuring unobstructed car door opening and easy maneuvering in compact villa driveways.'
+      },
+      {
+        question: 'Do you fabricate SS 304 and toughened glass balcony railings for duplexes in Sarjapur Road?',
+        answer: 'Yes. We fabricate premium architectural railings combining marine-grade AISI 304 stainless steel balusters or spigots with 10mm to 12mm laminated or toughened safety glass. All handrails and corner joints are TIG-welded and satin-brushed for long-lasting weather durability.'
+      },
+      {
+        question: 'How do you handle site inspections and measurements in gated communities across Sarjapur Road?',
+        answer: 'Our fabrication supervisors conduct scheduled on-site inspections across Sarjapur Road, Sompura, and Hadosiddapura. We coordinate with community association guidelines, measure site dimensions with precision laser equipment, check structural anchoring points, and supply detailed CAD layout drawings and quotations.'
+      },
+      {
+        question: 'What weather-protective coatings do you apply to outdoor villa pergolas and entrance gates?',
+        answer: 'All external mild steel structures undergo manual descaling, seam grinding, and two coats of anti-corrosive zinc phosphate epoxy primer. Exterior surfaces are finished with UV-resistant polyurethane (PU) enamel paint or high-durability powder coating to withstand heavy monsoon rainfall and intense sunlight.'
+      }
+    ]
   },
   {
     slug: 'indiranagar',
@@ -1026,7 +1048,29 @@ export const locationsData: LocationItem[] = [
     highlights: ['Custom steel & aluminium rooftop terrace pergolas with shade louvers', 'Architectural space-saving spiral & floating staircases for duplexes', 'Minimalist laser-cut privacy screens and window safety grills'],
     commonProjects: ['Rooftop terrace metal pergolas with glass or polycarbonate roofing', 'Modern internal and external MS spiral staircases', 'Architectural decorative metal facade screens & gates'],
     nearbyLandmarks: ['100 Feet Road', '12th Main', 'CMH Road', 'Defence Colony'],
-    featuredProjectSlug: 'terrace-pergola-indiranagar-penthouse'
+    featuredProjectSlug: 'terrace-pergola-indiranagar-penthouse',
+    faqs: [
+      {
+        question: 'What metal fabrication solutions do you deliver for rooftop penthouses and bungalows in Indiranagar?',
+        answer: 'In Indiranagar, Defence Colony, and surrounding residential blocks, we regularly fabricate architectural rooftop terrace pergolas with shade louvers, space-saving metal staircases for duplexes, minimalist laser-cut safety window grills, and bespoke stainless steel or brass-accented entrance gates.'
+      },
+      {
+        question: 'Can you fabricate custom spiral or floating metal staircases for duplex residences in Indiranagar?',
+        answer: 'Yes. We engineer space-efficient internal and external spiral staircases as well as modern floating mono-stringer staircases. Built with heavy-duty structural steel central columns and anti-skid wooden or metal-tread supports, they offer rigid structural stability while enhancing interior aesthetics.'
+      },
+      {
+        question: 'Do you build rooftop terrace pergolas with waterproof glass or polycarbonate roofing?',
+        answer: 'Yes. We design custom terrace sit-out pergolas using hollow steel rafters finished in matte black or charcoal grey, integrated with multi-wall UV-coated polycarbonate sheets or laminated toughened glass to provide 100% rain protection while admitting natural light.'
+      },
+      {
+        question: 'How do you manage fabrication and installation in residential areas like Defence Colony without causing disturbance?',
+        answer: 'To minimize noise and disruption in quiet residential zones, our team fabricates, cuts, and pre-assembles structural components off-site in our workshop. On-site work in Indiranagar is limited to alignment, bolting, and minimal precision welding during permitted daytime working hours.'
+      },
+      {
+        question: 'Can you manufacture designer laser-cut window grills and privacy partitions for modern Indiranagar homes?',
+        answer: 'Yes. We fabricate custom CNC laser-cut decorative metal panels in mild steel or aluminium with geometric and contemporary patterns. These panels serve as secure burglar-resistant window grills, balcony privacy screens, or room dividers, finished with smooth thermoset powder coating.'
+      }
+    ]
   },
   {
     slug: 'devanahalli',
@@ -1036,7 +1080,29 @@ export const locationsData: LocationItem[] = [
     highlights: ['Heavy-duty wide sliding estate gates with automation readiness', 'Industrial & agricultural metal storage sheds and roofing', 'On-site welding and fabrication across airport road villa enclaves'],
     commonProjects: ['Automated heavy mild steel sliding main gates for large properties', 'Galvanized compound security fencing and boundary grills', 'Steel truss storage sheds and car parking structures'],
     nearbyLandmarks: ['KIA Airport Corridor', 'Devanahalli Fort', 'Aerospace Park', 'Nandi Upachar Junction'],
-    featuredProjectSlug: 'sliding-gate-devanahalli-estate'
+    featuredProjectSlug: 'sliding-gate-devanahalli-estate',
+    faqs: [
+      {
+        question: 'What types of fabrication are suited for large farmhouses and gated estates in Devanahalli?',
+        answer: 'Properties in Devanahalli, Aerospace Park, and the Airport Road corridor typically require heavy-duty wide sliding estate entrance gates, perimeter security fencing with anti-climb spikes, large-span structural steel storage and utility sheds, and cantilever vehicle parking structures.'
+      },
+      {
+        question: 'Can you fabricate extra-wide motorized sliding main gates for estate properties near the Airport Road?',
+        answer: 'Yes. We manufacture heavy-gauge mild steel sliding gates spanning widths from 15 to 30 feet. Equipped with ground-recessed inverted angle tracks, heavy-duty sealed bearing rollers, and reinforced guide gantries, they can be manually rolled with ease or fitted with heavy-duty automatic sliding gate motors.'
+      },
+      {
+        question: 'Do you construct structural steel sheds and car parking canopies for plotted layouts in Devanahalli?',
+        answer: 'Yes. We build custom multi-vehicle parking sheds, garden tool storage sheds, and agricultural equipment shelters using structural steel trusses, C-purlins, and corrosion-resistant Galvalume or polycarbonate profile sheets engineered to withstand high wind loads in open northern terrains.'
+      },
+      {
+        question: 'How do you protect exterior gates and boundary fencing in open Devanahalli terrains from rust?',
+        answer: 'Open estate environments around Devanahalli experience high dust and seasonal monsoon weathering. We treat all steel components with industrial de-rusting, followed by dual-coat zinc chromate or zinc phosphate anti-corrosion primer and heavy-duty polyurethane exterior enamel for extended lifespan.'
+      },
+      {
+        question: 'Do you undertake on-site fabrication and installation for remote sites in the Devanahalli and Aerospace Park belt?',
+        answer: 'Yes. Our mobile fabrication teams are equipped for on-site anchoring, welding, and structural assembly across Devanahalli, Nandi Upachar corridor, and nearby industrial layouts. For projects requiring independent power, we deploy portable generator-backed welding rigs.'
+      }
+    ]
   },
   {
     slug: 'peenya',
@@ -1046,7 +1112,29 @@ export const locationsData: LocationItem[] = [
     highlights: ['Immediate same-day site visits from our nearby Dasarahalli workshop', 'Heavy IS 2062 I-beam structural steel & PEB industrial shed fabrication', 'Factory mezzanine storage platforms and OSHA-compliant safety railings'],
     commonProjects: ['Industrial PEB factory roofing sheds and warehouse structures', 'Heavy-load steel mezzanine floors and industrial staircases', 'Factory main entrance heavy sliding gates & safety barricades'],
     nearbyLandmarks: ['Peenya Industrial Area 1st & 2nd Stage', 'Tumkur Road', 'Dasarahalli Metro', 'Jalahalli Cross'],
-    featuredProjectSlug: 'industrial-fabrication-nelamangala-plant'
+    featuredProjectSlug: 'industrial-fabrication-nelamangala-plant',
+    faqs: [
+      {
+        question: 'What industrial fabrication services do you provide for manufacturing units and warehouses in Peenya?',
+        answer: 'For industrial units across Peenya 1st, 2nd, and 3rd Stages, we fabricate heavy structural steel frameworks, pre-engineered building (PEB) factory roofing sheds, structural mezzanine storage platforms, heavy sliding factory gates, and OSHA-compliant safety railings and machine guards.'
+      },
+      {
+        question: 'Can you engineer heavy-duty industrial mezzanine floors for storage expansion in Peenya factories?',
+        answer: 'Yes. We design and fabricate structural steel mezzanine floors using IS 2062 standard universal beams (UB), heavy square hollow sections, and chequered plate or grating decking. Every mezzanine is engineered to specified load ratings (such as 300 to 1,000 kg/m²) for equipment or warehouse racking.'
+      },
+      {
+        question: 'Do you fabricate heavy sliding factory gates and industrial perimeter safety barricades?',
+        answer: 'Yes. We manufacture robust industrial sliding gates capable of handling continuous commercial vehicle movement, utilizing reinforced structural box channels, heavy cast iron or forged steel guide wheels, and high-tensile safety latch mechanisms built for 24/7 industrial duty cycles.'
+      },
+      {
+        question: 'How quickly can your team conduct on-site inspections for industrial units in Peenya 1st and 2nd Stages?',
+        answer: 'Because our primary workshop is located in nearby Dasarahalli along Tumkur Road, we can arrange same-day or next-day on-site technical inspections in Peenya Industrial Area to take measurements, inspect structural anchor points, and discuss fabrication timelines.'
+      },
+      {
+        question: 'What structural steel standards and welding quality controls do you adhere to for industrial projects?',
+        answer: 'We utilize certified structural steel grades (such as IS 2062 / IS 4923 / IS 1239) from reputed Indian primary producers. All structural joints are welded by experienced welders using full-penetration MIG/SMAW welding, with weld slag removal, surface preparation, and quality checks before anti-corrosive priming.'
+      }
+    ]
   },
   {
     slug: 'jayanagar',
