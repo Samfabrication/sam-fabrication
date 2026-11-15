@@ -7,7 +7,8 @@ import {
   MessageSquare, 
   ShieldCheck, 
   Clock, 
-  Building2 
+  Building2,
+  HelpCircle
 } from 'lucide-react';
 import { LocationItem } from '../types';
 import { siteConfig, servicesData, projectsData } from '../data/siteData';
@@ -239,7 +240,43 @@ export const LocationPage: React.FC<LocationPageProps> = ({ location, onOpenQuot
         </div>
       </section>
 
-      {/* 3. BOTTOM CTA BANNER */}
+      {/* 3. LOCATION FAQS */}
+      {location.faqs && location.faqs.length > 0 && (
+        <section className="bg-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-t border-gray-200">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <span className="text-[11px] font-bold tracking-[0.2em] text-[#B77C26] uppercase block mb-2">
+                FREQUENTLY ASKED QUESTIONS
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-bold font-serif-heading text-gray-950 mb-3">
+                Fabrication FAQs for {location.name}
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-600 max-w-2xl mx-auto">
+                Practical answers on custom metal fabrication, site measurements, timelines, and installation across {location.name}, Bangalore.
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              {location.faqs.map((faq, index) => (
+                <div
+                  key={index}
+                  className="bg-[#F8FAFC] border border-gray-200 rounded-xl p-5 sm:p-6 shadow-sm hover:border-[#D49B37]/50 transition-colors"
+                >
+                  <h3 className="text-sm sm:text-base font-bold text-gray-950 mb-2 flex items-start gap-3">
+                    <HelpCircle className="w-5 h-5 text-[#B77C26] shrink-0 mt-0.5" />
+                    <span>{faq.question}</span>
+                  </h3>
+                  <p className="text-xs sm:text-sm text-gray-700 leading-relaxed pl-8">
+                    {faq.answer}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 4. BOTTOM CTA BANNER */}
       <CtaBanner onOpenQuote={onOpenQuote} />
     </>
   );

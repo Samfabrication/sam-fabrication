@@ -60,6 +60,7 @@ export interface LocationItem {
   commonProjects: string[];
   nearbyLandmarks: string[];
   featuredProjectSlug?: string;
+  faqs?: { question: string; answer: string }[];
 }
 
 export interface RegionItem {

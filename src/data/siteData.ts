@@ -1096,7 +1096,29 @@ export const locationsData: LocationItem[] = [
     highlights: ['External and internal mild steel fire-escape & access staircases', 'High-security burglar-resistant window grills and balcony enclosures', 'Prompt site measurement and repair welding across BTM 1st & 2nd Stages'],
     commonProjects: ['External iron staircases with anti-skid check plate treads', 'Modern bi-fold and sliding MS compound entrance gates', 'Rooftop terrace utility rooms and metal laundry sheds'],
     nearbyLandmarks: ['Udupi Garden Circle', 'Silk Board Junction', 'Madiwala Lake Ring Road', 'BTM 2nd Stage Water Tank'],
-    featuredProjectSlug: 'car-parking-shed-bangalore-campus'
+    featuredProjectSlug: 'car-parking-shed-bangalore-campus',
+    faqs: [
+      {
+        question: 'What types of fabrication works are most in-demand across BTM Layout?',
+        answer: 'Due to high-density residential apartments, PG accommodations, and commercial buildings in BTM 1st and 2nd Stages, the most frequent requirements are space-saving external mild steel staircases for rental and terrace access, burglar-resistant balcony grill cages, compact bi-fold or sliding compound gates for narrow road frontages, and protective rooftop utility sheds.'
+      },
+      {
+        question: 'Can you fabricate external iron staircases for properties with narrow setbacks in BTM Layout?',
+        answer: 'Yes. We design and fabricate custom external spiral staircases, straight-flight metal stairs, and compact mid-landing L-shaped staircases using structural MS hollow pipes and anti-skid chequered plate treads. Each staircase is custom-measured to fit tight municipal setbacks while providing safe, rigid upper-floor access.'
+      },
+      {
+        question: 'Do you provide on-site measurement and quotation visits in BTM 1st & 2nd Stages?',
+        answer: 'Yes. Our fabrication supervisors visit sites throughout BTM Layout, Tavarekere, Madiwala, and surrounding South Bangalore layouts. We inspect site alignment, assess load-bearing walls or RCC columns for secure anchor placement, take laser measurements, and provide detailed itemized quotations.'
+      },
+      {
+        question: 'How do you ensure balcony safety grills in BTM rental properties are secure and weather-resistant?',
+        answer: 'Balcony safety cages and grill panels are fabricated with heavy-gauge square bars or hollow pipes, anchored into RCC slab edges using high-tensile expansion fasteners. All steel elements receive double-coat zinc phosphate anti-rust primer and weather-resistant polyurethane enamel paint to resist corrosion from urban rain and moisture.'
+      },
+      {
+        question: 'What is the typical turnaround time for fabrication and installation in BTM Layout?',
+        answer: 'Standard residential gates, window grills, and safety doors are typically fabricated in our workshop within 4 to 7 working days. On-site structural positioning, alignment welding, and final touch-up painting are generally completed in 1 to 2 days, minimizing disruption to residents and tenants.'
+      }
+    ]
   },
   {
     slug: 'kr-puram',
@@ -1106,7 +1128,29 @@ export const locationsData: LocationItem[] = [
     highlights: ['Custom motorized and manual sliding main entrance gates', 'Cantilever residential car parking sheds with polycarbonate roofing', 'Complete on-site fabrication and mobile welding across KR Puram & Battarahalli'],
     commonProjects: ['Heavy-gauge MS boundary gates with anti-rust polyurethane coating', 'Single and dual-car parking sheds with galvanized steel frames', 'AISI 304 stainless steel balcony railings with toughened safety glass'],
     nearbyLandmarks: ['KR Puram Cable-Stayed Bridge', 'KR Puram Railway Station', 'Battarahalli Junction', 'ITPL Main Road Junction'],
-    featuredProjectSlug: 'main-gate-laser-cut-bangalore'
+    featuredProjectSlug: 'main-gate-laser-cut-bangalore',
+    faqs: [
+      {
+        question: 'What metal fabrication services do you offer in KR Puram and Battarahalli?',
+        answer: 'In KR Puram, Old Madras Road, and Battarahalli, we regularly fabricate cantilever and dual-post car parking sheds with polycarbonate or colour-coated roofing, motorized and manual mild steel sliding compound gates, AISI 304 grade stainless steel balcony railings, and structural rooftop utility sheds for independent houses and villa communities.'
+      },
+      {
+        question: 'Which car parking shed design is recommended for independent villas in KR Puram?',
+        answer: 'Cantilever car parking sheds are popular for villas with compact driveways because they eliminate outer support pillars, maximizing vehicle turning clearance. We fabricate robust structural frames using heavy-gauge tubular steel and top them with multiwall UV-stabilized polycarbonate sheets or insulated Galvalume roofing for heat and rain protection.'
+      },
+      {
+        question: 'Can automated sliding main gates be installed in residential layouts in KR Puram?',
+        answer: 'Yes. We manufacture heavy-duty sliding gates fitted with precision ground guide tracks, double-sealed ball bearing bottom rollers, and anti-jump top brackets. These gates can be operated manually with minimal effort or paired with standard automated gate motor kits for remote control access.'
+      },
+      {
+        question: 'How do you prevent rusting on gates and railings along busy transit corridors like Old Madras Road?',
+        answer: 'To withstand vehicle exhaust, road dust, and seasonal monsoon dampness, all mild steel fabrication is thoroughly de-slagged and wire-brushed before receiving a two-coat epoxy/zinc phosphate primer and heavy-duty polyurethane finish paint. For high-corrosion environments or decorative railings, we recommend AISI 304 stainless steel.'
+      },
+      {
+        question: 'Do you provide on-site structural welding and modification in KR Puram?',
+        answer: 'Yes. Our mobile fabrication teams carry portable inverter welding units, cutting equipment, and safety gear to handle on-site assembly, gate hinge reinforcement, frame modifications, and prompt structural repairs across KR Puram, TC Palya, and Devasandra.'
+      }
+    ]
   },
   {
     slug: 'thanisandra',
@@ -1116,7 +1160,29 @@ export const locationsData: LocationItem[] = [
     highlights: ['High-rise apartment balcony safety grills and child-safe window enclosures', 'Contemporary CNC laser-cut mild steel gates with champagne gold accents', 'Rapid site inspections and precision installation along Thanisandra Main Road'],
     commonProjects: ['Full-height balcony safety grill cages complying with apartment society norms', 'Designer laser-cut MS main gates with automated sliding tracks', 'Terrace sit-out pergolas and solar inverter support structures'],
     nearbyLandmarks: ['Bhartiya City', 'Thanisandra Main Road', 'Nagawara Junction', 'Hegde Nagar Circle'],
-    featuredProjectSlug: 'main-gate-laser-cut-bangalore'
+    featuredProjectSlug: 'main-gate-laser-cut-bangalore',
+    faqs: [
+      {
+        question: 'What fabrication solutions do you deliver for apartment complexes near Manyata and Bhartiya City in Thanisandra?',
+        answer: 'For high-rise residential towers and gated communities along Thanisandra Main Road, we specialize in society-compliant balcony safety grill cages, child-safe window safety bars, invisible grill perimeter framing, utility balcony louvers, and drying-yard privacy screens fabricated to match builder and RWA aesthetic guidelines.'
+      },
+      {
+        question: 'Can designer CNC laser-cut entrance gates be customized for Thanisandra villas?',
+        answer: 'Yes. We create bespoke modern entrance gates featuring precision CNC laser-cut mild steel panels in geometric, floral, or parametric designs. These can be integrated with warm metallic accents, powder-coated finishes, automated sliding or swing hinges, and composite exterior wood planks.'
+      },
+      {
+        question: 'What safety standards are maintained when installing balcony grills on upper floors in Thanisandra?',
+        answer: 'High-rise balcony grill installations strictly follow safety protocols. Our technicians use fall-arrest safety harnesses and internal drop nets. Frames are securely anchored into solid concrete lintels and floor slabs using heavy-duty chemical or mechanical anchor bolts calculated to withstand high-velocity wind loads at elevated floors.'
+      },
+      {
+        question: 'Do you fabricate modern terrace pergolas and sit-out canopies in Thanisandra?',
+        answer: 'Yes. We design and build architectural steel terrace pergolas with clean rectangular hollow sections, finished in matte black or charcoal grey polyurethane coatings. Roofs can be fitted with frosted toughened glass, polycarbonate sheets, or adjustable louvers to create elegant weather-protected rooftop sit-outs.'
+      },
+      {
+        question: 'How can I book a site inspection along Thanisandra Main Road or Hennur?',
+        answer: 'You can request a visit via our quote form or WhatsApp. Our fabrication supervisor visits your villa or apartment with design catalogues and measurement tools to inspect fixing surfaces, understand your design requirements, and provide a clear, itemized cost estimate.'
+      }
+    ]
   },
   {
     slug: 'yeshwanthpur',
@@ -1126,7 +1192,29 @@ export const locationsData: LocationItem[] = [
     highlights: ['Heavy structural steel warehouse framing, PEB sheds, and mezzanine floors', 'Heavy-duty motorized compound sliding gates and industrial barriers', 'Fast mobile welding and structural repairs across Yeshwanthpur & Tumkur Road'],
     commonProjects: ['I-beam structural warehouse roofing and mezzanine storage platforms', 'Heavy industrial sliding compound gates with industrial guide rollers', 'Safety handrails, caged vertical cat ladders, and rolling shutter frames'],
     nearbyLandmarks: ['Yeshwanthpur Railway Station', 'APMC Yard / Gordhandas Market', 'Goraguntepalya Flyover', 'Tumkur Road Industrial Junction'],
-    featuredProjectSlug: 'industrial-fabrication-nelamangala-plant'
+    featuredProjectSlug: 'industrial-fabrication-nelamangala-plant',
+    faqs: [
+      {
+        question: 'What industrial and commercial steel fabrication works do you undertake in Yeshwanthpur?',
+        answer: 'In the Yeshwanthpur commercial and light-industrial belt near APMC Yard and Tumkur Road, we engineer heavy structural steel warehouse sheds, industrial mezzanine storage floors, motorized heavy-duty compound sliding gates, loading dock canopies, safety catwalks, and vertical caged cat ladders for commercial godowns.'
+      },
+      {
+        question: 'Can you construct structural mezzanine storage floors for warehouses in Yeshwanthpur?',
+        answer: 'Yes. We engineer heavy-duty mezzanine floors using certified ISMB beams, ISMC channel sections, and heavy tubular columns with chequered steel plate or deck slab flooring. Every mezzanine is structurally calculated to accommodate your specific dead and live storage load requirements, maximizing vertical cubic space.'
+      },
+      {
+        question: 'What specifications do you use for heavy industrial compound sliding gates in Yeshwanthpur?',
+        answer: 'Our industrial gates feature rigid perimeter frames of heavy box sections or structural channels, high-load cast iron or machined steel track rollers, heavy-duty floor tracks anchored into RCC foundation beams, and robust overhead guide rollers designed to endure continuous heavy truck and forklift traffic.'
+      },
+      {
+        question: 'Do you offer urgent mobile welding and repair services in Yeshwanthpur?',
+        answer: 'Yes. Our mobile welding crews handle emergency on-site structural repairs, including damaged warehouse column reinforcement, rolling shutter guide channel welding, loading dock bumper frame repairs, and gate track realignments across Yeshwanthpur, Goraguntepalya, and adjacent Tumkur Road corridors.'
+      },
+      {
+        question: 'What is the typical execution schedule for structural sheds and mezzanine platforms in Yeshwanthpur?',
+        answer: 'Depending on tonnage and site accessibility, structural steel components are pre-cut, drilled, and primed in our workshop within 7 to 12 working days. On-site bolted and welded erection is then executed systematically to minimize downtime for warehouse and commercial operations.'
+      }
+    ]
   }
 ];
 

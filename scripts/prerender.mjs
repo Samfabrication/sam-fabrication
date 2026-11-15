@@ -42,7 +42,7 @@ async function prerender() {
   });
 
   const { App } = await vite.ssrLoadModule('/src/App.tsx');
-  const { siteConfig, servicesData, projectsData, regionsData, homeFaqsData } = await vite.ssrLoadModule('/src/data/siteData.ts');
+  const { siteConfig, servicesData, projectsData, regionsData, locationsData, homeFaqsData } = await vite.ssrLoadModule('/src/data/siteData.ts');
 
   const sitemapUrls = [];
 
@@ -166,6 +166,24 @@ async function prerender() {
             name: `${loc}, ${reg.name}, Bangalore`
           })),
           description: reg.metaDescription
+        });
+      }
+    }
+
+    if (page.category === 'locations') {
+      const slug = page.url.replace('/locations/', '').replace('/', '');
+      const loc = locationsData.find(item => item.slug === slug);
+      if (loc && loc.faqs && loc.faqs.length > 0) {
+        pageSchema['@graph'].push({
+          '@type': 'FAQPage',
+          mainEntity: loc.faqs.map(f => ({
+            '@type': 'Question',
+            name: f.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: f.answer
+            }
+          }))
         });
       }
     }
