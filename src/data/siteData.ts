@@ -1087,6 +1087,46 @@ export const locationsData: LocationItem[] = [
     commonProjects: ['Modern MS boundary gates with corrosion-resistant polyurethane coating', 'Burglar-resistant residential and commercial safety window grills', 'Terrace utility sheds and metal staircase railings'],
     nearbyLandmarks: ['Rajajinagar 1st Block', 'Navrang Circle', 'West of Chord Road', 'Mahakavi Kuvempu Road'],
     featuredProjectSlug: 'window-grills-hebbal-villa'
+  },
+  {
+    slug: 'btm-layout',
+    name: 'BTM Layout',
+    subRegion: 'South Bangalore Residential & Commercial Corridor',
+    description: 'A densely developed residential and commercial hub in South Bangalore connecting Bannerghatta Road with Hosur Road, BTM Layout features multi-storey residential apartments, rental housing, and bustling commercial blocks. We fabricate space-efficient external metal staircases for upper-floor access, security window grills, robust compound gates, and protective terrace utility sheds tailored to compact urban properties.',
+    highlights: ['External and internal mild steel fire-escape & access staircases', 'High-security burglar-resistant window grills and balcony enclosures', 'Prompt site measurement and repair welding across BTM 1st & 2nd Stages'],
+    commonProjects: ['External iron staircases with anti-skid check plate treads', 'Modern bi-fold and sliding MS compound entrance gates', 'Rooftop terrace utility rooms and metal laundry sheds'],
+    nearbyLandmarks: ['Udupi Garden Circle', 'Silk Board Junction', 'Madiwala Lake Ring Road', 'BTM 2nd Stage Water Tank'],
+    featuredProjectSlug: 'car-parking-shed-bangalore-campus'
+  },
+  {
+    slug: 'kr-puram',
+    name: 'KR Puram',
+    subRegion: 'East Bangalore Major Transit & Residential Corridor',
+    description: 'Positioned along Old Madras Road and the Outer Ring Road connecting into the Whitefield IT belt, KR Puram is a fast-growing residential zone of independent houses, newly developed layouts, and gated communities. We engineer heavy-duty mild steel sliding gates, cantilever car parking sheds with UV-coated roofing, balcony safety grills, and stainless steel railings built for long-term weather durability.',
+    highlights: ['Custom motorized and manual sliding main entrance gates', 'Cantilever residential car parking sheds with polycarbonate roofing', 'Complete on-site fabrication and mobile welding across KR Puram & Battarahalli'],
+    commonProjects: ['Heavy-gauge MS boundary gates with anti-rust polyurethane coating', 'Single and dual-car parking sheds with galvanized steel frames', 'AISI 304 stainless steel balcony railings with toughened safety glass'],
+    nearbyLandmarks: ['KR Puram Cable-Stayed Bridge', 'KR Puram Railway Station', 'Battarahalli Junction', 'ITPL Main Road Junction'],
+    featuredProjectSlug: 'main-gate-laser-cut-bangalore'
+  },
+  {
+    slug: 'thanisandra',
+    name: 'Thanisandra',
+    subRegion: 'North Bangalore Airport Link & Tech Corridor',
+    description: 'A thriving growth corridor extending from Manyata Tech Park toward the International Airport road along Thanisandra Main Road and Hennur, this area features high-rise luxury apartment complexes, premium villa gated communities, and retail frontage. We deliver custom CNC laser-cut entrance gates, high-rise balcony safety grill cages, modern floating staircases, and terrace sit-out pergolas designed for contemporary architecture.',
+    highlights: ['High-rise apartment balcony safety grills and child-safe window enclosures', 'Contemporary CNC laser-cut mild steel gates with champagne gold accents', 'Rapid site inspections and precision installation along Thanisandra Main Road'],
+    commonProjects: ['Full-height balcony safety grill cages complying with apartment society norms', 'Designer laser-cut MS main gates with automated sliding tracks', 'Terrace sit-out pergolas and solar inverter support structures'],
+    nearbyLandmarks: ['Bhartiya City', 'Thanisandra Main Road', 'Nagawara Junction', 'Hegde Nagar Circle'],
+    featuredProjectSlug: 'main-gate-laser-cut-bangalore'
+  },
+  {
+    slug: 'yeshwanthpur',
+    name: 'Yeshwanthpur',
+    subRegion: 'West Bangalore Industrial & Commercial Gateway',
+    description: 'Serving as West Bangalore’s primary commercial trade and light-industrial nexus adjacent to Peenya and Malleshwaram, Yeshwanthpur requires heavy-duty structural steelwork. We fabricate structural warehouse roofing sheds, industrial mezzanine storage floors, motorized factory compound gates, heavy machinery security cages, and loading dock canopies engineered to withstand heavy operational use.',
+    highlights: ['Heavy structural steel warehouse framing, PEB sheds, and mezzanine floors', 'Heavy-duty motorized compound sliding gates and industrial barriers', 'Fast mobile welding and structural repairs across Yeshwanthpur & Tumkur Road'],
+    commonProjects: ['I-beam structural warehouse roofing and mezzanine storage platforms', 'Heavy industrial sliding compound gates with industrial guide rollers', 'Safety handrails, caged vertical cat ladders, and rolling shutter frames'],
+    nearbyLandmarks: ['Yeshwanthpur Railway Station', 'APMC Yard / Gordhandas Market', 'Goraguntepalya Flyover', 'Tumkur Road Industrial Junction'],
+    featuredProjectSlug: 'industrial-fabrication-nelamangala-plant'
   }
 ];
 
