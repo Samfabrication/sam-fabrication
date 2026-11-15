@@ -648,6 +648,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
               { name: 'Indiranagar', url: '/locations/indiranagar/', area: 'Central-East' },
               { name: 'Devanahalli', url: '/locations/devanahalli/', area: 'Airport Belt' },
               { name: 'Peenya', url: '/locations/peenya/', area: 'Industrial West' },
+              { name: 'Jayanagar', url: '/locations/jayanagar/', area: 'South Bangalore' },
+              { name: 'JP Nagar', url: '/locations/jp-nagar/', area: 'South Corridor' },
+              { name: 'Marathahalli', url: '/locations/marathahalli/', area: 'East / ORR' },
+              { name: 'Rajajinagar', url: '/locations/rajajinagar/', area: 'West Bangalore' },
             ].map((loc) => (
               <a
                 key={loc.name}

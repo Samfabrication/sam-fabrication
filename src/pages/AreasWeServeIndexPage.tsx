@@ -433,17 +433,18 @@ export const AreasWeServeIndexPage: React.FC<AreasWeServeIndexPageProps> = ({ on
                   { loc: 'RT Nagar', corridor: 'North Bangalore', app: 'Apartment Security Grills, Compound Wall Railings', speed: 'Same-day consultation', link: '/areas-we-serve/north-bangalore/' },
                   { loc: 'Whitefield', corridor: 'East Bangalore', app: 'High-End CNC Gates, SS Glass Handrails, Villa Pergolas', speed: 'Next-day inspection', link: '/locations/whitefield/' },
                   { loc: 'KR Puram & Brookefield', corridor: 'East Bangalore', app: 'Residential Balcony Railings, Multi-Vehicle Car Sheds', speed: 'Next-day inspection', link: '/areas-we-serve/east-bangalore/' },
-                  { loc: 'Marathahalli & Mahadevapura', corridor: 'East Bangalore', app: 'Commercial Entrance Canopies, Architectural Partitions', speed: 'Next-day inspection', link: '/areas-we-serve/east-bangalore/' },
+                  { loc: 'Marathahalli & Mahadevapura', corridor: 'East Bangalore', app: 'Commercial Entrance Canopies, Architectural Partitions', speed: 'Next-day inspection', link: '/locations/marathahalli/' },
                   { loc: 'HSR Layout', corridor: 'South Bangalore', app: 'Matte Black Railings, Terrace Gazebos, Motorized Gates', speed: 'Same-day consultation', link: '/locations/hsr-layout/' },
                   { loc: 'Sarjapur Road', corridor: 'South Bangalore', app: 'Villa Entrance Porticos, Wood & Steel Pergolas, Car Sheds', speed: 'Next-day inspection', link: '/locations/sarjapur-road/' },
                   { loc: 'Indiranagar', corridor: 'Central-East Bangalore', app: 'Rooftop Pergolas, Spiral Staircases, Laser-Cut Grills', speed: 'Same-day consultation', link: '/locations/indiranagar/' },
                   { loc: 'Electronic City', corridor: 'South Bangalore', app: 'PEB Industrial Warehouse Sheds, Fire Escape Towers', speed: 'Priority industrial response', link: '/locations/electronic-city/' },
-                  { loc: 'JP Nagar & Jayanagar', corridor: 'South Bangalore', app: 'Bespoke Traditional & Modern Gates, Internal Staircases', speed: 'Same-day consultation', link: '/areas-we-serve/south-bangalore/' },
+                  { loc: 'Jayanagar', corridor: 'South Bangalore', app: 'Bespoke Traditional & Modern Gates, Balcony Railings, Terrace Sit-Outs', speed: 'Same-day consultation', link: '/locations/jayanagar/' },
+                  { loc: 'JP Nagar', corridor: 'South Bangalore', app: 'Internal & External MS Staircases, Balcony Grills, Cantilever Car Sheds', speed: 'Same-day consultation', link: '/locations/jp-nagar/' },
                   { loc: 'BTM Layout', corridor: 'South Bangalore', app: 'Space-Saving Bi-Fold Gates, Terrace Enclosures', speed: 'Same-day consultation', link: '/areas-we-serve/south-bangalore/' },
                   { loc: 'Peenya Industrial Area', corridor: 'West Bangalore', app: 'Heavy Structural Steel Framing, Warehouse PEB Sheds, Mezzanines', speed: 'Industrial priority dispatch', link: '/locations/peenya/' },
                   { loc: 'Devanahalli', corridor: 'North Bangalore Airport Belt', app: 'Automated Sliding Estate Gates, Perimeter Fencing, Sheds', speed: 'Same-day consultation', link: '/locations/devanahalli/' },
                   { loc: 'Yeshwanthpur', corridor: 'West Bangalore', app: 'Mezzanine Platforms, Heavy Logistics Roll-Up Gates', speed: 'Same-day consultation', link: '/areas-we-serve/west-bangalore/' },
-                  { loc: 'Rajajinagar', corridor: 'West Bangalore', app: 'Commercial Security Grills, Steel Balconies & Gates', speed: 'Same-day consultation', link: '/areas-we-serve/west-bangalore/' }
+                  { loc: 'Rajajinagar', corridor: 'West Bangalore', app: 'Commercial Security Grills, Steel Balconies & Gates', speed: 'Same-day consultation', link: '/locations/rajajinagar/' }
                 ].map((row, idx) => (
                   <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
                     <td className="py-4 px-6 font-bold text-gray-950 flex items-center gap-2">

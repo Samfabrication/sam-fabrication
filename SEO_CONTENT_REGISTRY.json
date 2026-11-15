@@ -161,7 +161,7 @@
     {
       "url": "/why-choose-us/",
       "title": "Best Fabricators in Bangalore Reviews & Quality Standards | SAM Fabrication",
-      "description": "Read verified Bangalore customer reviews and engineering guarantees for SAM Fabrication: MS/SS gates, grills, sheds, welding & heavy structural steel. Open Mon\u2013Sat 9 AM\u20138 PM.",
+      "description": "Read verified Bangalore customer reviews and engineering guarantees for SAM Fabrication: MS/SS gates, grills, sheds, welding & heavy structural steel. Open Mon–Sat 9 AM–8 PM.",
       "h1": "More Than Fabrication. A Stronger Tomorrow.",
       "primaryKeyword": "best fabricators in bangalore reviews",
       "schemaType": "WebPage",
@@ -335,6 +335,42 @@
       "description": "Industrial structural steel fabrication in Peenya Industrial Area, Bangalore. PEB factory sheds, I-beam roofing, mezzanine floors, heavy gates & welding.",
       "h1": "Industrial Fabrication & Structural Steel in Peenya, Bangalore",
       "primaryKeyword": "industrial fabrication peenya bangalore",
+      "schemaType": "LocalBusiness",
+      "category": "locations"
+    },
+    {
+      "url": "/locations/jayanagar/",
+      "title": "Fabrication Works in Jayanagar, Bangalore | Gates, Grills & Railings | SAM Fabrication",
+      "description": "Specialized metal fabrication works in Jayanagar, Bangalore. Custom main gates, safety window grills, SS balcony railings & terrace sheds. Call +91 94533 44824.",
+      "h1": "Fabrication Works in Jayanagar",
+      "primaryKeyword": "fabrication works in jayanagar",
+      "schemaType": "LocalBusiness",
+      "category": "locations"
+    },
+    {
+      "url": "/locations/jp-nagar/",
+      "title": "Fabrication Works in JP Nagar, Bangalore | Staircases, Gates & Sheds | SAM Fabrication",
+      "description": "Expert metal fabrication works in JP Nagar, Bangalore across 1st to 8th Phase. Custom staircases, car parking sheds, window grills & gates. Call +91 94533 44824.",
+      "h1": "Fabrication Works in JP Nagar",
+      "primaryKeyword": "fabrication works in jp nagar",
+      "schemaType": "LocalBusiness",
+      "category": "locations"
+    },
+    {
+      "url": "/locations/marathahalli/",
+      "title": "Fabrication Works in Marathahalli, Bangalore | Grills, Railings & Canopies | SAM Fabrication",
+      "description": "Reliable metal fabrication works in Marathahalli & ORR Bangalore. High-rise apartment balcony grills, window safety grills, canopies & railings. Call +91 94533 44824.",
+      "h1": "Fabrication Works in Marathahalli",
+      "primaryKeyword": "fabrication works in marathahalli",
+      "schemaType": "LocalBusiness",
+      "category": "locations"
+    },
+    {
+      "url": "/locations/rajajinagar/",
+      "title": "Fabrication Works in Rajajinagar, Bangalore | Gates, Grills & Sheds | SAM Fabrication",
+      "description": "Premier metal fabrication works in Rajajinagar, Bangalore. Heavy MS entrance gates, commercial security window grills & terrace roofing sheds. Call +91 94533 44824.",
+      "h1": "Fabrication Works in Rajajinagar",
+      "primaryKeyword": "fabrication works in rajajinagar",
       "schemaType": "LocalBusiness",
       "category": "locations"
     },

@@ -1047,6 +1047,46 @@ export const locationsData: LocationItem[] = [
     commonProjects: ['Industrial PEB factory roofing sheds and warehouse structures', 'Heavy-load steel mezzanine floors and industrial staircases', 'Factory main entrance heavy sliding gates & safety barricades'],
     nearbyLandmarks: ['Peenya Industrial Area 1st & 2nd Stage', 'Tumkur Road', 'Dasarahalli Metro', 'Jalahalli Cross'],
     featuredProjectSlug: 'industrial-fabrication-nelamangala-plant'
+  },
+  {
+    slug: 'jayanagar',
+    name: 'Jayanagar',
+    subRegion: 'South Bangalore Heritage & Residential Hub',
+    description: 'One of Bangalore’s most established residential and commercial enclaves, Jayanagar features tree-lined avenues, independent heritage bungalows, modern multi-level residences, and bustling commercial blocks. We provide custom-fabricated mild steel entrance gates, brass-accented balcony railings, safety window grills, and rooftop terrace sit-out sheds tailored to both traditional architecture and contemporary renovations.',
+    highlights: ['Custom architectural main gates for independent houses and duplexes', 'High-tensile MS safety window grills and balcony enclosures', 'On-site welding and custom metalwork across Jayanagar 1st to 9th Blocks'],
+    commonProjects: ['Heritage-style and modern minimalist MS sliding main gates', 'SS 304 balcony railings with toughened glass panels', 'Covered terrace sit-out pergolas and utility sheds'],
+    nearbyLandmarks: ['Jayanagar 4th Block Complex', 'South End Circle', 'Ashoka Pillar', 'Madhavan Park'],
+    featuredProjectSlug: 'main-gate-laser-cut-bangalore'
+  },
+  {
+    slug: 'jp-nagar',
+    name: 'JP Nagar',
+    subRegion: 'South Bangalore Residential Corridor',
+    description: 'Spanning eight planned phases across South Bangalore, JP Nagar is a vibrant residential corridor of independent villas, modern duplexes, and premium apartment communities. We fabricate custom space-saving metal staircases, decorative balcony safety railings, weather-resistant cantilever car parking sheds, and automated sliding entrance gates designed for residential layouts.',
+    highlights: ['Space-saving internal and external MS metal staircases', 'Cantilever residential car parking sheds with UV polycarbonate roofing', 'On-site fabrication and mobile welding across JP Nagar 1st to 8th Phase'],
+    commonProjects: ['Modern MS stringer staircases with timber or check plate treads', 'Heavy-gauge balcony safety grills for multi-storey residences', 'Motorized residential main gates and compact bi-fold gates'],
+    nearbyLandmarks: ['Brigade Millennium', 'Sarakki Lake', 'Ranga Shankara', 'Delmia Circle'],
+    featuredProjectSlug: 'ms-staircase-yelahanka-duplex'
+  },
+  {
+    slug: 'marathahalli',
+    name: 'Marathahalli',
+    subRegion: 'East Bangalore IT & Residential Corridor',
+    description: 'Positioned along the Outer Ring Road connecting key IT tech parks with dense residential townships, Marathahalli demands robust, space-efficient metalwork. We deliver precision-engineered balcony safety grills, child-safe window grills, commercial entrance canopies, and architectural partition screens for high-rise apartments, independent buildings, and commercial offices.',
+    highlights: ['High-strength apartment balcony safety grills and utility window enclosures', 'Commercial entrance drop-off canopies and structural steel porticos', 'Prompt site measurement and welding service across Marathahalli & ORR'],
+    commonProjects: ['Apartment balcony safety grill cages and bird-protection metal frames', 'Polycarbonate and metal sheet entrance canopies for commercial hubs', 'Architectural laser-cut privacy screens and corridor safety railings'],
+    nearbyLandmarks: ['Marathahalli Bridge', 'Kalamandir Junction', 'Kundalahalli Gate', 'Outer Ring Road IT Belt'],
+    featuredProjectSlug: 'custom-fabrication-screen-whitefield'
+  },
+  {
+    slug: 'rajajinagar',
+    name: 'Rajajinagar',
+    subRegion: 'West Bangalore Commercial & Residential Belt',
+    description: 'A major commercial and residential landmark in West Bangalore, Rajajinagar comprises well-planned residential blocks, commercial thoroughfares, and light industrial units. We fabricate heavy-duty compound boundary gates, security window grills, metal rooftop utility sheds, staircase railings, and commercial display structural frames built to withstand rigorous daily use.',
+    highlights: ['Heavy-duty mild steel sliding and swing boundary gates', 'Commercial security grills, rolling shutter safety frames, and partitions', 'Durable rooftop terrace sheds and solar panel support structures'],
+    commonProjects: ['Modern MS boundary gates with corrosion-resistant polyurethane coating', 'Burglar-resistant residential and commercial safety window grills', 'Terrace utility sheds and metal staircase railings'],
+    nearbyLandmarks: ['Rajajinagar 1st Block', 'Navrang Circle', 'West of Chord Road', 'Mahakavi Kuvempu Road'],
+    featuredProjectSlug: 'window-grills-hebbal-villa'
   }
 ];
 
