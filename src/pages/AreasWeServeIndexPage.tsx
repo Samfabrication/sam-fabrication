@@ -166,6 +166,237 @@ export const AreasWeServeIndexPage: React.FC<AreasWeServeIndexPageProps> = ({ on
         </div>
       </section>
 
+      {/* 2b. DEDICATED BANGALORE LOCALITY HUBS & CASE STUDIES */}
+      <section className="bg-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-14">
+            <span className="text-[11px] font-bold tracking-[0.2em] text-[#B77C26] uppercase block mb-2">
+              DEDICATED LOCALITY HUBS
+            </span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-serif-heading text-gray-950 mb-4">
+              Bangalore Locality Fabrication Hubs
+            </h2>
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Explore specialized fabrication engineering, local architectural standards, and verified project case studies across Bangalore's premier residential, commercial, and industrial corridors.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Sarjapur Road */}
+            <div className="bg-[#F8FAFC] border border-gray-200 hover:border-[#D49B37] rounded-xl p-6 sm:p-8 transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-xl hover:-translate-y-1">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#F59E0B]/10 text-[#B45309] border border-[#F59E0B]/30">
+                    <MapPin className="w-3.5 h-3.5 text-[#B77C26]" />
+                    South-East Villa Corridor
+                  </span>
+                  <span className="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                    Active Coverage
+                  </span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold font-serif-heading text-gray-950 group-hover:text-[#B77C26] transition-colors mb-2">
+                  Sarjapur Road &amp; Carmelaram
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-4">
+                  Specialized architectural metalwork for gated villa layouts and private residences along the Sarjapur-Carmelaram corridor.
+                </p>
+                <div className="bg-white rounded-lg p-3.5 border border-gray-200 mb-4 text-xs text-gray-700 space-y-1.5">
+                  <span className="font-bold text-gray-900 block text-[11px] uppercase tracking-wider text-[#B77C26]">
+                    Specialized Fabrication Scope:
+                  </span>
+                  <p className="leading-relaxed">
+                    Cantilever villa car parking sheds with UV polycarbonate roofing, custom SS 304 &amp; 12mm toughened glass balcony safety railings, and terrace canopies.
+                  </p>
+                </div>
+                <div className="text-xs text-gray-500 mb-6">
+                  <span className="font-semibold text-gray-800">Featured Case Study: </span>
+                  <a
+                    href="/our-work/canopy-structure-sarjapur-villa/"
+                    className="text-[#B77C26] hover:underline font-medium inline-flex items-center gap-1"
+                  >
+                    Architectural Entrance Canopy in Sarjapur Villa &rarr;
+                  </a>
+                </div>
+              </div>
+              <div className="pt-4 border-t border-gray-200 flex items-center justify-between">
+                <a
+                  href="/locations/sarjapur-road/"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#B77C26] group-hover:text-[#925C18] transition-colors"
+                >
+                  View Sarjapur Road Hub
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </a>
+                <button
+                  onClick={onOpenQuote}
+                  className="text-xs font-medium text-gray-600 hover:text-black underline cursor-pointer"
+                >
+                  Get Site Quote
+                </button>
+              </div>
+            </div>
+
+            {/* Indiranagar */}
+            <div className="bg-[#F8FAFC] border border-gray-200 hover:border-[#D49B37] rounded-xl p-6 sm:p-8 transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-xl hover:-translate-y-1">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#F59E0B]/10 text-[#B45309] border border-[#F59E0B]/30">
+                    <MapPin className="w-3.5 h-3.5 text-[#B77C26]" />
+                    Central-East Lifestyle Hub
+                  </span>
+                  <span className="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                    Active Coverage
+                  </span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold font-serif-heading text-gray-950 group-hover:text-[#B77C26] transition-colors mb-2">
+                  Indiranagar &amp; Central East
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-4">
+                  Bespoke architectural steelwork for luxury bungalows, rooftop penthouses, and boutique commercial spaces.
+                </p>
+                <div className="bg-white rounded-lg p-3.5 border border-gray-200 mb-4 text-xs text-gray-700 space-y-1.5">
+                  <span className="font-bold text-gray-900 block text-[11px] uppercase tracking-wider text-[#B77C26]">
+                    Specialized Fabrication Scope:
+                  </span>
+                  <p className="leading-relaxed">
+                    Steel &amp; aluminium rooftop terrace pergolas with shade louvers, architectural space-saving spiral &amp; floating staircases for duplexes, and laser-cut privacy screens.
+                  </p>
+                </div>
+                <div className="text-xs text-gray-500 mb-6">
+                  <span className="font-semibold text-gray-800">Featured Case Study: </span>
+                  <a
+                    href="/our-work/terrace-pergola-indiranagar-penthouse/"
+                    className="text-[#B77C26] hover:underline font-medium inline-flex items-center gap-1"
+                  >
+                    Rooftop Terrace Pergola in Indiranagar Penthouse &rarr;
+                  </a>
+                </div>
+              </div>
+              <div className="pt-4 border-t border-gray-200 flex items-center justify-between">
+                <a
+                  href="/locations/indiranagar/"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#B77C26] group-hover:text-[#925C18] transition-colors"
+                >
+                  View Indiranagar Hub
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </a>
+                <button
+                  onClick={onOpenQuote}
+                  className="text-xs font-medium text-gray-600 hover:text-black underline cursor-pointer"
+                >
+                  Get Site Quote
+                </button>
+              </div>
+            </div>
+
+            {/* Devanahalli */}
+            <div className="bg-[#F8FAFC] border border-gray-200 hover:border-[#D49B37] rounded-xl p-6 sm:p-8 transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-xl hover:-translate-y-1">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#F59E0B]/10 text-[#B45309] border border-[#F59E0B]/30">
+                    <MapPin className="w-3.5 h-3.5 text-[#B77C26]" />
+                    North Airport Belt &amp; Estates
+                  </span>
+                  <span className="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                    Active Coverage
+                  </span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold font-serif-heading text-gray-950 group-hover:text-[#B77C26] transition-colors mb-2">
+                  Devanahalli &amp; Airport Belt
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-4">
+                  Heavy-duty steel fabrication engineered for airport-corridor estates, gated villa layouts, and logistics facilities.
+                </p>
+                <div className="bg-white rounded-lg p-3.5 border border-gray-200 mb-4 text-xs text-gray-700 space-y-1.5">
+                  <span className="font-bold text-gray-900 block text-[11px] uppercase tracking-wider text-[#B77C26]">
+                    Specialized Fabrication Scope:
+                  </span>
+                  <p className="leading-relaxed">
+                    Motorized wide sliding estate gates, galvanized perimeter security fencing, agricultural sheds, and warehouse steel roofing.
+                  </p>
+                </div>
+                <div className="text-xs text-gray-500 mb-6">
+                  <span className="font-semibold text-gray-800">Featured Case Study: </span>
+                  <a
+                    href="/our-work/sliding-gate-devanahalli-estate/"
+                    className="text-[#B77C26] hover:underline font-medium inline-flex items-center gap-1"
+                  >
+                    Automated Sliding Estate Gate in Devanahalli &rarr;
+                  </a>
+                </div>
+              </div>
+              <div className="pt-4 border-t border-gray-200 flex items-center justify-between">
+                <a
+                  href="/locations/devanahalli/"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#B77C26] group-hover:text-[#925C18] transition-colors"
+                >
+                  View Devanahalli Hub
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </a>
+                <button
+                  onClick={onOpenQuote}
+                  className="text-xs font-medium text-gray-600 hover:text-black underline cursor-pointer"
+                >
+                  Get Site Quote
+                </button>
+              </div>
+            </div>
+
+            {/* Peenya Industrial Area */}
+            <div className="bg-[#F8FAFC] border border-gray-200 hover:border-[#D49B37] rounded-xl p-6 sm:p-8 transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-xl hover:-translate-y-1">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-[#F59E0B]/10 text-[#B45309] border border-[#F59E0B]/30">
+                    <MapPin className="w-3.5 h-3.5 text-[#B77C26]" />
+                    West Bangalore Industrial Zone
+                  </span>
+                  <span className="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                    Workshop Adjacency
+                  </span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold font-serif-heading text-gray-950 group-hover:text-[#B77C26] transition-colors mb-2">
+                  Peenya Industrial Area
+                </h3>
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-4">
+                  Industrial structural steel fabrication for South Asia's largest industrial cluster, located right beside our Dasarahalli workshop.
+                </p>
+                <div className="bg-white rounded-lg p-3.5 border border-gray-200 mb-4 text-xs text-gray-700 space-y-1.5">
+                  <span className="font-bold text-gray-900 block text-[11px] uppercase tracking-wider text-[#B77C26]">
+                    Specialized Fabrication Scope:
+                  </span>
+                  <p className="leading-relaxed">
+                    Heavy IS 2062 I-beam structural steel, PEB factory roofing sheds, warehouse mezzanine storage floors, and heavy sliding factory gates.
+                  </p>
+                </div>
+                <div className="text-xs text-gray-500 mb-6">
+                  <span className="font-semibold text-gray-800">Featured Case Study: </span>
+                  <a
+                    href="/our-work/industrial-fabrication-nelamangala-plant/"
+                    className="text-[#B77C26] hover:underline font-medium inline-flex items-center gap-1"
+                  >
+                    Industrial Plant Fabrication in Nelamangala &rarr;
+                  </a>
+                </div>
+              </div>
+              <div className="pt-4 border-t border-gray-200 flex items-center justify-between">
+                <a
+                  href="/locations/peenya/"
+                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#B77C26] group-hover:text-[#925C18] transition-colors"
+                >
+                  View Peenya Industrial Hub
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </a>
+                <button
+                  onClick={onOpenQuote}
+                  className="text-xs font-medium text-gray-600 hover:text-black underline cursor-pointer"
+                >
+                  Get Site Quote
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 3. COMPREHENSIVE LOCALITY MATRIX (Crisp White UI Table Section) */}
       <section className="bg-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 border-b border-gray-200">
         <div className="max-w-7xl mx-auto">
@@ -204,11 +435,13 @@ export const AreasWeServeIndexPage: React.FC<AreasWeServeIndexPageProps> = ({ on
                   { loc: 'KR Puram & Brookefield', corridor: 'East Bangalore', app: 'Residential Balcony Railings, Multi-Vehicle Car Sheds', speed: 'Next-day inspection', link: '/areas-we-serve/east-bangalore/' },
                   { loc: 'Marathahalli & Mahadevapura', corridor: 'East Bangalore', app: 'Commercial Entrance Canopies, Architectural Partitions', speed: 'Next-day inspection', link: '/areas-we-serve/east-bangalore/' },
                   { loc: 'HSR Layout', corridor: 'South Bangalore', app: 'Matte Black Railings, Terrace Gazebos, Motorized Gates', speed: 'Same-day consultation', link: '/locations/hsr-layout/' },
-                  { loc: 'Sarjapur Road', corridor: 'South Bangalore', app: 'Villa Entrance Porticos, Wood & Steel Pergolas', speed: 'Next-day inspection', link: '/areas-we-serve/south-bangalore/' },
+                  { loc: 'Sarjapur Road', corridor: 'South Bangalore', app: 'Villa Entrance Porticos, Wood & Steel Pergolas, Car Sheds', speed: 'Next-day inspection', link: '/locations/sarjapur-road/' },
+                  { loc: 'Indiranagar', corridor: 'Central-East Bangalore', app: 'Rooftop Pergolas, Spiral Staircases, Laser-Cut Grills', speed: 'Same-day consultation', link: '/locations/indiranagar/' },
                   { loc: 'Electronic City', corridor: 'South Bangalore', app: 'PEB Industrial Warehouse Sheds, Fire Escape Towers', speed: 'Priority industrial response', link: '/locations/electronic-city/' },
                   { loc: 'JP Nagar & Jayanagar', corridor: 'South Bangalore', app: 'Bespoke Traditional & Modern Gates, Internal Staircases', speed: 'Same-day consultation', link: '/areas-we-serve/south-bangalore/' },
                   { loc: 'BTM Layout', corridor: 'South Bangalore', app: 'Space-Saving Bi-Fold Gates, Terrace Enclosures', speed: 'Same-day consultation', link: '/areas-we-serve/south-bangalore/' },
-                  { loc: 'Peenya Industrial Area', corridor: 'West Bangalore', app: 'Heavy Structural Steel Framing, Warehouse PEB Sheds', speed: 'Industrial priority dispatch', link: '/areas-we-serve/west-bangalore/' },
+                  { loc: 'Peenya Industrial Area', corridor: 'West Bangalore', app: 'Heavy Structural Steel Framing, Warehouse PEB Sheds, Mezzanines', speed: 'Industrial priority dispatch', link: '/locations/peenya/' },
+                  { loc: 'Devanahalli', corridor: 'North Bangalore Airport Belt', app: 'Automated Sliding Estate Gates, Perimeter Fencing, Sheds', speed: 'Same-day consultation', link: '/locations/devanahalli/' },
                   { loc: 'Yeshwanthpur', corridor: 'West Bangalore', app: 'Mezzanine Platforms, Heavy Logistics Roll-Up Gates', speed: 'Same-day consultation', link: '/areas-we-serve/west-bangalore/' },
                   { loc: 'Rajajinagar', corridor: 'West Bangalore', app: 'Commercial Security Grills, Steel Balconies & Gates', speed: 'Same-day consultation', link: '/areas-we-serve/west-bangalore/' }
                 ].map((row, idx) => (

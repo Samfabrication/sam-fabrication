@@ -636,7 +636,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
             {[
               { name: 'Hebbal', url: '/locations/hebbal/', area: 'North Bangalore' },
               { name: 'Yelahanka', url: '/locations/yelahanka/', area: 'North-East' },
@@ -644,6 +644,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
               { name: 'Whitefield', url: '/locations/whitefield/', area: 'East Bangalore' },
               { name: 'Electronic City', url: '/locations/electronic-city/', area: 'South Bangalore' },
               { name: 'HSR Layout', url: '/locations/hsr-layout/', area: 'South-East' },
+              { name: 'Sarjapur Road', url: '/locations/sarjapur-road/', area: 'Villa Corridor' },
+              { name: 'Indiranagar', url: '/locations/indiranagar/', area: 'Central-East' },
+              { name: 'Devanahalli', url: '/locations/devanahalli/', area: 'Airport Belt' },
+              { name: 'Peenya', url: '/locations/peenya/', area: 'Industrial West' },
             ].map((loc) => (
               <a
                 key={loc.name}

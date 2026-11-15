@@ -166,7 +166,11 @@ export const App: React.FC<AppProps> = ({ initialPath }) => {
       }
     }
 
-    // 10. Bangalore Specific Locality Pages (/locations/:slug/)
+    // 10. Bangalore Specific Locality Pages (/locations/:slug/ and /locations/)
+    if (path === '/locations/' || path === '/locations') {
+      return <AreasWeServeIndexPage onOpenQuote={() => openQuoteModalWithService()} />;
+    }
+
     if (path.startsWith('/locations/')) {
       const slug = path.replace('/locations/', '').replace('/', '');
       const loc = locationsData.find((l) => l.slug === slug);
