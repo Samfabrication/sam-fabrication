@@ -1144,7 +1144,29 @@ export const locationsData: LocationItem[] = [
     highlights: ['Custom architectural main gates for independent houses and duplexes', 'High-tensile MS safety window grills and balcony enclosures', 'On-site welding and custom metalwork across Jayanagar 1st to 9th Blocks'],
     commonProjects: ['Heritage-style and modern minimalist MS sliding main gates', 'SS 304 balcony railings with toughened glass panels', 'Covered terrace sit-out pergolas and utility sheds'],
     nearbyLandmarks: ['Jayanagar 4th Block Complex', 'South End Circle', 'Ashoka Pillar', 'Madhavan Park'],
-    featuredProjectSlug: 'main-gate-laser-cut-bangalore'
+    featuredProjectSlug: 'main-gate-laser-cut-bangalore',
+    faqs: [
+      {
+        question: 'What metal fabrication services are most requested for residences in Jayanagar?',
+        answer: 'In Jayanagar 1st to 9th Blocks, homeowners frequently request custom mild steel entrance gates combining traditional or laser-cut styling, SS 304 balcony railings with toughened glass panels, ornate or modern safety window grills, and covered terrace sit-out pergolas for independent bungalows and renovated duplexes.'
+      },
+      {
+        question: 'Can you design custom main entrance gates that match traditional bungalow architecture in Jayanagar?',
+        answer: 'Yes. We fabricate bespoke swing and sliding gates featuring CNC laser-cut metal accents, classic wrought iron scrollwork, or clean contemporary horizontal louvers. All gates are built with heavy-gauge structural box sections and treated with dual-coat anti-rust primer for lasting durability.'
+      },
+      {
+        question: 'Do you fabricate stainless steel and glass balcony railings for duplex homes in Jayanagar?',
+        answer: 'Yes. We engineer AISI 304 marine-grade stainless steel railing systems paired with 10mm or 12mm toughened safety glass panels. All joints are precision TIG-welded, grind-finished, and buffed to satin or mirror polish to ensure both safety compliance and sleek aesthetics.'
+      },
+      {
+        question: 'Do you offer on-site measurement and consultation across all blocks of Jayanagar?',
+        answer: 'Yes. Our fabrication team conducts site visits across Jayanagar 3rd, 4th, 5th, 7th, 8th, and 9th Blocks, as well as nearby Tilaknagar and South End Circle. We take accurate laser measurements, check masonry and RCC anchor points, and provide itemized estimates.'
+      },
+      {
+        question: 'How do you build rooftop terrace sit-out sheds for Jayanagar houses?',
+        answer: 'We fabricate sturdy structural steel terrace canopies and pergolas using hollow box sections and purlins, topped with multi-wall UV-coated polycarbonate sheets or insulated Galvalume roofing tiles. These protect terrace gardens and seating areas from intense sun and monsoon rains.'
+      }
+    ]
   },
   {
     slug: 'jp-nagar',
@@ -1154,7 +1176,29 @@ export const locationsData: LocationItem[] = [
     highlights: ['Space-saving internal and external MS metal staircases', 'Cantilever residential car parking sheds with UV polycarbonate roofing', 'On-site fabrication and mobile welding across JP Nagar 1st to 8th Phase'],
     commonProjects: ['Modern MS stringer staircases with timber or check plate treads', 'Heavy-gauge balcony safety grills for multi-storey residences', 'Motorized residential main gates and compact bi-fold gates'],
     nearbyLandmarks: ['Brigade Millennium', 'Sarakki Lake', 'Ranga Shankara', 'Delmia Circle'],
-    featuredProjectSlug: 'ms-staircase-yelahanka-duplex'
+    featuredProjectSlug: 'ms-staircase-yelahanka-duplex',
+    faqs: [
+      {
+        question: 'What fabrication solutions do you deliver for villas and apartments in JP Nagar?',
+        answer: 'Across JP Nagar 1st to 8th Phases, we regularly fabricate space-saving internal and external metal staircases, cantilever car parking sheds, high-gauge balcony safety grills for multi-storey homes, and automated sliding or bi-fold compound gates.'
+      },
+      {
+        question: 'Can you fabricate space-saving spiral or floating metal staircases for duplexes in JP Nagar?',
+        answer: 'Yes. We build custom spiral staircases with central heavy-wall structural pipes and laser-cut steps, as well as modern floating mono-stringer metal stairs. Treads can be fitted with anti-skid chequered steel plate or prepared for solid wood and stone overlay.'
+      },
+      {
+        question: 'Which car parking shed designs work best for independent house plots in JP Nagar?',
+        answer: 'Cantilever car parking sheds are especially popular in JP Nagar residential layouts because they use one-sided structural column supports, keeping the driveway entrance completely open for smooth vehicle turning and passenger exit.'
+      },
+      {
+        question: 'Do you fabricate child-safe balcony safety grills and window enclosures in JP Nagar?',
+        answer: 'Yes. We fabricate heavy-duty mild steel balcony grill cages and window safety frames using square bars or hollow tubular sections anchored into RCC beams with high-tensile anchor fasteners, finished with corrosion-resistant primer and polyurethane paint.'
+      },
+      {
+        question: 'How do you schedule on-site fabrication and welding across JP Nagar 1st to 8th Phase?',
+        answer: 'Our mobile fabrication supervisors and welding crews provide on-site inspection and installation from Sarakki, Delmia Circle, and Brigade Millennium to 7th and 8th Phase layouts. We manage structural pre-assembly off-site to minimize on-site noise and duration.'
+      }
+    ]
   },
   {
     slug: 'marathahalli',
@@ -1164,7 +1208,29 @@ export const locationsData: LocationItem[] = [
     highlights: ['High-strength apartment balcony safety grills and utility window enclosures', 'Commercial entrance drop-off canopies and structural steel porticos', 'Prompt site measurement and welding service across Marathahalli & ORR'],
     commonProjects: ['Apartment balcony safety grill cages and bird-protection metal frames', 'Polycarbonate and metal sheet entrance canopies for commercial hubs', 'Architectural laser-cut privacy screens and corridor safety railings'],
     nearbyLandmarks: ['Marathahalli Bridge', 'Kalamandir Junction', 'Kundalahalli Gate', 'Outer Ring Road IT Belt'],
-    featuredProjectSlug: 'custom-fabrication-screen-whitefield'
+    featuredProjectSlug: 'custom-fabrication-screen-whitefield',
+    faqs: [
+      {
+        question: 'What metal fabrication works are most common for apartments and commercial spaces in Marathahalli?',
+        answer: 'Along Marathahalli, Kundalahalli, and Outer Ring Road, high demand centers on apartment balcony safety grill cages, pigeon-protection window metal frames, commercial building entrance porticos, cantilever drop-off canopies, and architectural partition screens.'
+      },
+      {
+        question: 'Can you install full-height balcony safety grill cages for high-rise apartments in Marathahalli?',
+        answer: 'Yes. We engineer custom full-height balcony safety enclosures fabricated from solid square bars or hollow structural sections. Designed to meet high-rise safety standards, they provide child protection and bird deterrence without obstructing ventilation or views.'
+      },
+      {
+        question: 'Do you manufacture commercial entrance canopies and car parking sheds in Marathahalli?',
+        answer: 'Yes. We fabricate heavy structural steel entrance canopies, drop-off porticos, and multi-car parking sheds using curved or pitched truss frames with multi-wall polycarbonate or insulated metal roofing sheets suited for IT offices, clinics, and commercial complexes.'
+      },
+      {
+        question: 'How do you ensure balcony grills and gates survive weather and pollution along the Outer Ring Road?',
+        answer: 'Because Marathahalli experiences heavy traffic emissions and seasonal monsoon exposure, all mild steel fabrication receives thorough mechanical cleaning, dual coats of red oxide / zinc phosphate primer, and two coats of weather-grade polyurethane (PU) enamel paint.'
+      },
+      {
+        question: 'Do you handle on-site measurements and fast installation in gated communities across Marathahalli?',
+        answer: 'Yes. We coordinate site visits across Marathahalli, Munnekollal, spice garden layout, and Kundalahalli Gate. Our supervisors review society guidelines, take laser measurements, and coordinate silent installation during permitted society work hours.'
+      }
+    ]
   },
   {
     slug: 'rajajinagar',
@@ -1174,7 +1240,29 @@ export const locationsData: LocationItem[] = [
     highlights: ['Heavy-duty mild steel sliding and swing boundary gates', 'Commercial security grills, rolling shutter safety frames, and partitions', 'Durable rooftop terrace sheds and solar panel support structures'],
     commonProjects: ['Modern MS boundary gates with corrosion-resistant polyurethane coating', 'Burglar-resistant residential and commercial safety window grills', 'Terrace utility sheds and metal staircase railings'],
     nearbyLandmarks: ['Rajajinagar 1st Block', 'Navrang Circle', 'West of Chord Road', 'Mahakavi Kuvempu Road'],
-    featuredProjectSlug: 'window-grills-hebbal-villa'
+    featuredProjectSlug: 'window-grills-hebbal-villa',
+    faqs: [
+      {
+        question: 'What types of fabrication services do you provide for properties in Rajajinagar?',
+        answer: 'In Rajajinagar, we fabricate heavy-duty compound boundary gates, burglar-resistant safety window grills, rooftop terrace laundry and utility sheds, rolling shutter safety frames, internal staircase railings, and commercial display structural frames.'
+      },
+      {
+        question: 'Can you fabricate heavy-duty mild steel sliding and bi-fold boundary gates for Rajajinagar residences?',
+        answer: 'Yes. We manufacture robust sliding and folding main gates using structural hollow sections and heavy-gauge sheet cladding or laser-cut decorative inserts. Equipped with precision ball-bearing bottom rollers and anti-lift top guides, they operate smoothly in tight urban frontages.'
+      },
+      {
+        question: 'How do you construct burglar-resistant safety window grills for homes and shops in Rajajinagar?',
+        answer: 'We fabricate high-security window grills using solid 10mm to 12mm square or round steel bars, welded into solid perimeter frames and embedded into masonry openings with deep anchor dowels, preventing tampering while allowing easy cleaning and ventilation.'
+      },
+      {
+        question: 'Do you build metal rooftop terrace sheds and solar panel support frames in Rajajinagar?',
+        answer: 'Yes. We construct heavy-gauge structural steel terrace sheds and elevated solar panel mounting frames designed to withstand high monsoon wind loads, using galvanized purlins and anti-rust coated steel trusses anchored directly to RCC columns.'
+      },
+      {
+        question: 'How quickly can your team visit Rajajinagar for measurements and quote estimates?',
+        answer: 'Our workshop in Dasarahalli is just minutes away from Rajajinagar via West of Chord Road and Tumkur Road. We can easily arrange same-day or next-day on-site measurement visits across all Rajajinagar blocks, Navrang Circle, and Mahakavi Kuvempu Road.'
+      }
+    ]
   },
   {
     slug: 'btm-layout',
