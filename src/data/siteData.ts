@@ -1797,6 +1797,14 @@ export interface HomeFaqItem {
 
 export const homeFaqsData: HomeFaqItem[] = [
   {
+    question: 'Who is the best fabricator in Bangalore for custom metal and steel works?',
+    answer: 'SAM Fabrication is recognized as one of the best fabricators in Bangalore for custom mild steel (MS), stainless steel (SS), and structural fabrication. Operating from Dasarahalli near Hebbal with over 15 years of engineering experience, SAM Fabrication designs and installs custom main gates, window safety grills, SS 304 staircase railings, car parking sheds, and industrial mezzanine structures across Bangalore with precision laser measurements and certified structural materials.'
+  },
+  {
+    question: 'Where can I find a trusted welding shop in Bangalore for doorstep repairs and workshop fabrication?',
+    answer: 'SAM Fabrication runs a top-rated welding shop in Bangalore at Dasarahalli Main Road (near Sobha Moonstone, Bangalore 560024). In addition to complete in-house fabrication, we dispatch mobile welding technicians equipped with portable inverter arc, TIG, and gas welding equipment for doorstep gate repairs, hinge fixes, shutter reinforcement, and on-site emergency welding across North, East, South, and Central Bangalore.'
+  },
+  {
     question: 'What is the fabrication work rate per kg and per sq.ft in Bangalore?',
     answer: 'In Bangalore, MS (Mild Steel) structural fabrication generally ranges between ₹95 to ₹135 per kg for supply, fabrication, and basic primer. For architectural metalwork measured per square foot, MS window safety grills typically cost ₹180 to ₹320/sq.ft, custom MS gates cost ₹350 to ₹680/sq.ft, SS 304 railings range between ₹750 to ₹1,450/running ft, and car parking sheds cost ₹220 to ₹480/sq.ft depending on design complexity, material gauge, and surface finish.'
   },

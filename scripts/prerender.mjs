@@ -107,6 +107,45 @@ async function prerender() {
       ]
     };
 
+    if (page.url === '/') {
+      pageSchema['@graph'][0].hasOfferCatalog = {
+        '@type': 'OfferCatalog',
+        name: 'Bangalore Metal Fabrication & Welding Services',
+        itemListElement: [
+          {
+            '@type': 'OfferCatalog',
+            name: 'MS Gate Fabrication',
+            description: 'Custom main gates, sliding gates, compound gates and modern MS grill gates.'
+          },
+          {
+            '@type': 'OfferCatalog',
+            name: 'Window Safety Grills',
+            description: 'Heavy gauge MS window grills, balcony safety grills and security mesh work.'
+          },
+          {
+            '@type': 'OfferCatalog',
+            name: 'SS Railings & Staircases',
+            description: 'SS 304 staircase railings, balcony glass railings and designer metal handrails.'
+          },
+          {
+            '@type': 'OfferCatalog',
+            name: 'Car Parking Sheds & Roofing',
+            description: 'Tensile fabric car parking sheds, polycarbonate roofing and metal sheds.'
+          },
+          {
+            '@type': 'OfferCatalog',
+            name: 'Structural Steel Works',
+            description: 'Mezzanine floors, heavy MS beams, industrial shed structures and PEB frames.'
+          },
+          {
+            '@type': 'OfferCatalog',
+            name: 'Welding Shop & On-Site Repair',
+            description: 'Doorstep mobile welding repairs, TIG/MIG welding, gate repairs and workshop metal engineering.'
+          }
+        ]
+      };
+    }
+
     if (page.url === '/' && homeFaqsData && homeFaqsData.length > 0) {
       pageSchema['@graph'].push({
         '@type': 'FAQPage',

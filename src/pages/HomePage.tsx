@@ -93,7 +93,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
             {/* Small tracking kicker */}
             <div className="inline-flex items-center space-x-2">
               <span className="text-[11px] sm:text-xs font-bold tracking-[0.2em] text-[#D49B37] uppercase">
-                STRONGER SPACES • BUILT WITH PRECISION
+                Best Metal Fabricator &amp; Welding Shop in Bangalore • SAM Fabrication
               </span>
             </div>
 
@@ -109,7 +109,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
 
             {/* Subheadline - Natural Keyword Integration */}
             <p className="text-sm sm:text-base text-gray-300 font-normal leading-relaxed max-w-xl">
-              Leading metal fabricator in Bangalore near Dasarahalli &amp; Hebbal. Custom MS gates, window safety grills, SS railings, car parking sheds, heavy structural steelwork and on-site welding services across Bengaluru.
+              Delivering the best fabrication works and trusted metal fabricators in Bangalore near Dasarahalli &amp; Hebbal. Specializing in custom MS gates, window safety grills, SS railings, sheds, structural steel fabrication, and mobile welding shop services across Bengaluru.
             </p>
 
             {/* 3 Feature Badges Row */}
@@ -167,8 +167,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
             <div className="w-11 h-11 rounded-full bg-[#FAF3E0] flex items-center justify-center text-[#B77C26] mb-3">
               <Flame className="w-5 h-5" />
             </div>
-            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">WELDING</h2>
-            <p className="text-[11px] text-gray-600 mt-1 leading-snug">High quality welding for all structures</p>
+            <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">WELDING SHOP</h2>
+            <p className="text-[11px] text-gray-600 mt-1 leading-snug">Doorstep &amp; workshop welding across Bangalore</p>
           </div>
 
           <div className="bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1">
@@ -176,7 +176,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
               <Layers className="w-5 h-5" />
             </div>
             <h2 className="text-xs font-bold tracking-wider uppercase text-gray-950 font-serif-heading">FABRICATION WORKS</h2>
-            <p className="text-[11px] text-gray-600 mt-1 leading-snug">Custom steel fabrication as per your needs</p>
+            <p className="text-[11px] text-gray-600 mt-1 leading-snug">Custom MS &amp; structural steel fabrication</p>
           </div>
 
           <div className="bg-white rounded-lg p-5 text-gray-900 shadow-xl border border-gray-100 flex flex-col items-center text-center transition-transform hover:-translate-y-1">
@@ -235,10 +235,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 ABOUT US
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold font-serif-heading text-white leading-tight">
-                Reliable Metal Fabrication &amp; Engineering for a Stronger Tomorrow
+                Top-Rated Metal Fabrication Works &amp; Precision Steel Engineering in Bangalore
               </h2>
               <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-                SAM Fabrication Engineering Work specializes in precision welding and steel fabrication solutions for buildings, houses, offices and industrial spaces across Bangalore. From our Dasarahalli workshop near Hebbal, we focus on certified metal grades, timely delivery, and exact architectural alignment.
+                SAM Fabrication Engineering Work is recognized for delivering the best fabrication works in Bangalore, operating an expert certified welding shop in Bangalore with precision steel fabrication solutions for homes, commercial complexes, and industrial spaces. When seeking the best fabricator in Bangalore near Dasarahalli and Hebbal, our dedicated team guarantees certified metal grades, punctual project handovers, and exact architectural structural fit.
               </p>
 
               {/* 3 Stat Numbers */}
@@ -297,8 +297,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 OUR SERVICES
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold font-serif-heading text-gray-950 mt-1">
-                Complete Metal Fabrication Solutions
+                Metal Fabrication Works &amp; Welding Services in Bangalore
               </h2>
+              <p className="text-xs sm:text-sm text-gray-600 mt-2 max-w-2xl leading-relaxed">
+                As skilled Bangalore fabricators, we engineer heavy-duty MS designer gates, high-security window grills, SS railings, and durable roofing sheds tailored for Bangalore weather.
+              </p>
             </div>
             <a
               href="/services/"
@@ -523,7 +526,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 <Wrench className="w-5 h-5 text-[#B77C26]" />
               </div>
               <h3 className="text-base font-bold font-serif-heading text-gray-950 group-hover:text-[#B77C26] transition-colors">
-                Welding Shop &amp; Home Service (16 km+)
+                Welding Shop in Bangalore &amp; Doorstep Welding Services
               </h3>
               <p className="text-xs text-gray-600 leading-relaxed">
                 Doorstep welding repairs from Dasarahalli Main Road (560024), plus Aluminium TIG, Gas Oxy-Acetylene, and Fiber Laser welding. Call {siteConfig.phone}.
