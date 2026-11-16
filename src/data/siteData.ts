@@ -1797,12 +1797,12 @@ export interface HomeFaqItem {
 
 export const homeFaqsData: HomeFaqItem[] = [
   {
-    question: 'Who is the best fabricator in Bangalore for custom metal and steel works?',
-    answer: 'SAM Fabrication is recognized as one of the best fabricators in Bangalore for custom mild steel (MS), stainless steel (SS), and structural fabrication. Operating from Dasarahalli near Hebbal with over 15 years of engineering experience, SAM Fabrication designs and installs custom main gates, window safety grills, SS 304 staircase railings, car parking sheds, and industrial mezzanine structures across Bangalore with precision laser measurements and certified structural materials.'
+    question: 'What metal fabrication services can I enquire about in Bangalore?',
+    answer: 'SAM Fabrication lists services for gates, window grills, railings, staircases, sheds, structural steel fabrication, and welding. Contact the business with your project details to confirm the suitable service, materials, scope, and quote.'
   },
   {
-    question: 'Where can I find a trusted welding shop in Bangalore for doorstep repairs and workshop fabrication?',
-    answer: 'SAM Fabrication runs a top-rated welding shop in Bangalore at Dasarahalli Main Road (near Sobha Moonstone, Bangalore 560024). In addition to complete in-house fabrication, we dispatch mobile welding technicians equipped with portable inverter arc, TIG, and gas welding equipment for doorstep gate repairs, hinge fixes, shutter reinforcement, and on-site emergency welding across North, East, South, and Central Bangalore.'
+    question: 'How can I enquire about welding or fabrication work in Bangalore?',
+    answer: 'Review the relevant service page and contact SAM Fabrication with your location, measurements, preferred materials, and a description or drawing of the work. The business can confirm availability, project specifications, and pricing for your requirements.'
   },
   {
     question: 'What is the fabrication work rate per kg and per sq.ft in Bangalore?',
