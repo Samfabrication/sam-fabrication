@@ -88,6 +88,7 @@ const breadcrumbPages = registry.pages.filter((page) =>
 const missingBreadcrumbs = [];
 const hierarchyErrors = [];
 const clusterNavigationErrors = [];
+const visibleBreadcrumbErrors = [];
 
 for (const page of breadcrumbPages) {
   const filePath = page.url === "/"
@@ -149,6 +150,24 @@ for (const page of breadcrumbPages) {
       }
     }
 
+    // Visible breadcrumb trail verification
+    const hasVisibleNav = html.includes("aria-label=\"Breadcrumb\"") || html.includes("aria-label='Breadcrumb'");
+    if (!hasVisibleNav) {
+      visibleBreadcrumbErrors.push(`${page.url}: missing visible <nav aria-label="Breadcrumb"> element`);
+    }
+    const hasHomeLink = html.includes("href=\"/\"");
+    const hasServicesLink = html.includes("href=\"/services/\"");
+    const hasCurrentPage = html.includes("aria-current=\"page\"");
+    if (!hasHomeLink) {
+      visibleBreadcrumbErrors.push(`${page.url}: visible breadcrumb missing Home link`);
+    }
+    if (!hasServicesLink) {
+      visibleBreadcrumbErrors.push(`${page.url}: visible breadcrumb missing /services/ link`);
+    }
+    if (!hasCurrentPage) {
+      visibleBreadcrumbErrors.push(`${page.url}: visible breadcrumb missing current page (aria-current="page")`);
+    }
+
     // Service-cluster navigation verification
     if (page.url.startsWith("/services/") && page.url !== "/services/") {
       const parentLink = html.includes('href="/services/"') || html.includes("href=\"/services/\"");
@@ -193,6 +212,14 @@ if (hierarchyErrors.length) {
   process.exitCode = 1;
 } else {
   console.log(`Hierarchy check passed: all service and locality pages match the expected navigation hierarchy.`);
+}
+
+if (visibleBreadcrumbErrors.length) {
+  console.error("Visible breadcrumb checks failed:");
+  visibleBreadcrumbErrors.forEach((err) => console.error(`  ${err}`));
+  process.exitCode = 1;
+} else {
+  console.log(`Visible breadcrumb check passed: all service pages display an accessible Home → Services → Service breadcrumb trail.`);
 }
 
 if (clusterNavigationErrors.length) {
