@@ -322,7 +322,7 @@ export const servicesData: ServiceItem[] = [
     slug: 'custom-welding-fabrication',
     title: 'Welding Services & Home Welding',
     shortDescription: 'Workshop & doorstep home welding service within 16+ km in Bangalore. Precision Fiber Laser, TIG/MIG, Aluminium welding, Gas welding & MS/SS repairs — Open Mon–Sat.',
-    fullDescription: 'Searching for a dependable welding shop near you in Bangalore? Located on Dasarahalli Main Road near Sobha Moonstone (560024) and open Mon–Sat from 9:00 AM to 8:00 PM, SAM Fabrication Engineering Work provides both workshop fabrication and rapid on-site home welding services within a 16 km to 25 km radius. Our certified welders handle precision Fiber Laser & Micro-TIG welding, Aluminium TIG/MIG welding, Oxy-Acetylene Gas welding & brazing, stainless steel railings, broken gate hinge repairs, and bespoke architectural metal furniture.',
+    fullDescription: 'Searching for the best welding services in Bangalore or a reliable welding shop near me within 16 km? Located on Dasarahalli Main Road near Sobha Moonstone (560024) and open Mon–Sat from 9:00 AM to 8:00 PM, SAM Fabrication Engineering Work provides precision workshop welding and rapid welding services at home within a 16 km to 25 km radius across Bangalore. If you need certified welding services in Bangalore near me for gates, grills, aluminium frames, or machinery repairs, our workshop and mobile vans are fully equipped.',
     category: 'custom',
     image: '/images/project-custom-fab.webp',
     imageAlt: 'Precision welding shop and custom metal fabrication in Bangalore for SS, MS, aluminium and laser-cut panels',
@@ -353,7 +353,15 @@ export const servicesData: ServiceItem[] = [
       },
       {
         question: 'What are your welding shop opening hours and contact number?',
-        answer: 'Our workshop on Dasarahalli Main Road (near Sobha Moonstone, 560024) is open Monday to Saturday from 9:00 AM to 8:00 PM. Reach us directly at +91 94533 44824 via call or WhatsApp.'
+        answer: 'Our workshop on Dasarahalli Main Road (near Sobha Moonstone, 560024) is open Monday to Saturday from 9:00 AM to 8:00 PM. Reach our welding services in Bangalore contact number directly at +91 94533 44824 via call or WhatsApp.'
+      },
+      {
+        question: 'What is the welding services in Bangalore price list for workshop and home repairs?',
+        answer: 'When evaluating welding services in Bangalore price factors, scope and weld type are key. Minor workshop welding repairs typically range from ₹300 to ₹1,200. For on-site welding services at home within 16 km, mobile technician visiting charges start from ₹350–₹500, with clear pricing for materials and weld joints before any work begins. Call +91 94533 44824 for a quick phone estimate.'
+      },
+      {
+        question: 'Are there Bangalore welding company vacancy openings at your workshop?',
+        answer: 'Yes, for candidates searching for a Bangalore welding company vacancy, SAM Fabrication periodically hires for skilled TIG/MIG arc welders, structural fabricators, and workshop helpers. Candidates with experience in MS and SS fabrication can call +91 94533 44824 or visit our Dasarahalli Main Road workshop to inquire about current welder vacancies.'
       }
     ]
   },
