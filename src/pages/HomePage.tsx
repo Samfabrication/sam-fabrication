@@ -39,8 +39,8 @@ interface HomePageProps {
 export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
 
-  // 6 Services for homepage matching mockup
-  const homeServices = servicesData.slice(0, 6);
+  // All 12 primary services for prominent homepage linking
+  const homeServices = servicesData.slice(0, 12);
   // 6 Recent projects matching mockup
   const homeProjects = projectsData.slice(0, 6);
 
@@ -300,50 +300,127 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 Metal Fabrication &amp; Welding Services in Bangalore
               </h2>
               <p className="text-xs sm:text-sm text-gray-600 mt-2 max-w-2xl leading-relaxed">
-                Browse fabrication services for gates, window grills, railings, sheds, staircases, structural steel, and welding. The service pages outline the work categories; project scope and specifications can be confirmed when requesting a quote.
+                Explore dedicated service pages for entrance gates, window safety grills, SS 304 and MS railings, metal staircases, vehicle parking sheds, rooftop roofing, heavy structural steel, and certified mobile welding across Bangalore.
               </p>
             </div>
             <a
               href="/services/"
               className="inline-flex items-center px-4 py-2 rounded-full border border-gray-300 hover:border-gray-800 text-xs font-semibold text-gray-800 hover:text-black transition-colors"
             >
-              <span>View All 11 Services</span>
+              <span>View Full Capabilities Directory</span>
               <ArrowRight className="w-3.5 h-3.5 ml-1.5" />
             </a>
           </div>
 
-          {/* Grid of 6 Service Cards */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          {/* Grid of 12 Service Cards with Prominent Contextual Links */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {homeServices.map((service) => (
-              <a
+              <div
                 key={service.id}
-                href={`/services/${service.slug}/`}
-                className="group block bg-[#F8FAFC] rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition-all hover:-translate-y-1"
+                className="group bg-[#F8FAFC] rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md hover:border-[#D49B37]/80 transition-all hover:-translate-y-1 flex flex-col justify-between"
               >
-                <div className="h-28 w-full overflow-hidden bg-gray-100">
-                  <picture>
-                    <source srcSet={service.image} type="image/webp" />
-                    <img
-                      src={service.image.replace('.webp', '.jpg')}
-                      alt={service.imageAlt}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      width="1200"
-                      height="750"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </picture>
-                </div>
-                <div className="p-3 flex items-center justify-between">
-                  <span className="text-xs font-bold text-gray-900 font-serif-heading group-hover:text-[#B77C26] transition-colors truncate">
-                    {service.title}
-                  </span>
-                  <div className="w-6 h-6 rounded-full border border-[#D49B37] flex items-center justify-center text-[#B77C26] group-hover:bg-[#D49B37] group-hover:text-white transition-colors shrink-0 ml-1">
-                    <ArrowRight className="w-3 h-3" />
+                <div>
+                  <a href={`/services/${service.slug}/`} className="block h-36 w-full overflow-hidden bg-gray-100 relative">
+                    <picture>
+                      <source srcSet={service.image} type="image/webp" />
+                      <img
+                        src={service.image.replace('.webp', '.jpg')}
+                        alt={service.imageAlt}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        width="1200"
+                        height="750"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                    <span className="absolute top-2.5 left-2.5 bg-gray-950/80 backdrop-blur-sm text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border border-white/10">
+                      {service.category.toUpperCase()}
+                    </span>
+                  </a>
+                  <div className="p-4 space-y-2">
+                    <h3 className="text-sm font-bold text-gray-950 font-serif-heading group-hover:text-[#B77C26] transition-colors leading-snug">
+                      <a href={`/services/${service.slug}/`}>
+                        {service.title}
+                      </a>
+                    </h3>
+                    <p className="text-xs text-gray-600 line-clamp-2 leading-relaxed">
+                      {service.shortDescription}
+                    </p>
+                    <div className="pt-2 border-t border-gray-200/70 text-[11px] text-gray-500 font-medium truncate">
+                      {service.materials.slice(0, 2).join(' • ')}
+                    </div>
                   </div>
                 </div>
-              </a>
+                <div className="px-4 pb-4 pt-1">
+                  <a
+                    href={`/services/${service.slug}/`}
+                    className="inline-flex items-center text-xs font-bold text-[#8E5B1C] group-hover:text-[#B77C26] transition-colors"
+                  >
+                    <span>Explore {service.title} Specifications</span>
+                    <ArrowRight className="w-3 h-3 ml-1 transition-transform group-hover:translate-x-1" />
+                  </a>
+                </div>
+              </div>
             ))}
+          </div>
+
+          {/* Contextual Service Quick Intent Hub */}
+          <div className="mt-10 p-6 rounded-2xl bg-[#F8FAFC] border border-gray-200 space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span className="text-[11px] font-bold tracking-[0.2em] text-[#B77C26] uppercase block">
+                  QUICK INTENT NAVIGATOR
+                </span>
+                <h3 className="text-lg font-bold font-serif-heading text-gray-950 mt-0.5">
+                  Bangalore Fabrication Works by Requirement &amp; Material
+                </h3>
+              </div>
+              <a
+                href="/services/"
+                className="text-xs font-bold text-[#8E5B1C] hover:text-[#B77C26] inline-flex items-center"
+              >
+                <span>Browse Complete Fabrication Hub</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </a>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
+              <div className="bg-white p-4 rounded-xl border border-gray-200 space-y-2">
+                <span className="text-xs font-bold text-gray-900 uppercase tracking-wide block text-[#B77C26]">
+                  Residential Security &amp; Gates
+                </span>
+                <p className="text-xs text-gray-600 leading-relaxed">
+                  Bespoke entrance barriers for independent homes and villas. Review our automated <a href="/services/gate-fabrication/" className="font-semibold text-[#8E5B1C] hover:underline">Gate Fabrication</a>, high-security <a href="/services/window-grills/" className="font-semibold text-[#8E5B1C] hover:underline">Window Safety Grills</a>, and heavy-duty <a href="/services/ms-gates/" className="font-semibold text-[#8E5B1C] hover:underline">Mild Steel (MS) Gates</a>.
+                </p>
+              </div>
+
+              <div className="bg-white p-4 rounded-xl border border-gray-200 space-y-2">
+                <span className="text-xs font-bold text-gray-900 uppercase tracking-wide block text-[#B77C26]">
+                  Balcony Railings &amp; Stairs
+                </span>
+                <p className="text-xs text-gray-600 leading-relaxed">
+                  Certified safety railings and multi-level access. Compare corrosion-proof <a href="/services/ss-railings/" className="font-semibold text-[#8E5B1C] hover:underline">SS 304 Balcony Railings</a>, modern <a href="/services/ms-railings/" className="font-semibold text-[#8E5B1C] hover:underline">MS Safety Railings</a>, and space-saving <a href="/services/staircase-fabrication/" className="font-semibold text-[#8E5B1C] hover:underline">Metal Staircase Fabrication</a>.
+                </p>
+              </div>
+
+              <div className="bg-white p-4 rounded-xl border border-gray-200 space-y-2">
+                <span className="text-xs font-bold text-gray-900 uppercase tracking-wide block text-[#B77C26]">
+                  Outdoor Sheds &amp; Canopies
+                </span>
+                <p className="text-xs text-gray-600 leading-relaxed">
+                  Weatherproof coverings for vehicles and terraces. Discover custom <a href="/services/car-parking-sheds/" className="font-semibold text-[#8E5B1C] hover:underline">Car Parking Sheds</a>, storm-resistant <a href="/services/metal-sheds/" className="font-semibold text-[#8E5B1C] hover:underline">Rooftop Metal Sheds</a>, and architectural <a href="/services/canopy-fabrication/" className="font-semibold text-[#8E5B1C] hover:underline">Entrance Canopies</a>.
+                </p>
+              </div>
+
+              <div className="bg-white p-4 rounded-xl border border-gray-200 space-y-2">
+                <span className="text-xs font-bold text-gray-900 uppercase tracking-wide block text-[#B77C26]">
+                  Structural Steel &amp; Welding
+                </span>
+                <p className="text-xs text-gray-600 leading-relaxed">
+                  Heavy industrial works and doorstep mobile repair. Check out our certified <a href="/services/structural-steel-fabrication/" className="font-semibold text-[#8E5B1C] hover:underline">Heavy Structural Steel</a>, same-day <a href="/services/custom-welding-fabrication/" className="font-semibold text-[#8E5B1C] hover:underline">Home Welding Services</a>, and commercial <a href="/services/event-fabrication/" className="font-semibold text-[#8E5B1C] hover:underline">Event Fabrication</a>.
+                </p>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -383,8 +460,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {fabricationRatesData.slice(0, 6).map((rate, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {fabricationRatesData.map((rate, idx) => (
               <div
                 key={idx}
                 className="bg-white rounded-xl border border-gray-200 p-5 shadow-sm hover:shadow-md hover:border-[#D49B37]/80 transition-all flex flex-col justify-between space-y-4"
@@ -670,6 +747,43 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
                 <span className="block text-[10px] text-gray-500 mt-0.5">{loc.area}</span>
               </a>
             ))}
+          </div>
+
+          {/* Contextual Bridge: Localities to Services */}
+          <div className="mt-8 p-5 rounded-xl bg-[#0B0F15] border border-[#222E3E] text-xs text-gray-300 space-y-3">
+            <div className="flex items-center gap-2 text-sm font-bold text-white font-serif-heading">
+              <MapPin className="w-4 h-4 text-[#D49B37]" />
+              <span>Bangalore Locality-to-Service Guide</span>
+            </div>
+            <p className="text-gray-400 leading-relaxed">
+              We provide rapid on-site laser measurements and turnkey workshop fabrication across all major Bangalore corridors:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pt-3 border-t border-[#1C2533] text-xs">
+              <div className="space-y-1">
+                <strong className="text-white block text-[#D49B37]">North Bangalore (Hebbal, Yelahanka):</strong>
+                <p className="text-gray-400 leading-relaxed">
+                  Specialized in modern <a href="/services/gate-fabrication/" className="text-white hover:text-[#D49B37] underline font-medium">Gate Fabrication</a>, cantilever <a href="/services/car-parking-sheds/" className="text-white hover:text-[#D49B37] underline font-medium">Car Parking Sheds</a>, and mobile <a href="/services/custom-welding-fabrication/" className="text-white hover:text-[#D49B37] underline font-medium">Welding Services</a>.
+                </p>
+              </div>
+              <div className="space-y-1">
+                <strong className="text-white block text-[#D49B37]">East Bangalore (Whitefield, KR Puram):</strong>
+                <p className="text-gray-400 leading-relaxed">
+                  High demand for <a href="/services/window-grills/" className="text-white hover:text-[#D49B37] underline font-medium">Window Safety Grills</a>, marine-grade <a href="/services/ss-railings/" className="text-white hover:text-[#D49B37] underline font-medium">SS 304 Railings</a>, and glass <a href="/services/canopy-fabrication/" className="text-white hover:text-[#D49B37] underline font-medium">Entrance Canopies</a>.
+                </p>
+              </div>
+              <div className="space-y-1">
+                <strong className="text-white block text-[#D49B37]">South Bangalore (Jayanagar, JP Nagar, HSR):</strong>
+                <p className="text-gray-400 leading-relaxed">
+                  Bespoke residential <a href="/services/ms-gates/" className="text-white hover:text-[#D49B37] underline font-medium">Mild Steel Gates</a>, space-saving <a href="/services/staircase-fabrication/" className="text-white hover:text-[#D49B37] underline font-medium">Metal Staircases</a>, and <a href="/services/ms-railings/" className="text-white hover:text-[#D49B37] underline font-medium">MS Balcony Railings</a>.
+                </p>
+              </div>
+              <div className="space-y-1">
+                <strong className="text-white block text-[#D49B37]">West Bangalore (Peenya, Rajajinagar):</strong>
+                <p className="text-gray-400 leading-relaxed">
+                  Industrial hub for <a href="/services/structural-steel-fabrication/" className="text-white hover:text-[#D49B37] underline font-medium">Heavy Structural Steel</a>, factory <a href="/services/metal-sheds/" className="text-white hover:text-[#D49B37] underline font-medium">Metal Roofing Sheds</a>, and workshop repairs.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="mt-8">
