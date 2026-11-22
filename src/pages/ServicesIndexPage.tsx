@@ -204,6 +204,158 @@ export const ServicesIndexPage: React.FC<ServicesIndexPageProps> = ({ onOpenQuot
               </div>
             ))}
           </div>
+
+          {/* 3b. Contextual Service Clusters Directory */}
+          <div className="mt-14 p-6 sm:p-8 rounded-2xl bg-white border border-gray-200 shadow-sm space-y-6">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+              <div>
+                <span className="text-[11px] font-bold tracking-[0.2em] text-[#B77C26] uppercase block">
+                  PROJECT CLUSTER DIRECTORY
+                </span>
+                <h3 className="text-xl sm:text-2xl font-bold font-serif-heading text-gray-950 mt-1">
+                  Bangalore Fabrication Service Clusters &amp; Project Workflows
+                </h3>
+              </div>
+              <a
+                href="/fabrication-rates-bangalore/"
+                className="text-xs font-bold text-[#8E5B1C] hover:text-[#B77C26] inline-flex items-center shrink-0"
+              >
+                <span>View Complete Rate Card</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1" />
+              </a>
+            </div>
+
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed max-w-3xl">
+              Metalwork projects in Bangalore are typically engineered in integrated clusters. Discover how our 12 specialized services interconnect across residential, commercial, and industrial scopes:
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
+              <div className="bg-[#F8FAFC] p-4 rounded-xl border border-gray-200 space-y-3 flex flex-col justify-between">
+                <div className="space-y-2">
+                  <span className="text-xs font-bold text-gray-950 uppercase tracking-wide block text-[#B77C26] border-b border-gray-200 pb-1.5">
+                    1. Gates &amp; Perimeter Security
+                  </span>
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    Integrated residential entrance and perimeter solutions for villas, apartments, and layouts.
+                  </p>
+                </div>
+                <ul className="space-y-1.5 text-xs pt-2 border-t border-gray-200/60">
+                  <li>
+                    <a href="/services/gate-fabrication/" className="font-semibold text-gray-900 hover:text-[#B77C26] flex items-center justify-between">
+                      <span>• Custom Gate Fabrication</span>
+                      <ArrowRight className="w-3 h-3 text-[#B77C26]" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/services/window-grills/" className="font-semibold text-gray-900 hover:text-[#B77C26] flex items-center justify-between">
+                      <span>• Window Safety Grills</span>
+                      <ArrowRight className="w-3 h-3 text-[#B77C26]" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/services/ms-gates/" className="font-semibold text-gray-900 hover:text-[#B77C26] flex items-center justify-between">
+                      <span>• Mild Steel (MS) Gates</span>
+                      <ArrowRight className="w-3 h-3 text-[#B77C26]" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-[#F8FAFC] p-4 rounded-xl border border-gray-200 space-y-3 flex flex-col justify-between">
+                <div className="space-y-2">
+                  <span className="text-xs font-bold text-gray-950 uppercase tracking-wide block text-[#B77C26] border-b border-gray-200 pb-1.5">
+                    2. Railings &amp; Access Stairs
+                  </span>
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    Architectural safety barriers and vertical access systems for duplexes, terraces, and buildings.
+                  </p>
+                </div>
+                <ul className="space-y-1.5 text-xs pt-2 border-t border-gray-200/60">
+                  <li>
+                    <a href="/services/ss-railings/" className="font-semibold text-gray-900 hover:text-[#B77C26] flex items-center justify-between">
+                      <span>• SS 304 Balcony Railings</span>
+                      <ArrowRight className="w-3 h-3 text-[#B77C26]" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/services/ms-railings/" className="font-semibold text-gray-900 hover:text-[#B77C26] flex items-center justify-between">
+                      <span>• Modern MS Safety Railings</span>
+                      <ArrowRight className="w-3 h-3 text-[#B77C26]" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/services/staircase-fabrication/" className="font-semibold text-gray-900 hover:text-[#B77C26] flex items-center justify-between">
+                      <span>• Metal Staircase Fabrication</span>
+                      <ArrowRight className="w-3 h-3 text-[#B77C26]" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-[#F8FAFC] p-4 rounded-xl border border-gray-200 space-y-3 flex flex-col justify-between">
+                <div className="space-y-2">
+                  <span className="text-xs font-bold text-gray-950 uppercase tracking-wide block text-[#B77C26] border-b border-gray-200 pb-1.5">
+                    3. Outdoor Sheds &amp; Shelters
+                  </span>
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    All-weather sun and monsoon protection for parking spaces, rooftops, and entryways.
+                  </p>
+                </div>
+                <ul className="space-y-1.5 text-xs pt-2 border-t border-gray-200/60">
+                  <li>
+                    <a href="/services/car-parking-sheds/" className="font-semibold text-gray-900 hover:text-[#B77C26] flex items-center justify-between">
+                      <span>• Car Parking Sheds</span>
+                      <ArrowRight className="w-3 h-3 text-[#B77C26]" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/services/metal-sheds/" className="font-semibold text-gray-900 hover:text-[#B77C26] flex items-center justify-between">
+                      <span>• Rooftop Metal Sheds</span>
+                      <ArrowRight className="w-3 h-3 text-[#B77C26]" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/services/canopy-fabrication/" className="font-semibold text-gray-900 hover:text-[#B77C26] flex items-center justify-between">
+                      <span>• Architectural Canopies</span>
+                      <ArrowRight className="w-3 h-3 text-[#B77C26]" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-[#F8FAFC] p-4 rounded-xl border border-gray-200 space-y-3 flex flex-col justify-between">
+                <div className="space-y-2">
+                  <span className="text-xs font-bold text-gray-950 uppercase tracking-wide block text-[#B77C26] border-b border-gray-200 pb-1.5">
+                    4. Structural &amp; Mobile Welding
+                  </span>
+                  <p className="text-xs text-gray-600 leading-relaxed">
+                    Heavy industrial engineering, rapid on-site mobile van repairs, and commercial event framing.
+                  </p>
+                </div>
+                <ul className="space-y-1.5 text-xs pt-2 border-t border-gray-200/60">
+                  <li>
+                    <a href="/services/structural-steel-fabrication/" className="font-semibold text-gray-900 hover:text-[#B77C26] flex items-center justify-between">
+                      <span>• Heavy Structural Steel</span>
+                      <ArrowRight className="w-3 h-3 text-[#B77C26]" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/services/custom-welding-fabrication/" className="font-semibold text-gray-900 hover:text-[#B77C26] flex items-center justify-between">
+                      <span>• Doorstep Mobile Welding</span>
+                      <ArrowRight className="w-3 h-3 text-[#B77C26]" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/services/event-fabrication/" className="font-semibold text-gray-900 hover:text-[#B77C26] flex items-center justify-between">
+                      <span>• Event Fabrication &amp; Trusses</span>
+                      <ArrowRight className="w-3 h-3 text-[#B77C26]" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 

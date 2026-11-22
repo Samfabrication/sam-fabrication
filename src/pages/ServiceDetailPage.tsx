@@ -13,7 +13,7 @@ import {
   MessageSquare
 } from 'lucide-react';
 import { ServiceItem } from '../types';
-import { projectsData, siteConfig, weldingCapabilitiesData } from '../data/siteData';
+import { projectsData, siteConfig, weldingCapabilitiesData, servicesData, relatedServiceClusters } from '../data/siteData';
 import { CtaBanner } from '../components/CtaBanner';
 import { Breadcrumbs } from '../components/Breadcrumbs';
 import { SeoHead } from '../components/SeoHead';
@@ -25,6 +25,16 @@ interface ServiceDetailPageProps {
 
 export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, onOpenQuote }) => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
+
+  // Compute contextual cluster services
+  const clusterItems = relatedServiceClusters[service.slug] || [];
+  const relatedClusterServices = clusterItems.map((item) => {
+    const srv = servicesData.find((s) => s.slug === item.slug);
+    return {
+      ...item,
+      service: srv
+    };
+  }).filter((item) => item.service !== undefined);
 
   // Filter relevant projects for this service (matched first, fallback to fill 3)
   const matchedProjects = projectsData.filter((p) => {
@@ -293,6 +303,124 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                 </div>
               )}
 
+              {/* Contextual Related Services Cluster Section */}
+              <div className="space-y-6 pt-6 border-t border-gray-200">
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+                  <div>
+                    <span className="text-[11px] font-bold tracking-[0.2em] text-[#B77C26] uppercase block">
+                      PROJECT SYNERGY &amp; RELATED SERVICES
+                    </span>
+                    <h3 className="text-xl font-bold font-serif-heading text-gray-950 mt-1">
+                      Complementary Fabrication Services for {service.title} in Bangalore
+                    </h3>
+                  </div>
+                  <a
+                    href="/services/"
+                    className="text-xs font-bold text-[#8E5B1C] hover:text-[#B77C26] inline-flex items-center shrink-0"
+                  >
+                    <span>View All 12 Services</span>
+                    <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                  </a>
+                </div>
+
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed max-w-3xl">
+                  Bangalore residential and commercial metalwork projects frequently involve multiple interlinked fabrication requirements. When executing {service.title.toLowerCase()}, clients and architects regularly coordinate with these complementary fabrication services:
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {relatedClusterServices.map((item) => {
+                    const srv = item.service!;
+                    return (
+                      <div
+                        key={srv.slug}
+                        className="bg-[#F8FAFC] border border-gray-200 hover:border-[#D49B37] p-5 rounded-xl transition-all group hover:shadow-md flex flex-col justify-between"
+                      >
+                        <div className="space-y-2.5">
+                          <div className="flex items-center justify-between">
+                            <span className="text-[10px] font-bold uppercase tracking-wider text-[#8E5B1C] bg-[#FAF3E0] border border-[#D49B37]/30 px-2 py-0.5 rounded">
+                              {item.tag}
+                            </span>
+                            <span className="text-[10px] font-semibold text-gray-500 uppercase">
+                              {srv.category}
+                            </span>
+                          </div>
+
+                          <h4 className="text-sm sm:text-base font-bold font-serif-heading text-gray-950 group-hover:text-[#B77C26] transition-colors">
+                            <a href={`/services/${srv.slug}/`}>
+                              {srv.title}
+                            </a>
+                          </h4>
+
+                          <p className="text-xs text-gray-600 leading-relaxed">
+                            {item.relationship}
+                          </p>
+
+                          <div className="pt-2 border-t border-gray-200/60 text-[11px] text-gray-500 font-medium truncate">
+                            Materials: {srv.materials.slice(0, 2).join(' • ')}
+                          </div>
+                        </div>
+
+                        <div className="pt-3 mt-2">
+                          <a
+                            href={`/services/${srv.slug}/`}
+                            className="inline-flex items-center text-xs font-bold text-[#8E5B1C] group-hover:text-[#B77C26] transition-colors"
+                          >
+                            <span>Explore {srv.title} Specifications</span>
+                            <ArrowRight className="w-3 h-3 ml-1 transition-transform group-hover:translate-x-1" />
+                          </a>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Bangalore Service Clusters Cross-Navigator */}
+                <div className="p-4 sm:p-5 rounded-xl bg-[#FAF3E0]/50 border border-[#D49B37]/30 space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-gray-950 uppercase tracking-wider block text-[#8E5B1C]">
+                      Bangalore Metalwork Project Clusters
+                    </span>
+                    <a href="/fabrication-rates-bangalore/" className="text-[11px] font-bold text-[#8E5B1C] hover:underline">
+                      View 2026 Price List →
+                    </a>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 text-xs">
+                    <div className="bg-white p-2.5 rounded-lg border border-gray-200 space-y-1">
+                      <strong className="text-gray-900 block font-semibold">1. Gates &amp; Security:</strong>
+                      <div className="flex flex-col space-y-0.5 text-gray-600">
+                        <a href="/services/gate-fabrication/" className="hover:text-[#B77C26]">• Main Gates</a>
+                        <a href="/services/window-grills/" className="hover:text-[#B77C26]">• Safety Grills</a>
+                        <a href="/services/ms-gates/" className="hover:text-[#B77C26]">• MS Gates</a>
+                      </div>
+                    </div>
+                    <div className="bg-white p-2.5 rounded-lg border border-gray-200 space-y-1">
+                      <strong className="text-gray-900 block font-semibold">2. Railings &amp; Stairs:</strong>
+                      <div className="flex flex-col space-y-0.5 text-gray-600">
+                        <a href="/services/ss-railings/" className="hover:text-[#B77C26]">• SS 304 Railings</a>
+                        <a href="/services/ms-railings/" className="hover:text-[#B77C26]">• MS Railings</a>
+                        <a href="/services/staircase-fabrication/" className="hover:text-[#B77C26]">• Metal Stairs</a>
+                      </div>
+                    </div>
+                    <div className="bg-white p-2.5 rounded-lg border border-gray-200 space-y-1">
+                      <strong className="text-gray-900 block font-semibold">3. Sheds &amp; Canopies:</strong>
+                      <div className="flex flex-col space-y-0.5 text-gray-600">
+                        <a href="/services/car-parking-sheds/" className="hover:text-[#B77C26]">• Car Sheds</a>
+                        <a href="/services/metal-sheds/" className="hover:text-[#B77C26]">• Metal Sheds</a>
+                        <a href="/services/canopy-fabrication/" className="hover:text-[#B77C26]">• Canopies</a>
+                      </div>
+                    </div>
+                    <div className="bg-white p-2.5 rounded-lg border border-gray-200 space-y-1">
+                      <strong className="text-gray-900 block font-semibold">4. Structural &amp; Welding:</strong>
+                      <div className="flex flex-col space-y-0.5 text-gray-600">
+                        <a href="/services/structural-steel-fabrication/" className="hover:text-[#B77C26]">• Heavy Steel</a>
+                        <a href="/services/custom-welding-fabrication/" className="hover:text-[#B77C26]">• Doorstep Welding</a>
+                        <a href="/services/event-fabrication/" className="hover:text-[#B77C26]">• Event Trusses</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Service FAQs */}
               <div className="space-y-4 pt-4 border-t border-gray-200">
                 <h3 className="text-base font-bold font-serif-heading text-gray-950">
@@ -369,22 +497,55 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
                 </div>
               </div>
 
-              {/* Other Services Navigation Box */}
-              <div className="bg-[#F8FAFC] border border-gray-200 rounded-xl p-5 space-y-3">
-                <h4 className="text-xs font-bold text-gray-950 font-serif-heading uppercase tracking-wider border-l-2 border-[#D49B37] pl-2">
-                  Related Fabrication Services
-                </h4>
-                <ul className="space-y-1.5 text-xs">
-                  <li><a href="/services/gate-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Gate Fabrication</a></li>
-                  <li><a href="/services/window-grills/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Window Grills</a></li>
-                  <li><a href="/services/ss-railings/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• SS Railings</a></li>
-                  <li><a href="/services/car-parking-sheds/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Car Parking Sheds</a></li>
-                  <li><a href="/services/staircase-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Staircase Fabrication</a></li>
-                  <li><a href="/services/structural-steel-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Heavy Structural Steel Fabrication</a></li>
-                  <li><a href="/services/custom-welding-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Welding Shop &amp; Home Service</a></li>
-                  <li><a href="/services/event-fabrication/" className="text-gray-700 hover:text-[#B77C26] transition-colors block py-0.5">• Event Fabrication &amp; Trusses</a></li>
-                  <li><a href="/fabrication-rates-bangalore/" className="text-[#8E5B1C] font-semibold hover:text-[#B77C26] transition-colors block py-0.5 pt-1 border-t border-gray-200 mt-1">• Bangalore Fabrication Rate Card →</a></li>
+              {/* Dynamic Related Services Cluster Navigation Box */}
+              <div className="bg-[#F8FAFC] border border-gray-200 rounded-xl p-5 space-y-4">
+                <div>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#B77C26] block">
+                    PROJECT CLUSTER
+                  </span>
+                  <h4 className="text-xs font-bold text-gray-950 font-serif-heading uppercase tracking-wider mt-0.5">
+                    Related to {service.title}
+                  </h4>
+                </div>
+                
+                <ul className="space-y-2 text-xs">
+                  {relatedClusterServices.map((item) => {
+                    const srv = item.service!;
+                    return (
+                      <li key={srv.slug} className="border-b border-gray-100 pb-1.5 last:border-0 last:pb-0">
+                        <a
+                          href={`/services/${srv.slug}/`}
+                          className="font-semibold text-gray-900 hover:text-[#B77C26] transition-colors flex items-center justify-between group"
+                        >
+                          <span className="truncate">{srv.title}</span>
+                          <ArrowRight className="w-3 h-3 text-[#B77C26] opacity-0 group-hover:opacity-100 transition-opacity shrink-0 ml-1" />
+                        </a>
+                        <span className="text-[10px] text-gray-500 block truncate">{item.tag}</span>
+                      </li>
+                    );
+                  })}
                 </ul>
+
+                <div className="pt-3 border-t border-gray-200 space-y-1.5 text-xs">
+                  <a
+                    href="/services/"
+                    className="text-[#8E5B1C] font-semibold hover:text-[#B77C26] transition-colors block py-0.5"
+                  >
+                    • Full 12-Service Capabilities Hub →
+                  </a>
+                  <a
+                    href="/fabrication-rates-bangalore/"
+                    className="text-[#8E5B1C] font-semibold hover:text-[#B77C26] transition-colors block py-0.5"
+                  >
+                    • Bangalore Fabrication Rate Card →
+                  </a>
+                  <a
+                    href="/areas-we-serve/"
+                    className="text-[#8E5B1C] font-semibold hover:text-[#B77C26] transition-colors block py-0.5"
+                  >
+                    • Service Coverage Across Bangalore →
+                  </a>
+                </div>
               </div>
 
             </div>

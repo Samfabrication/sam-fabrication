@@ -1829,3 +1829,277 @@ export const homeFaqsData: HomeFaqItem[] = [
     answer: 'All our mild steel products undergo thorough mechanical slag and rust removal, followed by an industrial dual-coat anti-corrosive zinc-chromate or red-oxide primer. We then apply either architectural electrostatic powder coating or dual coats of high-gloss polyurethane (PU) / synthetic enamel paint to protect against Bangalore monsoon humidity.'
   }
 ];
+
+
+export interface RelatedServiceClusterItem {
+  slug: string;
+  tag: string;
+  relationship: string;
+}
+
+export const relatedServiceClusters: Record<string, RelatedServiceClusterItem[]> = {
+  'gate-fabrication': [
+    {
+      slug: 'ms-gates',
+      tag: 'Material Alternative',
+      relationship: 'Heavy mild steel swing and sliding gates designed for high durability and cost optimization.'
+    },
+    {
+      slug: 'window-grills',
+      tag: 'Perimeter Security Pairing',
+      relationship: 'Coordinate gate metalwork with matching residential window safety grills for consistent home exterior styling.'
+    },
+    {
+      slug: 'canopy-fabrication',
+      tag: 'Entryway Weather Protection',
+      relationship: 'Cover entrance doorways and gate access points with custom metal and polycarbonate weather canopies.'
+    },
+    {
+      slug: 'custom-welding-fabrication',
+      tag: 'On-Site Installation & Welds',
+      relationship: 'Doorstep mobile welding vans for precision hinge alignment, sliding track embedding, and bracket welding.'
+    }
+  ],
+  'window-grills': [
+    {
+      slug: 'ms-railings',
+      tag: 'Balcony & Parapet Match',
+      relationship: 'Match window grill patterns with matching mild steel safety railings on balconies, terraces, and parapets.'
+    },
+    {
+      slug: 'ss-railings',
+      tag: 'Corrosion-Proof Balconies',
+      relationship: 'Marine-grade SS 304 railings with toughened glass for exposed balconies while using MS grills for windows.'
+    },
+    {
+      slug: 'gate-fabrication',
+      tag: 'Full Residential Security',
+      relationship: 'Combine window safety grills with bespoke entrance gates for comprehensive home perimeter security.'
+    },
+    {
+      slug: 'custom-welding-fabrication',
+      tag: 'Doorstep Fixing & Repair',
+      relationship: 'On-site mobile welding service for grill anchoring, modification, and security bracket reinforcement.'
+    }
+  ],
+  'ms-gates': [
+    {
+      slug: 'gate-fabrication',
+      tag: 'Designer Gate Alternative',
+      relationship: 'Explore CNC laser-cut sheet designs, modern wood-grain composite inserts, and motorized sliding gates.'
+    },
+    {
+      slug: 'ms-railings',
+      tag: 'Matching Compound Railings',
+      relationship: 'Extend matching MS section bars and powder-coated geometric patterns across perimeter boundary walls.'
+    },
+    {
+      slug: 'window-grills',
+      tag: 'Residential Security Cluster',
+      relationship: 'Complete residential property protection with heavy-duty mild steel window grills and safety bars.'
+    },
+    {
+      slug: 'custom-welding-fabrication',
+      tag: 'On-Site Track Welding',
+      relationship: 'Heavy MS sliding gates require on-site bottom channel embedding, stop-block welding, and precision roller alignment.'
+    }
+  ],
+  'ss-railings': [
+    {
+      slug: 'ms-railings',
+      tag: 'Budget-Friendly Alternative',
+      relationship: 'Compare powder-coated mild steel railings for cost-effective internal stairs and shaded balconies.'
+    },
+    {
+      slug: 'staircase-fabrication',
+      tag: 'Staircase Handrail Pairing',
+      relationship: 'Fit continuous SS 304 handrails and toughened glass balustrades directly onto metal spiral and floating stairs.'
+    },
+    {
+      slug: 'canopy-fabrication',
+      tag: 'Terrace & Balcony Shelter',
+      relationship: 'Complement upper-floor glass railings with cantilevered glass or polycarbonate terrace rain canopies.'
+    },
+    {
+      slug: 'window-grills',
+      tag: 'High-Rise Balcony Safety',
+      relationship: 'Combine lower SS glass railings with upper child-safety window grills for comprehensive balcony enclosure.'
+    }
+  ],
+  'ms-railings': [
+    {
+      slug: 'ss-railings',
+      tag: 'Stainless Steel Alternative',
+      relationship: 'Evaluate rust-resistant Grade 304 stainless steel with toughened glass for open terrace and coastal exposures.'
+    },
+    {
+      slug: 'staircase-fabrication',
+      tag: 'Stairway Balustrades',
+      relationship: 'Fabricate bespoke MS balusters, laser-cut side panels, and handrails tailored to internal metal staircases.'
+    },
+    {
+      slug: 'window-grills',
+      tag: 'Matching Safety Grills',
+      relationship: 'Maintain unified exterior aesthetics by pairing MS balcony railings with matching window grill profiles.'
+    },
+    {
+      slug: 'ms-gates',
+      tag: 'Boundary Wall Continuity',
+      relationship: 'Connect compound wall railings with matching MS driveway gates for a continuous architectural perimeter.'
+    }
+  ],
+  'staircase-fabrication': [
+    {
+      slug: 'ss-railings',
+      tag: 'Essential Safety Handrails',
+      relationship: 'Ensure building code safety compliance with continuous SS 304 handrails and toughened glass balustrades.'
+    },
+    {
+      slug: 'ms-railings',
+      tag: 'Architectural MS Railings',
+      relationship: 'Incorporate modern vertical slat or geometric laser-cut mild steel safety panels along staircase risers.'
+    },
+    {
+      slug: 'structural-steel-fabrication',
+      tag: 'Heavy Stringer Framework',
+      relationship: 'Heavy industrial stairs and mezzanine access require IS 2062 I-beam and C-channel structural frameworks.'
+    },
+    {
+      slug: 'metal-sheds',
+      tag: 'Terrace Headroom Enclosure',
+      relationship: 'Protect rooftop staircase cutouts and headroom with custom weatherproof terrace metal sheds and doors.'
+    }
+  ],
+  'car-parking-sheds': [
+    {
+      slug: 'metal-sheds',
+      tag: 'Heavy Roofing Alternative',
+      relationship: 'Compare corrugated metal sheet or insulated sandwich PUF panel roofing for larger multi-vehicle yards.'
+    },
+    {
+      slug: 'canopy-fabrication',
+      tag: 'Pedestrian Walkway Canopies',
+      relationship: 'Extend vehicle shelter protection with matching cantilevered entrance and walkway rain canopies.'
+    },
+    {
+      slug: 'gate-fabrication',
+      tag: 'Driveway Clearance Match',
+      relationship: 'Coordinate parking shed post positions and clearance heights with automated driveway sliding gates.'
+    },
+    {
+      slug: 'custom-welding-fabrication',
+      tag: 'On-Site Frame Welding',
+      relationship: 'Our mobile welders execute foundation base plate anchoring, truss welding, and gutter fitting on site.'
+    }
+  ],
+  'metal-sheds': [
+    {
+      slug: 'car-parking-sheds',
+      tag: 'Cantilever Vehicle Carports',
+      relationship: 'Opt for sleek cantilever curved carports with UV polycarbonate sheets for tight residential parking zones.'
+    },
+    {
+      slug: 'structural-steel-fabrication',
+      tag: 'Heavy Industrial Framing',
+      relationship: 'Large warehouse sheds utilize engineered PEB portal frames, heavy steel columns, and roof purlins.'
+    },
+    {
+      slug: 'canopy-fabrication',
+      tag: 'Architectural Terrace Pergolas',
+      relationship: 'For recreational terrace areas, explore modern aesthetic pergolas with tempered glass or louvers.'
+    },
+    {
+      slug: 'staircase-fabrication',
+      tag: 'Rooftop Shed Access',
+      relationship: 'Add external spiral or straight-flight steel staircases for convenient, safe maintenance access to rooftop sheds.'
+    }
+  ],
+  'structural-steel-fabrication': [
+    {
+      slug: 'metal-sheds',
+      tag: 'Industrial Shed Enclosures',
+      relationship: 'Heavy I-beam columns and rafters form the primary skeleton for industrial factory sheds and warehouse roofs.'
+    },
+    {
+      slug: 'staircase-fabrication',
+      tag: 'Mezzanine & Fire Exit Stairs',
+      relationship: 'Fabricate heavy-duty industrial stairs, checkered plate treads, and emergency fire escapes for steel structures.'
+    },
+    {
+      slug: 'custom-welding-fabrication',
+      tag: 'Certified Field Welding',
+      relationship: 'High-strength structural connections require certified multi-pass MIG/SMAW welding and on-site fit-up inspections.'
+    },
+    {
+      slug: 'event-fabrication',
+      tag: 'Heavy Truss & Stage Rigging',
+      relationship: 'Custom structural box trusses and modular frames for temporary venues, commercial exhibition halls, and stages.'
+    }
+  ],
+  'canopy-fabrication': [
+    {
+      slug: 'car-parking-sheds',
+      tag: 'Vehicle Shelter Synergy',
+      relationship: 'Pair front entrance canopies with matching driveway car parking sheds for cohesive building exteriors.'
+    },
+    {
+      slug: 'ss-railings',
+      tag: 'Terrace & Balcony Pairings',
+      relationship: 'Install glass terrace canopies overhead with matching SS 304 frameless glass balustrades below.'
+    },
+    {
+      slug: 'metal-sheds',
+      tag: 'Full Weather Enclosure',
+      relationship: 'When complete weather enclosure is needed, consider full metal terrace sheds with rainwater drainage gutters.'
+    },
+    {
+      slug: 'gate-fabrication',
+      tag: 'Front Entryway Framing',
+      relationship: 'Crown residential main gates and security cabins with weather-resistant steel and polycarbonate canopies.'
+    }
+  ],
+  'custom-welding-fabrication': [
+    {
+      slug: 'gate-fabrication',
+      tag: 'Gate Repairs & Track Welds',
+      relationship: 'Mobile welding vans repair cracked gate hinges, misaligned tracks, latch plates, and automation brackets on site.'
+    },
+    {
+      slug: 'window-grills',
+      tag: 'Grill Modification & Anchoring',
+      relationship: 'On-site welding for window grill modifications, security bracket strengthening, and AC outdoor unit cages.'
+    },
+    {
+      slug: 'structural-steel-fabrication',
+      tag: 'On-Site Steel Erection',
+      relationship: 'Qualified field welders provide certified SMAW and MIG welding for structural columns, beams, and gusset plates.'
+    },
+    {
+      slug: 'staircase-fabrication',
+      tag: 'Staircase Assembly & Repair',
+      relationship: 'Doorstep welding service for fixing wobbly staircase handrails, replacing corroded steps, and stringer reinforcement.'
+    }
+  ],
+  'event-fabrication': [
+    {
+      slug: 'structural-steel-fabrication',
+      tag: 'Heavy Truss Rigging',
+      relationship: 'Utilize engineered structural steel tubing and box trusses for high-capacity lighting rigs and festival stages.'
+    },
+    {
+      slug: 'custom-welding-fabrication',
+      tag: 'Rapid On-Site Welding',
+      relationship: 'Fast on-demand welding teams for venue modifications, emergency truss repairs, and quick-turnaround setups.'
+    },
+    {
+      slug: 'ms-railings',
+      tag: 'Crowd Barriers & Stage Rails',
+      relationship: 'Fabricate modular queue management barricades, VIP enclosure railings, and stage safety handrails.'
+    },
+    {
+      slug: 'canopy-fabrication',
+      tag: 'Weatherproof Event Canopies',
+      relationship: 'Temporary and semi-permanent weatherproof entrance canopies, registration arches, and sponsor booths.'
+    }
+  ]
+};
