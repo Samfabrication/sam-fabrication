@@ -29,8 +29,8 @@ export const servicesData: ServiceItem[] = [
     id: 'gate-fabrication',
     slug: 'gate-fabrication',
     title: 'Gate Fabrication',
-    shortDescription: 'Sliding gates, folding gates, and modern laser-cut designer steel gates built for security and architectural beauty.',
-    fullDescription: 'At SAM Fabrication Engineering Work, we design, fabricate, and install custom entrance gates across Bangalore. Whether you need a heavy-duty motorized sliding gate for a commercial premises or a contemporary laser-cut CNC residential main gate with brass accents, our engineering team ensures precision alignment, smooth track movement, and multi-year rust protection.',
+    shortDescription: "Custom gate fabrication in Bangalore: automated sliding gates, folding gates, CNC laser-cut main gates & heavy MS/SS entrance security systems.",
+    fullDescription: "Looking for the best fabrication works in Bangalore for custom entrance gates? At SAM Fabrication Engineering Work, we design, fabricate, and install modern sliding gates, telescopic gates, folding gates, and designer CNC laser-cut main gates across Bangalore. Whether you need a motorized sliding gate for an industrial compound or an architectural steel gate with brass accents for your villa, our steel fabricators ensure precision alignment, heavy bearing tracks, and durable anti-rust coatings with free doorstep site measurement across Bangalore.",
     category: 'gates',
     image: '/images/project-main-gate.webp',
     imageAlt: 'Custom gate fabrication in Bangalore with CNC laser-cut geometric gold inlay pattern',
@@ -60,15 +60,24 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'How long does a custom main gate take to fabricate and install?',
         answer: 'Typically 7 to 12 working days from final site measurement and 3D design approval.'
+      },
+      {
+        question: "What is the gate fabrication works in Bangalore price list and cost per sq. ft?",
+        answer: "Gate fabrication prices in Bangalore depend on design complexity and steel specifications. Standard heavy MS sliding and swing gates range from ₹350 to ₹680 per sq. ft. (or ₹115 to ₹155 per kg), while modern CNC laser-cut designer steel gates with 3mm CRCA sheet inserts range from ₹650 to ₹1,250 per sq. ft. Motorized gate automation kits and European PU finishes are estimated separately after site inspection."
+      },
+      {
+        question: "What is the contact number and workshop address for gate fabrication near me in Bangalore?",
+        answer: "You can contact SAM Fabrication directly at our Bangalore fabrication works contact number +91 94533 44824 (call or WhatsApp). Our workshop is located on Dasarahalli Main Road near Sobha Moonstone, Bengaluru 560024. We dispatch technicians for free site surveys across Hebbal, Yelahanka, Manyata, Indiranagar, Whitefield, and surrounding Bangalore localities."
       }
+    
     ]
   },
   {
     id: 'window-grills',
     slug: 'window-grills',
     title: 'Window Grills',
-    shortDescription: 'Safety window grills, designer balcony grills, and custom security solutions combining robust protection with sleek aesthetics.',
-    fullDescription: 'Protect your home without sacrificing ventilation or natural light. We fabricate modern window security grills, box grills with integrated planter shelves, and French window grills engineered to meet Bangalore apartment society guidelines while ensuring child safety and intrusion deterrence.',
+    shortDescription: "MS safety window grills, balcony box grills & French window security grills in Bangalore. Anti-rust primer, apartment-compliant designs & quick installation.",
+    fullDescription: "Protect your home without sacrificing ventilation or natural light. Recognized for dependable metal fabrication works in Bangalore, SAM Fabrication designs and manufactures modern window security grills, balcony box grills with planter shelves, and custom French window safety frames. Our window grill fabricators engineer each unit to meet Bangalore apartment society bylaws while ensuring child safety, intrusion deterrence, and long-lasting rust protection.",
     category: 'grills',
     image: '/images/project-window-grill.webp',
     imageAlt: 'Modern safety window grill with minimalist horizontal steel bars in Hebbal residential project',
@@ -93,15 +102,24 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Will mild steel window grills rust during Bangalore rains?',
         answer: 'We treat every MS grill with chemical rust-inhibitors, zinc phosphate primer, and durable outdoor polyurethane or powder-coated finishes to prevent corrosion.'
+      },
+      {
+        question: "What is the window grill fabrication work rate per sq. ft. and per kg in Bangalore?",
+        answer: "Window grill fabrication works in Bangalore typically cost ₹180 to ₹320 per sq. ft., or ₹110 to ₹145 per kg for standard 10mm or 12mm solid square MS bars (IS 2062 grade). The rate includes material supply, precision welding, dual-coat red oxide or zinc chromate primer, enamel or powder-coated finish, and on-site wall grouting."
+      },
+      {
+        question: "How do I book a site measurement, and what is your Bangalore contact number for window grills?",
+        answer: "To book a free site visit anywhere in Bangalore, call or WhatsApp our contact number +91 94533 44824. Our technicians visit villas, independent houses, and apartments with design catalogues, measure window openings precisely, and provide an instant transparent quote."
       }
+    
     ]
   },
   {
     id: 'ms-gates',
     slug: 'ms-gates',
     title: 'MS Gates',
-    shortDescription: 'Heavy-duty mild steel (MS) gates offering unbeatable structural strength, custom aesthetic patterns, and maximum value.',
-    fullDescription: 'Mild Steel (MS) is the premier choice for homeowners and commercial establishments seeking high-impact resistance, versatile design customization, and budget-friendly fabrication. We fabricate high-tensile MS sliding, swing, and double-leaf gates treated with industrial-grade anti-rust primers.',
+    shortDescription: "Heavy-duty mild steel (MS) gates in Bangalore: sliding, swing & double-leaf gates. High-tensile Tata/Jindal steel, anti-rust primers & custom fabrication.",
+    fullDescription: "Mild Steel (MS) is the premier choice for homeowners, developers, and commercial establishments seeking high-impact resistance, versatile design customization, and cost-effective steel fabrication works in Bangalore. If you are searching for experienced MS gate fabricators near me or reliable metal fabrication works in Bangalore, SAM Fabrication delivers heavy-duty sliding, swing, cantilever, and double-leaf gates engineered from branded Tata and Jindal steel sections with industrial-grade anti-corrosive primers.",
     category: 'gates',
     image: '/images/project-sliding-gate.webp',
     imageAlt: 'Heavy-duty horizontal slat sliding gate installed at private residence in Devanahalli',
@@ -120,15 +138,28 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'How do MS gates compare to Stainless Steel gates?',
         answer: 'MS gates are approximately 40% to 50% more affordable than SS gates and offer greater structural rigidity for very large spans, though they require high-quality paint or powder coating to prevent rust.'
+      },
+      {
+        question: "What is the MS fabrication rate per kg in Bangalore for gates and steel frames?",
+        answer: "The standard MS fabrication rate per kg in Bangalore for gates and structural frames ranges from ₹115 to ₹155 per kg (or ₹350 to ₹680 per sq. ft. installed). Pricing depends on hollow section wall thickness (14 or 16 gauge), CNC cut sheet inserts, bearing wheel mechanisms, and surface finish (zinc epoxy primer with PU paint or powder coating)."
+      },
+      {
+        question: "Do you provide on-site inspection and site measurements for MS gates near me in Bangalore?",
+        answer: "Yes, our steel fabricators travel across Bangalore—including Hebbal, Yelahanka, Manyata, Indiranagar, Whitefield, and Jayanagar—for laser measurements, driveway slope assessments, and foundation checks prior to shop fabrication."
+      },
+      {
+        question: "What is your workshop address and contact number for MS gate fabrication in Bangalore?",
+        answer: "Reach SAM Fabrication directly via call or WhatsApp at +91 94533 44824. Our central fabrication workshop is located on Dasarahalli Main Road near Sobha Moonstone, Bengaluru 560024, open Monday to Saturday from 9:00 AM to 8:00 PM."
       }
+    
     ]
   },
   {
     id: 'ss-railings',
     slug: 'ss-railings',
     title: 'SS Railings',
-    shortDescription: 'AISI 304 Grade stainless steel railings for balconies, stairs, and terraces with mirror or satin finish and glass combinations.',
-    fullDescription: 'Add modern luxury and lifetime rust immunity to your property. SAM Fabrication specializes in architectural Grade 304 Stainless Steel railings, featuring precision TIG welded joints, invisible fastenings, and combinations with 10mm/12mm toughened safety glass for balconies, staircases, and terrace parapets.',
+    shortDescription: "AISI 304 Grade stainless steel railings in Bangalore for balconies, stairs & terraces. Glass-steel railings, TIG welding & mirror or brushed satin finish.",
+    fullDescription: "Add modern luxury and lifetime rust immunity to your property with Bangalore's trusted stainless steel fabricators. At SAM Fabrication Engineering Work, we rank among the top steel fabrication works in Bangalore for architectural Grade 304 Stainless Steel railings. We provide precision Argon TIG welded joints, seamless handrail bends, invisible fastenings, and modern combinations with 10mm/12mm toughened safety glass for balconies, internal staircases, and rooftop terrace parapets.",
     category: 'railings',
     image: '/images/project-ss-railing.webp',
     imageAlt: 'Grade 304 stainless steel balcony railing installed at Manyata Tech Park residential complex',
@@ -147,15 +178,24 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'How can I verify that genuine 304 Grade Stainless Steel is used?',
         answer: 'We provide chemical test confirmation and offer on-site acid-test verification upon client request to guarantee 100% genuine non-magnetic AISI 304 SS.'
+      },
+      {
+        question: "What is the SS railing fabrication work rate per running foot in Bangalore?",
+        answer: "In Bangalore, SS 304 railing fabrication rates typically range from ₹750 to ₹1,450 per running foot (RFT) for standard 3-pipe or 4-pipe baluster designs. Designer stainless steel railings combined with 10mm or 12mm toughened safety glass range from ₹1,650 to ₹2,800+ per RFT, including precision core cutting, Jindal 304 grade steel, argon welding, and mirror buff or brushed satin polish."
+      },
+      {
+        question: "How do I contact your stainless steel fabrication team for a quote in Bangalore?",
+        answer: "You can contact our Bangalore steel fabrication desk directly at +91 94533 44824 (call or WhatsApp). We provide free on-site staircase and balcony measurements across Bangalore and share detailed, itemized estimates within 24 hours."
       }
+    
     ]
   },
   {
     id: 'ms-railings',
     slug: 'ms-railings',
     title: 'MS Railings',
-    shortDescription: 'Modern minimalist mild steel railings with architectural matte black powder coating and geometric laser-cut patterns.',
-    fullDescription: 'Achieve the trending contemporary industrial aesthetic with our custom mild steel (MS) railing systems. Ideal for modern villas, duplex apartments, and commercial offices, our MS railings feature clean horizontal geometric slats, slender vertical balusters, and durable thermoset powder coatings.',
+    shortDescription: "Modern mild steel (MS) railings in Bangalore: geometric balusters, laser-cut panels & matte powder coating for balconies, terraces and stairways.",
+    fullDescription: "Achieve the trending contemporary industrial aesthetic with custom mild steel (MS) railing systems from SAM Fabrication. As one of the dedicated metal fabrication works in Bangalore for modern villas, duplex apartments, and commercial spaces, we fabricate clean horizontal geometric slats, slender vertical balusters, CNC laser-cut sheets, and durable thermoset powder-coated railings that deliver robust structural protection with refined architectural lines.",
     category: 'railings',
     image: '/images/project-balcony-railing.webp',
     imageAlt: 'Architectural mild steel balcony railing with black powder coated finish in HSR Layout',
@@ -174,15 +214,24 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Are MS railings safe for external balconies in Bangalore?',
         answer: 'Yes, when properly primed with zinc phosphate and oven-baked powder coating, MS railings endure outdoor rain and sun exposure for many years.'
+      },
+      {
+        question: "What is the cost of MS railing fabrication per running foot in Bangalore?",
+        answer: "MS railing fabrication work in Bangalore typically ranges from ₹420 to ₹780 per running foot (RFT). Rates vary based on hollow section dimensions, solid flat bar thickness, decorative laser-cut motifs, and surface finish (zinc phosphate primer with matte black synthetic enamel or thermoset electrostatic powder coating)."
+      },
+      {
+        question: "Can you fabricate custom designer metal railings to match architectural drawings?",
+        answer: "Yes. Our Bangalore steel fabricators collaborate regularly with architects, interior designers, and homeowners to execute custom designs from CAD drawings or reference images. Reach our engineering team at +91 94533 44824 for design consultation and site measurements."
       }
+    
     ]
   },
   {
     id: 'staircase-fabrication',
     slug: 'staircase-fabrication',
     title: 'Staircase Fabrication',
-    shortDescription: 'Space-saving spiral stairs, modern floating mono-stringer staircases, and heavy-duty external fire escapes.',
-    fullDescription: 'From sculptural indoor floating metal stairs with integrated step lighting brackets to heavy-duty industrial external emergency stairs, SAM Fabrication engineers stairs that maximize square footage while adhering to rigorous structural load-bearing standards.',
+    shortDescription: "Metal staircase fabrication in Bangalore: spiral staircases, modern floating mono-stringer stairs, external fire escapes & industrial metal steps.",
+    fullDescription: "From sculptural indoor floating metal stairs with integrated step lighting brackets to heavy-duty industrial external emergency fire escapes, SAM Fabrication engineers stairs that maximize square footage while adhering to rigorous structural load-bearing standards. If you are searching for dependable steel fabricators near me in Bangalore for duplex residences, commercial offices, or factory mezzanine access, our fabrication team delivers exceptional stability, clean weld seams, and ergonomic step geometry.",
     category: 'structural',
     image: '/images/project-ms-staircase.webp',
     imageAlt: 'Custom MS internal staircase with floating metal steps in Yelahanka Bangalore',
@@ -201,15 +250,24 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Can you build a staircase inside a tight 5ft x 5ft space?',
         answer: 'Yes, our custom-engineered spiral staircases fit comfortably within compact footprints starting from 4.5 ft diameter.'
+      },
+      {
+        question: "How much does metal staircase fabrication cost in Bangalore?",
+        answer: "Metal staircase fabrication prices in Bangalore depend on design: compact circular spiral staircases typically cost ₹35,000 to ₹75,000 complete; standard straight-flight or L-turn MS channel staircases cost ₹600 to ₹1,200 per step (or ₹450 to ₹900 per sq. ft. of tread area); while custom floating mono-stringer staircases with heavy center beams are estimated based on engineering span and tread material."
+      },
+      {
+        question: "Do you provide on-site structural assessment and installation across Bangalore?",
+        answer: "Yes, our senior fabrication engineers perform on-site structural inspections, slab anchor testing, and ergonomic rise-and-run calculations across Bangalore. Call +91 94533 44824 or visit our workshop on Dasarahalli Main Road (560024) to schedule a site consultation."
       }
+    
     ]
   },
   {
     id: 'car-parking-sheds',
     slug: 'car-parking-sheds',
     title: 'Car Parking Sheds',
-    shortDescription: 'Weatherproof polycarbonate, tensile fabric, and metal carports for residential villas, apartments, and corporate complexes.',
-    fullDescription: 'Protect your vehicles from Bangalore blistering afternoon heat, seasonal hail, and heavy monsoon downpours. We build custom cantilever and multi-pillar car parking sheds featuring UV-resistant polycarbonate sheets, architectural tensile fabrics, or insulated metal roofing.',
+    shortDescription: "Car parking shed fabrication in Bangalore: cantilever carports, tensile fabric structures, polycarbonate & metal roofing for homes and offices.",
+    fullDescription: "Protect your vehicles from Bangalore's blistering afternoon heat, seasonal hail, and heavy monsoon downpours. SAM Fabrication is a premier provider of metal and steel fabrication works in Bangalore for residential carports, multi-vehicle apartment parking shelters, and commercial office parking sheds. We build custom cantilever and multi-pillar structures featuring UV-resistant multi-wall polycarbonate sheets, architectural tensile fabrics, or insulated color-coated metal roofing with reinforced structural steel frameworks.",
     category: 'sheds',
     image: '/images/project-car-shed.webp',
     imageAlt: 'Commercial car parking shed with heavy-duty steel pillars and weather-resistant roofing',
@@ -228,15 +286,24 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Which roofing material is best for a residential car shed?',
         answer: 'Polycarbonate sheets are the most popular because they allow natural diffused daylight while blocking 99% of damaging UV rays and vehicle interior heat.'
+      },
+      {
+        question: "What is the car parking shed fabrication price per sq. ft. in Bangalore?",
+        answer: "Car parking shed fabrication in Bangalore typically costs ₹220 to ₹480 per sq. ft. Standard color-coated GI/metal sheet carports cost ₹220 to ₹350 per sq. ft., multi-wall UV-coated polycarbonate sheds cost ₹280 to ₹450 per sq. ft., and cantilever or tensile fabric structures cost ₹380 to ₹550+ per sq. ft., including steel columns, trusses, anti-rust primer, paint, and foundation grouting."
+      },
+      {
+        question: "How do I book a site survey and what is your contact number for car parking sheds in Bangalore?",
+        answer: "Contact SAM Fabrication directly at +91 94533 44824 (call or WhatsApp). Our technicians inspect your parking area anywhere in Bangalore within 24 to 48 hours to evaluate turning radius, column positioning, and rainwater drainage before providing a detailed estimate."
       }
+    
     ]
   },
   {
     id: 'metal-sheds',
     slug: 'metal-sheds',
     title: 'Metal Sheds',
-    shortDescription: 'Heavy-duty steel rooftop sheds, weatherproof garden storage sheds, and industrial equipment shelters.',
-    fullDescription: 'Transform rooftop terraces into shaded, functional living or storage areas. Our metal sheds reduce top-floor building temperatures by shielding the slab from direct solar radiation, while providing waterproof utility spaces for gymnasiums, solar panel mounts, or storage.',
+    shortDescription: "Rooftop metal sheds, terrace steel framing, warehouse storage sheds & industrial utility enclosures across Bangalore. 100% waterproof installation.",
+    fullDescription: "Transform rooftop terraces, industrial compounds, and commercial premises into shaded, functional spaces. As one of the established steel fabrication works in Bangalore, SAM Fabrication designs and constructs heavy-duty rooftop metal sheds, warehouse storage sheds, factory lean-to extensions, and weatherproof utility enclosures. Our steel sheds reduce top-floor building heat by shielding concrete slabs from direct solar radiation while ensuring 100% leak-proof reliability during Bangalore monsoons.",
     category: 'sheds',
     image: '/images/commitment-carport.webp',
     imageAlt: 'Heavy-duty structural metal car parking shed with dark steel frame',
@@ -255,15 +322,24 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Will a rooftop metal shed damage my terrace waterproofing?',
         answer: 'No, we anchor steel base plates into RCC pedestals or use non-penetrative weighted footing techniques combined with PU elastomeric sealants to safeguard waterproofing.'
+      },
+      {
+        question: "What is the metal shed fabrication works in Bangalore price list per sq. ft?",
+        answer: "Metal shed fabrication works in Bangalore generally cost ₹220 to ₹450 per sq. ft. Standard rooftop sheds with Tata Bluescope color-coated sheets and MS tubular trusses range from ₹240 to ₹380 per sq. ft. Commercial warehouse storage sheds and heavy industrial utility enclosures with heavier gauge steel framing and insulated PUF panels range from ₹320 to ₹650 per sq. ft."
+      },
+      {
+        question: "Who can I contact in Bangalore for rooftop shed estimation and site survey?",
+        answer: "You can reach SAM Fabrication directly at +91 94533 44824 or visit our workshop on Dasarahalli Main Road (Bengaluru 560024). We provide complimentary site surveys and structural load checks across North, East, South, and West Bangalore."
       }
+    
     ]
   },
   {
     id: 'structural-steel-fabrication',
     slug: 'structural-steel-fabrication',
     title: 'Heavy Structural Steel Fabrication',
-    shortDescription: 'Heavy industrial fabrication, warehouse framing, pre-engineered steel buildings (PEB), factory trusses, crane girders, and mezzanine floors in Bangalore.',
-    fullDescription: 'As one of the dependable heavy fabrication companies in Bangalore, SAM Fabrication Engineering Work serves industrial belts across Peenya, Bidadi, Bommasandra, Whitefield, and Nelamangala. We fabricate heavy I-beam columns, portal frames, crane girders, multi-tier mezzanine storage floors, and industrial machinery skids engineered to IS 800 and IS 2062 structural codes.',
+    shortDescription: "Heavy structural steel fabrication in Bangalore: PEB warehouse framing, industrial mezzanine floors, crane girders, I-beams & factory structures.",
+    fullDescription: "As one of the leading heavy fabrication companies in Bangalore, SAM Fabrication Engineering Work serves industrial corridors across Peenya, Bidadi, Bommasandra, Whitefield, Nelamangala, and Hoskote. If you need trusted steel fabrication works in Bangalore for warehouses, pre-engineered steel buildings (PEB), industrial mezzanine storage floors, crane gantries, or machinery skids, our workshop fabricates heavy I-beam columns and portal frames engineered strictly to IS 800 and IS 2062 standards with ultrasonic weld inspection.",
     category: 'structural',
     image: '/images/project-ms-structure.webp',
     imageAlt: 'Heavy structural steel fabrication and industrial warehouse trusses in Bidadi Bangalore',
@@ -287,15 +363,24 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'How are heavy structural steel fabrication rates calculated in Bangalore?',
         answer: 'Heavy fabrication pricing is typically quoted per kg or per metric ton depending on section sizes (ISMB/ISA/plate thickness), erection height, and epoxy primer specifications.'
+      },
+      {
+        question: "What is the structural steel fabrication works in Bangalore price list per kg and per ton?",
+        answer: "Structural steel fabrication works in Bangalore range between ₹95 and ₹135 per kg for full material supply, shop cutting, MIG structural welding, anti-corrosive epoxy primer, and crane erection. For client-supplied steel (labour and job work only), rates range from ₹28 to ₹42 per kg depending on plate thickness, joint complexity, and height of erection."
+      },
+      {
+        question: "What is the address and contact number for heavy steel fabricators near me in Bangalore?",
+        answer: "SAM Fabrication Engineering Work operates from Dasarahalli Main Road, near Sobha Moonstone, Bengaluru, Karnataka 560024. Reach our industrial fabrication desk at +91 94533 44824 (call or WhatsApp) or email info@samfabrication.in for tender drawings, structural calculations, and BOQ reviews."
       }
+    
     ]
   },
   {
     id: 'canopy-fabrication',
     slug: 'canopy-fabrication',
     title: 'Canopy Fabrication',
-    shortDescription: 'Architectural metal entrance canopies, cantilever glass porticos, and designer terrace pergolas.',
-    fullDescription: 'Enhance your building entrance facade with architectural metal canopies. Combining slender steel cantilever beams with laminated glass, wooden rafters, or metal louvers, our canopies create striking architectural statements while shielding entrances from rain and glare.',
+    shortDescription: "Architectural metal entrance canopies in Bangalore: cantilever glass canopies, ACP sunshades, terrace pergolas & MS/SS porticos.",
+    fullDescription: "Enhance your building entrance facade with architectural metal canopies from SAM Fabrication Engineering Work. Recognized among premier metal fabrication works in Bangalore for bespoke architectural steelwork, we combine slender cantilever beams with laminated safety glass, ACP sheets, or laser-cut louvers to create striking architectural statements that protect building entrances from Bangalore monsoon rains and harsh afternoon glare.",
     category: 'sheds',
     image: '/images/project-canopy.webp',
     imageAlt: 'Modern residential metal entrance canopy structure with wooden slatted pergola roof in Sarjapur',
@@ -314,7 +399,16 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Are cantilever glass canopies safe during Bangalore windstorms?',
         answer: 'Yes, our cantilever canopies are engineered with structural gusset plates and high-tensile anchor bolts calculated for high wind uplift.'
+      },
+      {
+        question: "What is the indicative price for entrance canopy fabrication in Bangalore?",
+        answer: "Entrance metal canopy fabrication in Bangalore typically ranges from ₹380 to ₹850 per sq. ft. Polycarbonate or ACP sheet canopies cost ₹380 to ₹550 per sq. ft., whereas architectural cantilever steel canopies with 10mm/12mm toughened laminated glass and stainless steel spider fittings range from ₹750 to ₹1,400+ per sq. ft."
+      },
+      {
+        question: "Can your team fabricate custom metal canopies matching architect drawings and 3D elevations?",
+        answer: "Yes, our steel fabricators collaborate closely with architects, builders, and homeowners across Bangalore to execute custom canopies from CAD drawings or 3D renderings. Call our Bangalore workshop at +91 94533 44824 to discuss your entrance specifications."
       }
+    
     ]
   },
   {
@@ -369,8 +463,8 @@ export const servicesData: ServiceItem[] = [
     id: 'event-fabrication',
     slug: 'event-fabrication',
     title: 'Event Fabrication',
-    shortDescription: 'Custom stage trusses, exhibition stalls, corporate backdrop steel frames, entry arches, and modular event canopies in Bangalore.',
-    fullDescription: 'Looking for experienced event fabrication vendors in Bangalore? SAM Fabrication Engineering Work partners with event agencies, exhibition designers, and corporate venues across Manyata Tech Park, Whitefield KTPO, Palace Grounds, and BIEC to build sturdy modular stage trusses, custom steel entry arches, LED screen rigging frames, trade show booths, and heavy-duty temporary canopies.',
+    shortDescription: "Event fabrication vendors in Bangalore: custom stage trusses, exhibition stalls, corporate backdrop frames, entry arches & modular steel rigs.",
+    fullDescription: "Looking for dependable, fast-turnaround event fabrication vendors in Bangalore? SAM Fabrication Engineering Work partners with event management companies, exhibition designers, experiential marketing agencies, and corporate venues across Manyata Tech Park, Whitefield KTPO, Palace Grounds, and BIEC. We deliver robust modular stage trusses, custom steel entry arches, LED screen rigging frames, trade show booths, and heavy-duty temporary canopies with precision welding and strict on-time venue delivery.",
     category: 'custom',
     image: '/images/project-terrace-pergola.webp',
     imageAlt: 'Custom event steel truss, corporate backdrop framework and canopy fabrication in Bangalore',
@@ -394,7 +488,16 @@ export const servicesData: ServiceItem[] = [
       {
         question: 'Are your event metal structures portable for non-destructive hotel or indoor installation?',
         answer: 'Yes, we design bolted knock-down joints with rubber-padded weighted base plates so installations require zero floor drilling in hotel ballrooms and convention centers.'
+      },
+      {
+        question: "What is the typical pricing and turnaround time for event fabrication in Bangalore?",
+        answer: "Pricing for event fabrication depends on structural specifications, rental versus custom build requirements, and metal finish (primer, paint, or high-gloss powder coat). We support express 48-hour to 7-day turnaround times for urgent Bangalore events, expos, and product launches with transparent itemized quotes."
+      },
+      {
+        question: "How do event agencies contact SAM Fabrication for urgent stage and truss fabrication in Bangalore?",
+        answer: "Event organizers and production managers can reach our event fabrication team 24/7 via WhatsApp or direct call at +91 94533 44824, or visit our central fabrication unit on Dasarahalli Main Road (near Sobha Moonstone, 560024) for rapid prototype reviews and load testing."
       }
+    
     ]
   }
 ];
