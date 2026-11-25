@@ -53,7 +53,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({ service, o
 
   const seoTitle =
     service.slug === 'custom-welding-fabrication'
-      ? 'Welding Shop in Bangalore Near Me | Home Service, Aluminium, Gas & Fiber Welding | SAM Fabrication'
+      ? 'Best Welding Shop in Bangalore | Welding Services & Home Welding | SAM Fabrication'
       : service.slug === 'structural-steel-fabrication'
         ? 'Heavy Structural Steel Fabrication Company in Bangalore | PEB & I-Beam Works | SAM Fabrication'
         : service.slug === 'event-fabrication'

@@ -61,8 +61,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
   return (
     <>
       <SeoHead
-        title="Fabrication Works in Bangalore | Metal Fabricator, Gates, Grills & Welding | SAM Fabrication"
-        description="Leading metal fabrication works in Bangalore near Dasarahalli & Hebbal. Custom MS gates, window safety grills, SS railings, sheds & on-site welding. Call +91 94533 44824."
+        title="Fabrication Works in Bangalore | Best Metal Fabricators & Welding Services | SAM Fabrication"
+        description="Looking for the best fabrication works in Bangalore? SAM Fabrication provides custom metal fabrication, MS gates, window safety grills, SS railings, sheds & welding across Bengaluru. Call +91 94533 44824."
         canonical="https://samfabrication.in/"
       />
 
@@ -109,7 +109,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuote }) => {
 
             {/* Subheadline - Natural Keyword Integration */}
             <p className="text-sm sm:text-base text-gray-300 font-normal leading-relaxed max-w-xl">
-              Explore metal fabrication and welding services in Bangalore, including custom gates, window grills, railings, sheds, structural steelwork, and welding. Contact SAM Fabrication to discuss your project requirements.
+              Reliable metal fabrication works in Bangalore (Bengaluru) for residential, commercial, and industrial properties. From custom MS gates, window safety grills, and SS railings to heavy structural sheds and precision welding, discover why property owners choose SAM Fabrication for durable craftsmanship.
             </p>
 
             {/* 3 Feature Badges Row */}

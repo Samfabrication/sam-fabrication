@@ -76,7 +76,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a href="/services/custom-welding-fabrication/" className="text-gray-400 hover:text-white transition-colors">
-                  Welding &amp; Home Service
+                  Welding Services in Bangalore
                 </a>
               </li>
               <li>

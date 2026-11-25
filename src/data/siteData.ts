@@ -414,9 +414,9 @@ export const servicesData: ServiceItem[] = [
   {
     id: 'custom-welding-fabrication',
     slug: 'custom-welding-fabrication',
-    title: 'Welding Services & Home Welding',
-    shortDescription: 'Workshop & doorstep home welding service within 16+ km in Bangalore. Precision Fiber Laser, TIG/MIG, Aluminium welding, Gas welding & MS/SS repairs — Open Mon–Sat.',
-    fullDescription: 'Searching for the best welding services in Bangalore or a reliable welding shop near me within 16 km? Located on Dasarahalli Main Road near Sobha Moonstone (560024) and open Mon–Sat from 9:00 AM to 8:00 PM, SAM Fabrication Engineering Work provides precision workshop welding and rapid welding services at home within a 16 km to 25 km radius across Bangalore. If you need certified welding services in Bangalore near me for gates, grills, aluminium frames, or machinery repairs, our workshop and mobile vans are fully equipped.',
+    title: 'Best Welding Shop & Welding Services',
+    shortDescription: 'Top-rated welding shop & doorstep home welding service across Bangalore. Precision TIG/MIG, Aluminium welding, Gas brazing, and emergency MS/SS repairs open Mon–Sat.',
+    fullDescription: 'Looking for the best welding shop in Bangalore or professional welding services near you? Located on Dasarahalli Main Road (Bengaluru 560024) and open Monday through Saturday (9:00 AM – 8:00 PM), SAM Fabrication delivers industrial workshop welding and rapid doorstep welding services within a 16 km to 25 km radius across Bangalore. Whether you require aluminium TIG welding, gas brazing, fiber laser seams, or urgent structural repairs, our experienced welders provide durable, code-compliant joins.',
     category: 'custom',
     image: '/images/project-custom-fab.webp',
     imageAlt: 'Precision welding shop and custom metal fabrication in Bangalore for SS, MS, aluminium and laser-cut panels',
@@ -433,6 +433,10 @@ export const servicesData: ServiceItem[] = [
       { label: 'Open Hours & Contact', value: 'Mon – Sat: 9:00 AM – 8:00 PM | Direct Call: +91 94533 44824' }
     ],
     faqs: [
+      {
+        question: 'What makes SAM Fabrication one of the best welding shops in Bangalore?',
+        answer: 'Our workshop features industrial TIG (AC/DC for aluminium), MIG/MAG, Oxy-Acetylene gas brazing, and portable inverter welding units. We offer walk-in workshop repairs on Dasarahalli Main Road and rapid mobile welding dispatch across Bengaluru.'
+      },
       {
         question: 'Do you provide welding home service near me in Bangalore?',
         answer: 'Yes! Our mobile welding technicians travel with portable inverter welding machines across North, East, South, and West Bangalore (16 km+ from Dasarahalli Main Road / Hebbal) for on-site gate hinge repairs, grill fixes, lock welding, and balcony railing reinforcement. Call +91 94533 44824 for same-day slot availability.'
@@ -1907,6 +1911,10 @@ export interface HomeFaqItem {
 }
 
 export const homeFaqsData: HomeFaqItem[] = [
+  {
+    question: 'What makes SAM Fabrication one of the best fabrication works in Bangalore?',
+    answer: 'SAM Fabrication combines over 12+ years of fabrication experience, certified welders, certified steel materials (APL Apollo, Jindal, Tata Steel), transparent per-kg and per-sq.ft rate cards, and on-time site installation across North, East, South, and Central Bengaluru.'
+  },
   {
     question: 'What metal fabrication services can I enquire about in Bangalore?',
     answer: 'SAM Fabrication lists services for gates, window grills, railings, staircases, sheds, structural steel fabrication, and welding. Contact the business with your project details to confirm the suitable service, materials, scope, and quote.'
