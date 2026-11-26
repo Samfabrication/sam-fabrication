@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node scripts/prerender.mjs && npm run check:seo:structured-data",
+    "build": "vite build && node scripts/prerender.mjs && npm run check:seo:structured-data && npm run test:seo",
     "preview": "vite preview",
-    "check:seo:structured-data": "node scripts/check-seo-structured-data.mjs"
+    "check:seo:structured-data": "node scripts/check-seo-structured-data.mjs",
+    "test:seo": "node scripts/check-seo-regression.mjs",
+    "test": "npm run check:seo:structured-data && npm run test:seo"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
