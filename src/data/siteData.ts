@@ -1912,10 +1912,6 @@ export interface HomeFaqItem {
 
 export const homeFaqsData: HomeFaqItem[] = [
   {
-    question: 'What makes SAM Fabrication one of the best fabrication works in Bangalore?',
-    answer: 'SAM Fabrication combines over 12+ years of fabrication experience, certified welders, certified steel materials (APL Apollo, Jindal, Tata Steel), transparent per-kg and per-sq.ft rate cards, and on-time site installation across North, East, South, and Central Bengaluru.'
-  },
-  {
     question: 'What metal fabrication services can I enquire about in Bangalore?',
     answer: 'SAM Fabrication lists services for gates, window grills, railings, staircases, sheds, structural steel fabrication, and welding. Contact the business with your project details to confirm the suitable service, materials, scope, and quote.'
   },
