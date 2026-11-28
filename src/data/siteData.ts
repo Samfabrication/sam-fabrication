@@ -1507,7 +1507,131 @@ export const locationsData: LocationItem[] = [
       }
     ]
   }
-];
+  ,{
+    slug: 'koramangala',
+    name: 'Koramangala',
+    subRegion: 'South-East Bangalore Commercial & Upscale Hub',
+    description: 'Koramangala is one of Bangalore’s premier commercial and upscale residential districts, spanning 8 distinct blocks from Sony World Junction to Intermediate Ring Road. We fabricate custom entrance gates, cafe pergolas, rooftop glass canopies, and modern floating staircases for independent homes, restaurants, and boutique commercial spaces.',
+    highlights: ["Specialized in designer rooftop pergolas & restaurant entrance canopies", "High-end laser-cut gates with composite wooden/WPC inlays", "Rapid on-site surveys across Blocks 1 through 8 and 80 Feet Road"],
+    commonProjects: ["Rooftop dining pergolas and glass skylight canopies", "CNC laser-cut mild steel compound gates", "Stainless steel & toughened glass staircase railings"],
+    nearbyLandmarks: ["Sony World Signal", "80 Feet Road", "Koramangala Club", "Forum Mall / Nexus"],
+    featuredProjectSlug: 'custom-fabrication-screen-whitefield',
+    faqs: [
+      {
+            "question": "Do you fabricate outdoor pergolas and canopies for Koramangala cafes and commercial rooftops?",
+            "answer": "Yes. We design and fabricate custom structural steel pergolas, glass skylights, and tensile canopies tailored to Koramangala restaurants, rooftop cafes, and commercial terraces with weather-resistant powder coating."
+      },
+      {
+            "question": "Can you customize entrance gates for independent bungalows in Koramangala?",
+            "answer": "Absolutely. We engineer bespoke CNC laser-cut MS gates, sliding compound gates, and composite wood-inlay main gates with heavy-duty hinges and automated motor provisions."
+      },
+      {
+            "question": "What metal grades do you use for high-traffic Koramangala commercial railings?",
+            "answer": "For commercial staircases and balconies, we utilize certified Grade 304 or 316 stainless steel with toughened architectural glass, preventing corrosion and withstanding intensive daily use."
+      },
+      {
+            "question": "How fast can you conduct a site measurement visit in Koramangala?",
+            "answer": "Our fabrication team provides same-day or next-day on-site measurement visits across all sectors of Koramangala, bringing material samples and discussing structural layouts."
+      },
+      {
+            "question": "Do you handle demolition and replacement of old rusted gates in Koramangala?",
+            "answer": "Yes. We offer complete turnkey services including safe removal of old gates or railings, structural wall reinforcement, and precision installation of the new fabricated metalwork."
+      }
+]
+  }  ,{
+    slug: 'bellandur',
+    name: 'Bellandur',
+    subRegion: 'Outer Ring Road IT & High-Rise Corridor',
+    description: 'Positioned centrally along the Outer Ring Road tech corridor connecting Marathahalli and Sarjapur Road, Bellandur features extensive apartment townships, tech campuses, and villa gated communities. We deliver compliant apartment balcony safety grills, cantilever car parking sheds, terrace laundry shelters, and heavy-duty sliding gates.',
+    highlights: ["RWA-compliant balcony child-safety grills and box grill enclosures", "Cantilever multi-vehicle car parking sheds for villa driveways", "Quick installation teams servicing Green Glen Layout, Ecospace & ORR"],
+    commonProjects: ["Apartment balcony safety box grills & utility enclosures", "Villa cantilever polycarbonate car parking sheds", "Terrace metal roofing sheets for rain & sun protection"],
+    nearbyLandmarks: ["Ecospace Business Park", "Green Glen Layout", "Bellandur Central", "Outer Ring Road"],
+    featuredProjectSlug: 'car-parking-shed-bangalore-campus',
+    faqs: [
+      {
+            "question": "Are your balcony safety grills compliant with Bellandur apartment society guidelines?",
+            "answer": "Yes. We fabricate balcony safety grills and child-safe invisible/box grills strictly conforming to local apartment association rules and fire evacuation specifications."
+      },
+      {
+            "question": "Can you install car parking sheds in Bellandur villa communities?",
+            "answer": "Yes. We engineer cantilever and arch-frame car parking sheds using polycarbonate sheets, tensile fabric, or PUF insulated panels that fit neatly into villa driveways."
+      },
+      {
+            "question": "What anti-rust treatments do you apply to metalwork in the Bellandur lake vicinity?",
+            "answer": "Due to humidity in the lake corridor, all our mild steel work receives zinc-chromate anti-rust primer followed by dual coats of epoxy or exterior polyurethane powder coating."
+      },
+      {
+            "question": "Do you offer utility balcony bird protection and laundry drying sheds?",
+            "answer": "Yes. We fabricate lightweight utility enclosures, pigeon-proof balcony safety grills, and overhead covered drying areas for apartment utility spaces."
+      },
+      {
+            "question": "How long does fabrication and installation take for an apartment in Bellandur?",
+            "answer": "Standard balcony safety grills and window grates are typically fabricated in our workshop within 3 to 5 business days and installed on-site within 4 to 6 hours."
+      }
+]
+  }  ,{
+    slug: 'banashankari',
+    name: 'Banashankari',
+    subRegion: 'South-West Bangalore Residential Heartland',
+    description: 'As Bangalore’s largest established residential layout spanning Stages 1 through 6, Banashankari features multi-story independent residences, duplex villas, and bustling commercial cross roads. We fabricate heavy-gauge mild steel security gates, classic window safety grills, external metal staircases, and terrace utility sheds.',
+    highlights: ["Heavy mild steel security gates designed for multi-family independent homes", "External fire-escape and space-saving spiral staircases", "Comprehensive site inspections across BSK 1st, 2nd, and 3rd Stages"],
+    commonProjects: ["Double-leaf MS swing gates with anti-sag heavy hinges", "Traditional and contemporary flat-bar window safety grills", "Terrace GI sheet roofing with structural tubular framing"],
+    nearbyLandmarks: ["Banashankari BDA Complex", "Banashankari Amma Temple", "Outer Ring Road BSK 2nd Stage", "Deve Gowda Petrol Bunk"],
+    featuredProjectSlug: 'window-grills-hebbal-villa',
+    faqs: [
+      {
+            "question": "Do you fabricate custom main gates for independent houses in Banashankari?",
+            "answer": "Yes. We build custom swing, sliding, and folding main gates using Tata/APL Apollo MS hollow sections with laser-cut geometric patterns and heavy-duty pivot bearings."
+      },
+      {
+            "question": "Can you build an external metal staircase for a rental floor in Banashankari?",
+            "answer": "Yes. We specialize in external spiral and straight-flight iron staircases with anti-slip checker plate treads, providing safe separate access for rental upper floors."
+      },
+      {
+            "question": "What are the common rates for window safety grills in Banashankari?",
+            "answer": "Standard residential MS window safety grills typically range from \u20b9180 to \u20b9280 per square foot depending on steel thickness, spacing, and powder-coated finish."
+      },
+      {
+            "question": "Do you provide on-site welding repairs for damaged gates in Banashankari?",
+            "answer": "Yes. Our mobile welding unit visits Banashankari homes for on-site gate hinge repairs, latch fixes, re-welding fallen railing sections, and structural reinforcement."
+      },
+      {
+            "question": "How do you protect terrace metal sheds against heavy monsoon rainfall?",
+            "answer": "We construct sheds with heavy-duty structural steel purlins, high-grade color-coated GI or polycarbonate roofing sheets, and integrated perimeter rainwater drainage gutters."
+      }
+]
+  }  ,{
+    slug: 'kengeri',
+    name: 'Kengeri',
+    subRegion: 'West Bangalore Industrial & Metro Growth Corridor',
+    description: 'Strategically situated along Mysore Road and the Purple Line Metro corridor, Kengeri connects heavy industrial clusters, educational institutions, and rapidly expanding satellite residential layouts. We engineer heavy structural steel frameworks, warehouse industrial sheds, motorized factory sliding gates, and residential balcony railings.',
+    highlights: ["Heavy structural steel truss fabrication and industrial warehouse roofing", "Heavy-gauge automated sliding gates for commercial & factory compounds", "Prompt on-site surveys across Kengeri Satellite Town, Mysore Road & Kommaghatta"],
+    commonProjects: ["Industrial PEB and tubular steel warehouse sheds", "Wide-driveway factory sliding gates with heavy roller tracks", "Durable GI terrace sheds and residential balcony handrails"],
+    nearbyLandmarks: ["Kengeri Metro Station", "Kengeri Satellite Town", "Mysore Road Junction", "RV College of Engineering"],
+    featuredProjectSlug: 'car-parking-shed-bangalore-campus',
+    faqs: [
+      {
+            "question": "Do you undertake industrial shed and warehouse metal fabrication in Kengeri?",
+            "answer": "Yes. We engineer large-span industrial metal sheds, PEB factory structures, mezzanine floors, and heavy storage racks across industrial zones in and around Kengeri."
+      },
+      {
+            "question": "Can you manufacture heavy sliding gates for factories and warehouses in Kengeri?",
+            "answer": "Absolutely. We fabricate heavy-duty MS sliding compound gates spanning 20 to 50 feet with reinforced bottom guide rails, heavy industrial rollers, and automated drive compatibility."
+      },
+      {
+            "question": "What materials do you recommend for industrial roofing in Kengeri?",
+            "answer": "We recommend pre-painted galvalume corrugated sheets or PUF insulated panels mounted on engineered tubular truss frames for optimal heat insulation and rust resistance."
+      },
+      {
+            "question": "Do you fabricate residential gates and railings in Kengeri Satellite Town?",
+            "answer": "Yes. We regularly supply residential main gates, modern window safety grills, and stainless steel balcony railings for independent houses across Kengeri Satellite Town."
+      },
+      {
+            "question": "Can your mobile welding team handle heavy machinery or gate track repairs on-site?",
+            "answer": "Yes. Our mobile on-site welding equipment is equipped for heavy structural steel welding, damaged track realignment, and immediate commercial gate repairs in Kengeri."
+      }
+]
+  }];
 
 export const regionsData: RegionItem[] = [
   {

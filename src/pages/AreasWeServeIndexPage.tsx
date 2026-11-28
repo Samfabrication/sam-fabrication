@@ -489,7 +489,11 @@ export const AreasWeServeIndexPage: React.FC<AreasWeServeIndexPageProps> = ({ on
                   { loc: 'Peenya Industrial Area', corridor: 'West Bangalore', app: 'Heavy Structural Steel Framing, Warehouse PEB Sheds, Mezzanines', speed: 'Industrial priority dispatch', link: '/locations/peenya/' },
                   { loc: 'Devanahalli', corridor: 'North Bangalore Airport Belt', app: 'Automated Sliding Estate Gates, Perimeter Fencing, Sheds', speed: 'Same-day consultation', link: '/locations/devanahalli/' },
                   { loc: 'Yeshwanthpur', corridor: 'West Bangalore', app: 'Mezzanine Platforms, Heavy Logistics Roll-Up Gates', speed: 'Same-day consultation', link: '/locations/yeshwanthpur/' },
-                  { loc: 'Rajajinagar', corridor: 'West Bangalore', app: 'Commercial Security Grills, Steel Balconies & Gates', speed: 'Same-day consultation', link: '/locations/rajajinagar/' }
+                  { loc: 'Rajajinagar', corridor: 'West Bangalore', app: 'Commercial Security Grills, Steel Balconies & Gates', speed: 'Same-day consultation', link: '/locations/rajajinagar/' },
+                  { loc: 'Koramangala', corridor: 'South-East Bangalore', app: 'Rooftop Cafe Pergolas, Modern Duplex Floating Stairs, Designer Gates', speed: 'Same-day consultation', link: '/locations/koramangala/' },
+                  { loc: 'Bellandur & ORR', corridor: 'Outer Ring Road IT Belt', app: 'RWA-Compliant Balcony Safety Grills, Cantilever Carports, Utility Sheds', speed: 'Same-day consultation', link: '/locations/bellandur/' },
+                  { loc: 'Banashankari', corridor: 'South-West Bangalore', app: 'Independent House Security Gates, Spiral Fire Stairs, Terrace Roofs', speed: 'Same-day consultation', link: '/locations/banashankari/' },
+                  { loc: 'Kengeri & Mysore Rd', corridor: 'West Bangalore Growth Belt', app: 'Industrial PEB Sheds, Heavy Factory Sliding Gates, Terrace Railings', speed: 'Same-day consultation', link: '/locations/kengeri/' }
                 ].map((row, idx) => (
                   <tr key={idx} className="hover:bg-[#F8FAFC] transition-colors">
                     <td className="py-4 px-6 font-bold text-gray-950 flex items-center gap-2">

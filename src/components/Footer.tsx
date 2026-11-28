@@ -193,6 +193,27 @@ export const Footer: React.FC = () => {
                   Yeshwanthpur &amp; West
                 </a>
               </li>
+              <li>
+                <a href="/locations/koramangala/" className="text-gray-400 hover:text-white transition-colors">
+                  Koramangala
+                </a>
+              </li>
+              <li>
+                <a href="/locations/bellandur/" className="text-gray-400 hover:text-white transition-colors">
+                  Bellandur &amp; ORR
+                </a>
+              </li>
+              <li>
+                <a href="/locations/banashankari/" className="text-gray-400 hover:text-white transition-colors">
+                  Banashankari
+                </a>
+              </li>
+              <li>
+                <a href="/locations/kengeri/" className="text-gray-400 hover:text-white transition-colors">
+                  Kengeri &amp; Mysore Rd
+                </a>
+              </li>
+
               <li className="pt-1 border-t border-white/5">
                 <a href="/areas-we-serve/" className="text-[#D49B37] hover:text-[#E5B55D] font-medium transition-colors inline-flex items-center gap-1">
                   All Bangalore Service Zones &rarr;

@@ -598,6 +598,42 @@
       "primaryKeyword": "terms and conditions SAM Fabrication",
       "schemaType": "WebPage",
       "category": "legal"
+    },
+    {
+      "url": "/locations/koramangala/",
+      "title": "Fabrication Works in Koramangala, Bangalore | Gates, Railings & Canopies",
+      "description": "Custom metal fabrication in Koramangala, Bangalore. Designer entrance gates, cafe pergolas, rooftop glass canopies, and SS railings with on-site installation.",
+      "h1": "Fabrication Works in Koramangala",
+      "primaryKeyword": "fabrication works in koramangala",
+      "category": "locations",
+      "schemaType": "LocalBusiness"
+    },
+    {
+      "url": "/locations/bellandur/",
+      "title": "Fabrication Services in Bellandur, Bangalore | Balcony Grills & Car Sheds",
+      "description": "Trusted metal fabrication in Bellandur, Bangalore along Outer Ring Road. Balcony safety grills, villa car parking sheds, terrace roofing & on-site welding.",
+      "h1": "Fabrication Works in Bellandur",
+      "primaryKeyword": "fabrication works in bellandur",
+      "category": "locations",
+      "schemaType": "LocalBusiness"
+    },
+    {
+      "url": "/locations/banashankari/",
+      "title": "Fabrication Works in Banashankari, Bangalore | Gates, Grills & Sheds",
+      "description": "Precision metal fabrication in Banashankari, Bangalore across BSK 1st-6th Stages. Custom MS security gates, window safety grills, staircases & terrace sheds.",
+      "h1": "Fabrication Works in Banashankari",
+      "primaryKeyword": "fabrication works in banashankari",
+      "category": "locations",
+      "schemaType": "LocalBusiness"
+    },
+    {
+      "url": "/locations/kengeri/",
+      "title": "Industrial & Metal Fabrication in Kengeri, Bangalore | SAM Fabrication",
+      "description": "Heavy structural steel and metal fabrication in Kengeri, Bangalore along Mysore Road. Industrial sheds, warehouse sliding gates, railings & certified welding.",
+      "h1": "Fabrication Works in Kengeri",
+      "primaryKeyword": "fabrication works in kengeri",
+      "category": "locations",
+      "schemaType": "LocalBusiness"
     }
   ]
 }

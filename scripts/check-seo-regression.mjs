@@ -135,12 +135,16 @@ const EXPECTED_LOCALITY_URLS = [
   "/locations/btm-layout/",
   "/locations/kr-puram/",
   "/locations/thanisandra/",
-  "/locations/yeshwanthpur/"
+  "/locations/yeshwanthpur/",
+  "/locations/koramangala/",
+  "/locations/bellandur/",
+  "/locations/banashankari/",
+  "/locations/kengeri/"
 ];
 
 assert(
-  EXPECTED_LOCALITY_URLS.length === 18,
-  `All 18 designated locality pages monitored in regression suite`
+  EXPECTED_LOCALITY_URLS.length === 22,
+  `All 22 designated locality pages monitored in regression suite`
 );
 
 for (const locUrl of EXPECTED_LOCALITY_URLS) {
